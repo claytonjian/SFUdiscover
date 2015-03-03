@@ -1,19 +1,18 @@
 //
-//  NewsFeedViewController.m
+//  SettingsViewController.m
 //  SFUdiscover
 //
-//  Created by Clayton Jian on 2015-02-27.
+//  Created by Clayton Jian on 3/2/15.
 //  Copyright (c) 2015 EngagingFoundations. All rights reserved.
 //
 
-#import "NewsFeedViewController.h"
+#import "SettingsViewController.h"
 
-@interface NewsFeedViewController ()
-@property (weak, nonatomic) IBOutlet UIButton *newsFeedToHome;
+@interface SettingsViewController ()
 
 @end
 
-@implementation NewsFeedViewController
+@implementation SettingsViewController
 - (IBAction)goBack:(id)sender {
     [self.navigationController popViewControllerAnimated:(YES)];
 }

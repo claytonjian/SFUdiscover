@@ -9,13 +9,17 @@
 #import "CanvasViewController.h"
 
 @interface CanvasViewController ()
+
 @property (weak, nonatomic) IBOutlet UIButton *canvasToHome;
 
 @end
 
 @implementation CanvasViewController
+- (IBAction)goBack:(id)sender {
+    [self.navigationController popViewControllerAnimated:(YES)];
+}
 - (IBAction)goHome:(id)sender {
-    [self dismissViewControllerAnimated:(YES) completion:nil];
+    [self.navigationController popToRootViewControllerAnimated:(YES)];
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
