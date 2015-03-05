@@ -230,7 +230,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tCD-K2-NCg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1446" y="1273"/>
+            <point key="canvasLocation" x="1570" y="1537"/>
         </scene>
         <!--Canvas View Controller-->
         <scene sceneID="FxP-yw-3ST">
@@ -299,6 +299,11 @@
                                     <segue destination="btR-Tc-CvA" kind="push" id="5ZQ-rP-KP0"/>
                                 </connections>
                             </button>
+                            <webView contentMode="scaleToFill" id="5II-2Q-sc0">
+                                <rect key="frame" x="0.0" y="84" width="320" height="396"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -307,6 +312,7 @@
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
+                        <outlet property="SFUCanvas" destination="5II-2Q-sc0" id="Pfa-32-k7Z"/>
                         <outlet property="canvasToHome" destination="jst-n4-fX5" id="0El-l8-hML"/>
                     </connections>
                 </viewController>
@@ -934,11 +940,17 @@
                                     <segue destination="btR-Tc-CvA" kind="push" id="O4s-Cw-EBK"/>
                                 </connections>
                             </button>
+                            <webView contentMode="scaleToFill" id="0rT-CU-12e">
+                                <rect key="frame" x="0.0" y="84" width="320" height="396"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
+                        <outlet property="SFUConnect" destination="0rT-CU-12e" id="UWW-Lj-Oha"/>
                         <outlet property="connectToHome" destination="EdF-4g-iBR" id="jkF-Cb-rdL"/>
                     </connections>
                 </viewController>
@@ -1051,6 +1063,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="O4s-Cw-EBK"/>
+        <segue reference="5ZQ-rP-KP0"/>
     </inferredMetricsTieBreakers>
 </document>

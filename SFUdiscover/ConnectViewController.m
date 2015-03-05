@@ -9,6 +9,7 @@
 #import "ConnectViewController.h"
 
 @interface ConnectViewController ()
+@property (weak, nonatomic) IBOutlet UIWebView *SFUConnect;
 @property (weak, nonatomic) IBOutlet UIButton *connectToHome;
 
 @end
@@ -34,6 +35,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    NSURL *myURL = [NSURL URLWithString:@"https://connect.sfu.ca/"];
+    NSURLRequest *myRequest = [NSURLRequest requestWithURL:myURL];
+    [_SFUConnect loadRequest:myRequest];
 }
 
 - (void)didReceiveMemoryWarning
