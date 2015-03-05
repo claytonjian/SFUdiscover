@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TransitMapViewController.h"
 
-@interface TransitViewController : UIViewController
+@interface TransitViewController : UIViewController <TransitMapViewControllerDelegate>
 
 @end

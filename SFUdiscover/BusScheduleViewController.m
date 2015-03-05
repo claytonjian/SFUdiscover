@@ -1,24 +1,27 @@
 //
-//  TransitViewController.m
+//  BusScheduleViewController.m
 //  SFUdiscover
 //
-//  Created by Clayton Jian on 2015-02-27.
+//  Created by Yixuan Li on 3/5/15.
 //  Copyright (c) 2015 EngagingFoundations. All rights reserved.
 //
 
-#import "TransitViewController.h"
-#import "TransitMapViewController.h"
+#import "BusScheduleViewController.h"
 
-@interface TransitViewController ()
-@property (weak, nonatomic) IBOutlet UIButton *transitToHome;
-@property (weak, nonatomic) IBOutlet UILabel *busStop;
+@interface BusScheduleViewController (){
+    NSArray *buses;
+}
+@property (weak, nonatomic) IBOutlet UITableView *busTableView;
+@property (weak, nonatomic) IBOutlet UIButton *transitGoHome;
 
 @end
 
-@implementation TransitViewController
+@implementation BusScheduleViewController
+
 - (IBAction)goBack:(id)sender {
     [self.navigationController popViewControllerAnimated:(YES)];
 }
+
 - (IBAction)goHome:(id)sender {
     [self.navigationController popToRootViewControllerAnimated:(YES)];
 }
@@ -32,10 +35,25 @@
     return self;
 }
 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 4;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    
+    // Configure the cell...
+    NSString *current = [buses objectAtIndex:indexPath.row];
+    cell.textLabel.text = current;
+    
+    return cell;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    buses = [[NSArray alloc]initWithObjects:@"135",@"143",@"144",@"145", nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -44,17 +62,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)openMap:(id)sender {
-    TransitMapViewController *TMVC = [self.storyboard instantiateViewControllerWithIdentifier:@"TransitMapViewController"];
-    TMVC.TMVCDelegate = self;
-    [self presentViewController:TMVC animated:YES completion:nil];
-}
 
-- (void) passBack:(TransitMapViewController *)controller busStop:(NSString *)input{
-    [self.busStop setText:input];
-}
-
-/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -62,7 +70,10 @@
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    NSIndexPath *path = [self.busTableView indexPathForSelectedRow];
+    BusTableViewController *vc = [segue destinationViewController];
+    vc.busNumber = 	path.row;
 }
-*/
+
 
 @end

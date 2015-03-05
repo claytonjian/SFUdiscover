@@ -1,24 +1,25 @@
 //
-//  TransitViewController.m
+//  BusTableViewController.m
 //  SFUdiscover
 //
-//  Created by Clayton Jian on 2015-02-27.
+//  Created by Yixuan Li on 3/5/15.
 //  Copyright (c) 2015 EngagingFoundations. All rights reserved.
 //
 
-#import "TransitViewController.h"
-#import "TransitMapViewController.h"
+#import "BusTableViewController.h"
 
-@interface TransitViewController ()
-@property (weak, nonatomic) IBOutlet UIButton *transitToHome;
-@property (weak, nonatomic) IBOutlet UILabel *busStop;
+@interface BusTableViewController ()
+@property (weak, nonatomic) IBOutlet UIWebView *tableDisplay;
 
 @end
 
-@implementation TransitViewController
+@implementation BusTableViewController
+@synthesize busNumber;
+
 - (IBAction)goBack:(id)sender {
     [self.navigationController popViewControllerAnimated:(YES)];
 }
+
 - (IBAction)goHome:(id)sender {
     [self.navigationController popToRootViewControllerAnimated:(YES)];
 }
@@ -36,22 +37,31 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    NSURL *myURL;
+    switch (busNumber) {
+        case 0:
+            myURL = [NSURL URLWithString:@"http://infomaps.translink.ca/Public_Timetables/100/tt135.pdf"];
+            break;
+        case 1:
+            myURL = [NSURL URLWithString:@"http://infomaps.translink.ca/Public_Timetables/100/tt143.pdf"];
+            break;
+        case 2:
+            myURL = [NSURL URLWithString:@"http://infomaps.translink.ca/Public_Timetables/100/tt144.pdf"];
+            break;
+        case 3:
+            myURL = [NSURL URLWithString:@"http://infomaps.translink.ca/Public_Timetables/100/tt145.pdf"];
+            break;
+        default:
+            break;
+    }
+    NSURLRequest *myRequest = [NSURLRequest requestWithURL:myURL];
+    [_tableDisplay loadRequest:myRequest];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (IBAction)openMap:(id)sender {
-    TransitMapViewController *TMVC = [self.storyboard instantiateViewControllerWithIdentifier:@"TransitMapViewController"];
-    TMVC.TMVCDelegate = self;
-    [self presentViewController:TMVC animated:YES completion:nil];
-}
-
-- (void) passBack:(TransitMapViewController *)controller busStop:(NSString *)input{
-    [self.busStop setText:input];
 }
 
 /*
