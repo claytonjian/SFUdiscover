@@ -7,9 +7,11 @@
 //
 
 #import "TransitViewController.h"
+#import "TransitMapViewController.h"
 
 @interface TransitViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *transitToHome;
+@property (weak, nonatomic) IBOutlet UILabel *busStop;
 
 @end
 
@@ -40,6 +42,16 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)openMap:(id)sender {
+    TransitMapViewController *TMVC = [self.storyboard instantiateViewControllerWithIdentifier:@"TransitMapViewController"];
+    TMVC.TMVCDelegate = self;
+    [self presentViewController:TMVC animated:YES completion:nil];
+}
+
+- (void) passBack:(TransitMapViewController *)controller busStop:(NSString *)input{
+    [self.busStop setText:input];
 }
 
 /*

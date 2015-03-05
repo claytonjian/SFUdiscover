@@ -10,6 +10,8 @@
 
 @interface CanvasViewController ()
 
+@property (weak, nonatomic) IBOutlet UIWebView *SFUCanvas;
+
 @property (weak, nonatomic) IBOutlet UIButton *canvasToHome;
 
 @end
@@ -35,6 +37,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    NSURL *myURL = [NSURL URLWithString:@"https://canvas.sfu.ca/"];
+    NSURLRequest *myRequest = [NSURLRequest requestWithURL:myURL];
+    [_SFUCanvas loadRequest:myRequest];
 }
 
 - (void)didReceiveMemoryWarning
