@@ -37,6 +37,8 @@
 		97361C031AA8EC9A0075B4A5 /* BusTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97361C021AA8EC9A0075B4A5 /* BusTableViewController.m */; };
 		97361C061AA8F8460075B4A5 /* TransitMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97361C051AA8F8460075B4A5 /* TransitMapViewController.m */; };
 		97361C091AA8F8CC0075B4A5 /* MapPin.m in Sources */ = {isa = PBXBuildFile; fileRef = 97361C081AA8F8CC0075B4A5 /* MapPin.m */; };
+		A7D1A6631AA92E6100B22F97 /* Simon_Fraser_University_coat_of_arms.png in Resources */ = {isa = PBXBuildFile; fileRef = A7D1A6621AA92E6100B22F97 /* Simon_Fraser_University_coat_of_arms.png */; };
+		A7D1A6741AA9428100B22F97 /* QRScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D1A6731AA9428100B22F97 /* QRScanViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +102,9 @@
 		97361C051AA8F8460075B4A5 /* TransitMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitMapViewController.m; sourceTree = "<group>"; };
 		97361C071AA8F8CC0075B4A5 /* MapPin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPin.h; sourceTree = "<group>"; };
 		97361C081AA8F8CC0075B4A5 /* MapPin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPin.m; sourceTree = "<group>"; };
+		A7D1A6621AA92E6100B22F97 /* Simon_Fraser_University_coat_of_arms.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Simon_Fraser_University_coat_of_arms.png; path = ../../../../Desktop/Simon_Fraser_University_coat_of_arms.png; sourceTree = "<group>"; };
+		A7D1A6721AA9428100B22F97 /* QRScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRScanViewController.h; sourceTree = "<group>"; };
+		A7D1A6731AA9428100B22F97 /* QRScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRScanViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +167,8 @@
 				4929B6251AA133D700963AA7 /* AppDelegate.h */,
 				4929B6261AA133D700963AA7 /* AppDelegate.m */,
 				4929B6281AA133D800963AA7 /* Main_iPhone.storyboard */,
+				A7D1A6721AA9428100B22F97 /* QRScanViewController.h */,
+				A7D1A6731AA9428100B22F97 /* QRScanViewController.m */,
 				97361C071AA8F8CC0075B4A5 /* MapPin.h */,
 				97361C081AA8F8CC0075B4A5 /* MapPin.m */,
 				97361C041AA8F8460075B4A5 /* TransitMapViewController.h */,
@@ -174,6 +181,7 @@
 				4929B62E1AA133D800963AA7 /* HomeViewController.h */,
 				4929B62F1AA133D900963AA7 /* HomeViewController.m */,
 				4929B6311AA133DA00963AA7 /* Images.xcassets */,
+				A7D1A6621AA92E6100B22F97 /* Simon_Fraser_University_coat_of_arms.png */,
 				4929B64E1AA1359900963AA7 /* CanvasViewController.h */,
 				4929B64F1AA1359900963AA7 /* CanvasViewController.m */,
 				4929B6511AA135A400963AA7 /* ConnectViewController.h */,
@@ -307,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4929B62D1AA133D800963AA7 /* Main_iPad.storyboard in Resources */,
+				A7D1A6631AA92E6100B22F97 /* Simon_Fraser_University_coat_of_arms.png in Resources */,
 				4929B6321AA133DA00963AA7 /* Images.xcassets in Resources */,
 				4929B62A1AA133D800963AA7 /* Main_iPhone.storyboard in Resources */,
 				4929B6211AA133D600963AA7 /* InfoPlist.strings in Resources */,
@@ -332,6 +341,7 @@
 				4929B6651AA135EE00963AA7 /* NewsFeedViewController.m in Sources */,
 				4929B6501AA1359900963AA7 /* CanvasViewController.m in Sources */,
 				4929B6531AA135A400963AA7 /* ConnectViewController.m in Sources */,
+				A7D1A6741AA9428100B22F97 /* QRScanViewController.m in Sources */,
 				4929B6301AA133D900963AA7 /* HomeViewController.m in Sources */,
 				97361C061AA8F8460075B4A5 /* TransitMapViewController.m in Sources */,
 				97361C031AA8EC9A0075B4A5 /* BusTableViewController.m in Sources */,
