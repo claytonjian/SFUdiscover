@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0EC6D53D1AA97FC30084B4C6 /* BookStoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC6D53C1AA97FC30084B4C6 /* BookStoreViewController.m */; };
+		0EC6D5481AA9A0170084B4C6 /* Locations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0EC6D5471AA9A0170084B4C6 /* Locations.plist */; };
+		0EC6D54B1AA9A2F30084B4C6 /* RestaurantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC6D54A1AA9A2F30084B4C6 /* RestaurantViewController.m */; };
+		0EC6D54E1AA9B10D0084B4C6 /* Restaurants2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC6D54D1AA9B10D0084B4C6 /* Restaurants2ViewController.m */; };
+		0EC6D5501AA9B5AE0084B4C6 /* RL_WMC.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0EC6D54F1AA9B5AE0084B4C6 /* RL_WMC.plist */; };
+		0EC6D5521AA9B5FF0084B4C6 /* RL_MBC.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0EC6D5511AA9B5FF0084B4C6 /* RL_MBC.plist */; };
+		0EC6D5541AA9B6490084B4C6 /* RL_Cornerstone.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0EC6D5531AA9B6490084B4C6 /* RL_Cornerstone.plist */; };
 		0EE2FAA61AA9256D007A2F19 /* EmergencyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE2FAA31AA9256D007A2F19 /* EmergencyViewController.m */; };
 		0EE2FAAA1AA92AF6007A2F19 /* LostandFoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE2FAA91AA92AF6007A2F19 /* LostandFoundViewController.m */; };
 		4925CF6C1AA566200026305C /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4925CF6B1AA566200026305C /* SettingsViewController.m */; };
@@ -52,6 +59,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0EC6D53B1AA97FC30084B4C6 /* BookStoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookStoreViewController.h; sourceTree = "<group>"; };
+		0EC6D53C1AA97FC30084B4C6 /* BookStoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookStoreViewController.m; sourceTree = "<group>"; };
+		0EC6D5471AA9A0170084B4C6 /* Locations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Locations.plist; sourceTree = "<group>"; };
+		0EC6D5491AA9A2F30084B4C6 /* RestaurantViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestaurantViewController.h; sourceTree = "<group>"; };
+		0EC6D54A1AA9A2F30084B4C6 /* RestaurantViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantViewController.m; sourceTree = "<group>"; };
+		0EC6D54C1AA9B10D0084B4C6 /* Restaurants2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Restaurants2ViewController.h; sourceTree = "<group>"; };
+		0EC6D54D1AA9B10D0084B4C6 /* Restaurants2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Restaurants2ViewController.m; sourceTree = "<group>"; };
+		0EC6D54F1AA9B5AE0084B4C6 /* RL_WMC.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RL_WMC.plist; sourceTree = "<group>"; };
+		0EC6D5511AA9B5FF0084B4C6 /* RL_MBC.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RL_MBC.plist; sourceTree = "<group>"; };
+		0EC6D5531AA9B6490084B4C6 /* RL_Cornerstone.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RL_Cornerstone.plist; sourceTree = "<group>"; };
 		0EE2FAA21AA9256D007A2F19 /* EmergencyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmergencyViewController.h; sourceTree = "<group>"; };
 		0EE2FAA31AA9256D007A2F19 /* EmergencyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmergencyViewController.m; sourceTree = "<group>"; };
 		0EE2FAA81AA92AF6007A2F19 /* LostandFoundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LostandFoundViewController.h; sourceTree = "<group>"; };
@@ -207,6 +224,12 @@
 				4925CF6A1AA566200026305C /* SettingsViewController.h */,
 				4925CF6B1AA566200026305C /* SettingsViewController.m */,
 				4929B61D1AA133D400963AA7 /* Supporting Files */,
+				0EC6D53B1AA97FC30084B4C6 /* BookStoreViewController.h */,
+				0EC6D53C1AA97FC30084B4C6 /* BookStoreViewController.m */,
+				0EC6D5491AA9A2F30084B4C6 /* RestaurantViewController.h */,
+				0EC6D54A1AA9A2F30084B4C6 /* RestaurantViewController.m */,
+				0EC6D54C1AA9B10D0084B4C6 /* Restaurants2ViewController.h */,
+				0EC6D54D1AA9B10D0084B4C6 /* Restaurants2ViewController.m */,
 			);
 			path = SFUdiscover;
 			sourceTree = "<group>";
@@ -218,6 +241,10 @@
 				4929B6221AA133D600963AA7 /* main.m */,
 				4929B61E1AA133D400963AA7 /* SFUdiscover-Info.plist */,
 				4929B6241AA133D600963AA7 /* SFUdiscover-Prefix.pch */,
+				0EC6D5471AA9A0170084B4C6 /* Locations.plist */,
+				0EC6D54F1AA9B5AE0084B4C6 /* RL_WMC.plist */,
+				0EC6D5511AA9B5FF0084B4C6 /* RL_MBC.plist */,
+				0EC6D5531AA9B6490084B4C6 /* RL_Cornerstone.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -317,8 +344,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4929B62D1AA133D800963AA7 /* Main_iPad.storyboard in Resources */,
+				0EC6D5521AA9B5FF0084B4C6 /* RL_MBC.plist in Resources */,
 				4929B6321AA133DA00963AA7 /* Images.xcassets in Resources */,
+				0EC6D5501AA9B5AE0084B4C6 /* RL_WMC.plist in Resources */,
 				4929B62A1AA133D800963AA7 /* Main_iPhone.storyboard in Resources */,
+				0EC6D5541AA9B6490084B4C6 /* RL_Cornerstone.plist in Resources */,
+				0EC6D5481AA9A0170084B4C6 /* Locations.plist in Resources */,
 				4929B6211AA133D600963AA7 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,8 +376,10 @@
 				4929B6301AA133D900963AA7 /* HomeViewController.m in Sources */,
 				97361C061AA8F8460075B4A5 /* TransitMapViewController.m in Sources */,
 				97361C031AA8EC9A0075B4A5 /* BusTableViewController.m in Sources */,
+				0EC6D53D1AA97FC30084B4C6 /* BookStoreViewController.m in Sources */,
 				4929B6271AA133D700963AA7 /* AppDelegate.m in Sources */,
 				97361C001AA8E9810075B4A5 /* BusScheduleViewController.m in Sources */,
+				0EC6D54E1AA9B10D0084B4C6 /* Restaurants2ViewController.m in Sources */,
 				4929B65C1AA135C700963AA7 /* NavigationViewController.m in Sources */,
 				49B69B061AA2A51800B3AC66 /* LibraryViewController.m in Sources */,
 				0EE2FAAA1AA92AF6007A2F19 /* LostandFoundViewController.m in Sources */,
@@ -356,6 +389,7 @@
 				4929B6591AA135BC00963AA7 /* CalendarViewController.m in Sources */,
 				4929B6681AA135FD00963AA7 /* ServicesViewController.m in Sources */,
 				4929B6621AA135DF00963AA7 /* LoyaltyViewController.m in Sources */,
+				0EC6D54B1AA9A2F30084B4C6 /* RestaurantViewController.m in Sources */,
 				4925CF6C1AA566200026305C /* SettingsViewController.m in Sources */,
 				0EE2FAA61AA9256D007A2F19 /* EmergencyViewController.m in Sources */,
 			);
