@@ -53,7 +53,7 @@
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
     [button addTarget:self action:@selector(confirm:) forControlEvents:UIControlEventTouchUpInside];
-    selection = annotation.title;
+    //selection = annotation.title;
     myPin.canShowCallout = YES;
     myPin.rightCalloutAccessoryView = button;
     
