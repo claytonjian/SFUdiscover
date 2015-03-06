@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
 
 @interface NavigationViewController : UIViewController
+    
+@property (weak, nonatomic) IBOutlet MKMapView *navigationMapView;
 
 @end

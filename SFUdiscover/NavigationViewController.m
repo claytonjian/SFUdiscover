@@ -14,13 +14,14 @@
 @end
 
 @implementation NavigationViewController
+
+
 - (IBAction)goBack:(id)sender {
     [self.navigationController popViewControllerAnimated:(YES)];
 }
 - (IBAction)goHome:(id)sender {
     [self.navigationController popToRootViewControllerAnimated:(YES)];
 }
-
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -29,11 +30,20 @@
     }
     return self;
 }
+- (void)viewBurnabyCampus {
+    MKCoordinateRegion SFUBurnaby;
+    SFUBurnaby.center.latitude = 49.277777;
+    SFUBurnaby.center.longitude = -122.917777;
+    SFUBurnaby.span.latitudeDelta = 0.0225;
+    SFUBurnaby.span.longitudeDelta = 0.0225;
+    [self.navigationMapView setRegion:SFUBurnaby animated:YES];
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self viewBurnabyCampus];
 }
 
 - (void)didReceiveMemoryWarning

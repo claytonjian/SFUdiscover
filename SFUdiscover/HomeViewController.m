@@ -19,6 +19,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    UIAlertView *SFUalert = [[UIAlertView alloc] initWithTitle:@"SFU Alert" message:@"The apocolypse as we know it is upon us. Run for your dear lives." delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil,nil];
+    [SFUalert show];
 }
 
 - (void)didReceiveMemoryWarning

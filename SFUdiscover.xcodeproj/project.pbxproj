@@ -32,6 +32,9 @@
 		4929B6621AA135DF00963AA7 /* LoyaltyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4929B6611AA135DF00963AA7 /* LoyaltyViewController.m */; };
 		4929B6651AA135EE00963AA7 /* NewsFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4929B6641AA135EE00963AA7 /* NewsFeedViewController.m */; };
 		4929B6681AA135FD00963AA7 /* ServicesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4929B6671AA135FD00963AA7 /* ServicesViewController.m */; };
+		4971E6C71AA9517000D90AE5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4971E6C61AA9517000D90AE5 /* CoreLocation.framework */; };
+		4971E6C91AA951AF00D90AE5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4971E6C81AA951AF00D90AE5 /* MapKit.framework */; };
+		4971E6CC1AA95ED700D90AE5 /* NavOptionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4971E6CB1AA95ED700D90AE5 /* NavOptionsTableViewController.m */; };
 		49B69B061AA2A51800B3AC66 /* LibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B69B051AA2A51800B3AC66 /* LibraryViewController.m */; };
 		97361C001AA8E9810075B4A5 /* BusScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97361BFF1AA8E9810075B4A5 /* BusScheduleViewController.m */; };
 		97361C031AA8EC9A0075B4A5 /* BusTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97361C021AA8EC9A0075B4A5 /* BusTableViewController.m */; };
@@ -90,6 +93,10 @@
 		4929B6641AA135EE00963AA7 /* NewsFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsFeedViewController.m; sourceTree = "<group>"; };
 		4929B6661AA135FD00963AA7 /* ServicesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServicesViewController.h; sourceTree = "<group>"; };
 		4929B6671AA135FD00963AA7 /* ServicesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServicesViewController.m; sourceTree = "<group>"; };
+		4971E6C61AA9517000D90AE5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		4971E6C81AA951AF00D90AE5 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		4971E6CA1AA95ED700D90AE5 /* NavOptionsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavOptionsTableViewController.h; sourceTree = "<group>"; };
+		4971E6CB1AA95ED700D90AE5 /* NavOptionsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavOptionsTableViewController.m; sourceTree = "<group>"; };
 		49B69B041AA2A51800B3AC66 /* LibraryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryViewController.h; sourceTree = "<group>"; };
 		49B69B051AA2A51800B3AC66 /* LibraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryViewController.m; sourceTree = "<group>"; };
 		97361BFE1AA8E9810075B4A5 /* BusScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusScheduleViewController.h; sourceTree = "<group>"; };
@@ -107,6 +114,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4971E6C91AA951AF00D90AE5 /* MapKit.framework in Frameworks */,
+				4971E6C71AA9517000D90AE5 /* CoreLocation.framework in Frameworks */,
 				4929B6191AA133D300963AA7 /* CoreGraphics.framework in Frameworks */,
 				4929B61B1AA133D300963AA7 /* UIKit.framework in Frameworks */,
 				4929B6171AA133D300963AA7 /* Foundation.framework in Frameworks */,
@@ -148,6 +157,8 @@
 		4929B6151AA133D300963AA7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4971E6C81AA951AF00D90AE5 /* MapKit.framework */,
+				4971E6C61AA9517000D90AE5 /* CoreLocation.framework */,
 				4929B6161AA133D300963AA7 /* Foundation.framework */,
 				4929B6181AA133D300963AA7 /* CoreGraphics.framework */,
 				4929B61A1AA133D300963AA7 /* UIKit.framework */,
@@ -188,6 +199,8 @@
 				4929B65E1AA135D100963AA7 /* TransitViewController.m */,
 				4929B6601AA135DF00963AA7 /* LoyaltyViewController.h */,
 				4929B6611AA135DF00963AA7 /* LoyaltyViewController.m */,
+				4971E6CA1AA95ED700D90AE5 /* NavOptionsTableViewController.h */,
+				4971E6CB1AA95ED700D90AE5 /* NavOptionsTableViewController.m */,
 				4929B6631AA135EE00963AA7 /* NewsFeedViewController.h */,
 				4929B6641AA135EE00963AA7 /* NewsFeedViewController.m */,
 				4929B6661AA135FD00963AA7 /* ServicesViewController.h */,
@@ -343,6 +356,7 @@
 				4929B65F1AA135D100963AA7 /* TransitViewController.m in Sources */,
 				4929B6561AA135AF00963AA7 /* FeedbackViewController.m in Sources */,
 				4929B6591AA135BC00963AA7 /* CalendarViewController.m in Sources */,
+				4971E6CC1AA95ED700D90AE5 /* NavOptionsTableViewController.m in Sources */,
 				4929B6681AA135FD00963AA7 /* ServicesViewController.m in Sources */,
 				4929B6621AA135DF00963AA7 /* LoyaltyViewController.m in Sources */,
 				4925CF6C1AA566200026305C /* SettingsViewController.m in Sources */,

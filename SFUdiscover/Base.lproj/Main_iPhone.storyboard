@@ -227,10 +227,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="N26-l0-0vG"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tCD-K2-NCg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1570" y="1537"/>
+            <point key="canvasLocation" x="1578" y="1508"/>
         </scene>
         <!--Canvas View Controller-->
         <scene sceneID="FxP-yw-3ST">
@@ -720,6 +721,34 @@
             </objects>
             <point key="canvasLocation" x="1939" y="925"/>
         </scene>
+        <!--Table View Controller-->
+        <scene sceneID="eST-6h-ahG">
+            <objects>
+                <tableViewController id="DYv-ea-JjT" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="lSx-pG-2XW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Navigation Option" id="6Sq-5n-lGt">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6Sq-5n-lGt" id="KGO-B3-769">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="DYv-ea-JjT" id="0r9-QH-Zt0"/>
+                            <outlet property="delegate" destination="DYv-ea-JjT" id="z06-OC-sdG"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WNx-n7-Im6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1926" y="943"/>
+        </scene>
         <!--Navigation View Controller-->
         <scene sceneID="0EZ-SE-PbY">
             <objects>
@@ -787,16 +816,30 @@
                                     <segue destination="btR-Tc-CvA" kind="push" id="FqR-Y8-zaM"/>
                                 </connections>
                             </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="HnS-rB-LoR">
+                                <rect key="frame" x="0.0" y="84" width="320" height="396"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="jaM-9a-bAY"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
+                        <outlet property="navigationMapView" destination="HnS-rB-LoR" id="UPi-Xo-AiL"/>
                         <outlet property="navigationToHome" destination="L6T-cv-Vpg" id="Syp-tM-ZMc"/>
+                        <outlet property="searchDisplayController" destination="xZh-GX-2xZ" id="6dc-PB-CDK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yeR-Go-UtT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="xZh-GX-2xZ">
+                    <connections>
+                        <outlet property="delegate" destination="WwY-Eb-6kS" id="zH9-Bj-m05"/>
+                        <outlet property="searchContentsController" destination="WwY-Eb-6kS" id="7xK-N2-pLz"/>
+                        <outlet property="searchResultsDataSource" destination="WwY-Eb-6kS" id="lJI-YN-4OM"/>
+                        <outlet property="searchResultsDelegate" destination="WwY-Eb-6kS" id="Ror-lQ-pJs"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="1570" y="344"/>
         </scene>
@@ -1344,6 +1387,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="6Yf-nr-7Ra"/>
+        <segue reference="FqR-Y8-zaM"/>
     </inferredMetricsTieBreakers>
 </document>
