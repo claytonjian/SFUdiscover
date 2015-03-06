@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0EE2FA921AA921A3007A2F19 /* main2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EE2FA901AA921A3007A2F19 /* main2.storyboard */; };
-		0EE2FA951AA921F9007A2F19 /* EmergencyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE2FA941AA921F9007A2F19 /* EmergencyViewController.m */; };
+		0EE2FAA61AA9256D007A2F19 /* EmergencyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE2FAA31AA9256D007A2F19 /* EmergencyViewController.m */; };
+		0EE2FAAA1AA92AF6007A2F19 /* LostandFoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE2FAA91AA92AF6007A2F19 /* LostandFoundViewController.m */; };
 		4925CF6C1AA566200026305C /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4925CF6B1AA566200026305C /* SettingsViewController.m */; };
 		4929B6171AA133D300963AA7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4929B6161AA133D300963AA7 /* Foundation.framework */; };
 		4929B6191AA133D300963AA7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4929B6181AA133D300963AA7 /* CoreGraphics.framework */; };
@@ -52,9 +52,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0EE2FA911AA921A3007A2F19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../sfudiscoverjames/sfudiscoverjames/Base.lproj/main2.storyboard; sourceTree = "<group>"; };
-		0EE2FA931AA921F9007A2F19 /* EmergencyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EmergencyViewController.h; path = ../../sfudiscoverjames/EmergencyViewController.h; sourceTree = "<group>"; };
-		0EE2FA941AA921F9007A2F19 /* EmergencyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EmergencyViewController.m; path = ../../sfudiscoverjames/EmergencyViewController.m; sourceTree = "<group>"; };
+		0EE2FAA21AA9256D007A2F19 /* EmergencyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmergencyViewController.h; sourceTree = "<group>"; };
+		0EE2FAA31AA9256D007A2F19 /* EmergencyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmergencyViewController.m; sourceTree = "<group>"; };
+		0EE2FAA81AA92AF6007A2F19 /* LostandFoundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LostandFoundViewController.h; sourceTree = "<group>"; };
+		0EE2FAA91AA92AF6007A2F19 /* LostandFoundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LostandFoundViewController.m; sourceTree = "<group>"; };
 		4925CF6A1AA566200026305C /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		4925CF6B1AA566200026305C /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		4929B6131AA133D300963AA7 /* SFUdiscover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SFUdiscover.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -164,12 +165,15 @@
 		4929B61C1AA133D300963AA7 /* SFUdiscover */ = {
 			isa = PBXGroup;
 			children = (
+				0EE2FAA21AA9256D007A2F19 /* EmergencyViewController.h */,
+				0EE2FAA31AA9256D007A2F19 /* EmergencyViewController.m */,
+				0EE2FAA81AA92AF6007A2F19 /* LostandFoundViewController.h */,
+				0EE2FAA91AA92AF6007A2F19 /* LostandFoundViewController.m */,
 				4929B6251AA133D700963AA7 /* AppDelegate.h */,
 				4929B6261AA133D700963AA7 /* AppDelegate.m */,
 				4929B6281AA133D800963AA7 /* Main_iPhone.storyboard */,
 				97361C071AA8F8CC0075B4A5 /* MapPin.h */,
 				97361C081AA8F8CC0075B4A5 /* MapPin.m */,
-				0EE2FA901AA921A3007A2F19 /* main2.storyboard */,
 				97361C041AA8F8460075B4A5 /* TransitMapViewController.h */,
 				97361C051AA8F8460075B4A5 /* TransitMapViewController.m */,
 				97361BFE1AA8E9810075B4A5 /* BusScheduleViewController.h */,
@@ -184,8 +188,6 @@
 				4929B64F1AA1359900963AA7 /* CanvasViewController.m */,
 				4929B6511AA135A400963AA7 /* ConnectViewController.h */,
 				4929B6521AA135A400963AA7 /* ConnectViewController.m */,
-				0EE2FA931AA921F9007A2F19 /* EmergencyViewController.h */,
-				0EE2FA941AA921F9007A2F19 /* EmergencyViewController.m */,
 				4929B6541AA135AF00963AA7 /* FeedbackViewController.h */,
 				4929B6551AA135AF00963AA7 /* FeedbackViewController.m */,
 				4929B6571AA135BC00963AA7 /* CalendarViewController.h */,
@@ -317,7 +319,6 @@
 				4929B62D1AA133D800963AA7 /* Main_iPad.storyboard in Resources */,
 				4929B6321AA133DA00963AA7 /* Images.xcassets in Resources */,
 				4929B62A1AA133D800963AA7 /* Main_iPhone.storyboard in Resources */,
-				0EE2FA921AA921A3007A2F19 /* main2.storyboard in Resources */,
 				4929B6211AA133D600963AA7 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,6 +349,7 @@
 				97361C001AA8E9810075B4A5 /* BusScheduleViewController.m in Sources */,
 				4929B65C1AA135C700963AA7 /* NavigationViewController.m in Sources */,
 				49B69B061AA2A51800B3AC66 /* LibraryViewController.m in Sources */,
+				0EE2FAAA1AA92AF6007A2F19 /* LostandFoundViewController.m in Sources */,
 				4929B6231AA133D600963AA7 /* main.m in Sources */,
 				4929B65F1AA135D100963AA7 /* TransitViewController.m in Sources */,
 				4929B6561AA135AF00963AA7 /* FeedbackViewController.m in Sources */,
@@ -355,7 +357,7 @@
 				4929B6681AA135FD00963AA7 /* ServicesViewController.m in Sources */,
 				4929B6621AA135DF00963AA7 /* LoyaltyViewController.m in Sources */,
 				4925CF6C1AA566200026305C /* SettingsViewController.m in Sources */,
-				0EE2FA951AA921F9007A2F19 /* EmergencyViewController.m in Sources */,
+				0EE2FAA61AA9256D007A2F19 /* EmergencyViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,14 +380,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0EE2FA901AA921A3007A2F19 /* main2.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0EE2FA911AA921A3007A2F19 /* Base */,
-			);
-			name = main2.storyboard;
-			sourceTree = "<group>";
-		};
 		4929B61F1AA133D600963AA7 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
