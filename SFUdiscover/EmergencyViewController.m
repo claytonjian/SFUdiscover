@@ -14,6 +14,14 @@
 
 @implementation EmergencyViewController
 
+- (IBAction)goBack:(id)sender {
+    [self.navigationController popViewControllerAnimated:(YES)];
+}
+
+- (IBAction)goHome:(id)sender {
+    [self.navigationController popToRootViewControllerAnimated:(YES)];
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
