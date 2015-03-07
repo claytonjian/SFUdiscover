@@ -35,12 +35,20 @@
     //dismiss keyboard upon touch
     [self.inputField resignFirstResponder];
 }
-
-- (IBAction)sendToApp:(id)sender {
+- (IBAction)sendToRestauants:(id)sender {
     //dismiss keyboard upon touch
     [self.inputField resignFirstResponder];
 }
 
+- (IBAction)sendToLibrary:(id)sender {
+    //dismiss keyboard upon touch
+    [self.inputField resignFirstResponder];
+}
+
+- (IBAction)sendToDevs:(id)sender {
+    //dismiss keyboard upon touch
+    [self.inputField resignFirstResponder];
+}
 
 //dimiss keyboard upon touching blank spaces on screen
 - (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
