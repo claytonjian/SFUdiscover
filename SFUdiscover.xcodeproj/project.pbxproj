@@ -61,7 +61,7 @@
 		97361C031AA8EC9A0075B4A5 /* BusTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97361C021AA8EC9A0075B4A5 /* BusTableViewController.m */; };
 		97361C061AA8F8460075B4A5 /* TransitMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97361C051AA8F8460075B4A5 /* TransitMapViewController.m */; };
 		97361C091AA8F8CC0075B4A5 /* MapPin.m in Sources */ = {isa = PBXBuildFile; fileRef = 97361C081AA8F8CC0075B4A5 /* MapPin.m */; };
-		97D44E1E1AAB98BF00B0A91C /* myButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D44E1D1AAB98BF00B0A91C /* myButton.m */; };
+		97D44E6B1AABB11F00B0A91C /* myButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D44E6A1AABB11F00B0A91C /* myButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -168,8 +168,8 @@
 		97361C051AA8F8460075B4A5 /* TransitMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitMapViewController.m; sourceTree = "<group>"; };
 		97361C071AA8F8CC0075B4A5 /* MapPin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPin.h; sourceTree = "<group>"; };
 		97361C081AA8F8CC0075B4A5 /* MapPin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPin.m; sourceTree = "<group>"; };
-		97D44E1C1AAB98BF00B0A91C /* myButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myButton.h; sourceTree = "<group>"; };
-		97D44E1D1AAB98BF00B0A91C /* myButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myButton.m; sourceTree = "<group>"; };
+		97D44E6A1AABB11F00B0A91C /* myButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myButton.m; sourceTree = "<group>"; };
+		97D44E6C1AABB13800B0A91C /* myButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myButton.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -297,6 +297,8 @@
 				0EE2FAA31AA9256D007A2F19 /* EmergencyViewController.m */,
 				0EE2FAA81AA92AF6007A2F19 /* LostandFoundViewController.h */,
 				0EE2FAA91AA92AF6007A2F19 /* LostandFoundViewController.m */,
+				97D44E6C1AABB13800B0A91C /* myButton.h */,
+				97D44E6A1AABB11F00B0A91C /* myButton.m */,
 				4929B6251AA133D700963AA7 /* AppDelegate.h */,
 				4929B6261AA133D700963AA7 /* AppDelegate.m */,
 				4929B6281AA133D800963AA7 /* Main_iPhone.storyboard */,
@@ -478,9 +480,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97D44E6B1AABB11F00B0A91C /* myButton.m in Sources */,
 				0EC20A3E1AAB0EF3008207FF /* TFHppleElement.m in Sources */,
 				97361C091AA8F8CC0075B4A5 /* MapPin.m in Sources */,
-				97D44E1E1AAB98BF00B0A91C /* myButton.m in Sources */,
 				4929B6651AA135EE00963AA7 /* NewsFeedViewController.m in Sources */,
 				4929B6501AA1359900963AA7 /* CanvasViewController.m in Sources */,
 				0EC209F31AAB0E19008207FF /* Contributor.m in Sources */,
