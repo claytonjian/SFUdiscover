@@ -42,6 +42,7 @@
     NSURL *url;
     switch (locationswitch) {
         case 0:
+            NSLog(@"TESTING");
             url = [[NSBundle mainBundle] URLForResource:@"RL_WMC" withExtension:@"plist"];
             break;
         case 1:
@@ -62,10 +63,10 @@
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault
-                                                  reuseIdentifier:@"cell"];
-    cell.textLabel.text = RestaurantsArray[indexPath.row];
-    return cell;
+    UITableViewCell *cell2 = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault
+                                                  reuseIdentifier:@"cell2"];
+    cell2.textLabel.text = RestaurantsArray[indexPath.row];
+    return cell2;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {

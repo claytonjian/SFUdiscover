@@ -16,6 +16,8 @@
 		0EC6D5541AA9B6490084B4C6 /* RL_Cornerstone.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0EC6D5531AA9B6490084B4C6 /* RL_Cornerstone.plist */; };
 		0EE2FAA61AA9256D007A2F19 /* EmergencyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE2FAA31AA9256D007A2F19 /* EmergencyViewController.m */; };
 		0EE2FAAA1AA92AF6007A2F19 /* LostandFoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE2FAA91AA92AF6007A2F19 /* LostandFoundViewController.m */; };
+		0EF4ABC71AAAABFD007B1B12 /* SafeWalkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF4ABC61AAAABFD007B1B12 /* SafeWalkViewController.m */; };
+		0EF4ABCA1AAAB999007B1B12 /* SafeWalkSiteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF4ABC91AAAB999007B1B12 /* SafeWalkSiteViewController.m */; };
 		4925CF6C1AA566200026305C /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4925CF6B1AA566200026305C /* SettingsViewController.m */; };
 		4929B6171AA133D300963AA7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4929B6161AA133D300963AA7 /* Foundation.framework */; };
 		4929B6191AA133D300963AA7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4929B6181AA133D300963AA7 /* CoreGraphics.framework */; };
@@ -73,6 +75,10 @@
 		0EE2FAA31AA9256D007A2F19 /* EmergencyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmergencyViewController.m; sourceTree = "<group>"; };
 		0EE2FAA81AA92AF6007A2F19 /* LostandFoundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LostandFoundViewController.h; sourceTree = "<group>"; };
 		0EE2FAA91AA92AF6007A2F19 /* LostandFoundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LostandFoundViewController.m; sourceTree = "<group>"; };
+		0EF4ABC51AAAABFD007B1B12 /* SafeWalkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeWalkViewController.h; sourceTree = "<group>"; };
+		0EF4ABC61AAAABFD007B1B12 /* SafeWalkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeWalkViewController.m; sourceTree = "<group>"; };
+		0EF4ABC81AAAB999007B1B12 /* SafeWalkSiteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeWalkSiteViewController.h; sourceTree = "<group>"; };
+		0EF4ABC91AAAB999007B1B12 /* SafeWalkSiteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeWalkSiteViewController.m; sourceTree = "<group>"; };
 		4925CF6A1AA566200026305C /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		4925CF6B1AA566200026305C /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		4929B6131AA133D300963AA7 /* SFUdiscover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SFUdiscover.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -189,8 +195,12 @@
 				4929B6251AA133D700963AA7 /* AppDelegate.h */,
 				4929B6261AA133D700963AA7 /* AppDelegate.m */,
 				4929B6281AA133D800963AA7 /* Main_iPhone.storyboard */,
+				0EF4ABC81AAAB999007B1B12 /* SafeWalkSiteViewController.h */,
+				0EF4ABC91AAAB999007B1B12 /* SafeWalkSiteViewController.m */,
 				97361C071AA8F8CC0075B4A5 /* MapPin.h */,
 				97361C081AA8F8CC0075B4A5 /* MapPin.m */,
+				0EF4ABC51AAAABFD007B1B12 /* SafeWalkViewController.h */,
+				0EF4ABC61AAAABFD007B1B12 /* SafeWalkViewController.m */,
 				97361C041AA8F8460075B4A5 /* TransitMapViewController.h */,
 				97361C051AA8F8460075B4A5 /* TransitMapViewController.m */,
 				97361BFE1AA8E9810075B4A5 /* BusScheduleViewController.h */,
@@ -385,6 +395,8 @@
 				0EE2FAAA1AA92AF6007A2F19 /* LostandFoundViewController.m in Sources */,
 				4929B6231AA133D600963AA7 /* main.m in Sources */,
 				4929B65F1AA135D100963AA7 /* TransitViewController.m in Sources */,
+				0EF4ABC71AAAABFD007B1B12 /* SafeWalkViewController.m in Sources */,
+				0EF4ABCA1AAAB999007B1B12 /* SafeWalkSiteViewController.m in Sources */,
 				4929B6561AA135AF00963AA7 /* FeedbackViewController.m in Sources */,
 				4929B6591AA135BC00963AA7 /* CalendarViewController.m in Sources */,
 				4929B6681AA135FD00963AA7 /* ServicesViewController.m in Sources */,

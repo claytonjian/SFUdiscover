@@ -75,6 +75,7 @@
  NSIndexPath *path = [self.RLTableView indexPathForSelectedRow];
  Restaurants2ViewController *vc = [segue destinationViewController];
  vc.locationswitch = 	path.row;
+     NSLog(@"%a", (double)vc.locationswitch);
  }
 
 @end
