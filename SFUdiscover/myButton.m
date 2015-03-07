@@ -12,6 +12,8 @@
 
 @synthesize data;
 
+//useless text
+
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
