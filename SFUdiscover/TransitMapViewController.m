@@ -8,6 +8,7 @@
 
 #import "TransitMapViewController.h"
 #import "MapPin.h"
+#import "myButton.h"
 
 @interface TransitMapViewController ()
 
@@ -15,8 +16,7 @@
 
 @implementation TransitMapViewController
 
-@synthesize mapView, selection;
-@synthesize TMVCDelegate;
+@synthesize mapView, selection, TMVCDelegate;
 
 - (IBAction)goBack:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
@@ -27,6 +27,11 @@
     [self.TMVCDelegate goHome:nil];
 }
 
+- (IBAction)goSet:(id)sender{
+    [self dismissViewControllerAnimated:YES completion:nil];
+    [self.TMVCDelegate goSetting];
+}
+
 -(void) location{
     MKCoordinateRegion region;
     region.center.latitude = 49.277777;
@@ -34,7 +39,6 @@
     region.span.latitudeDelta = 0.0225;
     region.span.longitudeDelta = 0.0225;
     [self.mapView setRegion:region animated:YES];
-    
 }
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -46,28 +50,27 @@
 }
 
 - (MKAnnotationView *) mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation{
-    
     MKPinAnnotationView *myPin = [[MKPinAnnotationView alloc]initWithAnnotation:annotation reuseIdentifier:@"current"];
     myPin.pinColor = MKPinAnnotationColorPurple;
     myPin.animatesDrop = TRUE;
     
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+    myButton *button = [myButton buttonWithType:UIButtonTypeDetailDisclosure];
+    button.data = myPin;
     [button addTarget:self action:@selector(confirm:) forControlEvents:UIControlEventTouchUpInside];
-    //selection = annotation.title;
     myPin.canShowCallout = YES;
     myPin.rightCalloutAccessoryView = button;
-    
     
     return myPin;
 }
 
--(void)confirm: (id) sender{
+-(void)confirm: (myButton *) sender{
+    selection = sender.data.annotation.title;
     NSString *alertMessage = [[NSString alloc]initWithFormat:@"You have selected %@, is this the right choice?", selection];
     UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Alert" message: alertMessage delegate:self cancelButtonTitle:@"No" otherButtonTitles:@"Yes", nil];
     [alert show];
 }
 
--(void) alertView:(UIAlertView *) alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+-(void)alertView:(UIAlertView *) alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
     if(buttonIndex == 1){
         [self.TMVCDelegate passBack:self busStop:selection];
         [self dismissViewControllerAnimated:YES completion:nil];

@@ -12,7 +12,6 @@
 
 @synthesize data;
 
-//useless text
 
 - (id)initWithFrame:(CGRect)frame
 {
