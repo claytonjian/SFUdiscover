@@ -13,11 +13,11 @@
                         <viewControllerLayoutGuide type="bottom" id="oDm-R5-ifI"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="960"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9pl-Ad-nS3">
-                                <rect key="frame" x="0.0" y="22" width="320" height="938"/>
+                                <rect key="frame" x="0.0" y="22" width="320" height="458"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V8q-kr-kvM">
@@ -177,7 +177,7 @@
                                     <constraint firstAttribute="height" constant="25" id="MGC-Ry-6Hd"/>
                                     <constraint firstAttribute="width" constant="25" id="l3S-TJ-kY9"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="Gear-2-512.png">
+                                <state key="normal" title="Button" image="settingIcon.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -199,7 +199,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="wej-dY-bpZ"/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="960"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -215,7 +215,7 @@
                         <viewControllerLayoutGuide type="bottom" id="bYr-vD-81b"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="bPC-Oh-7SI">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="960"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bla-as-GYI">
@@ -282,10 +282,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="N26-l0-0vG"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tCD-K2-NCg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2532" y="-572"/>
+            <point key="canvasLocation" x="2280" y="-572"/>
         </scene>
         <!--Canvas View Controller-->
         <scene sceneID="FxP-yw-3ST">
@@ -356,20 +357,6 @@
                                     <action selector="goHome:" destination="0OP-lk-fHh" eventType="touchUpInside" id="0Ff-N1-fRq"/>
                                 </connections>
                             </button>
-                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Osz-iD-1M6">
-                                <rect key="frame" x="290" y="21" width="25" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="25" id="CCU-0B-MVX"/>
-                                    <constraint firstAttribute="height" constant="25" id="Jih-M5-aKl"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="Gear-2-512.png">
-                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="btR-Tc-CvA" kind="push" id="HK9-Cd-zcp"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -379,10 +366,8 @@
                             <constraint firstAttribute="trailing" secondItem="I6x-6y-iv1" secondAttribute="trailing" id="Enc-XO-rzK"/>
                             <constraint firstAttribute="trailing" secondItem="Wm7-am-sl4" secondAttribute="trailing" id="LIf-yg-7OR"/>
                             <constraint firstItem="5AG-HW-Lg3" firstAttribute="top" secondItem="5II-2Q-sc0" secondAttribute="bottom" id="Q8w-2o-hsN"/>
-                            <constraint firstItem="I6x-6y-iv1" firstAttribute="top" secondItem="Osz-iD-1M6" secondAttribute="bottom" constant="-26" id="i1g-xd-2eC"/>
                             <constraint firstAttribute="trailing" secondItem="5II-2Q-sc0" secondAttribute="trailing" id="maT-og-gun"/>
                             <constraint firstItem="I6x-6y-iv1" firstAttribute="top" secondItem="LX0-gv-0Xz" secondAttribute="bottom" id="pRQ-qV-7zf"/>
-                            <constraint firstAttribute="trailing" secondItem="Osz-iD-1M6" secondAttribute="trailing" constant="5" id="tau-dZ-1Ah"/>
                             <constraint firstItem="5II-2Q-sc0" firstAttribute="top" secondItem="I6x-6y-iv1" secondAttribute="bottom" constant="44" id="uQy-Wb-3qK"/>
                             <constraint firstItem="Wm7-am-sl4" firstAttribute="top" secondItem="LX0-gv-0Xz" secondAttribute="bottom" constant="28" id="wH9-J9-Mzp"/>
                             <constraint firstItem="Wm7-am-sl4" firstAttribute="top" secondItem="I6x-6y-iv1" secondAttribute="bottom" id="wcs-e5-7W8"/>
@@ -464,28 +449,12 @@
                                     <action selector="goHome:" destination="URc-mO-CeV" eventType="touchUpInside" id="NCD-Ni-Su4"/>
                                 </connections>
                             </button>
-                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bPH-6r-kU0">
-                                <rect key="frame" x="290" y="21" width="25" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="25" id="2p1-nG-szK"/>
-                                    <constraint firstAttribute="width" constant="25" id="yRY-at-clp"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="Gear-2-512.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="btR-Tc-CvA" kind="push" id="106-Z5-f1N"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="SAT-rw-bU7" firstAttribute="leading" secondItem="la4-IF-d9u" secondAttribute="leading" id="0a2-7W-6yL"/>
                             <constraint firstItem="xu4-Ir-gQx" firstAttribute="top" secondItem="xOC-47-r2a" secondAttribute="bottom" constant="28" id="1g0-HV-go5"/>
                             <constraint firstItem="xu4-Ir-gQx" firstAttribute="top" secondItem="SAT-rw-bU7" secondAttribute="bottom" id="NAL-LJ-gxa"/>
-                            <constraint firstAttribute="trailing" secondItem="bPH-6r-kU0" secondAttribute="trailing" constant="5" id="RjR-QZ-BWK"/>
-                            <constraint firstItem="SAT-rw-bU7" firstAttribute="top" secondItem="bPH-6r-kU0" secondAttribute="bottom" constant="-26" id="SWQ-J1-4oi"/>
                             <constraint firstAttribute="trailing" secondItem="xu4-Ir-gQx" secondAttribute="trailing" id="Vd2-jN-TUl"/>
                             <constraint firstItem="SAT-rw-bU7" firstAttribute="top" secondItem="xOC-47-r2a" secondAttribute="bottom" id="YiD-Tv-gSR"/>
                             <constraint firstItem="xu4-Ir-gQx" firstAttribute="leading" secondItem="la4-IF-d9u" secondAttribute="leading" id="sJq-Cq-GX8"/>
@@ -565,29 +534,13 @@
                                     <action selector="goHome:" destination="ya4-fS-sBL" eventType="touchUpInside" id="cfY-Nd-0VL"/>
                                 </connections>
                             </button>
-                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="swC-T3-Joi">
-                                <rect key="frame" x="290" y="21" width="25" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="25" id="Ffm-z4-wgv"/>
-                                    <constraint firstAttribute="width" constant="25" id="e2F-Kg-SFF"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="Gear-2-512.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="btR-Tc-CvA" kind="push" id="msw-Wk-An6"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="CN2-Ca-TYa" firstAttribute="leading" secondItem="SCO-CO-QLW" secondAttribute="leading" id="11A-2a-6bd"/>
-                            <constraint firstAttribute="trailing" secondItem="swC-T3-Joi" secondAttribute="trailing" constant="5" id="3lP-HC-4Gd"/>
                             <constraint firstItem="9fO-tQ-YmK" firstAttribute="leading" secondItem="SCO-CO-QLW" secondAttribute="leading" id="5V7-R4-HJp"/>
                             <constraint firstItem="CN2-Ca-TYa" firstAttribute="top" secondItem="9fO-tQ-YmK" secondAttribute="bottom" id="98f-xs-9dW"/>
                             <constraint firstAttribute="trailing" secondItem="9fO-tQ-YmK" secondAttribute="trailing" id="Hd4-dp-4eP"/>
-                            <constraint firstItem="9fO-tQ-YmK" firstAttribute="top" secondItem="swC-T3-Joi" secondAttribute="bottom" constant="-26" id="IfL-Ha-wq4"/>
                             <constraint firstItem="CN2-Ca-TYa" firstAttribute="top" secondItem="Pqd-5T-OzN" secondAttribute="bottom" constant="28" id="fqm-RV-qy4"/>
                             <constraint firstItem="9fO-tQ-YmK" firstAttribute="top" secondItem="Pqd-5T-OzN" secondAttribute="bottom" id="mF7-mo-1mP"/>
                             <constraint firstAttribute="trailing" secondItem="CN2-Ca-TYa" secondAttribute="trailing" id="zqi-ZL-XfB"/>
@@ -742,20 +695,6 @@
                                     <action selector="goHome:" destination="i4E-FB-qNi" eventType="touchUpInside" id="QgR-C9-sDG"/>
                                 </connections>
                             </button>
-                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7r0-BX-LmI">
-                                <rect key="frame" x="290" y="21" width="25" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="25" id="DJs-2s-UjX"/>
-                                    <constraint firstAttribute="width" constant="25" id="zFy-x2-FLy"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="Gear-2-512.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="btR-Tc-CvA" kind="push" id="l75-5K-4oE"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -773,7 +712,6 @@
                             <constraint firstItem="jHS-Xk-ZTW" firstAttribute="top" secondItem="NcA-aq-uNK" secondAttribute="bottom" constant="318" id="PxI-uZ-92k"/>
                             <constraint firstAttribute="trailing" secondItem="Tb5-K5-be6" secondAttribute="trailing" id="Rlk-MX-qQe"/>
                             <constraint firstItem="rXi-mj-YCp" firstAttribute="leading" secondItem="8HX-UT-6LJ" secondAttribute="leading" id="Ruu-vq-uS6"/>
-                            <constraint firstAttribute="trailing" secondItem="7r0-BX-LmI" secondAttribute="trailing" constant="5" id="T6r-vc-gDR"/>
                             <constraint firstItem="NcA-aq-uNK" firstAttribute="leading" secondItem="8HX-UT-6LJ" secondAttribute="leading" id="Y5K-2E-6Iv"/>
                             <constraint firstItem="0tq-kX-fnc" firstAttribute="leading" secondItem="8HX-UT-6LJ" secondAttribute="leading" id="Z1x-jn-AnC"/>
                             <constraint firstItem="NcA-aq-uNK" firstAttribute="top" secondItem="Rot-SB-J2m" secondAttribute="bottom" constant="28" id="btt-Qj-wUA"/>
@@ -783,7 +721,6 @@
                             <constraint firstItem="rXi-mj-YCp" firstAttribute="top" secondItem="NcA-aq-uNK" secondAttribute="bottom" constant="202" id="s0B-4T-Tpo"/>
                             <constraint firstAttribute="centerX" secondItem="ReF-lV-x3a" secondAttribute="centerX" id="v7A-0h-iPB"/>
                             <constraint firstAttribute="trailing" secondItem="rXi-mj-YCp" secondAttribute="trailing" id="xo9-8i-ziz"/>
-                            <constraint firstItem="0tq-kX-fnc" firstAttribute="top" secondItem="7r0-BX-LmI" secondAttribute="bottom" constant="-26" id="y99-Ri-lL8"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Vah-tp-wVe"/>
@@ -899,27 +836,12 @@
                                     <action selector="goHome:" destination="Qxd-Wz-mr4" eventType="touchUpInside" id="2fe-Y1-34h"/>
                                 </connections>
                             </button>
-                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QEZ-67-0hJ">
-                                <rect key="frame" x="290" y="21" width="25" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="25" id="ZEb-b9-yKG"/>
-                                    <constraint firstAttribute="height" constant="25" id="gfG-Pi-20j"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="Gear-2-512.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="btR-Tc-CvA" kind="push" id="mRl-ca-ADp"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="wPQ-TM-Xe1" secondAttribute="trailing" id="0MC-LT-S8p"/>
                             <constraint firstItem="rP9-3K-BHa" firstAttribute="top" secondItem="wPQ-TM-Xe1" secondAttribute="bottom" id="4UO-NF-tfp"/>
                             <constraint firstItem="NO0-by-YPp" firstAttribute="leading" secondItem="v9i-rG-Buj" secondAttribute="leading" constant="20" id="FuT-zC-6dn"/>
-                            <constraint firstItem="wPQ-TM-Xe1" firstAttribute="top" secondItem="QEZ-67-0hJ" secondAttribute="bottom" constant="-26" id="MXF-Nl-wNc"/>
                             <constraint firstAttribute="trailing" secondItem="NO0-by-YPp" secondAttribute="trailing" constant="20" id="Pls-HW-W9e"/>
                             <constraint firstItem="rP9-3K-BHa" firstAttribute="top" secondItem="LGm-vB-eDs" secondAttribute="bottom" constant="28" id="TLd-e7-ycT"/>
                             <constraint firstItem="wPQ-TM-Xe1" firstAttribute="leading" secondItem="v9i-rG-Buj" secondAttribute="leading" id="TTt-EI-Drq"/>
@@ -930,7 +852,6 @@
                             <constraint firstAttribute="centerX" secondItem="Wfz-Ok-bOE" secondAttribute="centerX" id="kcI-p4-Sx9"/>
                             <constraint firstItem="wPQ-TM-Xe1" firstAttribute="top" secondItem="LGm-vB-eDs" secondAttribute="bottom" id="l14-fK-XIl"/>
                             <constraint firstItem="Wfz-Ok-bOE" firstAttribute="top" secondItem="rP9-3K-BHa" secondAttribute="bottom" constant="18" id="qua-aM-6eL"/>
-                            <constraint firstAttribute="trailing" secondItem="QEZ-67-0hJ" secondAttribute="trailing" constant="5" id="rMZ-XR-OA8"/>
                             <constraint firstAttribute="trailing" secondItem="rP9-3K-BHa" secondAttribute="trailing" id="tRE-yK-fsO"/>
                         </constraints>
                     </view>
@@ -1009,29 +930,13 @@
                                     <action selector="goHome:" destination="xYi-Bv-VZC" eventType="touchUpInside" id="rMZ-ZR-cuv"/>
                                 </connections>
                             </button>
-                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R7N-Iz-t1P">
-                                <rect key="frame" x="290" y="21" width="25" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="25" id="4mJ-RW-y4n"/>
-                                    <constraint firstAttribute="width" constant="25" id="woX-5o-DZN"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="Gear-2-512.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="btR-Tc-CvA" kind="push" id="PcW-sn-Zxc"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="S54-qE-JfG" firstAttribute="leading" secondItem="TuH-EN-7b8" secondAttribute="leading" id="3Xd-aN-dob"/>
                             <constraint firstItem="Eya-Un-cf4" firstAttribute="top" secondItem="S54-qE-JfG" secondAttribute="bottom" id="9dZ-pK-BXD"/>
-                            <constraint firstItem="S54-qE-JfG" firstAttribute="top" secondItem="R7N-Iz-t1P" secondAttribute="bottom" constant="-26" id="CBD-jz-lis"/>
                             <constraint firstItem="Eya-Un-cf4" firstAttribute="top" secondItem="Zyt-gN-OX7" secondAttribute="bottom" constant="28" id="U7x-md-XXU"/>
                             <constraint firstAttribute="trailing" secondItem="Eya-Un-cf4" secondAttribute="trailing" id="UOm-fs-2RD"/>
-                            <constraint firstAttribute="trailing" secondItem="R7N-Iz-t1P" secondAttribute="trailing" constant="5" id="Y1L-Pd-DAO"/>
                             <constraint firstItem="Eya-Un-cf4" firstAttribute="leading" secondItem="TuH-EN-7b8" secondAttribute="leading" id="crU-jg-iiP"/>
                             <constraint firstAttribute="trailing" secondItem="S54-qE-JfG" secondAttribute="trailing" id="e0l-WH-CgT"/>
                             <constraint firstItem="S54-qE-JfG" firstAttribute="top" secondItem="Zyt-gN-OX7" secondAttribute="bottom" id="l6P-7C-AKD"/>
@@ -1110,30 +1015,14 @@
                                     <action selector="goHome:" destination="1AJ-w7-Qb2" eventType="touchUpInside" id="Ag8-Nz-C7e"/>
                                 </connections>
                             </button>
-                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xlw-Pg-1r3">
-                                <rect key="frame" x="290" y="21" width="25" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="25" id="Men-eB-OXC"/>
-                                    <constraint firstAttribute="height" constant="25" id="onS-TK-3G0"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="Gear-2-512.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="btR-Tc-CvA" kind="push" id="T1g-MM-KmK"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="RwI-x5-ULS" secondAttribute="trailing" id="8d4-r1-pQn"/>
                             <constraint firstItem="Sdd-px-iTo" firstAttribute="leading" secondItem="9wz-aM-wkx" secondAttribute="leading" id="BDA-Dk-S01"/>
                             <constraint firstAttribute="trailing" secondItem="Sdd-px-iTo" secondAttribute="trailing" id="JE0-1C-jjM"/>
-                            <constraint firstItem="Sdd-px-iTo" firstAttribute="top" secondItem="Xlw-Pg-1r3" secondAttribute="bottom" constant="-26" id="Yva-Mf-9Cb"/>
                             <constraint firstItem="RwI-x5-ULS" firstAttribute="top" secondItem="jBr-n2-8OK" secondAttribute="bottom" constant="28" id="bj3-dn-HV5"/>
                             <constraint firstItem="RwI-x5-ULS" firstAttribute="top" secondItem="Sdd-px-iTo" secondAttribute="bottom" id="f4W-Mr-GH2"/>
-                            <constraint firstAttribute="trailing" secondItem="Xlw-Pg-1r3" secondAttribute="trailing" constant="5" id="hdl-9x-Tgz"/>
                             <constraint firstItem="RwI-x5-ULS" firstAttribute="leading" secondItem="9wz-aM-wkx" secondAttribute="leading" id="iWU-HH-C60"/>
                         </constraints>
                     </view>
@@ -1210,31 +1099,15 @@
                                     <action selector="goHome:" destination="WwY-Eb-6kS" eventType="touchUpInside" id="tFp-Fa-xTD"/>
                                 </connections>
                             </button>
-                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="agG-dI-Nsh">
-                                <rect key="frame" x="290" y="21" width="25" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="25" id="1nn-Am-U8p"/>
-                                    <constraint firstAttribute="width" constant="25" id="YIc-M9-L49"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="Gear-2-512.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="btR-Tc-CvA" kind="push" id="c0D-dN-Xnw"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="rAR-4q-JGF" firstAttribute="top" secondItem="5vm-jA-gOO" secondAttribute="bottom" constant="28" id="1c3-Rn-wKQ"/>
                             <constraint firstAttribute="trailing" secondItem="T1o-sQ-ktb" secondAttribute="trailing" id="3Sr-QR-ZTb"/>
-                            <constraint firstAttribute="trailing" secondItem="agG-dI-Nsh" secondAttribute="trailing" constant="5" id="8ve-95-BLg"/>
                             <constraint firstItem="T1o-sQ-ktb" firstAttribute="leading" secondItem="vLa-j3-QK3" secondAttribute="leading" id="9Kn-Sb-vXs"/>
                             <constraint firstAttribute="trailing" secondItem="rAR-4q-JGF" secondAttribute="trailing" id="J6J-MZ-D5B"/>
                             <constraint firstItem="rAR-4q-JGF" firstAttribute="top" secondItem="T1o-sQ-ktb" secondAttribute="bottom" id="KrF-1h-QFr"/>
                             <constraint firstItem="T1o-sQ-ktb" firstAttribute="top" secondItem="5vm-jA-gOO" secondAttribute="bottom" id="Vun-Ba-drX"/>
-                            <constraint firstItem="T1o-sQ-ktb" firstAttribute="top" secondItem="agG-dI-Nsh" secondAttribute="bottom" constant="-26" id="bJW-1D-3zE"/>
                             <constraint firstItem="rAR-4q-JGF" firstAttribute="leading" secondItem="vLa-j3-QK3" secondAttribute="leading" id="qSm-UN-e3k"/>
                         </constraints>
                     </view>
@@ -1344,26 +1217,10 @@
                                     <action selector="goHome:" destination="0c7-Bj-87g" eventType="touchUpInside" id="hb3-Wj-mh2"/>
                                 </connections>
                             </button>
-                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pwL-8T-emW">
-                                <rect key="frame" x="290" y="21" width="25" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="25" id="2Au-2K-xj4"/>
-                                    <constraint firstAttribute="height" constant="25" id="CSK-ol-k83"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="Gear-2-512.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="btR-Tc-CvA" kind="push" id="s7t-Ap-iBK"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="x58-TI-zDS" firstAttribute="top" secondItem="pwL-8T-emW" secondAttribute="bottom" constant="-26" id="1wX-MC-J4n"/>
                             <constraint firstItem="99v-1Z-smy" firstAttribute="top" secondItem="x58-TI-zDS" secondAttribute="bottom" id="K0z-jT-83j"/>
-                            <constraint firstAttribute="trailing" secondItem="pwL-8T-emW" secondAttribute="trailing" constant="5" id="M1e-d1-G2P"/>
                             <constraint firstItem="99v-1Z-smy" firstAttribute="leading" secondItem="odZ-NI-1sO" secondAttribute="leading" id="NQa-F4-a8v"/>
                             <constraint firstItem="99v-1Z-smy" firstAttribute="top" secondItem="vrR-n8-j1H" secondAttribute="bottom" constant="28" id="c4c-TY-a0E"/>
                             <constraint firstAttribute="trailing" secondItem="99v-1Z-smy" secondAttribute="trailing" id="pnF-OY-ccn"/>
@@ -1381,7 +1238,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eRW-qe-FSM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2633" y="832"/>
+            <point key="canvasLocation" x="1741" y="-229"/>
         </scene>
         <!--Bus Table View Controller-->
         <scene sceneID="Nvi-Hr-zif">
@@ -1450,17 +1307,6 @@
                                     <action selector="goHome:" destination="Ad6-XQ-s1K" eventType="touchUpInside" id="Mwl-9m-deh"/>
                                 </connections>
                             </button>
-                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewd-Pb-l0I">
-                                <rect key="frame" x="290" y="21" width="25" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="25" id="BNB-MW-3Hl"/>
-                                    <constraint firstAttribute="width" constant="25" id="qZi-6l-1Br"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="Gear-2-512.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -1471,9 +1317,7 @@
                             <constraint firstAttribute="trailing" secondItem="KGO-Nt-Tsg" secondAttribute="trailing" id="S8I-Oa-H5J"/>
                             <constraint firstItem="KGO-Nt-Tsg" firstAttribute="leading" secondItem="XJK-Y6-27q" secondAttribute="leading" id="TaJ-qA-smG"/>
                             <constraint firstItem="Yfq-aW-Ozl" firstAttribute="leading" secondItem="XJK-Y6-27q" secondAttribute="leading" id="X5i-dW-zP4"/>
-                            <constraint firstItem="Yfq-aW-Ozl" firstAttribute="top" secondItem="ewd-Pb-l0I" secondAttribute="bottom" constant="-26" id="axO-O9-INo"/>
                             <constraint firstItem="Yfq-aW-Ozl" firstAttribute="top" secondItem="6nk-ad-OuS" secondAttribute="bottom" id="el1-b1-jkg"/>
-                            <constraint firstAttribute="trailing" secondItem="ewd-Pb-l0I" secondAttribute="trailing" constant="5" id="f21-9m-zp9"/>
                             <constraint firstItem="KGO-Nt-Tsg" firstAttribute="top" secondItem="6nk-ad-OuS" secondAttribute="bottom" constant="28" id="n8d-Fr-ccH"/>
                             <constraint firstItem="AQi-dP-24K" firstAttribute="leading" secondItem="XJK-Y6-27q" secondAttribute="leading" id="w33-hS-CSo"/>
                             <constraint firstItem="KGO-Nt-Tsg" firstAttribute="top" secondItem="Yfq-aW-Ozl" secondAttribute="bottom" id="wWQ-RY-GfK"/>
@@ -1554,17 +1398,6 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bd-Jq-TI0">
-                                <rect key="frame" x="290" y="21" width="25" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="25" id="j3d-er-Z04"/>
-                                    <constraint firstAttribute="width" constant="25" id="kQQ-4b-bwu"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="Gear-2-512.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -1577,10 +1410,8 @@
                             <constraint firstItem="fYn-Ma-oc1" firstAttribute="top" secondItem="auk-Gq-mCF" secondAttribute="bottom" id="Wgt-bW-Lkq"/>
                             <constraint firstAttribute="trailing" secondItem="fYn-Ma-oc1" secondAttribute="trailing" id="din-MY-8ZA"/>
                             <constraint firstItem="9KY-Vy-6dg" firstAttribute="top" secondItem="auk-Gq-mCF" secondAttribute="bottom" constant="44" id="fKz-rB-r1F"/>
-                            <constraint firstItem="auk-Gq-mCF" firstAttribute="top" secondItem="9bd-Jq-TI0" secondAttribute="bottom" constant="-26" id="lKf-JE-5vh"/>
                             <constraint firstItem="auk-Gq-mCF" firstAttribute="leading" secondItem="N5z-7j-S73" secondAttribute="leading" id="o8z-fG-f36"/>
                             <constraint firstItem="fYn-Ma-oc1" firstAttribute="top" secondItem="hr2-nT-TvB" secondAttribute="bottom" constant="28" id="xxv-Jl-N02"/>
-                            <constraint firstAttribute="trailing" secondItem="9bd-Jq-TI0" secondAttribute="trailing" constant="5" id="zJk-cg-OKH"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="HN8-IK-u1T"/>
@@ -1675,27 +1506,14 @@
                                     <action selector="goHome:" destination="rX0-AG-tCP" eventType="touchUpInside" id="nz1-yL-gq9"/>
                                 </connections>
                             </button>
-                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t0D-mw-Zr6">
-                                <rect key="frame" x="290" y="21" width="25" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="25" id="Hd3-Gl-OH7"/>
-                                    <constraint firstAttribute="width" constant="25" id="bPC-H8-ZEw"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="Gear-2-512.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="LA4-0z-rGK" firstAttribute="top" secondItem="74L-2t-Ew9" secondAttribute="bottom" id="2vK-tQ-IyS"/>
                             <constraint firstAttribute="trailing" secondItem="LA4-0z-rGK" secondAttribute="trailing" id="3iu-jT-nwy"/>
-                            <constraint firstAttribute="trailing" secondItem="t0D-mw-Zr6" secondAttribute="trailing" constant="5" id="DKV-5u-F4W"/>
                             <constraint firstItem="IW9-P7-Rgs" firstAttribute="top" secondItem="74L-2t-Ew9" secondAttribute="bottom" constant="28" id="EDM-wZ-ZmH"/>
                             <constraint firstItem="IW9-P7-Rgs" firstAttribute="top" secondItem="LA4-0z-rGK" secondAttribute="bottom" id="Kcn-CQ-hHU"/>
                             <constraint firstAttribute="trailing" secondItem="IW9-P7-Rgs" secondAttribute="trailing" id="Yb0-Gz-5vE"/>
-                            <constraint firstItem="LA4-0z-rGK" firstAttribute="top" secondItem="t0D-mw-Zr6" secondAttribute="bottom" constant="-26" id="ezl-Jf-Awk"/>
                             <constraint firstItem="IW9-P7-Rgs" firstAttribute="leading" secondItem="jVm-HD-uAf" secondAttribute="leading" id="kRG-M1-2O5"/>
                             <constraint firstItem="LA4-0z-rGK" firstAttribute="leading" secondItem="jVm-HD-uAf" secondAttribute="leading" id="oRX-0B-RiE"/>
                         </constraints>
@@ -1779,30 +1597,14 @@
                                     <action selector="goHome:" destination="Y6U-pI-kVD" eventType="touchUpInside" id="qEg-xr-n2a"/>
                                 </connections>
                             </button>
-                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PuD-ro-CAX">
-                                <rect key="frame" x="290" y="21" width="25" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="25" id="XIQ-J8-lmN"/>
-                                    <constraint firstAttribute="height" constant="25" id="xv8-OB-TvM"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="Gear-2-512.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="btR-Tc-CvA" kind="push" id="BGa-ko-8hH"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="PuD-ro-CAX" secondAttribute="trailing" constant="5" id="2JW-YQ-1Lu"/>
                             <constraint firstItem="v0b-N4-Fgv" firstAttribute="top" secondItem="S8v-EB-XZF" secondAttribute="bottom" id="4yM-kq-KvJ"/>
                             <constraint firstAttribute="trailing" secondItem="S8v-EB-XZF" secondAttribute="trailing" id="B0W-cv-FHz"/>
                             <constraint firstItem="S8v-EB-XZF" firstAttribute="leading" secondItem="95G-Lw-JzN" secondAttribute="leading" id="Fhs-8x-T1N"/>
                             <constraint firstItem="S8v-EB-XZF" firstAttribute="top" secondItem="OfF-Ox-JMA" secondAttribute="bottom" id="Ix4-je-cZ2"/>
                             <constraint firstAttribute="trailing" secondItem="v0b-N4-Fgv" secondAttribute="trailing" id="JqV-Y5-x8u"/>
-                            <constraint firstItem="S8v-EB-XZF" firstAttribute="top" secondItem="PuD-ro-CAX" secondAttribute="bottom" constant="-26" id="K7m-Xz-mwF"/>
                             <constraint firstItem="0rT-CU-12e" firstAttribute="leading" secondItem="95G-Lw-JzN" secondAttribute="leading" id="LJb-BP-fWC"/>
                             <constraint firstItem="v0b-N4-Fgv" firstAttribute="leading" secondItem="95G-Lw-JzN" secondAttribute="leading" id="VAU-99-yK1"/>
                             <constraint firstItem="0rT-CU-12e" firstAttribute="top" secondItem="S8v-EB-XZF" secondAttribute="bottom" constant="44" id="XyO-CP-GCZ"/>
@@ -1892,20 +1694,6 @@
                                     <action selector="goHome:" destination="nFW-pq-Yze" eventType="touchUpInside" id="NVv-j3-X43"/>
                                 </connections>
                             </button>
-                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="577-bk-c8B">
-                                <rect key="frame" x="290" y="21" width="25" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="25" id="wZ3-ck-O4H"/>
-                                    <constraint firstAttribute="width" constant="25" id="wzT-66-TI8"/>
-                                </constraints>
-                                <state key="normal" backgroundImage="Gear-2-512.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="btR-Tc-CvA" kind="push" id="i6b-J9-6ME"/>
-                                </connections>
-                            </button>
                             <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58T-ui-OBY">
                                 <rect key="frame" x="20" y="150" width="90" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1983,11 +1771,9 @@
                             <constraint firstItem="58T-ui-OBY" firstAttribute="leading" secondItem="vGc-aA-oCj" secondAttribute="leading" constant="20" id="JxS-cj-3jn"/>
                             <constraint firstItem="9zg-K3-Li4" firstAttribute="leading" secondItem="vGc-aA-oCj" secondAttribute="leading" constant="20" id="KUe-1G-Vz0"/>
                             <constraint firstAttribute="trailing" secondItem="fps-SB-iFP" secondAttribute="trailing" constant="20" id="QJK-DO-Srj"/>
-                            <constraint firstItem="577-bk-c8B" firstAttribute="top" secondItem="ttX-YS-4vu" secondAttribute="bottom" constant="1" id="SMr-H3-Rrp"/>
                             <constraint firstItem="Pik-Wm-Kmk" firstAttribute="top" secondItem="ttX-YS-4vu" secondAttribute="bottom" constant="29" id="Veq-D2-gON"/>
                             <constraint firstAttribute="trailing" secondItem="xgS-5V-7oM" secondAttribute="trailing" id="VuX-hW-4QI"/>
                             <constraint firstItem="wM4-lw-ePR" firstAttribute="top" secondItem="fps-SB-iFP" secondAttribute="bottom" constant="46" id="bY3-Am-uDl"/>
-                            <constraint firstAttribute="trailing" secondItem="577-bk-c8B" secondAttribute="trailing" constant="5" id="g6g-rI-JzK"/>
                             <constraint firstItem="wM4-lw-ePR" firstAttribute="leading" secondItem="vGc-aA-oCj" secondAttribute="leading" constant="20" id="m0k-HZ-FbS"/>
                             <constraint firstItem="fps-SB-iFP" firstAttribute="leading" secondItem="vGc-aA-oCj" secondAttribute="leading" constant="20" id="mib-Gh-BMr"/>
                             <constraint firstItem="e5N-et-HxG" firstAttribute="leading" secondItem="vGc-aA-oCj" secondAttribute="leading" constant="20" id="p30-bo-40V"/>
@@ -2026,14 +1812,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Gear-2-512.png" width="512" height="512"/>
+        <image name="settingIcon.png" width="512" height="512"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="i6p-q5-Rcs"/>
-    </inferredMetricsTieBreakers>
 </document>
