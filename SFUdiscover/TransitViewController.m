@@ -16,11 +16,16 @@
 @end
 
 @implementation TransitViewController
+
 - (IBAction)goBack:(id)sender {
     [self.navigationController popViewControllerAnimated:(YES)];
 }
 - (IBAction)goHome:(id)sender {
     [self.navigationController popToRootViewControllerAnimated:(YES)];
+}
+
+- (void) goSetting{
+    [self performSegueWithIdentifier:@"setting" sender:self];
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil

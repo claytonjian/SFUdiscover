@@ -61,6 +61,7 @@
 		97361C031AA8EC9A0075B4A5 /* BusTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97361C021AA8EC9A0075B4A5 /* BusTableViewController.m */; };
 		97361C061AA8F8460075B4A5 /* TransitMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97361C051AA8F8460075B4A5 /* TransitMapViewController.m */; };
 		97361C091AA8F8CC0075B4A5 /* MapPin.m in Sources */ = {isa = PBXBuildFile; fileRef = 97361C081AA8F8CC0075B4A5 /* MapPin.m */; };
+		97D44E1E1AAB98BF00B0A91C /* myButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D44E1D1AAB98BF00B0A91C /* myButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -167,6 +168,8 @@
 		97361C051AA8F8460075B4A5 /* TransitMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitMapViewController.m; sourceTree = "<group>"; };
 		97361C071AA8F8CC0075B4A5 /* MapPin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPin.h; sourceTree = "<group>"; };
 		97361C081AA8F8CC0075B4A5 /* MapPin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPin.m; sourceTree = "<group>"; };
+		97D44E1C1AAB98BF00B0A91C /* myButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myButton.h; sourceTree = "<group>"; };
+		97D44E1D1AAB98BF00B0A91C /* myButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -477,6 +480,7 @@
 			files = (
 				0EC20A3E1AAB0EF3008207FF /* TFHppleElement.m in Sources */,
 				97361C091AA8F8CC0075B4A5 /* MapPin.m in Sources */,
+				97D44E1E1AAB98BF00B0A91C /* myButton.m in Sources */,
 				4929B6651AA135EE00963AA7 /* NewsFeedViewController.m in Sources */,
 				4929B6501AA1359900963AA7 /* CanvasViewController.m in Sources */,
 				0EC209F31AAB0E19008207FF /* Contributor.m in Sources */,
