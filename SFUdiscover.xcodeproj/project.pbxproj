@@ -30,6 +30,7 @@
 		0EF4ABC71AAAABFD007B1B12 /* SafeWalkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF4ABC61AAAABFD007B1B12 /* SafeWalkViewController.m */; };
 		0EF4ABCA1AAAB999007B1B12 /* SafeWalkSiteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF4ABC91AAAB999007B1B12 /* SafeWalkSiteViewController.m */; };
 		0EF731D21AAAF18200EBC23D /* FoodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF731D11AAAF18200EBC23D /* FoodViewController.m */; };
+		303C34031AAB9BF0001E95F7 /* TrafficHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 303C34021AAB9BF0001E95F7 /* TrafficHomeViewController.m */; };
 		4925CF6C1AA566200026305C /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4925CF6B1AA566200026305C /* SettingsViewController.m */; };
 		4929B6171AA133D300963AA7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4929B6161AA133D300963AA7 /* Foundation.framework */; };
 		4929B6191AA133D300963AA7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4929B6181AA133D300963AA7 /* CoreGraphics.framework */; };
@@ -114,6 +115,8 @@
 		0EF4ABC91AAAB999007B1B12 /* SafeWalkSiteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeWalkSiteViewController.m; sourceTree = "<group>"; };
 		0EF731D01AAAF18200EBC23D /* FoodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodViewController.h; sourceTree = "<group>"; };
 		0EF731D11AAAF18200EBC23D /* FoodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodViewController.m; sourceTree = "<group>"; };
+		303C34011AAB9BF0001E95F7 /* TrafficHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrafficHomeViewController.h; sourceTree = "<group>"; };
+		303C34021AAB9BF0001E95F7 /* TrafficHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrafficHomeViewController.m; sourceTree = "<group>"; };
 		4925CF6A1AA566200026305C /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		4925CF6B1AA566200026305C /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		4929B6131AA133D300963AA7 /* SFUdiscover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SFUdiscover.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -200,6 +203,8 @@
 				0EC209F21AAB0E19008207FF /* Contributor.m */,
 				0EC20A431AAB10FD008207FF /* TrafficViewController.h */,
 				0EC20A441AAB10FD008207FF /* TrafficViewController.m */,
+				303C34011AAB9BF0001E95F7 /* TrafficHomeViewController.h */,
+				303C34021AAB9BF0001E95F7 /* TrafficHomeViewController.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -502,6 +507,7 @@
 				4929B6591AA135BC00963AA7 /* CalendarViewController.m in Sources */,
 				4929B6681AA135FD00963AA7 /* ServicesViewController.m in Sources */,
 				4929B6621AA135DF00963AA7 /* LoyaltyViewController.m in Sources */,
+				303C34031AAB9BF0001E95F7 /* TrafficHomeViewController.m in Sources */,
 				0E277CF21AAAE887000AE237 /* LibraryAskWebViewController.m in Sources */,
 				4925CF6C1AA566200026305C /* SettingsViewController.m in Sources */,
 				0EC20A3D1AAB0EF3008207FF /* TFHpple.m in Sources */,

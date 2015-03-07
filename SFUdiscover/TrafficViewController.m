@@ -20,6 +20,14 @@
     NSArray *_objects;
 }
 
+- (IBAction)goBack:(id)sender {
+    [self.navigationController popViewControllerAnimated:(YES)];
+}
+
+- (IBAction)goHome:(id)sender {
+    [self.navigationController popToRootViewControllerAnimated:(YES)];
+}
+
 -(void)loadTutorials {
     // 1
     NSURL *tutorialsUrl = [NSURL URLWithString:@"http://www.sfu.ca/security/sfuroadconditions/"];
@@ -29,26 +37,64 @@
     TFHpple *tutorialsParser = [TFHpple hppleWithHTMLData:tutorialsHtmlData];
     
     // 3
-    //NSString *tutorialsXpathQueryString = @"//div[@class='content-wrapper']/ul/li/a";
-    NSString *tutorialsXpathQueryString = @"//div[@class='main-campus-info half last']/div";
-    //NSString *tutorialsXpathQueryString = @"//div[@class='header-divider']";
-    NSArray *tutorialsNodes = [tutorialsParser searchWithXPathQuery:tutorialsXpathQueryString];
+    
+    // CAMPUS OPEN OR CLOSED
+    NSString *tutorialsXpathQueryString = @"//div[@class='campus']";
+    NSArray *LocationNode = [tutorialsParser searchWithXPathQuery:tutorialsXpathQueryString];
+    
+    tutorialsXpathQueryString = @"//div[@class='campus-status normal']/h1";
+    NSArray *OCNode = [tutorialsParser searchWithXPathQuery:tutorialsXpathQueryString];
+    
+    // BURNABY ROADS
+    tutorialsXpathQueryString = @"//div[@class='status-title first']/h3";
+    NSArray *tutorialsNodes1 = [tutorialsParser searchWithXPathQuery:tutorialsXpathQueryString];
+    
+    tutorialsXpathQueryString = @"//div[@class='status-title first']/h3/span";
+    NSArray *tutorialsNodes2 = [tutorialsParser searchWithXPathQuery:tutorialsXpathQueryString];
+    
+    //EXTRA WEATHER CONDITIONS
+    tutorialsXpathQueryString = @"//div[@class='extra-weather-conditions last']/ul/li";
+    NSArray *tutorialsNodes3 = [tutorialsParser searchWithXPathQuery:tutorialsXpathQueryString];
+    
+    //ON OR OFF SCHEDULE
+    tutorialsXpathQueryString = @"//div[@class='extra-weather-conditions last']/ul/li/span";
+    NSArray *tutorialsNodes4 = [tutorialsParser searchWithXPathQuery:tutorialsXpathQueryString];
     
     // 4
     NSMutableArray *newTutorials = [[NSMutableArray alloc] initWithCapacity:0];
-    for (TFHppleElement *element in tutorialsNodes) {
+    
+    //BURNABY OPEN OR CLOSED
+    Tutorial *tutorial = [[Tutorial alloc] init];
+    [newTutorials addObject:tutorial];
+    tutorial.title = [NSString stringWithFormat:@"%@: %@",[[LocationNode[0] firstChild] content],[[OCNode[0] firstChild] content]];
+    
+    for (TFHppleElement *element in tutorialsNodes1) {
+        for (TFHppleElement *element2 in tutorialsNodes2) {
         // 5
         Tutorial *tutorial = [[Tutorial alloc] init];
         [newTutorials addObject:tutorial];
         
         
         // 6
-        tutorial.title = [[element firstChild] content];
+        tutorial.title = [NSString stringWithFormat:@"      %@%@",[[element firstChild] content],[[element2 firstChild] content]];
         NSLog(@"%@",tutorial.title);
         
         // 7
-        //tutorial.url = [element objectForKey:@"href"];
+        //tutorial.url = [element objectForKey:@"span"];
+        }
     }
+    
+    Tutorial *adjroads = [[Tutorial alloc] init];
+    [newTutorials addObject:adjroads];
+    adjroads.title = [NSString stringWithFormat:@"      %@%@",[[tutorialsNodes3[0] firstChild] content],[[tutorialsNodes4[0] firstChild] content]];
+    
+    Tutorial *classandexam = [[Tutorial alloc] init];
+    [newTutorials addObject:classandexam];
+    classandexam.title = [NSString stringWithFormat:@"     %@%@",[[tutorialsNodes3[1] firstChild] content],[[tutorialsNodes4[1] firstChild] content]];
+    
+    Tutorial *translink = [[Tutorial alloc] init];
+    [newTutorials addObject:translink];
+    translink.title = [NSString stringWithFormat:@"     %@%@",[[tutorialsNodes3[2] firstChild] content],[[tutorialsNodes4[2] firstChild] content]];
     
     // 8
     _objects = newTutorials;
@@ -81,6 +127,10 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    }
+    
+    if (indexPath!=0){
+        cell.textLabel.font = [UIFont systemFontOfSize:12.0];
     }
     
     Tutorial *thisTutorial = [_objects objectAtIndex:indexPath.row];
