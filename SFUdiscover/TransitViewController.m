@@ -7,7 +7,6 @@
 //
 
 #import "TransitViewController.h"
-#import "TransitMapViewController.h"
 
 @interface TransitViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *transitToHome;
@@ -22,10 +21,6 @@
 }
 - (IBAction)goHome:(id)sender {
     [self.navigationController popToRootViewControllerAnimated:(YES)];
-}
-
-- (void) goSetting{
-    [self performSegueWithIdentifier:@"setting" sender:self];
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil

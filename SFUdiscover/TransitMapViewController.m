@@ -27,11 +27,6 @@
     [self.TMVCDelegate goHome:nil];
 }
 
-- (IBAction)goSet:(id)sender{
-    [self dismissViewControllerAnimated:YES completion:nil];
-    [self.TMVCDelegate goSetting];
-}
-
 -(void) location{
     MKCoordinateRegion region;
     region.center.latitude = 49.277777;
