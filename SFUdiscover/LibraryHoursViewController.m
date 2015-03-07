@@ -1,25 +1,24 @@
 //
-//  CanvasViewController.m
+//  LibraryHoursViewController.m
 //  SFUdiscover
 //
-//  Created by Clayton Jian on 2015-02-27.
+//  Created by James Voong on 3/6/2015.
 //  Copyright (c) 2015 EngagingFoundations. All rights reserved.
 //
 
-#import "CanvasViewController.h"
+#import "LibraryHoursViewController.h"
 
-@interface CanvasViewController ()
-
-@property (weak, nonatomic) IBOutlet UIWebView *SFUCanvas;
-
-@property (weak, nonatomic) IBOutlet UIButton *canvasToHome;
+@interface LibraryHoursViewController ()
+@property (weak, nonatomic) IBOutlet UIWebView *LibraryHours;
 
 @end
 
-@implementation CanvasViewController
+@implementation LibraryHoursViewController
+
 - (IBAction)goBack:(id)sender {
     [self.navigationController popViewControllerAnimated:(YES)];
 }
+
 - (IBAction)goHome:(id)sender {
     [self.navigationController popToRootViewControllerAnimated:(YES)];
 }
@@ -37,10 +36,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    NSURL *myURL = [NSURL URLWithString:@"https://www.sfu.ca/srs/security/patrol-operations/programs/safe-walk.html"];
+    NSURL *myURL = [NSURL URLWithString:@"http://www.lib.sfu.ca/about/hours/bennett"];
     NSURLRequest *myRequest = [NSURLRequest requestWithURL:myURL];
-    [_SFUCanvas loadRequest:myRequest];
-}
+    [_LibraryHours loadRequest:myRequest];}
 
 - (void)didReceiveMemoryWarning
 {
