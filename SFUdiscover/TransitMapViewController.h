@@ -13,8 +13,9 @@
 @class TransitMapViewController;
 @protocol TransitMapViewControllerDelegate <NSObject>
 
--(void) passBack:(TransitMapViewController *) controller busStop:(NSString *)input;
--(IBAction)goHome:(id)sender;
+- (void) passBack:(TransitMapViewController *) controller busStop:(NSString *)input;
+- (IBAction)goHome:(id)sender;
+- (void) goSetting;
 @end
 
 @interface TransitMapViewController : UIViewController <MKMapViewDelegate>{
