@@ -37,7 +37,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     NSURL *myURL;
-    myURL = [NSURL URLWithString:@"www.sfu.ca/srs/security/patrol-operations/programs/safe-walk.html"];
+    myURL = [NSURL URLWithString:@"https://www.sfu.ca/srs/security/patrol-operations/programs/safe-walk.html"];
     NSLog(@"Test");
     NSURLRequest *myRequest = [NSURLRequest requestWithURL:myURL];
     [_SWWebPage loadRequest:myRequest];}

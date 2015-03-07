@@ -1,22 +1,20 @@
 //
-//  CanvasViewController.m
+//  LibraryCitationViewController.m
 //  SFUdiscover
 //
-//  Created by Clayton Jian on 2015-02-27.
+//  Created by James Voong on 3/7/2015.
 //  Copyright (c) 2015 EngagingFoundations. All rights reserved.
 //
 
-#import "CanvasViewController.h"
+#import "LibraryCitationViewController.h"
 
-@interface CanvasViewController ()
-
-@property (weak, nonatomic) IBOutlet UIWebView *SFUCanvas;
-
-@property (weak, nonatomic) IBOutlet UIButton *canvasToHome;
+@interface LibraryCitationViewController ()
+@property (weak, nonatomic) IBOutlet UIWebView *LibraryCitation;
 
 @end
 
-@implementation CanvasViewController
+@implementation LibraryCitationViewController
+
 - (IBAction)goBack:(id)sender {
     [self.navigationController popViewControllerAnimated:(YES)];
 }
@@ -37,10 +35,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    NSURL *myURL = [NSURL URLWithString:@"https://www.sfu.ca/srs/security/patrol-operations/programs/safe-walk.html"];
+    NSURL *myURL = [NSURL URLWithString:@"http://www.lib.sfu.ca/help/writing"];
     NSURLRequest *myRequest = [NSURLRequest requestWithURL:myURL];
-    [_SFUCanvas loadRequest:myRequest];
-}
+    [_LibraryCitation loadRequest:myRequest];}
 
 - (void)didReceiveMemoryWarning
 {

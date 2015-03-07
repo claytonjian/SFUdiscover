@@ -1,22 +1,23 @@
 //
-//  BusScheduleViewController.m
+//  FoodViewController.m
 //  SFUdiscover
 //
-//  Created by Yixuan Li on 3/5/15.
+//  Created by James Voong on 3/7/2015.
 //  Copyright (c) 2015 EngagingFoundations. All rights reserved.
 //
 
-#import "BusScheduleViewController.h"
+#import "FoodViewController.h"
 
-@interface BusScheduleViewController (){
-    NSArray *buses;
-}
-@property (weak, nonatomic) IBOutlet UITableView *busTableView;
-@property (weak, nonatomic) IBOutlet UIButton *transitGoHome;
+@interface FoodViewController ()
+
+@property (weak, nonatomic) IBOutlet UITableView *locationTableView;
 
 @end
 
-@implementation BusScheduleViewController
+@implementation FoodViewController {
+    NSDictionary *LocationsDict;
+    NSArray *LocationsArray;
+}
 
 - (IBAction)goBack:(id)sender {
     [self.navigationController popViewControllerAnimated:(YES)];
@@ -36,24 +37,30 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 4;
+    return LocationsDict.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     
     // Configure the cell...
-    NSString *current = [buses objectAtIndex:indexPath.row];
+    NSString *current = [LocationsArray objectAtIndex:indexPath.row];
     cell.textLabel.text = current;
     
     return cell;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    return @"Choose Location:";
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    buses = [[NSArray alloc]initWithObjects:@"135",@"143",@"144",@"145", nil];
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Locations" withExtension:@"plist"];
+    LocationsDict = [NSDictionary dictionaryWithContentsOfURL:url];
+    LocationsArray = LocationsDict.allKeys;
 }
 
 - (void)didReceiveMemoryWarning
@@ -70,9 +77,9 @@
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-    NSIndexPath *path = [self.busTableView indexPathForSelectedRow];
-    BusTableViewController *vc = [segue destinationViewController];
-    vc.busNumber = 	path.row;
+    NSIndexPath *path = [self.locationTableView indexPathForSelectedRow];
+    Food2ViewController *vc = [segue destinationViewController];
+    vc.locationswitch = 	path.row;
 }
 
 
