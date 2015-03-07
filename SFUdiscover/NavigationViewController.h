@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <MapKit/MapKit.h>
 
-@interface NavigationViewController : UIViewController
-    
-@property (weak, nonatomic) IBOutlet MKMapView *navigationMapView;
+@interface NavigationViewController : UIViewController <UIScrollViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UIImageView *SFUBurnaby;
+@property (strong, nonatomic, readonly) IBOutlet UIScrollView *scrollView;
+
 
 @end
