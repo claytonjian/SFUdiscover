@@ -16,116 +16,135 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="960"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" alwaysBounceHorizontal="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9pl-Ad-nS3">
-                                <rect key="frame" x="0.0" y="48" width="320" height="912"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9pl-Ad-nS3">
+                                <rect key="frame" x="0.0" y="22" width="320" height="938"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V8q-kr-kvM">
-                                        <rect key="frame" x="0.0" y="5" width="106" height="63"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="106" height="171"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.68235294120000001" green="0.0" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="18"/>
                                         <state key="normal" title="Canvas">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
                                             <segue destination="0OP-lk-fHh" kind="push" id="cn1-a7-REk"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ukx-pn-khi">
-                                        <rect key="frame" x="107" y="5" width="106" height="64"/>
+                                        <rect key="frame" x="107" y="0.0" width="106" height="171"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.0" green="0.24961323169999999" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="18"/>
                                         <state key="normal" title="Connect">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
                                             <segue destination="Y6U-pI-kVD" kind="push" id="m40-iy-EQU"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QZR-Hw-GBb">
-                                        <rect key="frame" x="214" y="5" width="106" height="66"/>
+                                        <rect key="frame" x="214" y="0.0" width="106" height="171"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="18"/>
                                         <state key="normal" title="Feedback">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
                                             <segue destination="nFW-pq-Yze" kind="push" id="4rN-TF-iuY"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T7d-TS-vyR">
-                                        <rect key="frame" x="0.0" y="72" width="106" height="171"/>
+                                        <rect key="frame" x="0.0" y="172" width="106" height="171"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.050980392159999999" green="0.2274509804" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="18"/>
                                         <state key="normal" title="Calendar">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
                                             <segue destination="URc-mO-CeV" kind="push" id="OUS-kp-aIz"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQx-8T-TbB">
-                                        <rect key="frame" x="107" y="72" width="106" height="171"/>
+                                        <rect key="frame" x="107" y="172" width="106" height="171"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="18"/>
                                         <state key="normal" title="Navigation">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
                                             <segue destination="WwY-Eb-6kS" kind="push" id="13N-7d-NYV"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UeZ-DD-nNQ">
-                                        <rect key="frame" x="214" y="79" width="106" height="171"/>
+                                        <rect key="frame" x="214" y="172" width="106" height="171"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.68235294120000001" green="0.0" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="18"/>
                                         <state key="normal" title="Transit">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
                                             <segue destination="0c7-Bj-87g" kind="push" id="b12-xQ-jLx"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="34u-nY-y4x">
-                                        <rect key="frame" x="0.0" y="261" width="106" height="46"/>
+                                        <rect key="frame" x="0.0" y="344" width="106" height="171"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.68235294120000001" green="0.0" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="18"/>
                                         <state key="normal" title="Loyalty">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
                                             <segue destination="i4E-FB-qNi" kind="push" id="nKT-Te-4HY"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7zk-c3-P17">
-                                        <rect key="frame" x="107" y="251" width="106" height="47"/>
+                                        <rect key="frame" x="107" y="344" width="106" height="171"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.050980392159999999" green="0.2274509804" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="18"/>
                                         <state key="normal" title="News Feed">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
                                             <segue destination="xYi-Bv-VZC" kind="push" id="NwI-Cg-d9q"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wos-Nt-SJR">
-                                        <rect key="frame" x="214" y="260" width="106" height="48"/>
+                                        <rect key="frame" x="214" y="344" width="106" height="171"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="18"/>
                                         <state key="normal" title="Services">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
                                             <segue destination="1AJ-w7-Qb2" kind="push" id="08s-Oh-D3g"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zBS-8N-Z8f">
-                                        <rect key="frame" x="0.0" y="324" width="106" height="62"/>
+                                        <rect key="frame" x="0.0" y="516" width="106" height="171"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.050980392159999999" green="0.2274509804" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="18"/>
                                         <state key="normal" title="Library">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
                                             <segue destination="ya4-fS-sBL" kind="push" customClass="goToLibrary" id="VSC-1P-etC"/>
@@ -169,13 +188,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="9pl-Ad-nS3" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="7pi-Wf-Y2j"/>
+                            <constraint firstItem="oOD-0N-okv" firstAttribute="top" secondItem="iBM-X0-Yee" secondAttribute="bottom" id="C06-IM-CV3"/>
                             <constraint firstItem="oDm-R5-ifI" firstAttribute="top" secondItem="9pl-Ad-nS3" secondAttribute="bottom" id="KFd-fl-LQq"/>
+                            <constraint firstItem="9pl-Ad-nS3" firstAttribute="top" secondItem="iBM-X0-Yee" secondAttribute="bottom" constant="2" id="LSC-N3-i5T"/>
                             <constraint firstItem="oOD-0N-okv" firstAttribute="top" secondItem="dcJ-TT-Fjb" secondAttribute="bottom" constant="-26" id="ZpB-Yv-DbK"/>
                             <constraint firstAttribute="trailing" secondItem="9pl-Ad-nS3" secondAttribute="trailing" id="bDt-6e-muY"/>
                             <constraint firstItem="oOD-0N-okv" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="eV7-hR-qzM"/>
                             <constraint firstAttribute="trailing" secondItem="dcJ-TT-Fjb" secondAttribute="trailing" constant="5" id="fZA-3M-QQp"/>
-                            <constraint firstItem="9pl-Ad-nS3" firstAttribute="top" secondItem="oOD-0N-okv" secondAttribute="bottom" id="iuX-o8-Sne"/>
-                            <constraint firstItem="oOD-0N-okv" firstAttribute="top" secondItem="iBM-X0-Yee" secondAttribute="bottom" id="oqV-ul-5jW"/>
                             <constraint firstAttribute="trailing" secondItem="oOD-0N-okv" secondAttribute="trailing" id="uug-o5-PV2"/>
                         </constraints>
                     </view>
@@ -196,7 +215,7 @@
                         <viewControllerLayoutGuide type="bottom" id="bYr-vD-81b"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="bPC-Oh-7SI">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="960"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bla-as-GYI">
@@ -2015,6 +2034,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="s7t-Ap-iBK"/>
+        <segue reference="i6p-q5-Rcs"/>
     </inferredMetricsTieBreakers>
 </document>
