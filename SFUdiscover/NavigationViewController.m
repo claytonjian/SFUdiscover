@@ -11,11 +11,12 @@
 @interface NavigationViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *navigationToHome;
 @property (strong, nonatomic, readwrite) IBOutlet UIScrollView *scrollView;
-@property (nonatomic, strong) UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UIButton *point;
 
 - (void)centerScrollViewContents;
 - (void)scrollViewDoubleTapped:(UITapGestureRecognizer*)recognizer;
 - (void)scrollViewTwoFingerTapped:(UITapGestureRecognizer*)recognizer;
+@property (strong, nonatomic) IBOutlet UIImageView *imageView;
 
 @end
 
@@ -100,11 +101,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
     // 1
     UIImage *image = [UIImage imageNamed:@"Page1.jpg"];
     self.imageView = [[UIImageView alloc] initWithImage:image];
-    [self.imageView setFrame:CGRectMake(350, 840, 17187.5, 11000)];
+    // factor of 1.5625
+    [self.imageView setFrame:CGRectMake(250, 840, 14218.75, 9100)];
     [self.scrollView addSubview:self.imageView];
+    
+    NSLog(@"The image has width %f", image.size.width);
+    NSLog(@"The image has height %f", image.size.height);
+    
+    
     
     // 2
     self.scrollView.contentSize = image.size;
