@@ -1353,6 +1353,9 @@
                                                         <color key="value" red="0.70980392156862748" green="0.070588235294117646" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="goBack:" destination="fEY-qN-JvF" eventType="touchUpInside" id="ddG-P3-2GG"/>
+                                                </connections>
                                             </button>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="+" id="RZC-u2-HEw">
@@ -1376,6 +1379,9 @@
                                         <color key="value" red="0.70980392156862748" green="0.070588235294117646" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="goHome:" destination="fEY-qN-JvF" eventType="touchUpInside" id="Nen-be-AIQ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qvI-Mu-rv9">
                                 <rect key="frame" x="290" y="12" width="30" height="30"/>
