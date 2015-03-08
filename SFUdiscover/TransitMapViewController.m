@@ -19,12 +19,11 @@
 @synthesize mapView, selection, TMVCDelegate;
 
 - (IBAction)goBack:(id)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (IBAction)goHome:(id)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
-    [self.TMVCDelegate goHome:nil];
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 -(void) location{

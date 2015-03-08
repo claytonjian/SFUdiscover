@@ -10,6 +10,7 @@
 
 @interface LoyaltyViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *loyaltyToHome;
+@property (weak, nonatomic) IBOutlet UILabel *totalPoints;
 
 @end
 
@@ -20,6 +21,8 @@
 - (IBAction)goHome:(id)sender {
     [self.navigationController popToRootViewControllerAnimated:(YES)];
 }
+
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

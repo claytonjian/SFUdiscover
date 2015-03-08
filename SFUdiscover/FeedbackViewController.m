@@ -10,6 +10,7 @@
 
 @interface FeedbackViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *feedbackToHome;
+@property (weak, nonatomic) IBOutlet UITextField *inputField;
 
 @end
 
@@ -30,6 +31,30 @@
     }
     return self;
 }
+- (IBAction)sendToSFU:(id)sender {
+    //dismiss keyboard upon touch
+    [self.inputField resignFirstResponder];
+}
+- (IBAction)sendToRestauants:(id)sender {
+    //dismiss keyboard upon touch
+    [self.inputField resignFirstResponder];
+}
+
+- (IBAction)sendToLibrary:(id)sender {
+    //dismiss keyboard upon touch
+    [self.inputField resignFirstResponder];
+}
+
+- (IBAction)sendToDevs:(id)sender {
+    //dismiss keyboard upon touch
+    [self.inputField resignFirstResponder];
+}
+
+//dimiss keyboard upon touching blank spaces on screen
+- (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    [self.view endEditing:YES];
+}
+
 
 - (void)viewDidLoad
 {

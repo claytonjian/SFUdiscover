@@ -318,6 +318,8 @@
 				4929B62E1AA133D800963AA7 /* HomeViewController.h */,
 				4929B62F1AA133D900963AA7 /* HomeViewController.m */,
 				4929B6311AA133DA00963AA7 /* Images.xcassets */,
+				A7799ECC1AABB8BF0051E4D7 /* settingIcon.png */,
+				A7799ECD1AABB8BF0051E4D7 /* SFULogo.png */,
 				4929B64E1AA1359900963AA7 /* CanvasViewController.h */,
 				4929B64F1AA1359900963AA7 /* CanvasViewController.m */,
 				4929B6511AA135A400963AA7 /* ConnectViewController.h */,
@@ -462,6 +464,7 @@
 				0EC6D5541AA9B6490084B4C6 /* RL_Cornerstone.plist in Resources */,
 				0EC6D5481AA9A0170084B4C6 /* Locations.plist in Resources */,
 				4929B6211AA133D600963AA7 /* InfoPlist.strings in Resources */,
+				A7799ECF1AABB8BF0051E4D7 /* SFULogo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +490,7 @@
 				4929B6501AA1359900963AA7 /* CanvasViewController.m in Sources */,
 				0EC209F31AAB0E19008207FF /* Contributor.m in Sources */,
 				4929B6531AA135A400963AA7 /* ConnectViewController.m in Sources */,
+				A7D1A6741AA9428100B22F97 /* QRScanViewController.m in Sources */,
 				4929B6301AA133D900963AA7 /* HomeViewController.m in Sources */,
 				97361C061AA8F8460075B4A5 /* TransitMapViewController.m in Sources */,
 				0EBBCFCB1AAAE0E100389114 /* LibraryHoursViewController.m in Sources */,
