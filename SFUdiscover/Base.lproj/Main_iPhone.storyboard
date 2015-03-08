@@ -363,9 +363,6 @@
                                 <state key="normal" title="Hours of Operation">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="Vhj-Ey-3l1" kind="push" id="1sY-2J-UBa"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="X7E-6D-6kz">
                                 <rect key="frame" x="109" y="141" width="102" height="30"/>
@@ -373,9 +370,6 @@
                                 <state key="normal" title="Ask a Librarian">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="CL3-99-WM8" kind="push" id="Adp-il-1dA"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WFh-eb-Pee">
                                 <rect key="frame" x="107" y="179" width="106" height="30"/>
@@ -383,9 +377,6 @@
                                 <state key="normal" title="Citation Guides">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="eSd-q1-4AJ" kind="push" id="LBd-Ov-Zq8"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="l29-Mf-fTq">
                                 <rect key="frame" x="20" y="379" width="123" height="30"/>
@@ -614,9 +605,6 @@
                                 <state key="normal" title="Lost and Found">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="vv6-yI-gUc" kind="push" id="xeU-2O-I1X"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="24m-rM-srY">
                                 <rect key="frame" x="122" y="113" width="77" height="30"/>
@@ -624,9 +612,6 @@
                                 <state key="normal" title="Emergency">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="ua1-yU-gbw" kind="push" id="RgL-82-HvG"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zoB-Hq-afs">
                                 <rect key="frame" x="242" y="113" width="71" height="30"/>
@@ -634,9 +619,6 @@
                                 <state key="normal" title="Bookstore">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="Hcv-Vj-yBx" kind="push" id="28N-Za-Axq"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mnE-kY-80T">
                                 <rect key="frame" x="19" y="314" width="83" height="30"/>
@@ -644,9 +626,6 @@
                                 <state key="normal" title="Restaurants">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="1qE-c4-Agi" kind="push" id="b7b-ra-n2j"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="o8B-F7-AVp">
                                 <rect key="frame" x="126" y="314" width="69" height="30"/>
@@ -654,9 +633,6 @@
                                 <state key="normal" title="Safe Walk">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="KCx-gN-7cu" kind="push" id="hyQ-zF-ytW"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="T5I-cn-hrt">
                                 <rect key="frame" x="256" y="314" width="42" height="30"/>
@@ -664,9 +640,6 @@
                                 <state key="normal" title="Traffic">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="KVl-3F-6UV" kind="push" id="gHy-mj-ZhS"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -1327,7 +1300,6 @@
         <!--Calendar View Controller - Calendar View Controller-->
         <scene sceneID="rwX-GU-841">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5cW-Da-q9v" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tabBarController title="Calendar View Controller" definesPresentationContext="YES" id="FPc-2R-xBT" customClass="CalendarViewController" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="YTI-eQ-udz"/>
                     <nil key="simulatedBottomBarMetrics"/>
@@ -1343,6 +1315,7 @@
                         <segue destination="yVP-ZD-hQf" kind="relationship" relationship="viewControllers" id="l4m-iV-39a"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5cW-Da-q9v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="455" y="-1966"/>
         </scene>
