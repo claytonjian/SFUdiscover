@@ -11,11 +11,8 @@
 		0E277CF21AAAE887000AE237 /* LibraryAskWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E277CF11AAAE887000AE237 /* LibraryAskWebViewController.m */; };
 		0E277CF51AAAEB9D000AE237 /* LibraryCitationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E277CF41AAAEB9D000AE237 /* LibraryCitationViewController.m */; };
 		0EBBCFCB1AAAE0E100389114 /* LibraryHoursViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EBBCFCA1AAAE0E100389114 /* LibraryHoursViewController.m */; };
-		0EC209F01AAB0DB7008207FF /* Tutorial.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC209EF1AAB0DB7008207FF /* Tutorial.m */; };
-		0EC209F31AAB0E19008207FF /* Contributor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC209F21AAB0E19008207FF /* Contributor.m */; };
 		0EC20A3D1AAB0EF3008207FF /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC20A381AAB0EF3008207FF /* TFHpple.m */; };
 		0EC20A3E1AAB0EF3008207FF /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC20A3A1AAB0EF3008207FF /* TFHppleElement.m */; };
-		0EC20A3F1AAB0EF3008207FF /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC20A3C1AAB0EF3008207FF /* XPathQuery.m */; };
 		0EC20A421AAB1040008207FF /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EC20A411AAB1040008207FF /* libxml2.dylib */; };
 		0EC20A451AAB10FD008207FF /* TrafficViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC20A441AAB10FD008207FF /* TrafficViewController.m */; };
 		0EC6D53D1AA97FC30084B4C6 /* BookStoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC6D53C1AA97FC30084B4C6 /* BookStoreViewController.m */; };
@@ -25,11 +22,6 @@
 		0EC6D5541AA9B6490084B4C6 /* RL_Cornerstone.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0EC6D5531AA9B6490084B4C6 /* RL_Cornerstone.plist */; };
 		0EE2FAA61AA9256D007A2F19 /* EmergencyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE2FAA31AA9256D007A2F19 /* EmergencyViewController.m */; };
 		0EE2FAAA1AA92AF6007A2F19 /* LostandFoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE2FAA91AA92AF6007A2F19 /* LostandFoundViewController.m */; };
-		0EEC41731AAAE72500B4AF19 /* LibraryAskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EEC41721AAAE72500B4AF19 /* LibraryAskViewController.m */; };
-		0EEC41771AAAE7DB00B4AF19 /* LibraryHourOpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EEC41761AAAE7DB00B4AF19 /* LibraryHourOpViewController.m */; };
-		0EF4ABC71AAAABFD007B1B12 /* SafeWalkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF4ABC61AAAABFD007B1B12 /* SafeWalkViewController.m */; };
-		0EF4ABCA1AAAB999007B1B12 /* SafeWalkSiteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF4ABC91AAAB999007B1B12 /* SafeWalkSiteViewController.m */; };
-		0EF731D21AAAF18200EBC23D /* FoodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF731D11AAAF18200EBC23D /* FoodViewController.m */; };
 		303C34031AAB9BF0001E95F7 /* TrafficHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 303C34021AAB9BF0001E95F7 /* TrafficHomeViewController.m */; };
 		4925CF6C1AA566200026305C /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4925CF6B1AA566200026305C /* SettingsViewController.m */; };
 		4929B6171AA133D300963AA7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4929B6161AA133D300963AA7 /* Foundation.framework */; };
@@ -439,11 +431,6 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = EngagingFoundations;
-				TargetAttributes = {
-					4929B6361AA133DA00963AA7 = {
-						TestTargetID = 4929B6121AA133D300963AA7;
-					};
-				};
 			};
 			buildConfigurationList = 4929B60E1AA133D300963AA7 /* Build configuration list for PBXProject "SFUdiscover" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -672,6 +659,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SFUdiscover/SFUdiscover-Prefix.pch";
 				INFOPLIST_FILE = "SFUdiscover/SFUdiscover-Info.plist";
@@ -686,6 +674,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SFUdiscover/SFUdiscover-Prefix.pch";
 				INFOPLIST_FILE = "SFUdiscover/SFUdiscover-Info.plist";
@@ -698,7 +687,6 @@
 		4929B64C1AA133DB00963AA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SFUdiscover.app/SFUdiscover";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -712,7 +700,6 @@
 				);
 				INFOPLIST_FILE = "SFUdiscoverTests/SFUdiscoverTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -720,7 +707,6 @@
 		4929B64D1AA133DB00963AA7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SFUdiscover.app/SFUdiscover";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -730,7 +716,6 @@
 				GCC_PREFIX_HEADER = "SFUdiscover/SFUdiscover-Prefix.pch";
 				INFOPLIST_FILE = "SFUdiscoverTests/SFUdiscoverTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
