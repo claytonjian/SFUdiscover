@@ -62,6 +62,7 @@
 		97361C061AA8F8460075B4A5 /* TransitMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97361C051AA8F8460075B4A5 /* TransitMapViewController.m */; };
 		97361C091AA8F8CC0075B4A5 /* MapPin.m in Sources */ = {isa = PBXBuildFile; fileRef = 97361C081AA8F8CC0075B4A5 /* MapPin.m */; };
 		97D44E6B1AABB11F00B0A91C /* myButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D44E6A1AABB11F00B0A91C /* myButton.m */; };
+		A7799ED21AAC00060051E4D7 /* QRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7799ED11AAC00060051E4D7 /* QRViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -170,6 +171,8 @@
 		97361C081AA8F8CC0075B4A5 /* MapPin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPin.m; sourceTree = "<group>"; };
 		97D44E6A1AABB11F00B0A91C /* myButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myButton.m; sourceTree = "<group>"; };
 		97D44E6C1AABB13800B0A91C /* myButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myButton.h; sourceTree = "<group>"; };
+		A7799ED01AAC00060051E4D7 /* QRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRViewController.h; sourceTree = "<group>"; };
+		A7799ED11AAC00060051E4D7 /* QRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -302,6 +305,8 @@
 				4929B6251AA133D700963AA7 /* AppDelegate.h */,
 				4929B6261AA133D700963AA7 /* AppDelegate.m */,
 				4929B6281AA133D800963AA7 /* Main_iPhone.storyboard */,
+				A7799ED01AAC00060051E4D7 /* QRViewController.h */,
+				A7799ED11AAC00060051E4D7 /* QRViewController.m */,
 				0EF4ABC81AAAB999007B1B12 /* SafeWalkSiteViewController.h */,
 				0EF4ABC91AAAB999007B1B12 /* SafeWalkSiteViewController.m */,
 				97361C071AA8F8CC0075B4A5 /* MapPin.h */,
@@ -495,6 +500,7 @@
 				0E222D4E1AAAF57400E57818 /* Food2ViewController.m in Sources */,
 				0EC20A451AAB10FD008207FF /* TrafficViewController.m in Sources */,
 				4929B6271AA133D700963AA7 /* AppDelegate.m in Sources */,
+				A7799ED21AAC00060051E4D7 /* QRViewController.m in Sources */,
 				97361C001AA8E9810075B4A5 /* BusScheduleViewController.m in Sources */,
 				4929B65C1AA135C700963AA7 /* NavigationViewController.m in Sources */,
 				49B69B061AA2A51800B3AC66 /* LibraryViewController.m in Sources */,

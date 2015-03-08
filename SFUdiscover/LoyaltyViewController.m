@@ -10,6 +10,7 @@
 
 @interface LoyaltyViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *loyaltyToHome;
+@property (weak, nonatomic) IBOutlet UILabel *displayPoints;
 
 @end
 
