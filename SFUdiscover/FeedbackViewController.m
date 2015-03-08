@@ -10,6 +10,8 @@
 
 @interface FeedbackViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *feedbackToHome;
+@property (weak, nonatomic) IBOutlet UITextField *inputField;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrView;
 
 @end
 
@@ -30,11 +32,48 @@
     }
     return self;
 }
+- (IBAction)sendToSFU:(id)sender {
+    //dismiss keyboard upon touch
+    [self.inputField resignFirstResponder];
+}
+
+- (IBAction)sendToLib:(id)sender {
+    //dismiss keyboard upon touch
+    [self.inputField resignFirstResponder];
+}
+- (IBAction)sendToRests:(id)sender {
+    //dismiss keyboard upon touch
+    [self.inputField resignFirstResponder];
+}
+- (IBAction)sendToDevs:(id)sender {
+    //dismiss keyboard upon touch
+    [self.inputField resignFirstResponder];
+}
+
+//dimiss keyboard upon touching blank spaces on screen
+//this does not work right now for scroll views, normal views work
+- (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    [self.view endEditing:YES];
+}
+
+/*
+//function disabled since user may want to type in multiple lines in 
+ the text field and use return key to seprate lines
+ 
+//dismiss keyboard when user hits return  (done)
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+    
+    [textField resignFirstResponder];
+    
+    return YES;
+}
+*/
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [scroller setScrollEnabled:YES];
+    [scroller setContentSize:CGSizeMake(320, 480)];
 }
 
 - (void)didReceiveMemoryWarning
@@ -44,14 +83,14 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+ {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end
