@@ -7,8 +7,10 @@
 //
 
 #import "CalendarViewController.h"
+#import "AppDelegate.h"
 
 @interface CalendarViewController ()
+@property (nonatomic, strong) AppDelegate *appDelegate;
 @property (weak, nonatomic) IBOutlet UIButton *calendarToHome;
 
 @end
@@ -34,6 +36,12 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    // Instantiate the appDelegate property, so we can access its eventManager property.
+    self.appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    
+    // Request access to built-in Calendar events
+    [self performSelector:@selector(requestAccessToEvents) withObject:nil afterDelay:0.4];
 }
 
 - (void)didReceiveMemoryWarning
@@ -52,5 +60,18 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+-(void)requestAccessToEvents{
+    [self.appDelegate.eventManager.eventStore requestAccessToEntityType:EKEntityTypeEvent completion:^(BOOL granted, NSError *error) {
+        if (error == nil) {
+            // Store the returned granted value.
+            self.appDelegate.eventManager.eventsAccessGranted = granted;
+        }
+        else{
+            // In case of error, just log its description to the debugger.
+            NSLog(@"%@", [error localizedDescription]);
+        }
+    }];
+}   
 
 @end
