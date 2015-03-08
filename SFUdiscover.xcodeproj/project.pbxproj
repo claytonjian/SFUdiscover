@@ -57,6 +57,9 @@
 		4929B6651AA135EE00963AA7 /* NewsFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4929B6641AA135EE00963AA7 /* NewsFeedViewController.m */; };
 		4929B6681AA135FD00963AA7 /* ServicesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4929B6671AA135FD00963AA7 /* ServicesViewController.m */; };
 		49B69B061AA2A51800B3AC66 /* LibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B69B051AA2A51800B3AC66 /* LibraryViewController.m */; };
+		4E5E6EDA1AABAAC3004DC31F /* AddEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5E6ED91AABAAC3004DC31F /* AddEventViewController.m */; };
+		4E5E6EDD1AABAB8B004DC31F /* EventManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5E6EDC1AABAB8B004DC31F /* EventManager.m */; };
+		4E5E6EE01AABBCAE004DC31F /* DailyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5E6EDF1AABBCAE004DC31F /* DailyViewController.m */; };
 		97361C001AA8E9810075B4A5 /* BusScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97361BFF1AA8E9810075B4A5 /* BusScheduleViewController.m */; };
 		97361C031AA8EC9A0075B4A5 /* BusTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97361C021AA8EC9A0075B4A5 /* BusTableViewController.m */; };
 		97361C061AA8F8460075B4A5 /* TransitMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97361C051AA8F8460075B4A5 /* TransitMapViewController.m */; };
@@ -160,6 +163,12 @@
 		4929B6671AA135FD00963AA7 /* ServicesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServicesViewController.m; sourceTree = "<group>"; };
 		49B69B041AA2A51800B3AC66 /* LibraryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryViewController.h; sourceTree = "<group>"; };
 		49B69B051AA2A51800B3AC66 /* LibraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryViewController.m; sourceTree = "<group>"; };
+		4E5E6ED81AABAAC3004DC31F /* AddEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEventViewController.h; sourceTree = "<group>"; };
+		4E5E6ED91AABAAC3004DC31F /* AddEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddEventViewController.m; sourceTree = "<group>"; };
+		4E5E6EDB1AABAB8B004DC31F /* EventManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventManager.h; sourceTree = "<group>"; };
+		4E5E6EDC1AABAB8B004DC31F /* EventManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventManager.m; sourceTree = "<group>"; };
+		4E5E6EDE1AABBCAE004DC31F /* DailyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DailyViewController.h; sourceTree = "<group>"; };
+		4E5E6EDF1AABBCAE004DC31F /* DailyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DailyViewController.m; sourceTree = "<group>"; };
 		97361BFE1AA8E9810075B4A5 /* BusScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusScheduleViewController.h; sourceTree = "<group>"; };
 		97361BFF1AA8E9810075B4A5 /* BusScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusScheduleViewController.m; sourceTree = "<group>"; };
 		97361C011AA8EC9A0075B4A5 /* BusTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusTableViewController.h; sourceTree = "<group>"; };
@@ -341,6 +350,12 @@
 				0EC6D53B1AA97FC30084B4C6 /* BookStoreViewController.h */,
 				0EC6D53C1AA97FC30084B4C6 /* BookStoreViewController.m */,
 				4929B61D1AA133D400963AA7 /* Supporting Files */,
+				4E5E6ED81AABAAC3004DC31F /* AddEventViewController.h */,
+				4E5E6ED91AABAAC3004DC31F /* AddEventViewController.m */,
+				4E5E6EDE1AABBCAE004DC31F /* DailyViewController.h */,
+				4E5E6EDF1AABBCAE004DC31F /* DailyViewController.m */,
+				4E5E6EDB1AABAB8B004DC31F /* EventManager.h */,
+				4E5E6EDC1AABAB8B004DC31F /* EventManager.m */,
 			);
 			path = SFUdiscover;
 			sourceTree = "<group>";
@@ -485,9 +500,10 @@
 				97361C091AA8F8CC0075B4A5 /* MapPin.m in Sources */,
 				4929B6651AA135EE00963AA7 /* NewsFeedViewController.m in Sources */,
 				4929B6501AA1359900963AA7 /* CanvasViewController.m in Sources */,
-				0EC209F31AAB0E19008207FF /* Contributor.m in Sources */,
+				4E5E6EDA1AABAAC3004DC31F /* AddEventViewController.m in Sources */,
 				4929B6531AA135A400963AA7 /* ConnectViewController.m in Sources */,
 				4929B6301AA133D900963AA7 /* HomeViewController.m in Sources */,
+				4E5E6EE01AABBCAE004DC31F /* DailyViewController.m in Sources */,
 				97361C061AA8F8460075B4A5 /* TransitMapViewController.m in Sources */,
 				0EBBCFCB1AAAE0E100389114 /* LibraryHoursViewController.m in Sources */,
 				97361C031AA8EC9A0075B4A5 /* BusTableViewController.m in Sources */,
@@ -502,13 +518,7 @@
 				0E277CF51AAAEB9D000AE237 /* LibraryCitationViewController.m in Sources */,
 				4929B6231AA133D600963AA7 /* main.m in Sources */,
 				4929B65F1AA135D100963AA7 /* TransitViewController.m in Sources */,
-				0EC209F01AAB0DB7008207FF /* Tutorial.m in Sources */,
-				0EEC41771AAAE7DB00B4AF19 /* LibraryHourOpViewController.m in Sources */,
-				0EC20A3F1AAB0EF3008207FF /* XPathQuery.m in Sources */,
-				0EF4ABC71AAAABFD007B1B12 /* SafeWalkViewController.m in Sources */,
-				0EEC41731AAAE72500B4AF19 /* LibraryAskViewController.m in Sources */,
-				0EF731D21AAAF18200EBC23D /* FoodViewController.m in Sources */,
-				0EF4ABCA1AAAB999007B1B12 /* SafeWalkSiteViewController.m in Sources */,
+				4E5E6EDD1AABAB8B004DC31F /* EventManager.m in Sources */,
 				4929B6561AA135AF00963AA7 /* FeedbackViewController.m in Sources */,
 				4929B6591AA135BC00963AA7 /* CalendarViewController.m in Sources */,
 				4929B6681AA135FD00963AA7 /* ServicesViewController.m in Sources */,
