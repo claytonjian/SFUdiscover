@@ -10,6 +10,7 @@
 
 @interface LoyaltyViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *loyaltyToHome;
+@property (weak, nonatomic) IBOutlet UILabel *displayPoints;
 
 @end
 
@@ -33,7 +34,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [scroller setScrollEnabled:YES];
+    [scroller setContentSize:CGSizeMake(320, 480)];
 }
 
 - (void)didReceiveMemoryWarning
