@@ -991,7 +991,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="9KY-Vy-6dg">
-                                <rect key="frame" x="0.0" y="87" width="320" height="393"/>
+                                <rect key="frame" x="0.0" y="130" width="320" height="350"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             </mapView>
                             <navigationBar contentMode="scaleToFill" id="fYn-Ma-oc1">
@@ -1037,11 +1037,31 @@
                                     <action selector="goHome:" destination="Ef7-DW-Mwb" eventType="touchUpInside" id="Lpt-RZ-fX7"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="AIU-fm-Q5r">
+                                <rect key="frame" x="5" y="92" width="254" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Ef7-DW-Mwb" id="bvt-Ds-HAd"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xug-3E-cPm">
+                                <rect key="frame" x="267" y="92" width="43" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Select">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopSelect:" destination="Ef7-DW-Mwb" eventType="touchUpInside" id="0rx-3h-KdA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="mapView" destination="9KY-Vy-6dg" id="UEH-yP-yuc"/>
+                        <outlet property="stopNumber" destination="AIU-fm-Q5r" id="jAJ-Gq-SNE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TlZ-Om-qMj" userLabel="First Responder" sceneMemberID="firstResponder"/>

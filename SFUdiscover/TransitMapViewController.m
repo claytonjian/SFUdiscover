@@ -11,6 +11,7 @@
 #import "myButton.h"
 
 @interface TransitMapViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *stopNumber;
 
 @end
 
@@ -58,7 +59,63 @@
     return myPin;
 }
 
--(void)confirm: (myButton *) sender{
+- (IBAction)stopSelect:(id)sender {
+    NSString *stop = self.stopNumber.text;
+    int stopNum = [stop intValue];
+
+    switch (stopNum) {
+        case 59314:
+        case 58349:
+            selection = @"Production Way Station";
+            break;
+        case 52806:
+        case 51860:
+            selection = @"Transportation Center 2";
+            break;
+        case 51861:
+            selection = @"Transit Exchange";
+            break;
+        case 59044:
+            selection = @"University High Street";
+            break;
+        case 51862:
+            selection = @"Science Road";
+            break;
+        case 51863:
+            selection = @"Transportation Center 1";
+            break;
+        case 51864:
+            selection = @"West Campus Road";
+            break;
+        default:
+            break;
+    }
+    
+    if (selection != nil) {
+        NSString *alertMessage = [[NSString alloc]initWithFormat:@"You have selected %@, is this the right choice?", selection];
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Alert" message: alertMessage delegate:self cancelButtonTitle:@"No" otherButtonTitles:@"Yes", nil];
+        [alert show];
+    }
+    else{
+        NSString *alertMessage = [[NSString alloc]initWithFormat:@"You have entered an invalid bus stop number!"];
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Alert" message: alertMessage delegate:self cancelButtonTitle:@"Okay" otherButtonTitles:nil];
+        [alert show];
+        [self.stopNumber setText:@""];
+    }
+    [self.stopNumber resignFirstResponder];
+    
+}
+
+- (BOOL)textFieldShouldReturn: (UITextField *) textField{
+    [textField resignFirstResponder];
+    return YES;
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    [self.view endEditing:YES];
+}
+
+-(void) confirm: (myButton *) sender{
     selection = sender.data.annotation.title;
     NSString *alertMessage = [[NSString alloc]initWithFormat:@"You have selected %@, is this the right choice?", selection];
     UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Alert" message: alertMessage delegate:self cancelButtonTitle:@"No" otherButtonTitles:@"Yes", nil];
@@ -124,6 +181,13 @@
     westCampusRoad.coordinate = region.center;
     westCampusRoad.title = @"West Campus Road";
     [mapView addAnnotation:westCampusRoad];
+    
+    MapPin *productionWayStation = [[MapPin alloc] init];
+    region.center.latitude = 49.253796;
+    region.center.longitude = -122.918154;
+    productionWayStation.coordinate = region.center;
+    productionWayStation.title = @"Production Way Station";
+    [mapView addAnnotation:productionWayStation];
 }
 
 
