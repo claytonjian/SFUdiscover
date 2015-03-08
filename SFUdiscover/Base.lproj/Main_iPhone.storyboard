@@ -150,30 +150,6 @@
                                             <segue destination="ya4-fS-sBL" kind="push" customClass="goToLibrary" id="VSC-1P-etC"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nga-Ii-CTr">
-                                        <rect key="frame" x="0.0" y="-20" width="320" height="40"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <inset key="contentEdgeInsets" minX="0.0" minY="15" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="SFUdiscover">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
-                                                <color key="value" red="0.70980392156862748" green="0.070588235294117646" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="GaD-Ao-zc4">
-                                        <rect key="frame" x="136" y="562" width="49" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Setting">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="btR-Tc-CvA" kind="push" id="mq4-7P-75Y"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
@@ -228,7 +204,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="393" y="208"/>
+            <point key="canvasLocation" x="-1599" y="184"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="gb0-pe-L6B">
@@ -239,7 +215,7 @@
                         <viewControllerLayoutGuide type="bottom" id="bYr-vD-81b"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="bPC-Oh-7SI">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="960"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bla-as-GYI">
@@ -277,6 +253,22 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oPj-Jt-ue8">
+                                <rect key="frame" x="0.0" y="20" width="320" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.68235294120000001" green="0.0" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="eAo-yV-AbF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="18"/>
+                                <state key="normal" title="SFUdiscover">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goHome:" destination="btR-Tc-CvA" eventType="touchUpInside" id="q9v-PN-IIe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -294,7 +286,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tCD-K2-NCg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2280" y="-572"/>
+            <point key="canvasLocation" x="-2184" y="-512"/>
         </scene>
         <!--Canvas View Controller-->
         <scene sceneID="FxP-yw-3ST">
@@ -344,11 +336,27 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <webView contentMode="scaleToFill" id="5II-2Q-sc0">
-                                <rect key="frame" x="0.0" y="84" width="320" height="396"/>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5II-2Q-sc0">
+                                <rect key="frame" x="0.0" y="92" width="320" height="388"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
+                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I6x-6y-iv1">
+                                <rect key="frame" x="0.0" y="20" width="320" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.68235294120000001" green="0.0" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="yaL-4F-2tC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="18"/>
+                                <state key="normal" title="SFUdiscover">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="goHome:" destination="0OP-lk-fHh" eventType="touchUpInside" id="0Ff-N1-fRq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -376,7 +384,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tqx-Po-n1D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="965" y="-229"/>
+            <point key="canvasLocation" x="-1735" y="-1017"/>
         </scene>
         <!--Calendar View Controller-->
         <scene sceneID="vm5-mj-u34">
@@ -425,6 +433,22 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SAT-rw-bU7">
+                                <rect key="frame" x="0.0" y="20" width="325" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.68235294120000001" green="0.0" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="sRb-u5-BhV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="18"/>
+                                <state key="normal" title="SFUdiscover">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goHome:" destination="URc-mO-CeV" eventType="touchUpInside" id="NCD-Ni-Su4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -445,7 +469,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jnS-67-DEI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="965" y="392"/>
+            <point key="canvasLocation" x="-331" y="-1017"/>
         </scene>
         <!--Library View Controller-->
         <scene sceneID="aaK-af-b6o">
@@ -494,14 +518,20 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fFL-zX-sNy">
-                                <rect key="frame" x="95" y="103" width="131" height="30"/>
+                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9fO-tQ-YmK">
+                                <rect key="frame" x="0.0" y="20" width="320" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Hours of Operation">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.68235294120000001" green="0.0" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="otT-SP-oYz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="18"/>
+                                <state key="normal" title="SFUdiscover">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Vhj-Ey-3l1" kind="push" id="1sY-2J-UBa"/>
+                                    <action selector="goHome:" destination="ya4-fS-sBL" eventType="touchUpInside" id="cfY-Nd-0VL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="X7E-6D-6kz">
@@ -558,7 +588,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ujp-lv-l1t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1681" y="1037"/>
+            <point key="canvasLocation" x="-1735" y="1905"/>
         </scene>
         <!--Loyalty View Controller-->
         <scene sceneID="qFZ-Fe-gk0">
@@ -607,6 +637,98 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Rewad Points" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t5J-T0-Se1">
+                                <rect key="frame" x="20" y="104" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="3fQ-YJ-720"/>
+                                    <constraint firstAttribute="height" constant="21" id="zs7-lo-FzO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="128" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ReF-lV-x3a">
+                                <rect key="frame" x="97" y="133" width="126" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="2oX-J3-bPg"/>
+                                    <constraint firstAttribute="width" constant="126" id="hrS-Rj-z3A"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LF8-J2-k1W">
+                                <rect key="frame" x="0.0" y="236" width="320" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.24215214769999999" blue="0.57575757579999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="dHO-5C-TRd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="18"/>
+                                <state key="normal" title="Redeem">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rXi-mj-YCp">
+                                <rect key="frame" x="0.0" y="294" width="320" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.24215214769999999" blue="0.57575757579999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Yge-HZ-Sqn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="18"/>
+                                <state key="normal" title="History">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tb5-K5-be6">
+                                <rect key="frame" x="0.0" y="352" width="320" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.24215214769999999" blue="0.57575757579999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="y1B-zN-fWa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="18"/>
+                                <state key="normal" title="Participants">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jHS-Xk-ZTW">
+                                <rect key="frame" x="0.0" y="410" width="320" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.24215214769999999" blue="0.57575757579999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="YyP-ki-Gkr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="18"/>
+                                <state key="normal" title="Scan QR Code">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Qxd-Wz-mr4" kind="push" id="DRL-rb-sHZ"/>
+                                </connections>
+                            </button>
+                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0tq-kX-fnc">
+                                <rect key="frame" x="0.0" y="20" width="320" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.68235294120000001" green="0.0" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="A4t-kR-wtw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="18"/>
+                                <state key="normal" title="SFUdiscover">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goHome:" destination="i4E-FB-qNi" eventType="touchUpInside" id="QgR-C9-sDG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -644,7 +766,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JBd-2A-IkC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="965" y="1633"/>
+            <point key="canvasLocation" x="-2184" y="921"/>
         </scene>
         <!--Scan View Controller-->
         <scene sceneID="RRx-v3-htk">
@@ -777,7 +899,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xtg-aw-XQ5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1322" y="1633"/>
+            <point key="canvasLocation" x="-2762" y="325"/>
         </scene>
         <!--News Feed View Controller-->
         <scene sceneID="5p8-zM-62w">
@@ -826,6 +948,22 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S54-qE-JfG">
+                                <rect key="frame" x="0.0" y="20" width="320" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.68235294120000001" green="0.0" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="2TS-LS-f9Z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="18"/>
+                                <state key="normal" title="SFUdiscover">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goHome:" destination="xYi-Bv-VZC" eventType="touchUpInside" id="rMZ-ZR-cuv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -846,7 +984,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DAj-ls-meL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="965" y="1037"/>
+            <point key="canvasLocation" x="-2184" y="1603"/>
         </scene>
         <!--Services View Controller-->
         <scene sceneID="OAd-eF-Q1T">
@@ -895,14 +1033,20 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wJO-OY-WP3">
-                                <rect key="frame" x="6" y="113" width="108" height="30"/>
+                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sdd-px-iTo">
+                                <rect key="frame" x="0.0" y="20" width="320" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Lost and Found">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.68235294120000001" green="0.0" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="eui-Ym-Vyc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="18"/>
+                                <state key="normal" title="SFUdiscover">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="vv6-yI-gUc" kind="push" id="xeU-2O-I1X"/>
+                                    <action selector="goHome:" destination="1AJ-w7-Qb2" eventType="touchUpInside" id="Ag8-Nz-C7e"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="24m-rM-srY">
@@ -974,7 +1118,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W0r-0P-2Ue" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1322" y="1037"/>
+            <point key="canvasLocation" x="-363" y="1389"/>
         </scene>
         <!--Navigation View Controller-->
         <scene sceneID="0EZ-SE-PbY">
@@ -1023,6 +1167,22 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T1o-sQ-ktb">
+                                <rect key="frame" x="0.0" y="20" width="320" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.68235294120000001" green="0.0" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="EW8-d3-8xI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="18"/>
+                                <state key="normal" title="SFUdiscover">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goHome:" destination="WwY-Eb-6kS" eventType="touchUpInside" id="tFp-Fa-xTD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -1043,7 +1203,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yeR-Go-UtT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1322" y="392"/>
+            <point key="canvasLocation" x="81" y="-632"/>
         </scene>
         <!--Transit View Controller-->
         <scene sceneID="Q4C-Ni-48a">
@@ -1092,10 +1252,13 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="LZy-9j-hdM">
-                                <rect key="frame" x="145" y="264" width="31" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZy-9j-hdM">
+                                <rect key="frame" x="0.0" y="236" width="320" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.24215214769999999" blue="0.57575757579999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="zdY-Ry-GdG"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="18"/>
                                 <state key="normal" title="Map">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1106,10 +1269,13 @@
                                     <segue destination="Ef7-DW-Mwb" kind="push" id="QJz-gY-Bid"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCh-md-gSi">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCh-md-gSi">
                                 <rect key="frame" x="0.0" y="294" width="320" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.24215214769999999" blue="0.57575757579999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="kD0-Sc-hHz"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="18"/>
                                 <state key="normal" title="Bus Schedule">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1144,9 +1310,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="LZy-9j-hdM" firstAttribute="leading" secondItem="odZ-NI-1sO" secondAttribute="leading" id="5Xg-VE-xvZ"/>
+                            <constraint firstItem="LZy-9j-hdM" firstAttribute="top" secondItem="99v-1Z-smy" secondAttribute="bottom" constant="144" id="9Bq-id-Ic2"/>
                             <constraint firstItem="99v-1Z-smy" firstAttribute="top" secondItem="x58-TI-zDS" secondAttribute="bottom" id="K0z-jT-83j"/>
                             <constraint firstItem="99v-1Z-smy" firstAttribute="leading" secondItem="odZ-NI-1sO" secondAttribute="leading" id="NQa-F4-a8v"/>
+                            <constraint firstAttribute="trailing" secondItem="HCh-md-gSi" secondAttribute="trailing" id="Vau-cQ-EaD"/>
+                            <constraint firstAttribute="trailing" secondItem="LZy-9j-hdM" secondAttribute="trailing" id="bt7-fe-Bsd"/>
                             <constraint firstItem="99v-1Z-smy" firstAttribute="top" secondItem="vrR-n8-j1H" secondAttribute="bottom" constant="28" id="c4c-TY-a0E"/>
+                            <constraint firstItem="HCh-md-gSi" firstAttribute="top" secondItem="x58-TI-zDS" secondAttribute="bottom" constant="246" id="dFD-lA-T8q"/>
+                            <constraint firstItem="HCh-md-gSi" firstAttribute="leading" secondItem="odZ-NI-1sO" secondAttribute="leading" id="kqX-sd-dg3"/>
                             <constraint firstAttribute="trailing" secondItem="99v-1Z-smy" secondAttribute="trailing" id="pnF-OY-ccn"/>
                             <constraint firstAttribute="trailing" secondItem="x58-TI-zDS" secondAttribute="trailing" id="qdn-T9-uth"/>
                             <constraint firstItem="x58-TI-zDS" firstAttribute="leading" secondItem="odZ-NI-1sO" secondAttribute="leading" id="qe2-Vz-4Oc"/>
@@ -1162,7 +1334,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eRW-qe-FSM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1741" y="-229"/>
+            <point key="canvasLocation" x="81" y="-45"/>
         </scene>
         <!--Bus Table View Controller-->
         <scene sceneID="Nvi-Hr-zif">
@@ -1254,7 +1426,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tNU-UX-uaQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3660" y="1256"/>
+            <point key="canvasLocation" x="1308" y="-336"/>
         </scene>
         <!--Transit Map View Controller-->
         <scene sceneID="Hkt-sO-wOq">
@@ -1322,22 +1494,6 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NSH-43-uBC">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="SFUdiscover">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
-                                        <color key="value" red="0.70980393890000004" green="0.070588238540000001" blue="0.10588235410000001" alpha="1" colorSpace="deviceRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="goHome:" destination="Ef7-DW-Mwb" eventType="touchUpInside" id="Lpt-RZ-fX7"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -1361,7 +1517,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TlZ-Om-qMj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3179" y="480"/>
+            <point key="canvasLocation" x="879" y="-912"/>
         </scene>
         <!--Bus Schedule View Controller-->
         <scene sceneID="W5P-L0-r3D">
@@ -1443,7 +1599,7 @@
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="goHome:" destination="rX0-AG-tCP" eventType="touchUpInside" id="yTE-Gj-7j0"/>
+                                    <action selector="goHome:" destination="rX0-AG-tCP" eventType="touchUpInside" id="nz1-yL-gq9"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1466,7 +1622,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ffQ-u9-JPX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2301" y="344"/>
+            <point key="canvasLocation" x="879" y="-336"/>
         </scene>
         <!--Connect View Controller-->
         <scene sceneID="q7z-Q5-2QO">
@@ -1516,11 +1672,27 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <webView contentMode="scaleToFill" id="0rT-CU-12e">
-                                <rect key="frame" x="0.0" y="84" width="320" height="396"/>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0rT-CU-12e">
+                                <rect key="frame" x="0.0" y="92" width="320" height="388"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
+                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S8v-EB-XZF">
+                                <rect key="frame" x="0.0" y="20" width="320" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.68235294120000001" green="0.0" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="hld-G0-aUQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="18"/>
+                                <state key="normal" title="SFUdiscover">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="goHome:" destination="Y6U-pI-kVD" eventType="touchUpInside" id="qEg-xr-n2a"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -1546,12 +1718,16 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5jf-ol-GVZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1322" y="-229"/>
+            <point key="canvasLocation" x="-1266" y="-1017"/>
         </scene>
         <!--Traffic View Controller-->
         <scene sceneID="rIw-b9-yjP">
             <objects>
                 <viewController id="pqW-qz-eq2" customClass="TrafficViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nDh-5C-yok"/>
+                        <viewControllerLayoutGuide type="bottom" id="lYA-bG-6ta"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="W7p-4e-en7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1627,12 +1803,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bpB-Eb-CIO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1869" y="-950"/>
+            <point key="canvasLocation" x="93" y="614"/>
         </scene>
-        <!--Feedback View Controller-->
+        <!--Feedback View Controller - Feedback View Controller-->
         <scene sceneID="CpB-w1-CrQ">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XhS-E1-ZcE" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController title="Feedback View Controller" id="nFW-pq-Yze" customClass="FeedbackViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ttX-YS-4vu"/>
@@ -1677,6 +1852,92 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <textField appearanceType="aqua" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type in your feedback..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fps-SB-iFP">
+                                <rect key="frame" x="20" y="112" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xgS-5V-7oM">
+                                <rect key="frame" x="0.0" y="21" width="320" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.68235294120000001" green="0.0" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="wSU-od-76Z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="18"/>
+                                <state key="normal" title="SFUdiscover">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goHome:" destination="nFW-pq-Yze" eventType="touchUpInside" id="NVv-j3-X43"/>
+                                </connections>
+                            </button>
+                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58T-ui-OBY">
+                                <rect key="frame" x="20" y="150" width="90" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="QOG-od-kVa"/>
+                                    <constraint firstAttribute="height" constant="30" id="a7m-3W-E1O"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
+                                <state key="normal" title="Send to SFU">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendToSFU:" destination="nFW-pq-Yze" eventType="touchUpInside" id="4OP-KC-Ze1"/>
+                                </connections>
+                            </button>
+                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wM4-lw-ePR">
+                                <rect key="frame" x="20" y="188" width="203" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="203" id="IWk-go-ROY"/>
+                                    <constraint firstAttribute="height" constant="30" id="ohc-j7-SaK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
+                                <state key="normal" title="Send to Restaurant Services">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendToRestauants:" destination="nFW-pq-Yze" eventType="touchUpInside" id="Vb8-Vc-7pV"/>
+                                </connections>
+                            </button>
+                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9zg-K3-Li4">
+                                <rect key="frame" x="20" y="226" width="113" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Vnl-Lj-Vl7"/>
+                                    <constraint firstAttribute="width" constant="113" id="wHa-Dr-wJS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
+                                <state key="normal" title="Send to Library">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendToLibrary:" destination="nFW-pq-Yze" eventType="touchUpInside" id="5em-tj-2Ub"/>
+                                </connections>
+                            </button>
+                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e5N-et-HxG">
+                                <rect key="frame" x="20" y="264" width="136" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="136" id="RCK-6h-C1w"/>
+                                    <constraint firstAttribute="height" constant="30" id="gZC-Wj-RiA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
+                                <state key="normal" title="Send to developers">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendToDevs:" destination="nFW-pq-Yze" eventType="touchUpInside" id="sqt-lR-2Yo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -1707,8 +1968,9 @@
                         <outlet property="inputField" destination="fps-SB-iFP" id="hLr-y4-6JG"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XhS-E1-ZcE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1681" y="1633"/>
+            <point key="canvasLocation" x="-783" y="-1017"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="CMC-SS-Pxb">
@@ -1727,12 +1989,16 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="909-KR-Gkf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-16" y="404"/>
+            <point key="canvasLocation" x="-2184" y="140"/>
         </scene>
         <!--Lostand Found View Controller-->
         <scene sceneID="ZtQ-RN-szr">
             <objects>
                 <viewController id="vv6-yI-gUc" customClass="LostandFoundViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vhj-bY-dXs"/>
+                        <viewControllerLayoutGuide type="bottom" id="YCk-Z1-m7h"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="5qa-lt-Gk1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1836,12 +2102,16 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oIF-eF-yuO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1939" y="1537"/>
+            <point key="canvasLocation" x="1127" y="2485"/>
         </scene>
         <!--Emergency View Controller-->
         <scene sceneID="OYs-jR-LNm">
             <objects>
                 <viewController id="ua1-yU-gbw" customClass="EmergencyViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YLy-6X-x2S"/>
+                        <viewControllerLayoutGuide type="bottom" id="Q5n-oi-Dnh"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="f1g-5c-BZ9">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="1500"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -2066,12 +2336,16 @@ Use blue emergency phones</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="swh-hd-87N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2315" y="925"/>
+            <point key="canvasLocation" x="1259" y="845"/>
         </scene>
         <!--Book Store View Controller-->
         <scene sceneID="9tX-OT-lZE">
             <objects>
                 <viewController id="Hcv-Vj-yBx" customClass="BookStoreViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dcq-ir-9JI"/>
+                        <viewControllerLayoutGuide type="bottom" id="gaM-RO-EWa"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="fAC-LJ-QA5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -2160,12 +2434,16 @@ Use blue emergency phones</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qjC-Qo-cWx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2701" y="1615"/>
+            <point key="canvasLocation" x="453" y="1715"/>
         </scene>
         <!--Safe Walk View Controller-->
         <scene sceneID="Z3V-Qx-c4X">
             <objects>
                 <viewController id="KCx-gN-7cu" customClass="SafeWalkViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6Cv-eK-Vdi"/>
+                        <viewControllerLayoutGuide type="bottom" id="y0g-8z-mY7"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8xO-pe-VLX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="800"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -2286,12 +2564,16 @@ The Safe Walk personnel are identified by:
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nQ8-IC-fHQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3053" y="1523"/>
+            <point key="canvasLocation" x="29" y="2131"/>
         </scene>
         <!--Library Hour Op View Controller-->
         <scene sceneID="Gqs-pT-5sN">
             <objects>
                 <viewController id="Vhj-Ey-3l1" customClass="LibraryHourOpViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cOz-gp-QhU"/>
+                        <viewControllerLayoutGuide type="bottom" id="GAd-ZF-rYW"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="60s-Ym-gJx">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -2411,12 +2693,16 @@ The Safe Walk personnel are identified by:
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TFf-cr-zqn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1194" y="2089"/>
+            <point key="canvasLocation" x="-1202" y="2585"/>
         </scene>
         <!--Safe Walk Site View Controller-->
         <scene sceneID="9Lp-YJ-x7t">
             <objects>
                 <viewController id="iww-qq-YAe" customClass="SafeWalkSiteViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ifv-hX-yTm"/>
+                        <viewControllerLayoutGuide type="bottom" id="Yr8-V2-bUD"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="2pw-jK-tcZ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -2485,12 +2771,16 @@ The Safe Walk personnel are identified by:
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kqF-Mj-Kld" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3442" y="1546"/>
+            <point key="canvasLocation" x="594" y="2473"/>
         </scene>
         <!--Library Hours View Controller-->
         <scene sceneID="KfR-ZH-8c8">
             <objects>
                 <viewController id="xmC-eD-g1E" customClass="LibraryHoursViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="B6d-0R-aVd"/>
+                        <viewControllerLayoutGuide type="bottom" id="yTs-Rr-akX"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="jMw-zT-y8d">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -2559,12 +2849,16 @@ The Safe Walk personnel are identified by:
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DQ6-iE-vUe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1570" y="2089"/>
+            <point key="canvasLocation" x="-762" y="2585"/>
         </scene>
         <!--Library View Controller-->
         <scene sceneID="JbH-Tg-R59">
             <objects>
                 <viewController id="CL3-99-WM8" customClass="LibraryViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Kpa-XV-SUE"/>
+                        <viewControllerLayoutGuide type="bottom" id="PWL-w1-ucj"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Riw-aR-tzV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -2671,12 +2965,16 @@ The Safe Walk personnel are identified by:
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aqr-96-5sc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1194" y="2655"/>
+            <point key="canvasLocation" x="-1202" y="1995"/>
         </scene>
         <!--Library Ask Web View Controller-->
         <scene sceneID="4Gc-MQ-bJQ">
             <objects>
                 <viewController id="MId-zQ-ic6" customClass="LibraryAskWebViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mi8-g9-9ET"/>
+                        <viewControllerLayoutGuide type="bottom" id="glJ-MG-f93"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="7y9-0r-dO4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -2745,12 +3043,16 @@ The Safe Walk personnel are identified by:
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YBM-kL-wdD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1570" y="2655"/>
+            <point key="canvasLocation" x="-762" y="1995"/>
         </scene>
         <!--Library Citation View Controller-->
         <scene sceneID="X9a-h4-LSP">
             <objects>
                 <viewController id="eSd-q1-4AJ" customClass="LibraryCitationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QBh-Be-AT3"/>
+                        <viewControllerLayoutGuide type="bottom" id="Muh-YW-Rvr"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="XQI-TM-SeB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -2819,12 +3121,16 @@ The Safe Walk personnel are identified by:
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tw2-Ce-6Ws" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="798" y="1508"/>
+            <point key="canvasLocation" x="-1202" y="1389"/>
         </scene>
         <!--Food2 View Controller-->
         <scene sceneID="J0H-5Q-9iX">
             <objects>
                 <viewController id="hKq-Sa-3rp" customClass="Food2ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FET-pS-qot"/>
+                        <viewControllerLayoutGuide type="bottom" id="UWf-HY-zdA"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="GZu-4A-1Dh">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -2900,12 +3206,16 @@ The Safe Walk personnel are identified by:
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ubc-AE-c9L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2897" y="-518"/>
+            <point key="canvasLocation" x="843" y="891"/>
         </scene>
         <!--Food View Controller-->
         <scene sceneID="oAt-nW-Tce">
             <objects>
                 <viewController id="1qE-c4-Agi" customClass="FoodViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uIE-GI-rE7"/>
+                        <viewControllerLayoutGuide type="bottom" id="L0b-cc-8Pi"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="mYa-hy-6lJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -2984,12 +3294,16 @@ The Safe Walk personnel are identified by:
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wJp-1Q-P7s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2561" y="-518"/>
+            <point key="canvasLocation" x="507" y="891"/>
         </scene>
         <!--Traffic Home View Controller-->
         <scene sceneID="yz4-Gf-RFo">
             <objects>
                 <viewController id="KVl-3F-6UV" customClass="TrafficHomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="h1w-Ct-d6U"/>
+                        <viewControllerLayoutGuide type="bottom" id="E4E-zn-kTt"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="QB5-AW-CKE">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -3082,7 +3396,7 @@ The Safe Walk personnel are identified by:
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bgY-8d-qv1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1507" y="-950"/>
+            <point key="canvasLocation" x="-269" y="614"/>
         </scene>
     </scenes>
     <resources>

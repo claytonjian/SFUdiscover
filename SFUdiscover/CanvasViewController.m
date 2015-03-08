@@ -37,7 +37,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    NSURL *myURL = [NSURL URLWithString:@"https://www.sfu.ca/srs/security/patrol-operations/programs/safe-walk.html"];
+    NSURL *myURL = [NSURL URLWithString:@"https://cas.sfu.ca/cas/login?service=https%3A%2F%2Fcanvas.sfu.ca%2Flogin%2Fcas"];
     NSURLRequest *myRequest = [NSURLRequest requestWithURL:myURL];
     [_SFUCanvas loadRequest:myRequest];
 }
