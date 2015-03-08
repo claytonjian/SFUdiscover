@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LoyaltyViewController : UIViewController
+@interface LoyaltyViewController : UIViewController{
+    IBOutlet UIScrollView *scroller;
+}
 
 @end
