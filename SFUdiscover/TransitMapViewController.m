@@ -8,15 +8,16 @@
 
 #import "TransitMapViewController.h"
 #import "MapPin.h"
+#import "myButton.h"
 
 @interface TransitMapViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *stopNumber;
 
 @end
 
 @implementation TransitMapViewController
 
-@synthesize mapView, selection;
-@synthesize TMVCDelegate;
+@synthesize mapView, selection, TMVCDelegate;
 
 - (IBAction)goBack:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
@@ -34,7 +35,6 @@
     region.span.latitudeDelta = 0.0225;
     region.span.longitudeDelta = 0.0225;
     [self.mapView setRegion:region animated:YES];
-    
 }
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -46,28 +46,83 @@
 }
 
 - (MKAnnotationView *) mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation{
-    
     MKPinAnnotationView *myPin = [[MKPinAnnotationView alloc]initWithAnnotation:annotation reuseIdentifier:@"current"];
     myPin.pinColor = MKPinAnnotationColorPurple;
     myPin.animatesDrop = TRUE;
     
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+    myButton *button = [myButton buttonWithType:UIButtonTypeDetailDisclosure];
+    button.data = myPin;
     [button addTarget:self action:@selector(confirm:) forControlEvents:UIControlEventTouchUpInside];
-    selection = annotation.title;
     myPin.canShowCallout = YES;
     myPin.rightCalloutAccessoryView = button;
-    
     
     return myPin;
 }
 
--(void)confirm: (id) sender{
+- (IBAction)stopSelect:(id)sender {
+    NSString *stop = self.stopNumber.text;
+    int stopNum = [stop intValue];
+
+    switch (stopNum) {
+        case 59314:
+        case 58349:
+            selection = @"Production Way Station";
+            break;
+        case 52806:
+        case 51860:
+            selection = @"Transportation Center 2";
+            break;
+        case 51861:
+            selection = @"Transit Exchange";
+            break;
+        case 59044:
+            selection = @"University High Street";
+            break;
+        case 51862:
+            selection = @"Science Road";
+            break;
+        case 51863:
+            selection = @"Transportation Center 1";
+            break;
+        case 51864:
+            selection = @"West Campus Road";
+            break;
+        default:
+            break;
+    }
+    
+    if (selection != nil) {
+        NSString *alertMessage = [[NSString alloc]initWithFormat:@"You have selected %@, is this the right choice?", selection];
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Alert" message: alertMessage delegate:self cancelButtonTitle:@"No" otherButtonTitles:@"Yes", nil];
+        [alert show];
+    }
+    else{
+        NSString *alertMessage = [[NSString alloc]initWithFormat:@"You have entered an invalid bus stop number!"];
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Alert" message: alertMessage delegate:self cancelButtonTitle:@"Okay" otherButtonTitles:nil];
+        [alert show];
+        [self.stopNumber setText:@""];
+    }
+    [self.stopNumber resignFirstResponder];
+    
+}
+
+- (BOOL)textFieldShouldReturn: (UITextField *) textField{
+    [textField resignFirstResponder];
+    return YES;
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    [self.view endEditing:YES];
+}
+
+-(void) confirm: (myButton *) sender{
+    selection = sender.data.annotation.title;
     NSString *alertMessage = [[NSString alloc]initWithFormat:@"You have selected %@, is this the right choice?", selection];
     UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Alert" message: alertMessage delegate:self cancelButtonTitle:@"No" otherButtonTitles:@"Yes", nil];
     [alert show];
 }
 
--(void) alertView:(UIAlertView *) alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+-(void)alertView:(UIAlertView *) alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
     if(buttonIndex == 1){
         [self.TMVCDelegate passBack:self busStop:selection];
         [self dismissViewControllerAnimated:YES completion:nil];
@@ -126,6 +181,13 @@
     westCampusRoad.coordinate = region.center;
     westCampusRoad.title = @"West Campus Road";
     [mapView addAnnotation:westCampusRoad];
+    
+    MapPin *productionWayStation = [[MapPin alloc] init];
+    region.center.latitude = 49.253796;
+    region.center.longitude = -122.918154;
+    productionWayStation.coordinate = region.center;
+    productionWayStation.title = @"Production Way Station";
+    [mapView addAnnotation:productionWayStation];
 }
 
 

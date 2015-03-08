@@ -1,25 +1,25 @@
 //
-//  CanvasViewController.m
+//  LostandFoundViewController.m
 //  SFUdiscover
 //
-//  Created by Clayton Jian on 2015-02-27.
+//  Created by James Voong on 3/5/2015.
 //  Copyright (c) 2015 EngagingFoundations. All rights reserved.
 //
 
-#import "CanvasViewController.h"
+#import "LostandFoundViewController.h"
 
-@interface CanvasViewController ()
+@interface LostandFoundViewController ()
 
-@property (weak, nonatomic) IBOutlet UIWebView *SFUCanvas;
 
-@property (weak, nonatomic) IBOutlet UIButton *canvasToHome;
 
 @end
 
-@implementation CanvasViewController
+@implementation LostandFoundViewController
+
 - (IBAction)goBack:(id)sender {
     [self.navigationController popViewControllerAnimated:(YES)];
 }
+
 - (IBAction)goHome:(id)sender {
     [self.navigationController popToRootViewControllerAnimated:(YES)];
 }
@@ -37,9 +37,6 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    NSURL *myURL = [NSURL URLWithString:@"https://www.sfu.ca/srs/security/patrol-operations/programs/safe-walk.html"];
-    NSURLRequest *myRequest = [NSURLRequest requestWithURL:myURL];
-    [_SFUCanvas loadRequest:myRequest];
 }
 
 - (void)didReceiveMemoryWarning

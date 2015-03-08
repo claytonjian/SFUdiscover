@@ -7,6 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E222D4E1AAAF57400E57818 /* Food2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E222D4D1AAAF57400E57818 /* Food2ViewController.m */; };
+		0E277CF21AAAE887000AE237 /* LibraryAskWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E277CF11AAAE887000AE237 /* LibraryAskWebViewController.m */; };
+		0E277CF51AAAEB9D000AE237 /* LibraryCitationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E277CF41AAAEB9D000AE237 /* LibraryCitationViewController.m */; };
+		0EBBCFCB1AAAE0E100389114 /* LibraryHoursViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EBBCFCA1AAAE0E100389114 /* LibraryHoursViewController.m */; };
+		0EC209F01AAB0DB7008207FF /* Tutorial.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC209EF1AAB0DB7008207FF /* Tutorial.m */; };
+		0EC209F31AAB0E19008207FF /* Contributor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC209F21AAB0E19008207FF /* Contributor.m */; };
+		0EC20A3D1AAB0EF3008207FF /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC20A381AAB0EF3008207FF /* TFHpple.m */; };
+		0EC20A3E1AAB0EF3008207FF /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC20A3A1AAB0EF3008207FF /* TFHppleElement.m */; };
+		0EC20A3F1AAB0EF3008207FF /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC20A3C1AAB0EF3008207FF /* XPathQuery.m */; };
+		0EC20A421AAB1040008207FF /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EC20A411AAB1040008207FF /* libxml2.dylib */; };
+		0EC20A451AAB10FD008207FF /* TrafficViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC20A441AAB10FD008207FF /* TrafficViewController.m */; };
+		0EC6D53D1AA97FC30084B4C6 /* BookStoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC6D53C1AA97FC30084B4C6 /* BookStoreViewController.m */; };
+		0EC6D5481AA9A0170084B4C6 /* Locations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0EC6D5471AA9A0170084B4C6 /* Locations.plist */; };
+		0EC6D5501AA9B5AE0084B4C6 /* RL_WMC.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0EC6D54F1AA9B5AE0084B4C6 /* RL_WMC.plist */; };
+		0EC6D5521AA9B5FF0084B4C6 /* RL_MBC.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0EC6D5511AA9B5FF0084B4C6 /* RL_MBC.plist */; };
+		0EC6D5541AA9B6490084B4C6 /* RL_Cornerstone.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0EC6D5531AA9B6490084B4C6 /* RL_Cornerstone.plist */; };
+		0EE2FAA61AA9256D007A2F19 /* EmergencyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE2FAA31AA9256D007A2F19 /* EmergencyViewController.m */; };
+		0EE2FAAA1AA92AF6007A2F19 /* LostandFoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE2FAA91AA92AF6007A2F19 /* LostandFoundViewController.m */; };
+		0EEC41731AAAE72500B4AF19 /* LibraryAskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EEC41721AAAE72500B4AF19 /* LibraryAskViewController.m */; };
+		0EEC41771AAAE7DB00B4AF19 /* LibraryHourOpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EEC41761AAAE7DB00B4AF19 /* LibraryHourOpViewController.m */; };
+		0EF4ABC71AAAABFD007B1B12 /* SafeWalkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF4ABC61AAAABFD007B1B12 /* SafeWalkViewController.m */; };
+		0EF4ABCA1AAAB999007B1B12 /* SafeWalkSiteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF4ABC91AAAB999007B1B12 /* SafeWalkSiteViewController.m */; };
+		0EF731D21AAAF18200EBC23D /* FoodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF731D11AAAF18200EBC23D /* FoodViewController.m */; };
+		303C34031AAB9BF0001E95F7 /* TrafficHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 303C34021AAB9BF0001E95F7 /* TrafficHomeViewController.m */; };
 		4925CF6C1AA566200026305C /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4925CF6B1AA566200026305C /* SettingsViewController.m */; };
 		4929B6171AA133D300963AA7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4929B6161AA133D300963AA7 /* Foundation.framework */; };
 		4929B6191AA133D300963AA7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4929B6181AA133D300963AA7 /* CoreGraphics.framework */; };
@@ -40,6 +64,7 @@
 		97361C031AA8EC9A0075B4A5 /* BusTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97361C021AA8EC9A0075B4A5 /* BusTableViewController.m */; };
 		97361C061AA8F8460075B4A5 /* TransitMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97361C051AA8F8460075B4A5 /* TransitMapViewController.m */; };
 		97361C091AA8F8CC0075B4A5 /* MapPin.m in Sources */ = {isa = PBXBuildFile; fileRef = 97361C081AA8F8CC0075B4A5 /* MapPin.m */; };
+		97D44E6B1AABB11F00B0A91C /* myButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D44E6A1AABB11F00B0A91C /* myButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +78,49 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E222D4C1AAAF57400E57818 /* Food2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Food2ViewController.h; sourceTree = "<group>"; };
+		0E222D4D1AAAF57400E57818 /* Food2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Food2ViewController.m; sourceTree = "<group>"; };
+		0E277CF01AAAE887000AE237 /* LibraryAskWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryAskWebViewController.h; sourceTree = "<group>"; };
+		0E277CF11AAAE887000AE237 /* LibraryAskWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryAskWebViewController.m; sourceTree = "<group>"; };
+		0E277CF31AAAEB9D000AE237 /* LibraryCitationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryCitationViewController.h; sourceTree = "<group>"; };
+		0E277CF41AAAEB9D000AE237 /* LibraryCitationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryCitationViewController.m; sourceTree = "<group>"; };
+		0EBBCFC91AAAE0E100389114 /* LibraryHoursViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryHoursViewController.h; sourceTree = "<group>"; };
+		0EBBCFCA1AAAE0E100389114 /* LibraryHoursViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryHoursViewController.m; sourceTree = "<group>"; };
+		0EC209EE1AAB0DB7008207FF /* Tutorial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tutorial.h; sourceTree = "<group>"; };
+		0EC209EF1AAB0DB7008207FF /* Tutorial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tutorial.m; sourceTree = "<group>"; };
+		0EC209F11AAB0E19008207FF /* Contributor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contributor.h; sourceTree = "<group>"; };
+		0EC209F21AAB0E19008207FF /* Contributor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contributor.m; sourceTree = "<group>"; };
+		0EC20A371AAB0EF3008207FF /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
+		0EC20A381AAB0EF3008207FF /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHpple.m; sourceTree = "<group>"; };
+		0EC20A391AAB0EF3008207FF /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHppleElement.h; sourceTree = "<group>"; };
+		0EC20A3A1AAB0EF3008207FF /* TFHppleElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHppleElement.m; sourceTree = "<group>"; };
+		0EC20A3B1AAB0EF3008207FF /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
+		0EC20A3C1AAB0EF3008207FF /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
+		0EC20A411AAB1040008207FF /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		0EC20A431AAB10FD008207FF /* TrafficViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrafficViewController.h; sourceTree = "<group>"; };
+		0EC20A441AAB10FD008207FF /* TrafficViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrafficViewController.m; sourceTree = "<group>"; };
+		0EC6D53B1AA97FC30084B4C6 /* BookStoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookStoreViewController.h; sourceTree = "<group>"; };
+		0EC6D53C1AA97FC30084B4C6 /* BookStoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookStoreViewController.m; sourceTree = "<group>"; };
+		0EC6D5471AA9A0170084B4C6 /* Locations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Locations.plist; sourceTree = "<group>"; };
+		0EC6D54F1AA9B5AE0084B4C6 /* RL_WMC.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RL_WMC.plist; sourceTree = "<group>"; };
+		0EC6D5511AA9B5FF0084B4C6 /* RL_MBC.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RL_MBC.plist; sourceTree = "<group>"; };
+		0EC6D5531AA9B6490084B4C6 /* RL_Cornerstone.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RL_Cornerstone.plist; sourceTree = "<group>"; };
+		0EE2FAA21AA9256D007A2F19 /* EmergencyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmergencyViewController.h; sourceTree = "<group>"; };
+		0EE2FAA31AA9256D007A2F19 /* EmergencyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmergencyViewController.m; sourceTree = "<group>"; };
+		0EE2FAA81AA92AF6007A2F19 /* LostandFoundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LostandFoundViewController.h; sourceTree = "<group>"; };
+		0EE2FAA91AA92AF6007A2F19 /* LostandFoundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LostandFoundViewController.m; sourceTree = "<group>"; };
+		0EEC41711AAAE72500B4AF19 /* LibraryAskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryAskViewController.h; sourceTree = "<group>"; };
+		0EEC41721AAAE72500B4AF19 /* LibraryAskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryAskViewController.m; sourceTree = "<group>"; };
+		0EEC41751AAAE7DB00B4AF19 /* LibraryHourOpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryHourOpViewController.h; sourceTree = "<group>"; };
+		0EEC41761AAAE7DB00B4AF19 /* LibraryHourOpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryHourOpViewController.m; sourceTree = "<group>"; };
+		0EF4ABC51AAAABFD007B1B12 /* SafeWalkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeWalkViewController.h; sourceTree = "<group>"; };
+		0EF4ABC61AAAABFD007B1B12 /* SafeWalkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeWalkViewController.m; sourceTree = "<group>"; };
+		0EF4ABC81AAAB999007B1B12 /* SafeWalkSiteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeWalkSiteViewController.h; sourceTree = "<group>"; };
+		0EF4ABC91AAAB999007B1B12 /* SafeWalkSiteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeWalkSiteViewController.m; sourceTree = "<group>"; };
+		0EF731D01AAAF18200EBC23D /* FoodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodViewController.h; sourceTree = "<group>"; };
+		0EF731D11AAAF18200EBC23D /* FoodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodViewController.m; sourceTree = "<group>"; };
+		303C34011AAB9BF0001E95F7 /* TrafficHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrafficHomeViewController.h; sourceTree = "<group>"; };
+		303C34021AAB9BF0001E95F7 /* TrafficHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrafficHomeViewController.m; sourceTree = "<group>"; };
 		4925CF6A1AA566200026305C /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		4925CF6B1AA566200026305C /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		4929B6131AA133D300963AA7 /* SFUdiscover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SFUdiscover.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,6 +177,8 @@
 		97361C051AA8F8460075B4A5 /* TransitMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitMapViewController.m; sourceTree = "<group>"; };
 		97361C071AA8F8CC0075B4A5 /* MapPin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPin.h; sourceTree = "<group>"; };
 		97361C081AA8F8CC0075B4A5 /* MapPin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPin.m; sourceTree = "<group>"; };
+		97D44E6A1AABB11F00B0A91C /* myButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myButton.m; sourceTree = "<group>"; };
+		97D44E6C1AABB13800B0A91C /* myButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myButton.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +186,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EC20A421AAB1040008207FF /* libxml2.dylib in Frameworks */,
 				4929B6191AA133D300963AA7 /* CoreGraphics.framework in Frameworks */,
 				4929B61B1AA133D300963AA7 /* UIKit.framework in Frameworks */,
 				4929B6171AA133D300963AA7 /* Foundation.framework in Frameworks */,
@@ -135,6 +206,64 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0EC209ED1AAB0D88008207FF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0EC209EE1AAB0DB7008207FF /* Tutorial.h */,
+				0EC209EF1AAB0DB7008207FF /* Tutorial.m */,
+				0EC209F11AAB0E19008207FF /* Contributor.h */,
+				0EC209F21AAB0E19008207FF /* Contributor.m */,
+				0EC20A431AAB10FD008207FF /* TrafficViewController.h */,
+				0EC20A441AAB10FD008207FF /* TrafficViewController.m */,
+				303C34011AAB9BF0001E95F7 /* TrafficHomeViewController.h */,
+				303C34021AAB9BF0001E95F7 /* TrafficHomeViewController.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0EC20A401AAB0F1D008207FF /* Hpple */ = {
+			isa = PBXGroup;
+			children = (
+				0EC20A371AAB0EF3008207FF /* TFHpple.h */,
+				0EC20A381AAB0EF3008207FF /* TFHpple.m */,
+				0EC20A391AAB0EF3008207FF /* TFHppleElement.h */,
+				0EC20A3A1AAB0EF3008207FF /* TFHppleElement.m */,
+				0EC20A3B1AAB0EF3008207FF /* XPathQuery.h */,
+				0EC20A3C1AAB0EF3008207FF /* XPathQuery.m */,
+			);
+			name = Hpple;
+			sourceTree = "<group>";
+		};
+		0EEC41741AAAE73B00B4AF19 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				0EBBCFC91AAAE0E100389114 /* LibraryHoursViewController.h */,
+				0EBBCFCA1AAAE0E100389114 /* LibraryHoursViewController.m */,
+				0EEC41711AAAE72500B4AF19 /* LibraryAskViewController.h */,
+				0EEC41721AAAE72500B4AF19 /* LibraryAskViewController.m */,
+				49B69B041AA2A51800B3AC66 /* LibraryViewController.h */,
+				49B69B051AA2A51800B3AC66 /* LibraryViewController.m */,
+				0EEC41751AAAE7DB00B4AF19 /* LibraryHourOpViewController.h */,
+				0EEC41761AAAE7DB00B4AF19 /* LibraryHourOpViewController.m */,
+				0E277CF01AAAE887000AE237 /* LibraryAskWebViewController.h */,
+				0E277CF11AAAE887000AE237 /* LibraryAskWebViewController.m */,
+				0E277CF31AAAEB9D000AE237 /* LibraryCitationViewController.h */,
+				0E277CF41AAAEB9D000AE237 /* LibraryCitationViewController.m */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		0EF731CF1AAAF16100EBC23D /* Restaurant */ = {
+			isa = PBXGroup;
+			children = (
+				0EF731D01AAAF18200EBC23D /* FoodViewController.h */,
+				0EF731D11AAAF18200EBC23D /* FoodViewController.m */,
+				0E222D4C1AAAF57400E57818 /* Food2ViewController.h */,
+				0E222D4D1AAAF57400E57818 /* Food2ViewController.m */,
+			);
+			name = Restaurant;
+			sourceTree = "<group>";
+		};
 		4929B60A1AA133D300963AA7 = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +286,7 @@
 		4929B6151AA133D300963AA7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0EC20A411AAB1040008207FF /* libxml2.dylib */,
 				4929B6161AA133D300963AA7 /* Foundation.framework */,
 				4929B6181AA133D300963AA7 /* CoreGraphics.framework */,
 				4929B61A1AA133D300963AA7 /* UIKit.framework */,
@@ -168,11 +298,25 @@
 		4929B61C1AA133D300963AA7 /* SFUdiscover */ = {
 			isa = PBXGroup;
 			children = (
+				0EC20A401AAB0F1D008207FF /* Hpple */,
+				0EC209ED1AAB0D88008207FF /* Model */,
+				0EF731CF1AAAF16100EBC23D /* Restaurant */,
+				0EEC41741AAAE73B00B4AF19 /* Library */,
+				0EE2FAA21AA9256D007A2F19 /* EmergencyViewController.h */,
+				0EE2FAA31AA9256D007A2F19 /* EmergencyViewController.m */,
+				0EE2FAA81AA92AF6007A2F19 /* LostandFoundViewController.h */,
+				0EE2FAA91AA92AF6007A2F19 /* LostandFoundViewController.m */,
+				97D44E6C1AABB13800B0A91C /* myButton.h */,
+				97D44E6A1AABB11F00B0A91C /* myButton.m */,
 				4929B6251AA133D700963AA7 /* AppDelegate.h */,
 				4929B6261AA133D700963AA7 /* AppDelegate.m */,
 				4929B6281AA133D800963AA7 /* Main_iPhone.storyboard */,
+				0EF4ABC81AAAB999007B1B12 /* SafeWalkSiteViewController.h */,
+				0EF4ABC91AAAB999007B1B12 /* SafeWalkSiteViewController.m */,
 				97361C071AA8F8CC0075B4A5 /* MapPin.h */,
 				97361C081AA8F8CC0075B4A5 /* MapPin.m */,
+				0EF4ABC51AAAABFD007B1B12 /* SafeWalkViewController.h */,
+				0EF4ABC61AAAABFD007B1B12 /* SafeWalkViewController.m */,
 				97361C041AA8F8460075B4A5 /* TransitMapViewController.h */,
 				97361C051AA8F8460075B4A5 /* TransitMapViewController.m */,
 				97361BFE1AA8E9810075B4A5 /* BusScheduleViewController.h */,
@@ -201,10 +345,10 @@
 				4929B6641AA135EE00963AA7 /* NewsFeedViewController.m */,
 				4929B6661AA135FD00963AA7 /* ServicesViewController.h */,
 				4929B6671AA135FD00963AA7 /* ServicesViewController.m */,
-				49B69B041AA2A51800B3AC66 /* LibraryViewController.h */,
-				49B69B051AA2A51800B3AC66 /* LibraryViewController.m */,
 				4925CF6A1AA566200026305C /* SettingsViewController.h */,
 				4925CF6B1AA566200026305C /* SettingsViewController.m */,
+				0EC6D53B1AA97FC30084B4C6 /* BookStoreViewController.h */,
+				0EC6D53C1AA97FC30084B4C6 /* BookStoreViewController.m */,
 				4929B61D1AA133D400963AA7 /* Supporting Files */,
 				4E5E6ED81AABAAC3004DC31F /* AddEventViewController.h */,
 				4E5E6ED91AABAAC3004DC31F /* AddEventViewController.m */,
@@ -223,6 +367,10 @@
 				4929B6221AA133D600963AA7 /* main.m */,
 				4929B61E1AA133D400963AA7 /* SFUdiscover-Info.plist */,
 				4929B6241AA133D600963AA7 /* SFUdiscover-Prefix.pch */,
+				0EC6D5471AA9A0170084B4C6 /* Locations.plist */,
+				0EC6D54F1AA9B5AE0084B4C6 /* RL_WMC.plist */,
+				0EC6D5511AA9B5FF0084B4C6 /* RL_MBC.plist */,
+				0EC6D5531AA9B6490084B4C6 /* RL_Cornerstone.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -322,8 +470,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4929B62D1AA133D800963AA7 /* Main_iPad.storyboard in Resources */,
+				0EC6D5521AA9B5FF0084B4C6 /* RL_MBC.plist in Resources */,
 				4929B6321AA133DA00963AA7 /* Images.xcassets in Resources */,
+				0EC6D5501AA9B5AE0084B4C6 /* RL_WMC.plist in Resources */,
 				4929B62A1AA133D800963AA7 /* Main_iPhone.storyboard in Resources */,
+				0EC6D5541AA9B6490084B4C6 /* RL_Cornerstone.plist in Resources */,
+				0EC6D5481AA9A0170084B4C6 /* Locations.plist in Resources */,
 				4929B6211AA133D600963AA7 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,6 +495,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97D44E6B1AABB11F00B0A91C /* myButton.m in Sources */,
+				0EC20A3E1AAB0EF3008207FF /* TFHppleElement.m in Sources */,
 				97361C091AA8F8CC0075B4A5 /* MapPin.m in Sources */,
 				4929B6651AA135EE00963AA7 /* NewsFeedViewController.m in Sources */,
 				4929B6501AA1359900963AA7 /* CanvasViewController.m in Sources */,
@@ -351,11 +505,17 @@
 				4929B6301AA133D900963AA7 /* HomeViewController.m in Sources */,
 				4E5E6EE01AABBCAE004DC31F /* DailyViewController.m in Sources */,
 				97361C061AA8F8460075B4A5 /* TransitMapViewController.m in Sources */,
+				0EBBCFCB1AAAE0E100389114 /* LibraryHoursViewController.m in Sources */,
 				97361C031AA8EC9A0075B4A5 /* BusTableViewController.m in Sources */,
+				0EC6D53D1AA97FC30084B4C6 /* BookStoreViewController.m in Sources */,
+				0E222D4E1AAAF57400E57818 /* Food2ViewController.m in Sources */,
+				0EC20A451AAB10FD008207FF /* TrafficViewController.m in Sources */,
 				4929B6271AA133D700963AA7 /* AppDelegate.m in Sources */,
 				97361C001AA8E9810075B4A5 /* BusScheduleViewController.m in Sources */,
 				4929B65C1AA135C700963AA7 /* NavigationViewController.m in Sources */,
 				49B69B061AA2A51800B3AC66 /* LibraryViewController.m in Sources */,
+				0EE2FAAA1AA92AF6007A2F19 /* LostandFoundViewController.m in Sources */,
+				0E277CF51AAAEB9D000AE237 /* LibraryCitationViewController.m in Sources */,
 				4929B6231AA133D600963AA7 /* main.m in Sources */,
 				4929B65F1AA135D100963AA7 /* TransitViewController.m in Sources */,
 				4E5E6EDD1AABAB8B004DC31F /* EventManager.m in Sources */,
@@ -363,7 +523,11 @@
 				4929B6591AA135BC00963AA7 /* CalendarViewController.m in Sources */,
 				4929B6681AA135FD00963AA7 /* ServicesViewController.m in Sources */,
 				4929B6621AA135DF00963AA7 /* LoyaltyViewController.m in Sources */,
+				303C34031AAB9BF0001E95F7 /* TrafficHomeViewController.m in Sources */,
+				0E277CF21AAAE887000AE237 /* LibraryAskWebViewController.m in Sources */,
 				4925CF6C1AA566200026305C /* SettingsViewController.m in Sources */,
+				0EC20A3D1AAB0EF3008207FF /* TFHpple.m in Sources */,
+				0EE2FAA61AA9256D007A2F19 /* EmergencyViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,6 +617,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SDKROOT)/usr/include/libxml2",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -486,6 +655,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SDKROOT)/usr/include/libxml2",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

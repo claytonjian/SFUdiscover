@@ -7,7 +7,6 @@
 //
 
 #import "TransitViewController.h"
-#import "TransitMapViewController.h"
 
 @interface TransitViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *transitToHome;
@@ -16,6 +15,7 @@
 @end
 
 @implementation TransitViewController
+
 - (IBAction)goBack:(id)sender {
     [self.navigationController popViewControllerAnimated:(YES)];
 }

@@ -1,22 +1,20 @@
 //
-//  CanvasViewController.m
+//  LibraryAskWebViewController.m
 //  SFUdiscover
 //
-//  Created by Clayton Jian on 2015-02-27.
+//  Created by James Voong on 3/7/2015.
 //  Copyright (c) 2015 EngagingFoundations. All rights reserved.
 //
 
-#import "CanvasViewController.h"
+#import "LibraryAskWebViewController.h"
 
-@interface CanvasViewController ()
-
-@property (weak, nonatomic) IBOutlet UIWebView *SFUCanvas;
-
-@property (weak, nonatomic) IBOutlet UIButton *canvasToHome;
+@interface LibraryAskWebViewController ()
+@property (weak, nonatomic) IBOutlet UIWebView *LibraryAsk;
 
 @end
 
-@implementation CanvasViewController
+@implementation LibraryAskWebViewController
+
 - (IBAction)goBack:(id)sender {
     [self.navigationController popViewControllerAnimated:(YES)];
 }
@@ -37,9 +35,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    NSURL *myURL = [NSURL URLWithString:@"https://www.sfu.ca/srs/security/patrol-operations/programs/safe-walk.html"];
+    NSURL *myURL = [NSURL URLWithString:@"http://www.lib.sfu.ca/help/ask-us/"];
     NSURLRequest *myRequest = [NSURLRequest requestWithURL:myURL];
-    [_SFUCanvas loadRequest:myRequest];
+    [_LibraryAsk loadRequest:myRequest];
 }
 
 - (void)didReceiveMemoryWarning

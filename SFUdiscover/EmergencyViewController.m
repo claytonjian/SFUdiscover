@@ -1,25 +1,23 @@
 //
-//  CanvasViewController.m
-//  SFUdiscover
+//  EmergencyViewController.m
+//  sfudiscoverjames
 //
-//  Created by Clayton Jian on 2015-02-27.
-//  Copyright (c) 2015 EngagingFoundations. All rights reserved.
+//  Created by James Voong on 3/1/2015.
+//  Copyright (c) 2015 JamesVoong. All rights reserved.
 //
 
-#import "CanvasViewController.h"
+#import "EmergencyViewController.h"
 
-@interface CanvasViewController ()
-
-@property (weak, nonatomic) IBOutlet UIWebView *SFUCanvas;
-
-@property (weak, nonatomic) IBOutlet UIButton *canvasToHome;
+@interface EmergencyViewController ()
 
 @end
 
-@implementation CanvasViewController
+@implementation EmergencyViewController
+
 - (IBAction)goBack:(id)sender {
     [self.navigationController popViewControllerAnimated:(YES)];
 }
+
 - (IBAction)goHome:(id)sender {
     [self.navigationController popToRootViewControllerAnimated:(YES)];
 }
@@ -37,9 +35,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    NSURL *myURL = [NSURL URLWithString:@"https://www.sfu.ca/srs/security/patrol-operations/programs/safe-walk.html"];
-    NSURLRequest *myRequest = [NSURLRequest requestWithURL:myURL];
-    [_SFUCanvas loadRequest:myRequest];
+    [scroller setScrollEnabled:YES];
+    [scroller setContentSize:CGSizeMake(320, 1500)];
 }
 
 - (void)didReceiveMemoryWarning
@@ -48,7 +45,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -57,6 +53,6 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
-*/
+
 
 @end
