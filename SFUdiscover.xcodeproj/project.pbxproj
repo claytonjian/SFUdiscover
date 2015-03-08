@@ -23,6 +23,9 @@
 		0EE2FAA61AA9256D007A2F19 /* EmergencyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE2FAA31AA9256D007A2F19 /* EmergencyViewController.m */; };
 		0EE2FAAA1AA92AF6007A2F19 /* LostandFoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE2FAA91AA92AF6007A2F19 /* LostandFoundViewController.m */; };
 		303C34031AAB9BF0001E95F7 /* TrafficHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 303C34021AAB9BF0001E95F7 /* TrafficHomeViewController.m */; };
+		304816E51AAD01E800D1F083 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC20A3C1AAB0EF3008207FF /* XPathQuery.m */; };
+		304816E61AAD01ED00D1F083 /* Tutorial.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC209EF1AAB0DB7008207FF /* Tutorial.m */; };
+		304816E71AAD01F100D1F083 /* Contributor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC209F21AAB0E19008207FF /* Contributor.m */; };
 		4925CF6C1AA566200026305C /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4925CF6B1AA566200026305C /* SettingsViewController.m */; };
 		4929B6171AA133D300963AA7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4929B6161AA133D300963AA7 /* Foundation.framework */; };
 		4929B6191AA133D300963AA7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4929B6181AA133D300963AA7 /* CoreGraphics.framework */; };
@@ -482,6 +485,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				304816E71AAD01F100D1F083 /* Contributor.m in Sources */,
+				304816E61AAD01ED00D1F083 /* Tutorial.m in Sources */,
+				304816E51AAD01E800D1F083 /* XPathQuery.m in Sources */,
 				97D44E6B1AABB11F00B0A91C /* myButton.m in Sources */,
 				0EC20A3E1AAB0EF3008207FF /* TFHppleElement.m in Sources */,
 				97361C091AA8F8CC0075B4A5 /* MapPin.m in Sources */,
