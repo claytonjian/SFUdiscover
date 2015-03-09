@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface LibraryAskViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIButton *askLibrarianButton;
 
 @end

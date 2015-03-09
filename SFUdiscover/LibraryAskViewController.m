@@ -34,6 +34,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    _askLibrarianButton.layer.borderWidth = .5f;
+    _askLibrarianButton.layer.borderColor = [[UIColor lightGrayColor]CGColor];
 }
 
 - (void)didReceiveMemoryWarning

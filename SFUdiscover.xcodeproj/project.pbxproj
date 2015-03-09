@@ -355,6 +355,7 @@
 				4929B62F1AA133D900963AA7 /* HomeViewController.m */,
 				4929B6311AA133DA00963AA7 /* Images.xcassets */,
 				496D138A1AAA7FB600256D0D /* Page1.jpg */,
+				7E4C80541AAD1BB9001BD4C4 /* setting.png */,
 				4929B64E1AA1359900963AA7 /* CanvasViewController.h */,
 				4929B64F1AA1359900963AA7 /* CanvasViewController.m */,
 				4929B6511AA135A400963AA7 /* ConnectViewController.h */,
