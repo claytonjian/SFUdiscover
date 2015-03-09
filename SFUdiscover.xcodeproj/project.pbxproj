@@ -504,6 +504,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				304816EC1AAD0F4500D1F083 /* SafeWalkViewController.m in Sources */,
+				304816EB1AAD0F3F00D1F083 /* SafeWalkSiteViewController.m in Sources */,
+				304816EA1AAD0F3600D1F083 /* LibraryHourOpViewController.m in Sources */,
+				304816E91AAD0F2D00D1F083 /* LibraryAskViewController.m in Sources */,
+				304816E81AAD0F2400D1F083 /* FoodViewController.m in Sources */,
 				304816E71AAD01F100D1F083 /* Contributor.m in Sources */,
 				304816E61AAD01ED00D1F083 /* Tutorial.m in Sources */,
 				304816E51AAD01E800D1F083 /* XPathQuery.m in Sources */,

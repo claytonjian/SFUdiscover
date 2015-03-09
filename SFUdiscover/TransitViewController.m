@@ -35,7 +35,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    _mapButton.layer.borderWidth = .5f;
+    _mapButton.layer.borderColor = [[UIColor lightGrayColor]CGColor];
+    _busSchedButton.layer.borderWidth = .5f;
+    _busSchedButton.layer.borderColor = [[UIColor lightGrayColor]CGColor];
 }
 
 - (void)didReceiveMemoryWarning
