@@ -1,16 +1,26 @@
 //
 //  NavigationViewController.m
+//  Implementation file for the Navigation View Controller
+//
 //  SFUdiscover
 //
 //  Created by Clayton Jian on 2015-02-27.
+//  Contributors: Clayton Jian, James Voong
+//
+//  - Declared a scroll view for the zooming map image, an image view for the map, a mutable array for the available
+//    location search options, arrays for different navigation options, buildings, and the search results
+//  - Added functions to enable zooming of image, search functionality, and displaying of items and search results
+//
 //  Copyright (c) 2015 EngagingFoundations. All rights reserved.
 //
 
 #import "NavigationViewController.h"
 
 @interface NavigationViewController (){
-     CGRect bHallFrame;
+    CGRect bHallFrame;
 }
+
+// created data types for use in view controller
 
 @property (weak, nonatomic) IBOutlet UIButton *navigationToHome;
 @property (strong, nonatomic, readwrite) IBOutlet UIScrollView *scrollView;
@@ -24,7 +34,9 @@
 
 @property (strong, nonatomic) IBOutlet UIView *buttons;
 @property (weak, nonatomic) IBOutlet UIButton *bHall;
- 
+
+
+// declare functions for use in scroll view
 
 - (void)centerScrollViewContents;
 - (void)scrollViewDoubleTapped:(UITapGestureRecognizer*)recognizer;
@@ -38,13 +50,14 @@
 @synthesize imageView = _imageView;
 @synthesize buttons = _buttons;
 
-
 - (IBAction)goBack:(id)sender {
     [self.navigationController popViewControllerAnimated:(YES)];
 }
+
 - (IBAction)goHome:(id)sender {
     [self.navigationController popToRootViewControllerAnimated:(YES)];
 }
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -55,12 +68,12 @@
 }
 
 - (void)scrollViewDidZoom:(UIScrollView *)scrollView {
-    // The scroll view has zoomed, so you need to re-center the contents
+    // recenters contents of scroll view
     
     [self centerScrollViewContents];
     
     
-     self.bHall.frame = CGRectMake((bHallFrame.origin.x * self.scrollView.zoomScale),
+    self.bHall.frame = CGRectMake((bHallFrame.origin.x * self.scrollView.zoomScale),
                                   (bHallFrame.origin.y * self.scrollView.zoomScale),
                                   bHallFrame.size.width,
                                   bHallFrame.size.height);
@@ -68,12 +81,12 @@
 }
 
 - (UIView*)viewForZoomingInScrollView:(UIScrollView *)scrollView {
-    // Return the view that you want to zoom
+    // return view that you wish to zoom
     return self.imageView;
 }
 
 - (void)scrollViewTwoFingerTapped:(UITapGestureRecognizer*)recognizer {
-    // Zoom out slightly, capping at the minimum zoom scale specified by the scroll view
+    // zoom out slightly, capping at the minimum zoom scale specified by the scroll view
     CGFloat newZoomScale = self.scrollView.zoomScale / 1.5f;
     newZoomScale = MAX(newZoomScale, self.scrollView.minimumZoomScale);
     [self.scrollView setZoomScale:newZoomScale animated:YES];
@@ -81,14 +94,12 @@
 }
 
 - (void)scrollViewDoubleTapped:(UITapGestureRecognizer*)recognizer {
-    // 1
+    // zoom in map with double tapping
     CGPoint pointInView = [recognizer locationInView:self.imageView];
     
-    // 2
     CGFloat newZoomScale = self.scrollView.zoomScale * 1.5f;
     newZoomScale = MIN(newZoomScale, self.scrollView.maximumZoomScale);
     
-    // 3
     CGSize scrollViewSize = self.scrollView.bounds.size;
     
     CGFloat w = scrollViewSize.width / newZoomScale;
@@ -98,7 +109,6 @@
     
     CGRect rectToZoomTo = CGRectMake(x, y, w, h);
     
-    // 4
     [self.scrollView zoomToRect:rectToZoomTo animated:YES];
     
 }
@@ -125,60 +135,63 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-     bHallFrame = self.bHall.frame;
+    bHallFrame = self.bHall.frame;
     
     
     
-    // 1
+    // load map to image view
     UIImage *image = [UIImage imageNamed:@"Page1.jpg"];
     self.imageView = [[UIImageView alloc] initWithImage:image];
     // factor of 1.5625
     // Blusson Hall - (5237, 900)
-    [self.imageView setFrame:CGRectMake(250, 840, 14218.75, 9100)];
+    [self.imageView setFrame:CGRectMake(250, 840, 14843.75, 9500)];
     [self.scrollView addSubview:self.imageView];
     
+    /*
+     self.bHall = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+     [self.bHall addTarget:self action:@selector(aMethod:)forControlEvents:UIControlEventTouchUpInside];
+     [self.bHall setTitle:@"Blusson Hall" forState:UIControlStateNormal];
+     [self.scrollView addSubview:self.bHall];
+     bHallFrame.origin.x = 8182.8125;
+     bHallFrame.origin.y = 1406.25;
+     */
     
-    self.bHall = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [self.bHall addTarget:self action:@selector(aMethod:)forControlEvents:UIControlEventTouchUpInside];
-    [self.bHall setTitle:@"Blusson Hall" forState:UIControlStateNormal];
-    [self.scrollView addSubview:self.bHall];
-    bHallFrame.origin.x = 8182.8125;
-    bHallFrame.origin.y = 1406.25;
     
+    // create available search options for search bar
     self.navOptions = [[NSArray alloc] initWithObjects:@"Building", @"Room", @"Recent", @"Favorites", @"Nearest Amenity", nil];
     self.searchResults = [[NSMutableArray alloc]init];
     self.buildings = [[NSArray alloc]initWithObjects:   @"Academic Quadrangle (AQ)",
-                                                        @"Alcan Aquatic Research Centre (AAB)",
-                                                        @"Applied Science Building (ASB)",
-                                                        @"Blusson Hall (BLU)",
-                                                        @"Bee Research Building (BEE)",
-                                                        @"Childcare Centre (CCC)",
-                                                        @"Diamond Alumni Centre (DAC)",
-                                                        @"Dining Hall (DH)",
-                                                        @"Discovery 1 (DIS1)",
-                                                        @"Discovery 2 (DIS2)",
-                                                        @"Education Building (EDB)",
-                                                        @"Facilities Services (FS)",
-                                                        @"Greenhouses (GH)",
-                                                        @"Halpern Centre (HC)",
-                                                        @"Lorne Davies Complex (LDC)",
-                                                        @"Maggie Benston Centre (MBC)",
-                                                        @"Robert C. Brown Hall (RCB)",
-                                                        @"Saywell Hall (SWH)",
-                                                        @"Shrum Science Centre Biology (SCB)",
-                                                        @"Shrum Science Centre Chemistry (SCC)",
-                                                        @"Shrum Science Centre Kinesiology (SCK)",
-                                                        @"Science Research Annex (SRA)",
-                                                        @"Strand Hall (SH)",
-                                                        @"Strand Hall Annex (SHA)",
-                                                        @"T3 - Archaeology Trailer (T3)",
-                                                        @"Technology & Science Complex 1 (TASC 1)",
-                                                        @"Technology & Science Complex 2 (TASC 2)," ,
-                                                        @"Transportation Centre (TC)",
-                                                        @"University Theatre (TH)",
-                                                        @"W.A.C. Bennett Library (LIB)",
-                                                        @"West Mall Centre (WMC)",
-                                                        @"Water Tower Building (WTB)", nil];
+                      @"Alcan Aquatic Research Centre (AAB)",
+                      @"Applied Science Building (ASB)",
+                      @"Blusson Hall (BLU)",
+                      @"Bee Research Building (BEE)",
+                      @"Childcare Centre (CCC)",
+                      @"Diamond Alumni Centre (DAC)",
+                      @"Dining Hall (DH)",
+                      @"Discovery 1 (DIS1)",
+                      @"Discovery 2 (DIS2)",
+                      @"Education Building (EDB)",
+                      @"Facilities Services (FS)",
+                      @"Greenhouses (GH)",
+                      @"Halpern Centre (HC)",
+                      @"Lorne Davies Complex (LDC)",
+                      @"Maggie Benston Centre (MBC)",
+                      @"Robert C. Brown Hall (RCB)",
+                      @"Saywell Hall (SWH)",
+                      @"Shrum Science Centre Biology (SCB)",
+                      @"Shrum Science Centre Chemistry (SCC)",
+                      @"Shrum Science Centre Kinesiology (SCK)",
+                      @"Science Research Annex (SRA)",
+                      @"Strand Hall (SH)",
+                      @"Strand Hall Annex (SHA)",
+                      @"T3 - Archaeology Trailer (T3)",
+                      @"Technology & Science Complex 1 (TASC 1)",
+                      @"Technology & Science Complex 2 (TASC 2)," ,
+                      @"Transportation Centre (TC)",
+                      @"University Theatre (TH)",
+                      @"W.A.C. Bennett Library (LIB)",
+                      @"West Mall Centre (WMC)",
+                      @"Water Tower Building (WTB)", nil];
     self.searchOptions = [[NSMutableArray alloc]init];
     
     for (int i = 0; i < [self.navOptions count]; i++) {
@@ -189,10 +202,7 @@
     }
     
     
-    // 2
     self.scrollView.contentSize = image.size;
-    
-    // 3
     
     UITapGestureRecognizer *doubleTapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(scrollViewDoubleTapped:)];
     doubleTapRecognizer.numberOfTapsRequired = 2;
@@ -208,20 +218,17 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
-    // 4
     CGRect scrollViewFrame = self.scrollView.frame;
     CGFloat scaleWidth = scrollViewFrame.size.width / self.scrollView.contentSize.width;
     CGFloat scaleHeight = scrollViewFrame.size.height / self.scrollView.contentSize.height;
     CGFloat minScale = MIN(scaleWidth, scaleHeight);
     self.scrollView.minimumZoomScale = minScale;
     
-    // 5
     self.scrollView.maximumZoomScale = 1.0f;
     self.scrollView.zoomScale = minScale;
     
-    // 6
     [self centerScrollViewContents];
-     
+    
 }
 - (void)didReceiveMemoryWarning
 {
@@ -230,12 +237,13 @@
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+    // returns number of rows the search will display
+    
     if (tableView == self.searchDisplayController.searchResultsTableView) {
         return [self.searchResults count];
         
@@ -246,6 +254,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    // writes the search option to each row
     static NSString *simpleTableIdentifier = @"SimpleTableCell";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
@@ -263,6 +272,7 @@
 }
 
 -(void) filterSearchResults: (NSString *)searchText scope:(NSString *)scope{
+    // filters search results by keywords that contain search parameter
     NSPredicate *predicate = [NSPredicate predicateWithFormat: @"SELF contains[c] %@", searchText];
     self.searchResults = [self.searchOptions filteredArrayUsingPredicate:predicate];
 }
@@ -272,14 +282,14 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+ {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end
