@@ -75,7 +75,8 @@
     
     // Fetch all events that match the predicate
     NSArray *events = [store eventsMatchingPredicate:predicate];
-    NSString *results = @"";
+   NSString *results = @"";
+    //NSString *results = nil;
     for (EKEvent *element in events) {
         NSString *title = element.title;
         NSString *calendar = element.calendar.title;

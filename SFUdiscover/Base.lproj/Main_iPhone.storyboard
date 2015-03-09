@@ -1458,48 +1458,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="e1s-Ix-HA8">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UFa-WU-GWJ">
+                                <rect key="frame" x="0.0" y="20" width="320" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <inset key="contentEdgeInsets" minX="0.0" minY="15" maxX="0.0" maxY="0.0"/>
+                                <color key="backgroundColor" red="0.66666668650000005" green="0.023529414089999999" blue="0.13333334029999999" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="18"/>
                                 <state key="normal" title="SFUdiscover">
-                                    <color key="titleColor" red="0.99444442990000004" green="0.98888885969999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
-                                        <color key="value" red="0.70980392160000005" green="0.070588235289999995" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="goHome:" destination="vSO-34-Gd0" eventType="touchUpInside" id="K2h-dL-cJb"/>
+                                    <action selector="goHome:" destination="vSO-34-Gd0" eventType="touchUpInside" id="QBE-w3-WI2"/>
                                 </connections>
                             </button>
-                            <navigationBar contentMode="scaleToFill" id="7vp-VS-tfg">
-                                <rect key="frame" x="0.0" y="35" width="320" height="44"/>
+                            <navigationBar contentMode="scaleToFill" id="9Q9-hH-061">
+                                <rect key="frame" x="0.0" y="49" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <textAttributes key="titleTextAttributes">
-                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                    <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="20"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="Calendar" id="exd-Ir-Az7">
-                                        <barButtonItem key="leftBarButtonItem" id="X7u-GI-4pB">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lSd-e8-5iA">
+                                    <navigationItem title="Calendar" id="MMi-8u-MM8">
+                                        <barButtonItem key="leftBarButtonItem" id="cFP-Ny-a7r">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Zqt-T1-Ay3">
                                                 <rect key="frame" x="16" y="7" width="50" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="backgroundColor" red="0.66666668650000005" green="0.023529414089999999" blue="0.13333334029999999" alpha="1" colorSpace="deviceRGB"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
                                                 <state key="normal" title="Back">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
-                                                        <color key="value" red="0.70980392160000005" green="0.070588235289999995" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="3"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="goBack:" destination="vSO-34-Gd0" eventType="touchUpInside" id="8yx-04-ir2"/>
+                                                    <action selector="goBack:" destination="vSO-34-Gd0" eventType="touchUpInside" id="IrZ-1z-Kvx"/>
                                                 </connections>
                                             </button>
                                         </barButtonItem>
@@ -1553,31 +1550,64 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" id="xu4-Ir-gQx">
-                                <rect key="frame" x="0.0" y="35" width="320" height="44"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="0ns-p8-1bq">
+                                <rect key="frame" x="0.0" y="103" width="320" height="449"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" id="wGg-iw-JyK">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="454"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                        <size key="value" width="320" height="600"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="iGy-0c-zQz">
+                                <rect key="frame" x="0.0" y="20" width="320" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.66666668650000005" green="0.023529414089999999" blue="0.13333334029999999" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="18"/>
+                                <state key="normal" title="SFUdiscover">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goHome:" destination="fEY-qN-JvF" eventType="touchUpInside" id="xlZ-qJ-bML"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" id="c9B-AQ-Uhg">
+                                <rect key="frame" x="0.0" y="49" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <textAttributes key="titleTextAttributes">
-                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                    <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="20"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="Calendar" id="LaR-p4-CA0">
-                                        <barButtonItem key="leftBarButtonItem" id="Viq-Yh-i1A">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3HE-NJ-gl6">
+                                    <navigationItem title="Calendar" id="ATy-SP-DOv">
+                                        <barButtonItem key="leftBarButtonItem" id="qtG-sl-1DU">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fZF-y1-ilj">
                                                 <rect key="frame" x="16" y="7" width="50" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="backgroundColor" red="0.66666668650000005" green="0.023529414089999999" blue="0.13333334029999999" alpha="1" colorSpace="deviceRGB"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
                                                 <state key="normal" title="Back">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
-                                                        <color key="value" red="0.70980392156862748" green="0.070588235294117646" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="3"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="goBack:" destination="fEY-qN-JvF" eventType="touchUpInside" id="ddG-P3-2GG"/>
+                                                    <action selector="goBack:" destination="fEY-qN-JvF" eventType="touchUpInside" id="AfE-L9-bm7"/>
                                                 </connections>
                                             </button>
                                         </barButtonItem>
@@ -1589,46 +1619,12 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Gvb-qN-vDo">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <inset key="contentEdgeInsets" minX="0.0" minY="15" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="SFUdiscover">
-                                    <color key="titleColor" red="0.99444442990000004" green="0.98888885969999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
-                                        <color key="value" red="0.70980392156862748" green="0.070588235294117646" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="goHome:" destination="fEY-qN-JvF" eventType="touchUpInside" id="Nen-be-AIQ"/>
-                                </connections>
-                            </button>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="0ns-p8-1bq">
-                                <rect key="frame" x="0.0" y="103" width="320" height="449"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" id="wGg-iw-JyK">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="454"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                </subviews>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
-                                        <size key="value" width="320" height="600"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Daily" id="uwP-ac-sUK"/>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="600"/>
                     <connections>
@@ -1647,54 +1643,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" id="psZ-mw-Vf1">
-                                <rect key="frame" x="0.0" y="35" width="320" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="l4a-VF-rho">
+                                <rect key="frame" x="0.0" y="20" width="320" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.66666668650000005" green="0.023529414089999999" blue="0.13333334029999999" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="18"/>
+                                <state key="normal" title="SFUdiscover">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goHome:" destination="yVP-ZD-hQf" eventType="touchUpInside" id="VEu-bC-DIC"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" id="HKV-ja-eNI">
+                                <rect key="frame" x="0.0" y="49" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <textAttributes key="titleTextAttributes">
-                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                    <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="20"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="Calendar" id="Txr-R8-2B1">
-                                        <barButtonItem key="leftBarButtonItem" id="hXz-gY-8PX">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fYY-Vk-47P">
+                                    <navigationItem title="Calendar" id="sVn-iM-vlA">
+                                        <barButtonItem key="leftBarButtonItem" id="fNW-mr-KKf">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="YLo-kX-rmd">
                                                 <rect key="frame" x="16" y="7" width="50" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="backgroundColor" red="0.66666668650000005" green="0.023529414089999999" blue="0.13333334029999999" alpha="1" colorSpace="deviceRGB"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
                                                 <state key="normal" title="Back">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
-                                                        <color key="value" red="0.70980392160000005" green="0.070588235289999995" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="3"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="goBack:" destination="yVP-ZD-hQf" eventType="touchUpInside" id="ev9-09-PQl"/>
+                                                    <action selector="goBack:" destination="yVP-ZD-hQf" eventType="touchUpInside" id="7Ay-TT-s66"/>
                                                 </connections>
                                             </button>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bVK-sp-Ljv">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <inset key="contentEdgeInsets" minX="0.0" minY="15" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="SFUdiscover">
-                                    <color key="titleColor" red="0.99444442990000004" green="0.98888885969999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
-                                        <color key="value" red="0.70980392160000005" green="0.070588235289999995" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="goHome:" destination="yVP-ZD-hQf" eventType="touchUpInside" id="qvz-Su-Bbx"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -1749,13 +1742,13 @@
                                     </datePicker>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Event Title" borderStyle="roundedRect" minimumFontSize="17" id="FGV-jm-Rxc">
                                         <rect key="frame" x="23" y="63" width="280" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Calendar " borderStyle="roundedRect" minimumFontSize="17" id="cyL-7Z-RER">
                                         <rect key="frame" x="23" y="14" width="97" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
@@ -1765,20 +1758,54 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </scrollView>
-                            <navigationBar contentMode="scaleToFill" id="Dgx-xh-dYd">
+                            <navigationBar contentMode="scaleToFill" id="ray-M4-gge">
                                 <rect key="frame" x="0.0" y="10" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="20"/>
+                                </textAttributes>
                                 <items>
-                                    <navigationItem title="Add Event" id="yyW-Iw-ix8">
-                                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="B8G-CH-9tR">
-                                            <connections>
-                                                <segue destination="FPc-2R-xBT" kind="push" id="mAQ-Le-4ls"/>
-                                            </connections>
+                                    <navigationItem title="Add event" id="6fG-qg-7dV">
+                                        <barButtonItem key="leftBarButtonItem" id="4Zb-iq-XKt">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1cW-UH-IEj">
+                                                <rect key="frame" x="16" y="5" width="50" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66666668650000005" green="0.023529414089999999" blue="0.13333334029999999" alpha="1" colorSpace="deviceRGB"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
+                                                <state key="normal" title="Cancel">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="Cancel:" destination="qcI-tf-z42" eventType="touchUpInside" id="tEK-5e-uLm"/>
+                                                </connections>
+                                            </button>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="Save" id="Boy-j1-8kE">
-                                            <connections>
-                                                <action selector="saveEvent:" destination="qcI-tf-z42" id="xgb-bq-XIL"/>
-                                            </connections>
+                                        <barButtonItem key="rightBarButtonItem" id="cww-Ao-yOb">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UzM-F0-dYc">
+                                                <rect key="frame" x="254" y="5" width="50" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66666668650000005" green="0.023529414089999999" blue="0.13333334029999999" alpha="1" colorSpace="deviceRGB"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
+                                                <state key="normal" title="Save">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="saveEvent:" destination="qcI-tf-z42" eventType="touchUpInside" id="2ia-bF-Q4w"/>
+                                                </connections>
+                                            </button>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -1786,10 +1813,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Add Event" id="fUE-nd-Hxk">
-                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="m3v-7d-WFV"/>
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="fiZ-w1-5so"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Add Event" id="fUE-nd-Hxk"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="600"/>
                     <connections>
@@ -3491,7 +3515,4 @@ The Safe Walk personnel are identified by:
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="6Yg-Gh-pXj"/>
-    </inferredMetricsTieBreakers>
 </document>
