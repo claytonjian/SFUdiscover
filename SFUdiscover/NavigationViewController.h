@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NavigationViewController : UIViewController
+@interface NavigationViewController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource,UISearchBarDelegate, UIAlertViewDelegate>
+
+@property (strong, nonatomic, readonly) IBOutlet UIScrollView *scrollView;
 
 @end
+
+
