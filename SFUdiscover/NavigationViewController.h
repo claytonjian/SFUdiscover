@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NavigationViewController : UIViewController <UIScrollViewDelegate>
+@interface NavigationViewController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource,UISearchBarDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *SFUBurnaby;
 @property (strong, nonatomic, readonly) IBOutlet UIScrollView *scrollView;

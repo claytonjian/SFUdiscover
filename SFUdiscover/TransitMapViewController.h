@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 #import <Mapkit/MapKit.h>
 
-
 @class TransitMapViewController;
 @protocol TransitMapViewControllerDelegate <NSObject>
 

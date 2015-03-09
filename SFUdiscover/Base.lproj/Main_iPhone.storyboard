@@ -721,34 +721,6 @@
             </objects>
             <point key="canvasLocation" x="1939" y="925"/>
         </scene>
-        <!--Nav Options Table View Controller-->
-        <scene sceneID="eST-6h-ahG">
-            <objects>
-                <tableViewController id="DYv-ea-JjT" customClass="NavOptionsTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="lSx-pG-2XW">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Navigation Option" id="6Sq-5n-lGt">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6Sq-5n-lGt" id="KGO-B3-769">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="DYv-ea-JjT" id="0r9-QH-Zt0"/>
-                            <outlet property="delegate" destination="DYv-ea-JjT" id="z06-OC-sdG"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WNx-n7-Im6" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1926" y="943"/>
-        </scene>
         <!--Navigation View Controller-->
         <scene sceneID="0EZ-SE-PbY">
             <objects>
@@ -774,8 +746,37 @@
                                     <action selector="goHome:" destination="WwY-Eb-6kS" eventType="touchUpInside" id="qkF-yP-GDe"/>
                                 </connections>
                             </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" id="Qpa-f1-emJ">
+                                <rect key="frame" x="0.0" y="128" width="320" height="352"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="dKZ-QX-pJI">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="352"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="WwY-Eb-6kS" id="QDF-1L-Akn"/>
+                                            <outlet property="delegate" destination="WwY-Eb-6kS" id="cbd-bq-Ie5"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <connections>
+                                    <outlet property="delegate" destination="WwY-Eb-6kS" id="aSW-IY-jCV"/>
+                                </connections>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4av-oQ-5GT">
+                                <rect key="frame" x="290" y="0.0" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="20" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="S">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="btR-Tc-CvA" kind="push" id="FqR-Y8-zaM"/>
+                                </connections>
+                            </button>
                             <navigationBar contentMode="scaleToFill" id="rAR-4q-JGF">
-                                <rect key="frame" x="0.0" y="40" width="320" height="44"/>
+                                <rect key="frame" x="-5" y="40" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <textAttributes key="titleTextAttributes">
@@ -805,67 +806,34 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4av-oQ-5GT">
-                                <rect key="frame" x="290" y="0.0" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <inset key="contentEdgeInsets" minX="0.0" minY="20" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="S">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="btR-Tc-CvA" kind="push" id="FqR-Y8-zaM"/>
-                                </connections>
-                            </button>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" id="Qpa-f1-emJ">
-                                <rect key="frame" x="0.0" y="128" width="320" height="352"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="nO6-EA-Jf0">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="352"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    </imageView>
-                                </subviews>
-                                <connections>
-                                    <outlet property="delegate" destination="WwY-Eb-6kS" id="aSW-IY-jCV"/>
-                                </connections>
-                            </scrollView>
-                            <searchBar contentMode="redraw" id="F3E-ha-sbb">
+                            <searchBar contentMode="redraw" id="lG0-Ct-28F">
                                 <rect key="frame" x="0.0" y="84" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <outlet property="delegate" destination="WwY-Eb-6kS" id="wlz-Pt-psk"/>
+                                    <outlet property="delegate" destination="WwY-Eb-6kS" id="MFE-wf-4pR"/>
                                 </connections>
                             </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="jaM-9a-bAY"/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="480"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="8280" height="4504"/>
                     <connections>
-                        <outlet property="imageView" destination="nO6-EA-Jf0" id="XqV-ua-mwJ"/>
                         <outlet property="navigationToHome" destination="L6T-cv-Vpg" id="Syp-tM-ZMc"/>
                         <outlet property="scrollView" destination="Qpa-f1-emJ" id="P8U-4u-t8A"/>
-                        <outlet property="searchDisplayController" destination="eSy-J1-z9P" id="czN-Yp-s1t"/>
+                        <outlet property="searchDisplayController" destination="OqH-Ss-gEN" id="yk0-BC-vk2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yeR-Go-UtT" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <searchDisplayController id="xZh-GX-2xZ">
+                <searchDisplayController id="OqH-Ss-gEN">
                     <connections>
-                        <outlet property="delegate" destination="WwY-Eb-6kS" id="zH9-Bj-m05"/>
-                        <outlet property="searchContentsController" destination="WwY-Eb-6kS" id="7xK-N2-pLz"/>
-                        <outlet property="searchResultsDataSource" destination="WwY-Eb-6kS" id="lJI-YN-4OM"/>
-                        <outlet property="searchResultsDelegate" destination="WwY-Eb-6kS" id="Ror-lQ-pJs"/>
-                    </connections>
-                </searchDisplayController>
-                <searchDisplayController id="eSy-J1-z9P">
-                    <connections>
-                        <outlet property="delegate" destination="WwY-Eb-6kS" id="N9o-Ze-hNs"/>
-                        <outlet property="searchBar" destination="F3E-ha-sbb" id="GlG-K3-1o4"/>
-                        <outlet property="searchContentsController" destination="WwY-Eb-6kS" id="iqY-64-WLr"/>
-                        <outlet property="searchResultsDataSource" destination="WwY-Eb-6kS" id="kci-Bx-9Vp"/>
-                        <outlet property="searchResultsDelegate" destination="WwY-Eb-6kS" id="iDg-0a-Dsb"/>
+                        <outlet property="delegate" destination="WwY-Eb-6kS" id="br9-qQ-ztb"/>
+                        <outlet property="searchBar" destination="lG0-Ct-28F" id="SB8-Kt-gVy"/>
+                        <outlet property="searchContentsController" destination="WwY-Eb-6kS" id="peZ-rg-ayZ"/>
+                        <outlet property="searchResultsDataSource" destination="WwY-Eb-6kS" id="IAX-Av-TPi"/>
+                        <outlet property="searchResultsDelegate" destination="WwY-Eb-6kS" id="vpY-Ze-Wrl"/>
                     </connections>
                 </searchDisplayController>
             </objects>

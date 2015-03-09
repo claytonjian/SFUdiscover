@@ -8,15 +8,24 @@
 
 #import "NavigationViewController.h"
 
-@interface NavigationViewController ()
+@interface NavigationViewController (){
+    // CGRect bHallFrame;
+}
+
 @property (weak, nonatomic) IBOutlet UIButton *navigationToHome;
 @property (strong, nonatomic, readwrite) IBOutlet UIScrollView *scrollView;
-@property (weak, nonatomic) IBOutlet UIButton *point;
+@property (strong, nonatomic) IBOutlet UIImageView *imageView;
+@property (strong, nonatomic) NSArray *navOptions;
+@property (strong, nonatomic) NSArray *searchResults;
+
+/*
+@property (strong, nonatomic) IBOutlet UIView *buttons;
+@property (weak, nonatomic) IBOutlet UIButton *bHall;
+ */
 
 - (void)centerScrollViewContents;
 - (void)scrollViewDoubleTapped:(UITapGestureRecognizer*)recognizer;
 - (void)scrollViewTwoFingerTapped:(UITapGestureRecognizer*)recognizer;
-@property (strong, nonatomic) IBOutlet UIImageView *imageView;
 
 @end
 
@@ -24,6 +33,9 @@
 
 @synthesize scrollView = _scrollView;
 @synthesize imageView = _imageView;
+
+// @synthesize buttons = _buttons;
+
 
 - (IBAction)goBack:(id)sender {
     [self.navigationController popViewControllerAnimated:(YES)];
@@ -42,7 +54,15 @@
 
 - (void)scrollViewDidZoom:(UIScrollView *)scrollView {
     // The scroll view has zoomed, so you need to re-center the contents
+    
     [self centerScrollViewContents];
+    
+    /*
+     self.bHall.frame = CGRectMake((bHallFrame.origin.x * self.scrollView.zoomScale),
+                                  (bHallFrame.origin.y * self.scrollView.zoomScale),
+                                  bHallFrame.size.width,
+                                  bHallFrame.size.height);
+    */
 }
 
 - (UIView*)viewForZoomingInScrollView:(UIScrollView *)scrollView {
@@ -55,6 +75,7 @@
     CGFloat newZoomScale = self.scrollView.zoomScale / 1.5f;
     newZoomScale = MAX(newZoomScale, self.scrollView.minimumZoomScale);
     [self.scrollView setZoomScale:newZoomScale animated:YES];
+    
 }
 
 - (void)scrollViewDoubleTapped:(UITapGestureRecognizer*)recognizer {
@@ -77,6 +98,7 @@
     
     // 4
     [self.scrollView zoomToRect:rectToZoomTo animated:YES];
+    
 }
 
 - (void)centerScrollViewContents {
@@ -100,18 +122,33 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    // bHallFrame = self.bHall.frame;
+    
     
     
     // 1
     UIImage *image = [UIImage imageNamed:@"Page1.jpg"];
     self.imageView = [[UIImageView alloc] initWithImage:image];
     // factor of 1.5625
+    // Blusson Hall - (5237, 900)
     [self.imageView setFrame:CGRectMake(250, 840, 14218.75, 9100)];
     [self.scrollView addSubview:self.imageView];
     
     NSLog(@"The image has width %f", image.size.width);
     NSLog(@"The image has height %f", image.size.height);
     
+    /*
+    self.bHall = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [self.bHall addTarget:self action:@selector(aMethod:)forControlEvents:UIControlEventTouchUpInside];
+    [self.bHall setTitle:@"Blusson Hall" forState:UIControlStateNormal];
+    [self.scrollView addSubview:self.bHall];
+    bHallFrame.origin.x = 8182.8125;
+    bHallFrame.origin.y = 1406.25;
+    NSLog(@"The X Coordinate of bHall is %f", bHallFrame.origin.x);
+    NSLog(@"The width of map is %f", self.imageView.frame.size.width);
+    */
+    self.navOptions = [[NSArray alloc] initWithObjects:@"Building", @"Room", @"Recent", @"Favorites", @"Nearest Amenity", nil];
+    self.searchResults = [[NSArray alloc]init];
     
     
     // 2
@@ -151,6 +188,50 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    // Return the number of sections.
+    return 0;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    if (tableView == self.searchDisplayController.searchResultsTableView) {
+        return [self.searchResults count];
+    }
+    else{
+        return [self.navOptions count];
+    }
+    
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *simpleTableIdentifier = @"SimpleTableCell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
+    }
+    
+    if (tableView == self.searchDisplayController.searchResultsTableView) {
+        cell.textLabel.text = [self.searchResults objectAtIndex:indexPath.row];
+    }
+    else{
+        cell.textLabel.text = [self.navOptions objectAtIndex:indexPath.row];
+    }
+    return cell;
+}
+
+-(void) filterSearchResults: (NSString *)searchText scope:(NSString *)scope{
+    NSPredicate *predicate = [NSPredicate predicateWithFormat: @"SELF contains[c] %@", searchText];
+    self.searchResults = [self.navOptions filteredArrayUsingPredicate:predicate];
+}
+- (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString{
+    [self filterSearchResults:searchString scope:[[self.searchDisplayController.searchBar scopeButtonTitles] objectAtIndex:[self.searchDisplayController.searchBar selectedScopeButtonIndex]]];
+    return YES;
 }
 
 /*

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NavOptionsTableViewController : UITableViewController<UITableViewDelegate,UITableViewDataSource>
+@interface NavOptionsTableViewController : UIViewController<UITableViewDelegate,UITableViewDataSource, UISearchBarDelegate>
 
 @end
