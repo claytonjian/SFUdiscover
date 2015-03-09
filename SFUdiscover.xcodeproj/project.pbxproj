@@ -31,6 +31,8 @@
 		304816EA1AAD0F3600D1F083 /* LibraryHourOpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EEC41761AAAE7DB00B4AF19 /* LibraryHourOpViewController.m */; };
 		304816EB1AAD0F3F00D1F083 /* SafeWalkSiteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF4ABC91AAAB999007B1B12 /* SafeWalkSiteViewController.m */; };
 		304816EC1AAD0F4500D1F083 /* SafeWalkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF4ABC61AAAABFD007B1B12 /* SafeWalkViewController.m */; };
+		30A459C01AAD5B7D00AD7221 /* Monthly View Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E4EF701AAD4F80003F6436 /* Monthly View Controller.m */; };
+		30A459C11AAD5B8400AD7221 /* AgendaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E4EF731AAD5011003F6436 /* AgendaViewController.m */; };
 		4925CF6C1AA566200026305C /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4925CF6B1AA566200026305C /* SettingsViewController.m */; };
 		4929B6171AA133D300963AA7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4929B6161AA133D300963AA7 /* Foundation.framework */; };
 		4929B6191AA133D300963AA7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4929B6181AA133D300963AA7 /* CoreGraphics.framework */; };
@@ -64,6 +66,7 @@
 		4E5E6EDA1AABAAC3004DC31F /* AddEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5E6ED91AABAAC3004DC31F /* AddEventViewController.m */; };
 		4E5E6EDD1AABAB8B004DC31F /* EventManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5E6EDC1AABAB8B004DC31F /* EventManager.m */; };
 		4E5E6EE01AABBCAE004DC31F /* DailyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5E6EDF1AABBCAE004DC31F /* DailyViewController.m */; };
+		7E4C80551AAD1BB9001BD4C4 /* setting.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4C80541AAD1BB9001BD4C4 /* setting.png */; };
 		97361C001AA8E9810075B4A5 /* BusScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97361BFF1AA8E9810075B4A5 /* BusScheduleViewController.m */; };
 		97361C031AA8EC9A0075B4A5 /* BusTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97361C021AA8EC9A0075B4A5 /* BusTableViewController.m */; };
 		97361C061AA8F8460075B4A5 /* TransitMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97361C051AA8F8460075B4A5 /* TransitMapViewController.m */; };
@@ -126,6 +129,10 @@
 		0EF731D11AAAF18200EBC23D /* FoodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodViewController.m; sourceTree = "<group>"; };
 		303C34011AAB9BF0001E95F7 /* TrafficHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrafficHomeViewController.h; sourceTree = "<group>"; };
 		303C34021AAB9BF0001E95F7 /* TrafficHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrafficHomeViewController.m; sourceTree = "<group>"; };
+		30E4EF6F1AAD4F80003F6436 /* Monthly View Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Monthly View Controller.h"; sourceTree = "<group>"; };
+		30E4EF701AAD4F80003F6436 /* Monthly View Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Monthly View Controller.m"; sourceTree = "<group>"; };
+		30E4EF721AAD5011003F6436 /* AgendaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgendaViewController.h; sourceTree = "<group>"; };
+		30E4EF731AAD5011003F6436 /* AgendaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgendaViewController.m; sourceTree = "<group>"; };
 		4925CF6A1AA566200026305C /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		4925CF6B1AA566200026305C /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		4929B6131AA133D300963AA7 /* SFUdiscover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SFUdiscover.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -179,6 +186,7 @@
 		4E5E6EDC1AABAB8B004DC31F /* EventManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventManager.m; sourceTree = "<group>"; };
 		4E5E6EDE1AABBCAE004DC31F /* DailyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DailyViewController.h; sourceTree = "<group>"; };
 		4E5E6EDF1AABBCAE004DC31F /* DailyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DailyViewController.m; sourceTree = "<group>"; };
+		7E4C80541AAD1BB9001BD4C4 /* setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = setting.png; path = Images.xcassets/setting.png; sourceTree = "<group>"; };
 		97361BFE1AA8E9810075B4A5 /* BusScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusScheduleViewController.h; sourceTree = "<group>"; };
 		97361BFF1AA8E9810075B4A5 /* BusScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusScheduleViewController.m; sourceTree = "<group>"; };
 		97361C011AA8EC9A0075B4A5 /* BusTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusTableViewController.h; sourceTree = "<group>"; };
@@ -376,6 +384,10 @@
 				4E5E6EDF1AABBCAE004DC31F /* DailyViewController.m */,
 				4E5E6EDB1AABAB8B004DC31F /* EventManager.h */,
 				4E5E6EDC1AABAB8B004DC31F /* EventManager.m */,
+				30E4EF6F1AAD4F80003F6436 /* Monthly View Controller.h */,
+				30E4EF701AAD4F80003F6436 /* Monthly View Controller.m */,
+				30E4EF721AAD5011003F6436 /* AgendaViewController.h */,
+				30E4EF731AAD5011003F6436 /* AgendaViewController.m */,
 			);
 			path = SFUdiscover;
 			sourceTree = "<group>";
@@ -492,6 +504,7 @@
 				496D138B1AAA7FB600256D0D /* Page1.jpg in Resources */,
 				0EC6D5541AA9B6490084B4C6 /* RL_Cornerstone.plist in Resources */,
 				0EC6D5481AA9A0170084B4C6 /* Locations.plist in Resources */,
+				7E4C80551AAD1BB9001BD4C4 /* setting.png in Resources */,
 				4929B6211AA133D600963AA7 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -511,6 +524,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30A459C11AAD5B8400AD7221 /* AgendaViewController.m in Sources */,
+				30A459C01AAD5B7D00AD7221 /* Monthly View Controller.m in Sources */,
 				304816EC1AAD0F4500D1F083 /* SafeWalkViewController.m in Sources */,
 				304816EB1AAD0F3F00D1F083 /* SafeWalkSiteViewController.m in Sources */,
 				304816EA1AAD0F3600D1F083 /* LibraryHourOpViewController.m in Sources */,

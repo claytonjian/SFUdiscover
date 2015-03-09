@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface TrafficHomeViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIButton *conditionButton;
+@property (weak, nonatomic) IBOutlet UIButton *webcamButton;
 
 @end

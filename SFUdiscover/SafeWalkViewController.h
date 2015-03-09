@@ -11,5 +11,6 @@
 @interface SafeWalkViewController : UIViewController {
     IBOutlet UIScrollView *scroller2;
 }
+@property (weak, nonatomic) IBOutlet UIButton *safewalkwebsite;
 
 @end

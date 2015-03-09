@@ -33,7 +33,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    _hoursButton.layer.borderWidth = .5f;
+    _hoursButton.layer.borderColor = [[UIColor lightGrayColor]CGColor];
+    _askLibButton.layer.borderWidth = .5f;
+    _askLibButton.layer.borderColor = [[UIColor lightGrayColor]CGColor];
+    _citationButton.layer.borderWidth = .5f;
+    _citationButton.layer.borderColor = [[UIColor lightGrayColor]CGColor];
+    _searchCatButton.layer.borderWidth = .5f;
+    _searchCatButton.layer.borderColor = [[UIColor lightGrayColor]CGColor];
+    _bookRoomButton.layer.borderWidth = .5f;
+    _bookRoomButton.layer.borderColor = [[UIColor lightGrayColor]CGColor];
 }
 
 - (void)didReceiveMemoryWarning

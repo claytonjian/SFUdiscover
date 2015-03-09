@@ -1,23 +1,22 @@
 //
-//  BookStoreViewController.m
+//  Monthly View Controller.m
 //  SFUdiscover
 //
-//  Created by James Voong on 3/5/2015.
+//  Created by James Voong on 3/8/15.
 //  Copyright (c) 2015 EngagingFoundations. All rights reserved.
 //
 
-#import "BookStoreViewController.h"
+#import "Monthly View Controller.h"
 
-@interface BookStoreViewController ()
+@interface Monthly_View_Controller ()
 
 @end
 
-@implementation BookStoreViewController
+@implementation Monthly_View_Controller
 
 - (IBAction)goBack:(id)sender {
     [self.navigationController popViewControllerAnimated:(YES)];
 }
-
 - (IBAction)goHome:(id)sender {
     [self.navigationController popToRootViewControllerAnimated:(YES)];
 }
@@ -34,10 +33,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    _browseMercButton.layer.borderWidth = .5f;
-    _browseMercButton.layer.borderColor = [[UIColor lightGrayColor]CGColor];
-    _courseMatButton.layer.borderWidth = .5f;
-    _courseMatButton.layer.borderColor = [[UIColor lightGrayColor]CGColor];
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning

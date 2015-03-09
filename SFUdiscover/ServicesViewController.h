@@ -10,4 +10,11 @@
 
 @interface ServicesViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIButton *bookstoreButton;
+@property (weak, nonatomic) IBOutlet UIButton *lostFoundButton;
+@property (weak, nonatomic) IBOutlet UIButton *emergencyButton;
+@property (weak, nonatomic) IBOutlet UIButton *safeWalkButton;
+@property (weak, nonatomic) IBOutlet UIButton *restaurantButton;
+@property (weak, nonatomic) IBOutlet UIButton *trafficButton;
+
 @end

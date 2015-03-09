@@ -33,6 +33,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    _LibrarySButton.layer.borderWidth = .5f;
+    _LibrarySButton.layer.borderColor = [[UIColor lightGrayColor]CGColor];
+    
 }
 
 - (void)didReceiveMemoryWarning

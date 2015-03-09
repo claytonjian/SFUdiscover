@@ -34,7 +34,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    _conditionButton.layer.borderWidth = .5f;
+    _conditionButton.layer.borderColor = [[UIColor lightGrayColor]CGColor];
+    _webcamButton.layer.borderWidth = .5f;
+    _webcamButton.layer.borderColor = [[UIColor lightGrayColor]CGColor];
 }
 
 - (void)didReceiveMemoryWarning
