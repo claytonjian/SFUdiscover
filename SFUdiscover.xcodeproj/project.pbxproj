@@ -229,7 +229,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0EC209ED1AAB0D88008207FF /* Model */ = {
+		0EC209ED1AAB0D88008207FF /* Traffic */ = {
 			isa = PBXGroup;
 			children = (
 				0EC209EE1AAB0DB7008207FF /* Tutorial.h */,
@@ -241,7 +241,7 @@
 				303C34011AAB9BF0001E95F7 /* TrafficHomeViewController.h */,
 				303C34021AAB9BF0001E95F7 /* TrafficHomeViewController.m */,
 			);
-			name = Model;
+			name = Traffic;
 			sourceTree = "<group>";
 		};
 		0EC20A401AAB0F1D008207FF /* Hpple */ = {
@@ -325,7 +325,7 @@
 			isa = PBXGroup;
 			children = (
 				0EC20A401AAB0F1D008207FF /* Hpple */,
-				0EC209ED1AAB0D88008207FF /* Model */,
+				0EC209ED1AAB0D88008207FF /* Traffic */,
 				0EF731CF1AAAF16100EBC23D /* Restaurant */,
 				0EEC41741AAAE73B00B4AF19 /* Library */,
 				0EE2FAA21AA9256D007A2F19 /* EmergencyViewController.h */,

@@ -31,6 +31,7 @@
     return self;
 }
 
+// Set scrollview and button borders
 - (void)viewDidLoad
 {
     [super viewDidLoad];

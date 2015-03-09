@@ -34,6 +34,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    // button border/width
     _conditionButton.layer.borderWidth = .5f;
     _conditionButton.layer.borderColor = [[UIColor lightGrayColor]CGColor];
     _webcamButton.layer.borderWidth = .5f;

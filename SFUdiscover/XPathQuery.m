@@ -6,6 +6,8 @@
 //  Copyright 2008 __MyCompanyName__. All rights reserved.
 //
 
+// USED FOR HTML PARSING
+
 #import "XPathQuery.h"
 
 #import <libxml/tree.h>

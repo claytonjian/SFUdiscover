@@ -4,7 +4,9 @@
 //
 //  Created by James Voong on 3/6/2015.
 //  Copyright (c) 2015 EngagingFoundations. All rights reserved.
-//
+//  Changes:
+//  Other Editors:
+//  Known Bugs:
 
 #import "LibraryHoursViewController.h"
 
@@ -32,6 +34,7 @@
     return self;
 }
 
+// Load the website
 - (void)viewDidLoad
 {
     [super viewDidLoad];

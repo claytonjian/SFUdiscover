@@ -4,7 +4,9 @@
 //
 //  Created by James Voong on 3/7/2015.
 //  Copyright (c) 2015 EngagingFoundations. All rights reserved.
-//
+//  Changes:
+//  Other Editors:
+//  Known Bugs:
 
 #import "FoodViewController.h"
 
@@ -40,6 +42,8 @@
     return LocationsDict.count;
 }
 
+
+// Use locations from plist file to be displayed in a table cell
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     
@@ -54,6 +58,7 @@
     return @"Choose Location:";
 }
 
+// Load Food Locations from the plist file
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -73,6 +78,7 @@
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
+// Identify the location pressed by used and prepare to send it
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     // Get the new view controller using [segue destinationViewController].

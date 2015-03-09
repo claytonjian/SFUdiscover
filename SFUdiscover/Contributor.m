@@ -6,6 +6,8 @@
 //  Copyright (c) 2015 EngagingFoundations. All rights reserved.
 //
 
+// Made in case of Image HTML Parsing
+
 #import "Contributor.h"
 
 @implementation Contributor

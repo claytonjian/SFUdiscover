@@ -4,7 +4,9 @@
 //
 //  Created by James Voong on 3/7/2015.
 //  Copyright (c) 2015 EngagingFoundations. All rights reserved.
-//
+//  Changes:
+//  Other Editors:
+//  Known Bugs:
 
 #import "Food2ViewController.h"
 
@@ -55,6 +57,7 @@
     return @"Choose Restaurant:";
 }
 
+// Cases for each location, load the proper plist to display restaurants and that location
 - (void)viewDidLoad
 {
     [super viewDidLoad];

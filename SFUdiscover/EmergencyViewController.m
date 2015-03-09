@@ -31,6 +31,7 @@
     return self;
 }
 
+// Set scrollview
 - (void)viewDidLoad
 {
     [super viewDidLoad];
