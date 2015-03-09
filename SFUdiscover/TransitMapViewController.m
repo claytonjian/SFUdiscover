@@ -12,6 +12,7 @@
 
 @interface TransitMapViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *stopNumber;
+@property (weak, nonatomic) IBOutlet UIButton *transitMapToHome;
 
 @end
 
