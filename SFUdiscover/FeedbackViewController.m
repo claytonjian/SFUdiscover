@@ -72,8 +72,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    //scroll view initialization
     [scroller setScrollEnabled:YES];
     [scroller setContentSize:CGSizeMake(320, 480)];
+    
+    //button formatting
+    _sendToSFUButton.layer.borderWidth = .5f;
+    _sendToSFUButton.layer.borderColor = [[UIColor lightGrayColor]CGColor];
+    _sendToLibButton.layer.borderWidth = .5f;
+    _sendToLibButton.layer.borderColor = [[UIColor lightGrayColor]CGColor];
+    _sendToDiningButton.layer.borderWidth = .5f;
+    _sendToDiningButton.layer.borderColor = [[UIColor lightGrayColor]CGColor];
+    _sendToDevsButton.layer.borderWidth = .5f;
+    _sendToDevsButton.layer.borderColor = [[UIColor lightGrayColor]CGColor];
+    
 }
 
 - (void)didReceiveMemoryWarning

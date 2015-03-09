@@ -5,6 +5,10 @@
 //  Created by Riku Kenju on 2015-03-05.
 //  Copyright (c) 2015 EngagingFoundations. All rights reserved.
 //
+//  03-05 Added buttons, views and other interface elements
+//  03-06 Implemented QR scanner code
+//  03-07 Implemented button behaviors
+//
 
 #import "QRViewController.h"
 

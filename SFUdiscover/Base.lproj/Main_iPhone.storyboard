@@ -175,6 +175,9 @@
                                 <state key="normal" title="Button" image="setting.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="btR-Tc-CvA" kind="push" id="yHa-VK-xVV"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -260,7 +263,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tCD-K2-NCg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1578" y="1508"/>
+            <point key="canvasLocation" x="380" y="1230"/>
         </scene>
         <!--Canvas View Controller-->
         <scene sceneID="FxP-yw-3ST">
@@ -441,6 +444,9 @@
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="6wP-jG-8vl" kind="push" id="lCb-5v-heM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="f5J-Xr-Tdo">
                                 <rect key="frame" x="52" y="342" width="216" height="45"/>
@@ -455,6 +461,9 @@
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="6wP-jG-8vl" kind="push" id="zOz-nV-2I3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="g6P-9E-tBN">
                                 <rect key="frame" x="0.0" y="20" width="320" height="29"/>
@@ -557,6 +566,9 @@
                                                 <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="6wP-jG-8vl" kind="push" id="5qe-Ws-yCM"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="BV1-gY-em0">
                                         <rect key="frame" x="52" y="184" width="216" height="45"/>
@@ -571,6 +583,9 @@
                                                 <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="6wP-jG-8vl" kind="push" id="hvj-U6-THL"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tOL-pn-wod">
                                         <rect key="frame" x="52" y="243" width="216" height="45"/>
@@ -585,6 +600,9 @@
                                                 <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="6wP-jG-8vl" kind="push" id="XQe-pp-xCN"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dJe-T8-Qtg">
                                         <rect key="frame" x="52" y="301" width="216" height="45"/>
@@ -695,6 +713,8 @@
                             <navigationBar contentMode="scaleToFill" id="Cra-8G-ULJ">
                                 <rect key="frame" x="0.0" y="50" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <textAttributes key="titleTextAttributes">
                                     <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="20"/>
                                 </textAttributes>
@@ -1247,6 +1267,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="goHome:" destination="Ad6-XQ-s1K" eventType="touchUpInside" id="f6O-rj-t62"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -1761,6 +1784,78 @@
             </objects>
             <point key="canvasLocation" x="1048" y="-1200"/>
         </scene>
+        <!--Page Under Construction View Controller-->
+        <scene sceneID="rH7-Fs-5Ba">
+            <objects>
+                <viewController id="6wP-jG-8vl" customClass="PageUnderConstructionViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8UX-Uv-S2W">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" id="Aca-L0-Kcf">
+                                <rect key="frame" x="0.0" y="49" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="20"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="..." id="5b0-kG-sCb">
+                                        <barButtonItem key="leftBarButtonItem" id="voE-h7-9DD">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aqK-yR-Ckq">
+                                                <rect key="frame" x="16" y="7" width="50" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66666668650000005" green="0.023529414089999999" blue="0.13333334029999999" alpha="1" colorSpace="deviceRGB"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
+                                                <state key="normal" title="Back">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="goBack:" destination="6wP-jG-8vl" eventType="touchUpInside" id="eCn-XC-Dye"/>
+                                                </connections>
+                                            </button>
+                                            <connections>
+                                                <action selector="goBack:" destination="6wP-jG-8vl" id="jL6-gn-bjj"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fP0-bX-NBt">
+                                <rect key="frame" x="0.0" y="20" width="320" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.66666668650000005" green="0.023529414089999999" blue="0.13333334029999999" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="18"/>
+                                <state key="normal" title="SFUdiscover">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goHome:" destination="6wP-jG-8vl" eventType="touchUpInside" id="hfY-ek-yLd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="EYS-td-rRs">
+                                <rect key="frame" x="0.0" y="148" width="320" height="121"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="This page is underconstruction...">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="AY8-0S-9o2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CBj-GW-qGD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7330" y="1338"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="CMC-SS-Pxb">
             <objects>
@@ -2043,6 +2138,9 @@
                                     <color key="titleColor" red="0.02745098248" green="0.27450981740000002" blue="0.5411764979" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="6wP-jG-8vl" kind="push" id="J0a-Fr-pzs"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bl9-9f-5Xs">
                                 <rect key="frame" x="52" y="399" width="216" height="35"/>
@@ -2052,6 +2150,9 @@
                                     <color key="titleColor" red="0.02745098248" green="0.27450981740000002" blue="0.5411764979" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="6wP-jG-8vl" kind="push" id="90T-Aa-yVf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="170-NS-lWM">
                                 <rect key="frame" x="52" y="425" width="216" height="35"/>
@@ -2061,6 +2162,9 @@
                                     <color key="titleColor" red="0.02745098248" green="0.27450981740000002" blue="0.5411764979" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="6wP-jG-8vl" kind="push" id="dMs-AK-eI9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dWg-Pr-pq6">
                                 <rect key="frame" x="0.0" y="20" width="320" height="29"/>
@@ -2383,6 +2487,9 @@ Use blue emergency phones</string>
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="6wP-jG-8vl" kind="push" id="RyD-En-yad"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="VIO-80-Fgg">
                                 <rect key="frame" x="52" y="324" width="216" height="45"/>
@@ -2397,6 +2504,9 @@ Use blue emergency phones</string>
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="6wP-jG-8vl" kind="push" id="Wr6-kP-R6O"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JSA-aj-ulc">
                                 <rect key="frame" x="0.0" y="20" width="320" height="29"/>
@@ -2506,6 +2616,9 @@ The Safe Walk personnel are identified by:
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="goHome:" destination="TeF-57-oG2" eventType="touchUpInside" id="50A-k7-HrL"/>
+                                </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" id="1u2-2n-wqJ">
                                 <rect key="frame" x="0.0" y="49" width="320" height="44"/>
@@ -2531,6 +2644,9 @@ The Safe Walk personnel are identified by:
                                                         <integer key="value" value="3"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="goBack:" destination="TeF-57-oG2" eventType="touchUpInside" id="xy3-Ht-NTH"/>
+                                                </connections>
                                             </button>
                                         </barButtonItem>
                                     </navigationItem>
@@ -2856,6 +2972,9 @@ The Safe Walk personnel are identified by:
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="6wP-jG-8vl" kind="push" id="hCW-nN-Hq8"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Srv-sS-Q6h">
                                 <rect key="frame" x="20" y="240" width="280" height="84"/>
@@ -3407,50 +3526,70 @@ The Safe Walk personnel are identified by:
                                 <rect key="frame" x="0.0" y="93" width="320" height="387"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pAL-xq-QEm">
-                                        <rect key="frame" x="20" y="69" width="107" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pAL-xq-QEm">
+                                        <rect key="frame" x="52" y="61" width="216" height="45"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
                                         <state key="normal" title="Send to SFU">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="titleColor" red="0.082352943720000002" green="0.31764706970000001" blue="0.60000002379999995" alpha="1" colorSpace="deviceRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="sendToSFU:" destination="dDA-LN-thq" eventType="touchUpInside" id="mbf-ZV-OSz"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="VIi-T1-U8S">
-                                        <rect key="frame" x="20" y="183" width="166" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="VIi-T1-U8S">
+                                        <rect key="frame" x="52" y="238" width="216" height="45"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
                                         <state key="normal" title="Send to the Developer">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="titleColor" red="0.082352943720000002" green="0.31764706970000001" blue="0.60000002379999995" alpha="1" colorSpace="deviceRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="sendToDevs:" destination="dDA-LN-thq" eventType="touchUpInside" id="kyC-nZ-rhw"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mXd-cV-19d">
-                                        <rect key="frame" x="20" y="107" width="123" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mXd-cV-19d">
+                                        <rect key="frame" x="52" y="120" width="216" height="45"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
                                         <state key="normal" title="Send to Library">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="titleColor" red="0.082352943720000002" green="0.31764706970000001" blue="0.60000002379999995" alpha="1" colorSpace="deviceRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="sendToLib:" destination="dDA-LN-thq" eventType="touchUpInside" id="BU3-b2-CuX"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gFy-yc-rgs">
-                                        <rect key="frame" x="20" y="145" width="209" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gFy-yc-rgs">
+                                        <rect key="frame" x="52" y="179" width="216" height="45"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
                                         <state key="normal" title="Send to Dining Services">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="titleColor" red="0.082352943720000002" green="0.31764706970000001" blue="0.60000002379999995" alpha="1" colorSpace="deviceRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="sendToRests:" destination="dDA-LN-thq" eventType="touchUpInside" id="zjW-cM-FDg"/>
                                         </connections>
@@ -3489,6 +3628,10 @@ The Safe Walk personnel are identified by:
                         <outlet property="inputField" destination="kHy-rn-VQA" id="7nR-WN-C2r"/>
                         <outlet property="scrView" destination="6oW-id-Vr3" id="PF9-cb-4ZG"/>
                         <outlet property="scroller" destination="6oW-id-Vr3" id="0mN-IS-gdm"/>
+                        <outlet property="sendToDevsButton" destination="VIi-T1-U8S" id="ZyI-cE-NH5"/>
+                        <outlet property="sendToDiningButton" destination="gFy-yc-rgs" id="RCt-3R-bmn"/>
+                        <outlet property="sendToLibButton" destination="mXd-cV-19d" id="Rpg-r5-trr"/>
+                        <outlet property="sendToSFUButton" destination="pAL-xq-QEm" id="rCw-iS-icx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uii-74-o2p" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -3504,4 +3647,7 @@ The Safe Walk personnel are identified by:
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="Wr6-kP-R6O"/>
+    </inferredMetricsTieBreakers>
 </document>
