@@ -6,11 +6,12 @@
 //  Copyright (c) 2015 EngagingFoundations. All rights reserved.
 //
 
+// Object that contains HTML Parse contents
+
 #import "Tutorial.h"
 
 @implementation Tutorial
 
 @synthesize title = _title;
-@synthesize url = _url;
 
 @end

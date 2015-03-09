@@ -34,6 +34,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    // Set button borders
     _browseMercButton.layer.borderWidth = .5f;
     _browseMercButton.layer.borderColor = [[UIColor lightGrayColor]CGColor];
     _courseMatButton.layer.borderWidth = .5f;

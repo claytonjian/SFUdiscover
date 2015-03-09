@@ -29,45 +29,44 @@
 }
 
 -(void)loadTutorials {
-    // 1
+    // Obtain URL and HTML Data needed to parse
     NSURL *tutorialsUrl = [NSURL URLWithString:@"http://www.sfu.ca/security/sfuroadconditions/"];
     NSData *tutorialsHtmlData = [NSData dataWithContentsOfURL:tutorialsUrl];
     
-    // 2
+    // Set up parse
     TFHpple *tutorialsParser = [TFHpple hppleWithHTMLData:tutorialsHtmlData];
     
-    // 3
-    
-    // CAMPUS OPEN OR CLOSED
+    // Prepare Parse if CAMPUS OPEN OR CLOSED
     NSString *tutorialsXpathQueryString = @"//div[@class='campus']";
     NSArray *LocationNode = [tutorialsParser searchWithXPathQuery:tutorialsXpathQueryString];
     
     tutorialsXpathQueryString = @"//div[@class='campus-status normal']/h1";
     NSArray *OCNode = [tutorialsParser searchWithXPathQuery:tutorialsXpathQueryString];
     
-    // BURNABY ROADS
+    // Prepare Parse BURNABY ROADS situation
     tutorialsXpathQueryString = @"//div[@class='status-title first']/h3";
     NSArray *tutorialsNodes1 = [tutorialsParser searchWithXPathQuery:tutorialsXpathQueryString];
     
     tutorialsXpathQueryString = @"//div[@class='status-title first']/h3/span";
     NSArray *tutorialsNodes2 = [tutorialsParser searchWithXPathQuery:tutorialsXpathQueryString];
     
-    //EXTRA WEATHER CONDITIONS
+    //Prepare Parse EXTRA WEATHER CONDITIONS
     tutorialsXpathQueryString = @"//div[@class='extra-weather-conditions last']/ul/li";
     NSArray *tutorialsNodes3 = [tutorialsParser searchWithXPathQuery:tutorialsXpathQueryString];
     
-    //ON OR OFF SCHEDULE
+    //Prepare Parse ON OR OFF SCHEDULE
     tutorialsXpathQueryString = @"//div[@class='extra-weather-conditions last']/ul/li/span";
     NSArray *tutorialsNodes4 = [tutorialsParser searchWithXPathQuery:tutorialsXpathQueryString];
     
-    // 4
+    // Create Array to hold parsed information
     NSMutableArray *newTutorials = [[NSMutableArray alloc] initWithCapacity:0];
     
-    //BURNABY OPEN OR CLOSED
+    //Parse BURNABY OPEN OR CLOSED
     Tutorial *tutorial = [[Tutorial alloc] init];
     [newTutorials addObject:tutorial];
     tutorial.title = [NSString stringWithFormat:@"%@: %@",[[LocationNode[0] firstChild] content],[[OCNode[0] firstChild] content]];
     
+    //Parse Burnaby Road followed by its condition (double loop)
     for (TFHppleElement *element in tutorialsNodes1) {
         for (TFHppleElement *element2 in tutorialsNodes2) {
         // 5
@@ -78,25 +77,25 @@
         // 6
         tutorial.title = [NSString stringWithFormat:@"      %@%@",[[element firstChild] content],[[element2 firstChild] content]];
         NSLog(@"%@",tutorial.title);
-        
-        // 7
-        //tutorial.url = [element objectForKey:@"span"];
         }
     }
     
+    // Parse and diplay adjroads and its condition
     Tutorial *adjroads = [[Tutorial alloc] init];
     [newTutorials addObject:adjroads];
     adjroads.title = [NSString stringWithFormat:@"      %@%@",[[tutorialsNodes3[0] firstChild] content],[[tutorialsNodes4[0] firstChild] content]];
     
+    // Parse and display classandexam schedule and its condition
     Tutorial *classandexam = [[Tutorial alloc] init];
     [newTutorials addObject:classandexam];
     classandexam.title = [NSString stringWithFormat:@"     %@%@",[[tutorialsNodes3[1] firstChild] content],[[tutorialsNodes4[1] firstChild] content]];
     
+    // Parse and display translink schedule and its condition
     Tutorial *translink = [[Tutorial alloc] init];
     [newTutorials addObject:translink];
     translink.title = [NSString stringWithFormat:@"     %@%@",[[tutorialsNodes3[2] firstChild] content],[[tutorialsNodes4[2] firstChild] content]];
     
-    // 8
+    // Put data into _objects to be displayed in cells
     _objects = newTutorials;
     [self.tableView reloadData];
 }
@@ -120,17 +119,18 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return _objects.count;
 }
+
+// Function displays rows of information created by _objects in viewdidload in a tableview format
+// Also checks if there is no more data to be displayed
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     static NSString *CellIdentifier = @"Cell";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-    }
-    
-    if (indexPath!=0){
-        cell.textLabel.font = [UIFont systemFontOfSize:12.0];
     }
     
     Tutorial *thisTutorial = [_objects objectAtIndex:indexPath.row];

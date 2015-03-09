@@ -33,6 +33,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    // Set button borders
     _bookstoreButton.layer.borderWidth = .5f;
     _bookstoreButton.layer.borderColor = [[UIColor lightGrayColor]CGColor];
     _lostFoundButton.layer.borderWidth = .5f;

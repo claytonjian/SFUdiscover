@@ -13,7 +13,6 @@
 		0EBBCFCB1AAAE0E100389114 /* LibraryHoursViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EBBCFCA1AAAE0E100389114 /* LibraryHoursViewController.m */; };
 		0EC20A3D1AAB0EF3008207FF /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC20A381AAB0EF3008207FF /* TFHpple.m */; };
 		0EC20A3E1AAB0EF3008207FF /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC20A3A1AAB0EF3008207FF /* TFHppleElement.m */; };
-		0EC20A421AAB1040008207FF /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EC20A411AAB1040008207FF /* libxml2.dylib */; };
 		0EC20A451AAB10FD008207FF /* TrafficViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC20A441AAB10FD008207FF /* TrafficViewController.m */; };
 		0EC6D53D1AA97FC30084B4C6 /* BookStoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC6D53C1AA97FC30084B4C6 /* BookStoreViewController.m */; };
 		0EC6D5481AA9A0170084B4C6 /* Locations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0EC6D5471AA9A0170084B4C6 /* Locations.plist */; };
@@ -104,7 +103,6 @@
 		0EC20A3A1AAB0EF3008207FF /* TFHppleElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHppleElement.m; sourceTree = "<group>"; };
 		0EC20A3B1AAB0EF3008207FF /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
 		0EC20A3C1AAB0EF3008207FF /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
-		0EC20A411AAB1040008207FF /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		0EC20A431AAB10FD008207FF /* TrafficViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrafficViewController.h; sourceTree = "<group>"; };
 		0EC20A441AAB10FD008207FF /* TrafficViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrafficViewController.m; sourceTree = "<group>"; };
 		0EC6D53B1AA97FC30084B4C6 /* BookStoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookStoreViewController.h; sourceTree = "<group>"; };
@@ -228,7 +226,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0EC209ED1AAB0D88008207FF /* Model */ = {
+		0EC209ED1AAB0D88008207FF /* Traffic */ = {
 			isa = PBXGroup;
 			children = (
 				0EC209EE1AAB0DB7008207FF /* Tutorial.h */,
@@ -240,7 +238,7 @@
 				303C34011AAB9BF0001E95F7 /* TrafficHomeViewController.h */,
 				303C34021AAB9BF0001E95F7 /* TrafficHomeViewController.m */,
 			);
-			name = Model;
+			name = Traffic;
 			sourceTree = "<group>";
 		};
 		0EC20A401AAB0F1D008207FF /* Hpple */ = {
@@ -324,7 +322,7 @@
 			isa = PBXGroup;
 			children = (
 				0EC20A401AAB0F1D008207FF /* Hpple */,
-				0EC209ED1AAB0D88008207FF /* Model */,
+				0EC209ED1AAB0D88008207FF /* Traffic */,
 				0EF731CF1AAAF16100EBC23D /* Restaurant */,
 				0EEC41741AAAE73B00B4AF19 /* Library */,
 				0EE2FAA21AA9256D007A2F19 /* EmergencyViewController.h */,
