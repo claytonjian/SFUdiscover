@@ -3,7 +3,14 @@
 //  SFUdiscover
 //
 //  Created by Clayton Jian on 2015-02-27.
+//  Modified by Riku Kenju (Interface adjustment.
+//
 //  Copyright (c) 2015 EngagingFoundations. All rights reserved.
+//
+//  02-28 added interface elements
+//  03-01 formatted interface elements
+//  03-02 delegation added
+//  03-05 button formatting added in DidLoad method
 //
 
 #import "LoyaltyViewController.h"

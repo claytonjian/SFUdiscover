@@ -11,5 +11,9 @@
 @interface FeedbackViewController : UIViewController {
     IBOutlet UIScrollView *scroller;
 }
+@property (weak, nonatomic) IBOutlet UIButton *sendToSFUButton;
+@property (weak, nonatomic) IBOutlet UIButton *sendToLibButton;
+@property (weak, nonatomic) IBOutlet UIButton *sendToDiningButton;
+@property (weak, nonatomic) IBOutlet UIButton *sendToDevsButton;
 
 @end
