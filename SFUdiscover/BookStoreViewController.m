@@ -34,7 +34,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    _browseMercButton.layer.borderWidth = .5f;
+    _browseMercButton.layer.borderColor = [[UIColor lightGrayColor]CGColor];
+    _courseMatButton.layer.borderWidth = .5f;
+    _courseMatButton.layer.borderColor = [[UIColor lightGrayColor]CGColor];
 }
 
 - (void)didReceiveMemoryWarning

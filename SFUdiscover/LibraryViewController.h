@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface LibraryViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIButton *hoursButton;
+@property (weak, nonatomic) IBOutlet UIButton *askLibButton;
+@property (weak, nonatomic) IBOutlet UIButton *citationButton;
+@property (weak, nonatomic) IBOutlet UIButton *searchCatButton;
+@property (weak, nonatomic) IBOutlet UIButton *bookRoomButton;
 
 @end
