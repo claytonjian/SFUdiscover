@@ -37,6 +37,8 @@
     // Do any additional setup after loading the view.
     [scroller2 setScrollEnabled:YES];
     [scroller2 setContentSize:CGSizeMake(320, 727)];
+    _safewalkwebsite.layer.borderWidth = .5f;
+    _safewalkwebsite.layer.borderColor [[UIColor lightGrayColor]CGColor];
 }
 
 - (void)didReceiveMemoryWarning
