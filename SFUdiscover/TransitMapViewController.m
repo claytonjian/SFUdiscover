@@ -29,6 +29,8 @@
     [self.TMVCDelegate goHome:nil];
 }
 
+// Set the center upon map initalization
+
 -(void) location{
     MKCoordinateRegion region;
     region.center.latitude = 49.277777;
