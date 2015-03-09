@@ -1,8 +1,15 @@
 //
-//  TransitMapViewController.h
+//  TransitMapViewController.m
+//  Header file for the Transit Map View Controller
+//
 //  SFUdiscover
 //
-//  Created by Yixuan Li on 3/5/15.
+//  Created by Yixuan Li on 2015-02-28.
+//  Contributors: Yixuan Li
+//
+//  - Setup protocol for delegation to pass user selection data back to transit menu
+//  - Declared the display map, user selection, and delegate
+//
 //  Copyright (c) 2015 EngagingFoundations. All rights reserved.
 //
 

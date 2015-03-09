@@ -1,8 +1,14 @@
 //
-//  BusTableViewController.h
+//  BusTableViewController.m
+//  header file for the Bus Table View Controller
+//
 //  SFUdiscover
 //
-//  Created by Yixuan Li on 3/5/15.
+//  Created by Yixuan Li on 2015-03-01.
+//  Contributors: Yixuan Li
+//
+//  - Declared the bus number element
+//
 //  Copyright (c) 2015 EngagingFoundations. All rights reserved.
 //
 

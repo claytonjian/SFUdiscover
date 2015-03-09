@@ -1,8 +1,15 @@
 //
 //  TransitMapViewController.m
+//  Implementation file for the Transit Map View Controller
+//
 //  SFUdiscover
 //
-//  Created by Yixuan Li on 3/5/15.
+//  Created by Yixuan Li on 2015-02-28.
+//  Contributors: Yixuan Li
+//
+//  - Setup the map centered on campus and annotation pins to display bus stops
+//  - Added the ability to select bus stop both by using the map annotation pins and by the five digit bus stop number
+//
 //  Copyright (c) 2015 EngagingFoundations. All rights reserved.
 //
 
@@ -39,6 +46,7 @@
     region.span.longitudeDelta = 0.0225;
     [self.mapView setRegion:region animated:YES];
 }
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -47,6 +55,8 @@
     }
     return self;
 }
+
+// Create annotation pins for map
 
 - (MKAnnotationView *) mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation{
     MKPinAnnotationView *myPin = [[MKPinAnnotationView alloc]initWithAnnotation:annotation reuseIdentifier:@"current"];
@@ -61,6 +71,8 @@
     
     return myPin;
 }
+
+// Implementing stop search function by using stop number
 
 - (IBAction)stopSelect:(id)sender {
     NSString *stop = self.stopNumber.text;
@@ -109,21 +121,29 @@
     
 }
 
+// Dismiss keyboard upon selecting return key
+
 - (BOOL)textFieldShouldReturn: (UITextField *) textField{
     [textField resignFirstResponder];
     return YES;
 }
 
+// Dismiss keyboard upon touching outside of keyboard
+
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     [self.view endEditing:YES];
 }
 
--(void) confirm: (myButton *) sender{
+// Display confirmation message for stop selection
+
+- (void)confirm: (myButton *) sender{
     selection = sender.data.annotation.title;
     NSString *alertMessage = [[NSString alloc]initWithFormat:@"You have selected %@, is this the right choice?", selection];
     UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Alert" message: alertMessage delegate:self cancelButtonTitle:@"No" otherButtonTitles:@"Yes", nil];
     [alert show];
 }
+
+// Return user selection to TransitViewController
 
 -(void)alertView:(UIAlertView *) alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
     if(buttonIndex == 1){
@@ -132,7 +152,6 @@
     }
 }
 
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -140,6 +159,8 @@
     mapView.delegate = self;
     mapView.MapType = MKMapTypeStandard;
     [self location];
+    
+    // Create map annotation pins
     
     MKCoordinateRegion region = {{0.0, 0.0}, {0.0, 0.0}};
     
@@ -192,8 +213,6 @@
     productionWayStation.title = @"Production Way Station";
     [mapView addAnnotation:productionWayStation];
 }
-
-
 
 - (void)didReceiveMemoryWarning
 {

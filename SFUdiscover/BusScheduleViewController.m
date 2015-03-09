@@ -1,8 +1,14 @@
 //
 //  BusScheduleViewController.m
+//  Implementation file for the Bus Schedule View Controller
+//
 //  SFUdiscover
 //
-//  Created by Yixuan Li on 3/5/15.
+//  Created by Yixuan Li on 2015-03-01.
+//  Contributors: Yixuan Li
+//
+//  - Created table view for user to select bus number of the bus table wanted
+//
 //  Copyright (c) 2015 EngagingFoundations. All rights reserved.
 //
 

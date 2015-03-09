@@ -1,8 +1,14 @@
 //
 //  BusTableViewController.m
+//  Implemenation file for the Bus Table View Controller
+//
 //  SFUdiscover
 //
-//  Created by Yixuan Li on 3/5/15.
+//  Created by Yixuan Li on 2015-03-01.
+//  Contributors: Yixuan Li
+//
+//  - Display the bus table using user selection pass through previous view via delegation
+//
 //  Copyright (c) 2015 EngagingFoundations. All rights reserved.
 //
 
@@ -37,6 +43,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    // Display bus table based on user selection on previous view
+    
     NSURL *myURL;
     switch (busNumber) {
         case 0:

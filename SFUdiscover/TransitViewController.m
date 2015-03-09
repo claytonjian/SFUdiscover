@@ -1,8 +1,15 @@
 //
 //  TransitViewController.m
+//  Implementation file for the Transit View Controller
+//
 //  SFUdiscover
 //
 //  Created by Clayton Jian on 2015-02-27.
+//  Contributors: Clayton Jian, Yixuan Li
+//
+//  - Setup the menu for displaying transit information for SFU campus
+//  - Provide the options for either bus stop selection or bus table display
+//
 //  Copyright (c) 2015 EngagingFoundations. All rights reserved.
 //
 
@@ -47,11 +54,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+// Create a TransitMapViewController and setup delegation
+
 - (IBAction)openMap:(id)sender {
     TransitMapViewController *TMVC = [self.storyboard instantiateViewControllerWithIdentifier:@"TransitMapViewController"];
     TMVC.TMVCDelegate = self;
     [self presentViewController:TMVC animated:YES completion:nil];
 }
+
+// Used for delegation to retrieve bus stop selection
 
 - (void) passBack:(TransitMapViewController *)controller busStop:(NSString *)input{
     [self.busStop setText:input];

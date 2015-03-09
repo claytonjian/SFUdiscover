@@ -1,8 +1,14 @@
 //
 //  CanvasViewController.m
+//  Implementation file for the Canvas View Controller
+//
 //  SFUdiscover
 //
 //  Created by Clayton Jian on 2015-02-27.
+//  Contributors: Clayton Jian, James Voong, Yixuan Li
+//
+//  - Display the SFU Canvas for user to use through cas.sfu
+//
 //  Copyright (c) 2015 EngagingFoundations. All rights reserved.
 //
 
@@ -11,12 +17,12 @@
 @interface CanvasViewController ()
 
 @property (weak, nonatomic) IBOutlet UIWebView *SFUCanvas;
-
 @property (weak, nonatomic) IBOutlet UIButton *canvasToHome;
 
 @end
 
 @implementation CanvasViewController
+
 - (IBAction)goBack:(id)sender {
     [self.navigationController popViewControllerAnimated:(YES)];
 }
@@ -37,6 +43,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    // To-Do: Secure storage of user login information
+    // Create SFU Canvas for user
     NSURL *myURL = [NSURL URLWithString:@"https://cas.sfu.ca/cas/login?service=https%3A%2F%2Fcanvas.sfu.ca%2Flogin%2Fcas"];
     NSURLRequest *myRequest = [NSURLRequest requestWithURL:myURL];
     [_SFUCanvas loadRequest:myRequest];

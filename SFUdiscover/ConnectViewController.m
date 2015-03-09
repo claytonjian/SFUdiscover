@@ -1,8 +1,14 @@
 //
 //  ConnectViewController.m
+//  Implementation file for the Connect View Controller
+//
 //  SFUdiscover
 //
 //  Created by Clayton Jian on 2015-02-27.
+//  Contributors: Clayton Jian, James Voong, Yixuan Li
+//
+//  - Display the SFU Connect for user to use through cas.sfu
+//
 //  Copyright (c) 2015 EngagingFoundations. All rights reserved.
 //
 
@@ -35,7 +41,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    NSURL *myURL = [NSURL URLWithString:@"https://connect.sfu.ca/"];
+    // To-Do: Secure storage of user login information
+    // Create SFU Connect for user
+    NSURL *myURL = [NSURL URLWithString:@"https://cas.sfu.ca/cas/login?app=SFU+Connect&allow=sfu,zimbra&service=https%3A%2F%2Fconnect.sfu.ca%2Fzimbra%2Fpublic%2Fpreauth.jsp"];
     NSURLRequest *myRequest = [NSURLRequest requestWithURL:myURL];
     [_SFUConnect loadRequest:myRequest];
 }

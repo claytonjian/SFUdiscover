@@ -1,8 +1,14 @@
 //
-//  BusScheduleViewController.h
+//  BusScheduleViewController.m
+//  Header file for the Bus Schedule View Controller
+//
 //  SFUdiscover
 //
-//  Created by Yixuan Li on 3/5/15.
+//  Created by Yixuan Li on 2015-03-01.
+//  Contributors: Yixuan Li
+//
+//  - Created delegation for the table view
+//
 //  Copyright (c) 2015 EngagingFoundations. All rights reserved.
 //
 
