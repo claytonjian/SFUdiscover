@@ -3,6 +3,13 @@
 //  SFUdiscover
 //
 //  Created by Clayton Jian on 2015-02-27.
+//  Contributors: Riku Kenju
+//
+//  - Created (Riku)
+//  - Added button outlets (Riku)
+//
+//  Known Bugs:
+//
 //  Copyright (c) 2015 EngagingFoundations. All rights reserved.
 //
 //  02-27 created.

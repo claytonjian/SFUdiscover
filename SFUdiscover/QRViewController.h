@@ -3,6 +3,13 @@
 //  SFUdiscover
 //
 //  Created by Riku Kenju on 2015-03-05.
+//  Contributors: Riku Kenju
+//
+//  - Created (Riku)
+//  - Implemented AV Capture Interface (Riku)
+//
+//  Known Bugs:
+//
 //  Copyright (c) 2015 EngagingFoundations. All rights reserved.
 //
 //  03-05 created
