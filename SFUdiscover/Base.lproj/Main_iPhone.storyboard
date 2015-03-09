@@ -17,7 +17,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="V8q-kr-kvM">
-                                        <rect key="frame" x="0.0" y="8" width="104" height="169"/>
+                                        <rect key="frame" x="0.0" y="8" width="105" height="169"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="16"/>
@@ -31,7 +31,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ukx-pn-khi">
-                                        <rect key="frame" x="108" y="8" width="104" height="169"/>
+                                        <rect key="frame" x="108" y="8" width="105" height="169"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.73725491759999995" green="0.031372550870000002" blue="0.1411764771" alpha="1" colorSpace="deviceRGB"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="16"/>
@@ -59,7 +59,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="T7d-TS-vyR">
-                                        <rect key="frame" x="0.0" y="185" width="104" height="169"/>
+                                        <rect key="frame" x="0.0" y="179" width="105" height="169"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.0" green="0.26570118910000001" blue="0.54904042119999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="16"/>
@@ -72,7 +72,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="LQx-8T-TbB">
-                                        <rect key="frame" x="108" y="185" width="104" height="169"/>
+                                        <rect key="frame" x="108" y="179" width="105" height="169"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="16"/>
@@ -86,7 +86,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UeZ-DD-nNQ">
-                                        <rect key="frame" x="215" y="185" width="105" height="169"/>
+                                        <rect key="frame" x="215" y="179" width="105" height="169"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.0" green="0.26570118910000001" blue="0.54904042119999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="16"/>
@@ -99,7 +99,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="34u-nY-y4x">
-                                        <rect key="frame" x="0.0" y="362" width="104" height="169"/>
+                                        <rect key="frame" x="0.0" y="351" width="105" height="169"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="16"/>
@@ -113,7 +113,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7zk-c3-P17">
-                                        <rect key="frame" x="108" y="362" width="104" height="169"/>
+                                        <rect key="frame" x="108" y="351" width="105" height="169"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.73725491759999995" green="0.031372550870000002" blue="0.1411764771" alpha="1" colorSpace="deviceRGB"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="16"/>
@@ -127,7 +127,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Wos-Nt-SJR">
-                                        <rect key="frame" x="215" y="362" width="105" height="169"/>
+                                        <rect key="frame" x="215" y="351" width="105" height="169"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="16"/>
@@ -141,7 +141,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zBS-8N-Z8f">
-                                        <rect key="frame" x="0.0" y="539" width="104" height="169"/>
+                                        <rect key="frame" x="0.0" y="522" width="105" height="169"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.0" green="0.26570118910000001" blue="0.54904042119999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="16"/>
@@ -181,6 +181,18 @@
                     <navigationItem key="navigationItem" id="wej-dY-bpZ"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="960"/>
+                    <connections>
+                        <outlet property="calendarButton" destination="T7d-TS-vyR" id="Dv7-nG-uhl"/>
+                        <outlet property="canvasButton" destination="V8q-kr-kvM" id="ePK-jm-X2Y"/>
+                        <outlet property="connectButton" destination="ukx-pn-khi" id="85P-xU-d8M"/>
+                        <outlet property="feedbackButton" destination="QZR-Hw-GBb" id="PME-nI-PAD"/>
+                        <outlet property="libButton" destination="zBS-8N-Z8f" id="UGl-gx-Jvt"/>
+                        <outlet property="loyaltyButton" destination="34u-nY-y4x" id="kGm-5z-22w"/>
+                        <outlet property="navButton" destination="LQx-8T-TbB" id="Oes-QA-IsZ"/>
+                        <outlet property="nfButton" destination="7zk-c3-P17" id="93X-3N-piM"/>
+                        <outlet property="serviceButton" destination="Wos-Nt-SJR" id="bK7-lE-gHl"/>
+                        <outlet property="transitButton" destination="UeZ-DD-nNQ" id="bq4-AI-LG3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
