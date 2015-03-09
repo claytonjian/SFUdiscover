@@ -26,6 +26,11 @@
 		304816E51AAD01E800D1F083 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC20A3C1AAB0EF3008207FF /* XPathQuery.m */; };
 		304816E61AAD01ED00D1F083 /* Tutorial.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC209EF1AAB0DB7008207FF /* Tutorial.m */; };
 		304816E71AAD01F100D1F083 /* Contributor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC209F21AAB0E19008207FF /* Contributor.m */; };
+		304816E81AAD0F2400D1F083 /* FoodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF731D11AAAF18200EBC23D /* FoodViewController.m */; };
+		304816E91AAD0F2D00D1F083 /* LibraryAskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EEC41721AAAE72500B4AF19 /* LibraryAskViewController.m */; };
+		304816EA1AAD0F3600D1F083 /* LibraryHourOpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EEC41761AAAE7DB00B4AF19 /* LibraryHourOpViewController.m */; };
+		304816EB1AAD0F3F00D1F083 /* SafeWalkSiteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF4ABC91AAAB999007B1B12 /* SafeWalkSiteViewController.m */; };
+		304816EC1AAD0F4500D1F083 /* SafeWalkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF4ABC61AAAABFD007B1B12 /* SafeWalkViewController.m */; };
 		4925CF6C1AA566200026305C /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4925CF6B1AA566200026305C /* SettingsViewController.m */; };
 		4929B6171AA133D300963AA7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4929B6161AA133D300963AA7 /* Foundation.framework */; };
 		4929B6191AA133D300963AA7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4929B6181AA133D300963AA7 /* CoreGraphics.framework */; };
@@ -490,6 +495,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				304816EC1AAD0F4500D1F083 /* SafeWalkViewController.m in Sources */,
+				304816EB1AAD0F3F00D1F083 /* SafeWalkSiteViewController.m in Sources */,
+				304816EA1AAD0F3600D1F083 /* LibraryHourOpViewController.m in Sources */,
+				304816E91AAD0F2D00D1F083 /* LibraryAskViewController.m in Sources */,
+				304816E81AAD0F2400D1F083 /* FoodViewController.m in Sources */,
 				304816E71AAD01F100D1F083 /* Contributor.m in Sources */,
 				304816E61AAD01ED00D1F083 /* Tutorial.m in Sources */,
 				304816E51AAD01E800D1F083 /* XPathQuery.m in Sources */,

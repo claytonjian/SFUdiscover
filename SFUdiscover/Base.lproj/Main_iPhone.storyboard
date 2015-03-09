@@ -935,11 +935,18 @@
                                     <segue destination="rX0-AG-tCP" kind="push" id="LKL-Le-yoR"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="I2l-Hz-yJN">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fAj-Du-exZ">
+                                <rect key="frame" x="0.0" y="171" width="320" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kCC-WK-99N">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="15" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="SFUdiscover">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.99444442990000004" green="0.98888885969999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -948,15 +955,9 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="goHome:" destination="0c7-Bj-87g" eventType="touchUpInside" id="YOZ-AF-jP4"/>
+                                    <action selector="goHome:" destination="0c7-Bj-87g" eventType="touchUpInside" id="FCo-U5-6Yd"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fAj-Du-exZ">
-                                <rect key="frame" x="0.0" y="171" width="320" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -964,7 +965,6 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="busStop" destination="fAj-Du-exZ" id="jrS-UU-U8M"/>
-                        <outlet property="transitToHome" destination="I2l-Hz-yJN" id="xcV-2u-boA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eRW-qe-FSM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1318,6 +1318,14 @@
                         <segue destination="yVP-ZD-hQf" kind="relationship" relationship="viewControllers" id="l4m-iV-39a"/>
                     </connections>
                 </tabBarController>
+                <navigationBar contentMode="scaleToFill" id="Pgj-bd-Hfe">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <textAttributes key="titleTextAttributes">
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                    </textAttributes>
+                </navigationBar>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5cW-Da-q9v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="455" y="-1966"/>
@@ -1331,7 +1339,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" id="xu4-Ir-gQx">
-                                <rect key="frame" x="0.0" y="47" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="35" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <textAttributes key="titleTextAttributes">
@@ -1367,7 +1375,7 @@
                                 </items>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Gvb-qN-vDo">
-                                <rect key="frame" x="0.0" y="12" width="320" height="35"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="15" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="SFUdiscover">
@@ -1384,7 +1392,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qvI-Mu-rv9">
-                                <rect key="frame" x="290" y="12" width="30" height="30"/>
+                                <rect key="frame" x="290" y="3" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="20" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="S">
@@ -1399,10 +1407,10 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" id="wGg-iw-JyK">
-                                        <rect key="frame" x="0.0" y="-12" width="320" height="454"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="454"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -1755,7 +1763,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="L4s-88-zpP">
-                                <rect key="frame" x="0.0" y="100" width="320" height="1500"/>
+                                <rect key="frame" x="0.0" y="84" width="320" height="1500"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" id="Oxw-1s-Wic">
@@ -1916,7 +1924,7 @@ Use blue emergency phones</string>
                                 </subviews>
                             </scrollView>
                             <navigationBar contentMode="scaleToFill" id="BXC-rF-xcU">
-                                <rect key="frame" x="0.0" y="56" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="40" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <textAttributes key="titleTextAttributes">
@@ -1954,20 +1962,21 @@ Use blue emergency phones</string>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2no-u6-6gG">
-                                <rect key="frame" x="0.0" y="16" width="320" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="csQ-qN-dk6">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="15" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="SFUdiscover">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
-                                        <color key="value" red="0.70980393890000004" green="0.070588238540000001" blue="0.10588235410000001" alpha="1" colorSpace="deviceRGB"/>
+                                        <color key="value" red="0.70980392160000005" green="0.070588235289999995" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="goHome:" destination="Orc-s0-hpR" eventType="touchUpInside" id="RN6-wj-wBh"/>
+                                    <action selector="goHome:" destination="Orc-s0-hpR" eventType="touchUpInside" id="j9V-RG-2mg"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -2094,63 +2103,6 @@ Use blue emergency phones</string>
                         <rect key="frame" x="0.0" y="0.0" width="320" height="800"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="CPc-6B-5LY">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="809"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <subviews>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BmO-Zf-QDw">
-                                        <rect key="frame" x="117" y="95" width="0.0" height="0.0"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" id="cR8-bc-MRh">
-                                        <rect key="frame" x="20" y="95" width="280" height="369"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <string key="text">The Safe Walk Program was developed by Campus Security as a safety initiative. This service helps ensure your safety as you travel around campus.
-
-The Safe Walk escort is provided by either a security officer or a student campus safety member. The Safe Walk personnel are equipped with portable radios and flashlights and are in direct communication with the Security Department Patrol Operations dispatcher.
-
-The Safe Walk personnel are identified by:
- - A uniform shirt or jacket bearing the insignia of the university or the contracted Security Company
-- They carry a valid SFU Campus Security picture identification card</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" id="MZW-iX-YvO">
-                                        <rect key="frame" x="20" y="472" width="280" height="83"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <string key="text">To request a safe walk:                               Dial 778.782.3100         OR                         Use any direct dial telephone located at a Safe Walk station                                </string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Note: You cannot reserve a Safe Walk time; you must call when you actually need the escort" id="GlL-cx-HEF">
-                                        <rect key="frame" x="20" y="563" width="280" height="65"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For more information visit:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uAO-aq-JBT">
-                                        <rect key="frame" x="60" y="636" width="201" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pAf-rh-OqO">
-                                        <rect key="frame" x="79" y="665" width="162" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="SFU Safe Walk Website">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="MM0-6n-Zau" kind="push" id="eY4-mS-L3g"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </scrollView>
                             <navigationBar contentMode="scaleToFill" id="ttb-Co-Nch">
                                 <rect key="frame" x="0.0" y="38" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -2182,6 +2134,63 @@ The Safe Walk personnel are identified by:
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="CPc-6B-5LY">
+                                <rect key="frame" x="0.0" y="88" width="320" height="722"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BmO-Zf-QDw">
+                                        <rect key="frame" x="117" y="8" width="0.0" height="0.0"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" id="cR8-bc-MRh">
+                                        <rect key="frame" x="20" y="8" width="280" height="369"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <string key="text">The Safe Walk Program was developed by Campus Security as a safety initiative. This service helps ensure your safety as you travel around campus.
+
+The Safe Walk escort is provided by either a security officer or a student campus safety member. The Safe Walk personnel are equipped with portable radios and flashlights and are in direct communication with the Security Department Patrol Operations dispatcher.
+
+The Safe Walk personnel are identified by:
+ - A uniform shirt or jacket bearing the insignia of the university or the contracted Security Company
+- They carry a valid SFU Campus Security picture identification card</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" id="MZW-iX-YvO">
+                                        <rect key="frame" x="20" y="385" width="280" height="83"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <string key="text">To request a safe walk:                               Dial 778.782.3100         OR                         Use any direct dial telephone located at a Safe Walk station                                </string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Note: You cannot reserve a Safe Walk time; you must call when you actually need the escort" id="GlL-cx-HEF">
+                                        <rect key="frame" x="20" y="476" width="280" height="65"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For more information visit:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uAO-aq-JBT">
+                                        <rect key="frame" x="60" y="549" width="201" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pAf-rh-OqO">
+                                        <rect key="frame" x="79" y="578" width="162" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="SFU Safe Walk Website">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="MM0-6n-Zau" kind="push" id="eY4-mS-L3g"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="GIW-dO-Ah8">
                                 <rect key="frame" x="290" y="0.0" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -2190,20 +2199,21 @@ The Safe Walk personnel are identified by:
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="BJ5-6C-3Nr">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1wg-bi-hDM">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="15" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="SFUdiscover">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
-                                        <color key="value" red="0.70980393890000004" green="0.070588238540000001" blue="0.10588235410000001" alpha="1" colorSpace="deviceRGB"/>
+                                        <color key="value" red="0.70980392160000005" green="0.070588235289999995" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="goHome:" destination="TeF-57-oG2" eventType="touchUpInside" id="4Wt-Hc-oJq"/>
+                                    <action selector="goHome:" destination="TeF-57-oG2" eventType="touchUpInside" id="gWb-5r-1UN"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -2311,7 +2321,7 @@ The Safe Walk personnel are identified by:
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" id="5X4-dE-2n1">
-                                <rect key="frame" x="0.0" y="41" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="40" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Restaurants" id="NzO-zV-hdN">
@@ -2337,22 +2347,6 @@ The Safe Walk personnel are identified by:
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="KhX-Oe-r4y">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="SFUdiscover">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
-                                        <color key="value" red="0.70980393890000004" green="0.070588238540000001" blue="0.10588235410000001" alpha="1" colorSpace="deviceRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="goHome:" destination="FHq-07-NS2" eventType="touchUpInside" id="0HK-C3-hM5"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="F59-Wz-8yu">
                                 <rect key="frame" x="290" y="11" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -2361,7 +2355,7 @@ The Safe Walk personnel are identified by:
                                 </state>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="sSR-mg-pUT">
-                                <rect key="frame" x="0.0" y="85" width="320" height="395"/>
+                                <rect key="frame" x="0.0" y="84" width="320" height="395"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -2378,6 +2372,23 @@ The Safe Walk personnel are identified by:
                                     <outlet property="dataSource" destination="FHq-07-NS2" id="cnC-Kd-ARs"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HhB-pF-lLm">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="15" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="SFUdiscover">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                        <color key="value" red="0.70980392160000005" green="0.070588235289999995" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="goHome:" destination="FHq-07-NS2" eventType="touchUpInside" id="fyV-nO-Pg8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -2446,22 +2457,6 @@ The Safe Walk personnel are identified by:
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3Kb-Pt-EAn">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="SFUdiscover">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
-                                        <color key="value" red="0.70980393890000004" green="0.070588238540000001" blue="0.10588235410000001" alpha="1" colorSpace="deviceRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="goHome:" destination="Z17-Vz-5Q2" eventType="touchUpInside" id="q4J-Jp-2R8"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="jYP-JU-lvK">
                                 <rect key="frame" x="290" y="10" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -2469,12 +2464,29 @@ The Safe Walk personnel are identified by:
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="TVs-W9-kac">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="15" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="SFUdiscover">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                        <color key="value" red="0.70980392160000005" green="0.070588235289999995" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="goHome:" destination="Z17-Vz-5Q2" eventType="touchUpInside" id="7AR-U2-e55"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="J9Y-nh-C73"/>
                     <connections>
-                        <outlet property="locationTableView" destination="G8c-gW-ENy" id="8W4-cQ-Ltc"/>
+                        <outlet property="locationTableView" destination="G8c-gW-ENy" id="n5i-ng-M6L"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8qS-uP-VLW" userLabel="First Responder" sceneMemberID="firstResponder"/>
