@@ -22,6 +22,9 @@
 
 @implementation AddEventViewController
 
+- (IBAction)Cancel:(id)sender {
+    [self.navigationController popViewControllerAnimated:(YES)];
+}
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];

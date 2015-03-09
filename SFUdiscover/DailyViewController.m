@@ -86,8 +86,9 @@
         results = [NSString stringWithFormat:@"%@\n\n%@", results, eventDetails];
     }
     //NSString *results = [events componentsJoinedByString:@"\n"];
-    //if ( results != nil);
-    if ( ![results isEqualToString: @""]){
+    
+    // if ( results != NULL){
+    if (![results isEqualToString: @""]){
         self.showEvents.text = results;
     }else{
         self.showEvents.text = @"nothing found";

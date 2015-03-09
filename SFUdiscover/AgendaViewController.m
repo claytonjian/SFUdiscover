@@ -1,19 +1,19 @@
 //
-//  ServicesViewController.m
+//  AgendaViewController.m
 //  SFUdiscover
 //
-//  Created by Clayton Jian on 2015-02-27.
+//  Created by James Voong on 3/8/15.
 //  Copyright (c) 2015 EngagingFoundations. All rights reserved.
 //
 
-#import "ServicesViewController.h"
+#import "AgendaViewController.h"
 
-@interface ServicesViewController ()
-@property (weak, nonatomic) IBOutlet UIButton *servicesToHome;
+@interface AgendaViewController ()
 
 @end
 
-@implementation ServicesViewController
+@implementation AgendaViewController
+
 - (IBAction)goBack:(id)sender {
     [self.navigationController popViewControllerAnimated:(YES)];
 }
@@ -33,18 +33,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    _bookstoreButton.layer.borderWidth = .5f;
-    _bookstoreButton.layer.borderColor = [[UIColor lightGrayColor]CGColor];
-    _lostFoundButton.layer.borderWidth = .5f;
-    _lostFoundButton.layer.borderColor = [[UIColor lightGrayColor]CGColor];
-    _emergencyButton.layer.borderWidth = .5f;
-    _emergencyButton.layer.borderColor = [[UIColor lightGrayColor]CGColor];
-    _safeWalkButton.layer.borderWidth = .5f;
-    _safeWalkButton.layer.borderColor = [[UIColor lightGrayColor]CGColor];
-    _restaurantButton.layer.borderWidth = .5f;
-    _restaurantButton.layer.borderColor = [[UIColor lightGrayColor]CGColor];
-    _trafficButton.layer.borderWidth = .5f;
-    _trafficButton.layer.borderColor = [[UIColor lightGrayColor]CGColor];
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning

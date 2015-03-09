@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface LibraryHourOpViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UIView *LibrarySButton;
 
 @end
