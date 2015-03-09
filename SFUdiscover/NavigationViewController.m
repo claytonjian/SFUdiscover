@@ -9,19 +9,22 @@
 #import "NavigationViewController.h"
 
 @interface NavigationViewController (){
-    // CGRect bHallFrame;
+     CGRect bHallFrame;
 }
 
 @property (weak, nonatomic) IBOutlet UIButton *navigationToHome;
 @property (strong, nonatomic, readwrite) IBOutlet UIScrollView *scrollView;
-//@property (strong, nonatomic) IBOutlet UIImageView *imageView;
+@property (strong, nonatomic) IBOutlet UIImageView *imageView;
+
+@property (strong, nonatomic) NSMutableArray *searchOptions;
 @property (strong, nonatomic) NSArray *navOptions;
 @property (strong, nonatomic) NSArray *searchResults;
+@property (strong, nonatomic) NSArray *buildings;
 
-/*
+
 @property (strong, nonatomic) IBOutlet UIView *buttons;
 @property (weak, nonatomic) IBOutlet UIButton *bHall;
- */
+ 
 
 - (void)centerScrollViewContents;
 - (void)scrollViewDoubleTapped:(UITapGestureRecognizer*)recognizer;
@@ -32,9 +35,8 @@
 @implementation NavigationViewController
 
 @synthesize scrollView = _scrollView;
-//@synthesize imageView = _imageView;
-
-// @synthesize buttons = _buttons;
+@synthesize imageView = _imageView;
+@synthesize buttons = _buttons;
 
 
 - (IBAction)goBack:(id)sender {
@@ -57,14 +59,14 @@
     
     [self centerScrollViewContents];
     
-    /*
+    
      self.bHall.frame = CGRectMake((bHallFrame.origin.x * self.scrollView.zoomScale),
                                   (bHallFrame.origin.y * self.scrollView.zoomScale),
                                   bHallFrame.size.width,
                                   bHallFrame.size.height);
-    */
+    
 }
-/*
+
 - (UIView*)viewForZoomingInScrollView:(UIScrollView *)scrollView {
     // Return the view that you want to zoom
     return self.imageView;
@@ -100,8 +102,8 @@
     [self.scrollView zoomToRect:rectToZoomTo animated:YES];
     
 }
-*/
-/*
+
+
 - (void)centerScrollViewContents {
     CGSize boundsSize = self.scrollView.bounds.size;
     CGRect contentsFrame = self.imageView.frame;
@@ -120,42 +122,78 @@
     
     self.imageView.frame = contentsFrame;
 }
-*/
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // bHallFrame = self.bHall.frame;
+     bHallFrame = self.bHall.frame;
     
     
     
     // 1
-//    UIImage *image = [UIImage imageNamed:@"Page1.jpg"];
-//    self.imageView = [[UIImageView alloc] initWithImage:image];
+    UIImage *image = [UIImage imageNamed:@"Page1.jpg"];
+    self.imageView = [[UIImageView alloc] initWithImage:image];
     // factor of 1.5625
     // Blusson Hall - (5237, 900)
- //   [self.imageView setFrame:CGRectMake(250, 840, 14218.75, 9100)];
- //   [self.scrollView addSubview:self.imageView];
+    [self.imageView setFrame:CGRectMake(250, 840, 14218.75, 9100)];
+    [self.scrollView addSubview:self.imageView];
     
- //   NSLog(@"The image has width %f", image.size.width);
- //   NSLog(@"The image has height %f", image.size.height);
     
-    /*
     self.bHall = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [self.bHall addTarget:self action:@selector(aMethod:)forControlEvents:UIControlEventTouchUpInside];
     [self.bHall setTitle:@"Blusson Hall" forState:UIControlStateNormal];
     [self.scrollView addSubview:self.bHall];
     bHallFrame.origin.x = 8182.8125;
     bHallFrame.origin.y = 1406.25;
-    NSLog(@"The X Coordinate of bHall is %f", bHallFrame.origin.x);
-    NSLog(@"The width of map is %f", self.imageView.frame.size.width);
-    */
+    
     self.navOptions = [[NSArray alloc] initWithObjects:@"Building", @"Room", @"Recent", @"Favorites", @"Nearest Amenity", nil];
-    self.searchResults = [[NSArray alloc]init];
+    self.searchResults = [[NSMutableArray alloc]init];
+    self.buildings = [[NSArray alloc]initWithObjects:   @"Academic Quadrangle (AQ)",
+                                                        @"Alcan Aquatic Research Centre (AAB)",
+                                                        @"Applied Science Building (ASB)",
+                                                        @"Blusson Hall (BLU)",
+                                                        @"Bee Research Building (BEE)",
+                                                        @"Childcare Centre (CCC)",
+                                                        @"Diamond Alumni Centre (DAC)",
+                                                        @"Dining Hall (DH)",
+                                                        @"Discovery 1 (DIS1)",
+                                                        @"Discovery 2 (DIS2)",
+                                                        @"Education Building (EDB)",
+                                                        @"Facilities Services (FS)",
+                                                        @"Greenhouses (GH)",
+                                                        @"Halpern Centre (HC)",
+                                                        @"Lorne Davies Complex (LDC)",
+                                                        @"Maggie Benston Centre (MBC)",
+                                                        @"Robert C. Brown Hall (RCB)",
+                                                        @"Saywell Hall (SWH)",
+                                                        @"Shrum Science Centre Biology (SCB)",
+                                                        @"Shrum Science Centre Chemistry (SCC)",
+                                                        @"Shrum Science Centre Kinesiology (SCK)",
+                                                        @"Science Research Annex (SRA)",
+                                                        @"Strand Hall (SH)",
+                                                        @"Strand Hall Annex (SHA)",
+                                                        @"T3 - Archaeology Trailer (T3)",
+                                                        @"Technology & Science Complex 1 (TASC 1)",
+                                                        @"Technology & Science Complex 2 (TASC 2)," ,
+                                                        @"Transportation Centre (TC)",
+                                                        @"University Theatre (TH)",
+                                                        @"W.A.C. Bennett Library (LIB)",
+                                                        @"West Mall Centre (WMC)",
+                                                        @"Water Tower Building (WTB)", nil];
+    self.searchOptions = [[NSMutableArray alloc]init];
+    
+    for (int i = 0; i < [self.navOptions count]; i++) {
+        [self.searchOptions addObject:[self.navOptions objectAtIndex:i]];
+    }
+    for (int i = 0; i < [self.buildings count]; i++){
+        [self.searchOptions addObject:[self.buildings objectAtIndex:i]];
+    }
     
     
     // 2
- //   self.scrollView.contentSize = image.size;
+    self.scrollView.contentSize = image.size;
     
     // 3
+    
     UITapGestureRecognizer *doubleTapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(scrollViewDoubleTapped:)];
     doubleTapRecognizer.numberOfTapsRequired = 2;
     doubleTapRecognizer.numberOfTouchesRequired = 1;
@@ -182,9 +220,9 @@
     self.scrollView.zoomScale = minScale;
     
     // 6
- //   [self centerScrollViewContents];
+    [self centerScrollViewContents];
+     
 }
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -193,14 +231,17 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-        return [self.navOptions count];
-    
-    
+    if (tableView == self.searchDisplayController.searchResultsTableView) {
+        return [self.searchResults count];
+        
+    } else {
+        return [self.searchOptions count];
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -212,20 +253,24 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
     }
-        cell.textLabel.text = [self.navOptions objectAtIndex:indexPath.row];
-    
+    if (tableView == self.searchDisplayController.searchResultsTableView) {
+        cell.textLabel.text = [self.searchResults objectAtIndex:indexPath.row];
+    }
+    else {
+        cell.textLabel.text = [self.searchOptions objectAtIndex:indexPath.row];
+    }
     return cell;
 }
-/*
+
 -(void) filterSearchResults: (NSString *)searchText scope:(NSString *)scope{
     NSPredicate *predicate = [NSPredicate predicateWithFormat: @"SELF contains[c] %@", searchText];
-    self.searchResults = [self.navOptions filteredArrayUsingPredicate:predicate];
+    self.searchResults = [self.searchOptions filteredArrayUsingPredicate:predicate];
 }
 - (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString{
     [self filterSearchResults:searchString scope:[[self.searchDisplayController.searchBar scopeButtonTitles] objectAtIndex:[self.searchDisplayController.searchBar selectedScopeButtonIndex]]];
     return YES;
 }
-*/
+
 /*
 #pragma mark - Navigation
 
