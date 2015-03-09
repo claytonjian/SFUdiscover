@@ -60,6 +60,7 @@
 		4971E6C71AA9517000D90AE5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4971E6C61AA9517000D90AE5 /* CoreLocation.framework */; };
 		4971E6C91AA951AF00D90AE5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4971E6C81AA951AF00D90AE5 /* MapKit.framework */; };
 		49B69B061AA2A51800B3AC66 /* LibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B69B051AA2A51800B3AC66 /* LibraryViewController.m */; };
+		49EB63FE1AACF69900172C5B /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 49EB63FD1AACF69800172C5B /* libxml2.dylib */; };
 		4E5E6EDA1AABAAC3004DC31F /* AddEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5E6ED91AABAAC3004DC31F /* AddEventViewController.m */; };
 		4E5E6EDD1AABAB8B004DC31F /* EventManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5E6EDC1AABAB8B004DC31F /* EventManager.m */; };
 		4E5E6EE01AABBCAE004DC31F /* DailyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5E6EDF1AABBCAE004DC31F /* DailyViewController.m */; };
@@ -170,6 +171,8 @@
 		4971E6C81AA951AF00D90AE5 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		49B69B041AA2A51800B3AC66 /* LibraryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryViewController.h; sourceTree = "<group>"; };
 		49B69B051AA2A51800B3AC66 /* LibraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryViewController.m; sourceTree = "<group>"; };
+		49EB63FD1AACF69800172C5B /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		49EB64051AACFA1F00172C5B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		4E5E6ED81AABAAC3004DC31F /* AddEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEventViewController.h; sourceTree = "<group>"; };
 		4E5E6ED91AABAAC3004DC31F /* AddEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddEventViewController.m; sourceTree = "<group>"; };
 		4E5E6EDB1AABAB8B004DC31F /* EventManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventManager.h; sourceTree = "<group>"; };
@@ -195,7 +198,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EC20A421AAB1040008207FF /* libxml2.dylib in Frameworks */,
+				49EB63FE1AACF69900172C5B /* libxml2.dylib in Frameworks */,
+				4971E6C91AA951AF00D90AE5 /* MapKit.framework in Frameworks */,
+				4971E6C71AA9517000D90AE5 /* CoreLocation.framework in Frameworks */,
 				4929B6191AA133D300963AA7 /* CoreGraphics.framework in Frameworks */,
 				4929B61B1AA133D300963AA7 /* UIKit.framework in Frameworks */,
 				4929B6171AA133D300963AA7 /* Foundation.framework in Frameworks */,
@@ -295,7 +300,10 @@
 		4929B6151AA133D300963AA7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0EC20A411AAB1040008207FF /* libxml2.dylib */,
+				49EB64051AACFA1F00172C5B /* CoreData.framework */,
+				49EB63FD1AACF69800172C5B /* libxml2.dylib */,
+				4971E6C81AA951AF00D90AE5 /* MapKit.framework */,
+				4971E6C61AA9517000D90AE5 /* CoreLocation.framework */,
 				4929B6161AA133D300963AA7 /* Foundation.framework */,
 				4929B6181AA133D300963AA7 /* CoreGraphics.framework */,
 				4929B61A1AA133D300963AA7 /* UIKit.framework */,
@@ -481,6 +489,7 @@
 				4929B6321AA133DA00963AA7 /* Images.xcassets in Resources */,
 				0EC6D5501AA9B5AE0084B4C6 /* RL_WMC.plist in Resources */,
 				4929B62A1AA133D800963AA7 /* Main_iPhone.storyboard in Resources */,
+				496D138B1AAA7FB600256D0D /* Page1.jpg in Resources */,
 				0EC6D5541AA9B6490084B4C6 /* RL_Cornerstone.plist in Resources */,
 				0EC6D5481AA9A0170084B4C6 /* Locations.plist in Resources */,
 				4929B6211AA133D600963AA7 /* InfoPlist.strings in Resources */,
