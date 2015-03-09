@@ -55,6 +55,8 @@
 		4E5E6EDA1AABAAC3004DC31F /* AddEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5E6ED91AABAAC3004DC31F /* AddEventViewController.m */; };
 		4E5E6EDD1AABAB8B004DC31F /* EventManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5E6EDC1AABAB8B004DC31F /* EventManager.m */; };
 		4E5E6EE01AABBCAE004DC31F /* DailyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5E6EDF1AABBCAE004DC31F /* DailyViewController.m */; };
+		7E4C80531AAD17ED001BD4C4 /* 200px-Simon_Fraser_University_coat_of_arms.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4C80521AAD17ED001BD4C4 /* 200px-Simon_Fraser_University_coat_of_arms.png */; };
+		7E4C80551AAD1BB9001BD4C4 /* setting.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4C80541AAD1BB9001BD4C4 /* setting.png */; };
 		97361C001AA8E9810075B4A5 /* BusScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97361BFF1AA8E9810075B4A5 /* BusScheduleViewController.m */; };
 		97361C031AA8EC9A0075B4A5 /* BusTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97361C021AA8EC9A0075B4A5 /* BusTableViewController.m */; };
 		97361C061AA8F8460075B4A5 /* TransitMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97361C051AA8F8460075B4A5 /* TransitMapViewController.m */; };
@@ -165,6 +167,8 @@
 		4E5E6EDC1AABAB8B004DC31F /* EventManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventManager.m; sourceTree = "<group>"; };
 		4E5E6EDE1AABBCAE004DC31F /* DailyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DailyViewController.h; sourceTree = "<group>"; };
 		4E5E6EDF1AABBCAE004DC31F /* DailyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DailyViewController.m; sourceTree = "<group>"; };
+		7E4C80521AAD17ED001BD4C4 /* 200px-Simon_Fraser_University_coat_of_arms.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "200px-Simon_Fraser_University_coat_of_arms.png"; path = "SFUdiscover/Images.xcassets/200px-Simon_Fraser_University_coat_of_arms.png"; sourceTree = SOURCE_ROOT; };
+		7E4C80541AAD1BB9001BD4C4 /* setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = setting.png; path = SFUdiscover/Images.xcassets/setting.png; sourceTree = SOURCE_ROOT; };
 		97361BFE1AA8E9810075B4A5 /* BusScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusScheduleViewController.h; sourceTree = "<group>"; };
 		97361BFF1AA8E9810075B4A5 /* BusScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusScheduleViewController.m; sourceTree = "<group>"; };
 		97361C011AA8EC9A0075B4A5 /* BusTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusTableViewController.h; sourceTree = "<group>"; };
@@ -327,6 +331,8 @@
 				4929B62E1AA133D800963AA7 /* HomeViewController.h */,
 				4929B62F1AA133D900963AA7 /* HomeViewController.m */,
 				4929B6311AA133DA00963AA7 /* Images.xcassets */,
+				7E4C80541AAD1BB9001BD4C4 /* setting.png */,
+				7E4C80521AAD17ED001BD4C4 /* 200px-Simon_Fraser_University_coat_of_arms.png */,
 				4929B64E1AA1359900963AA7 /* CanvasViewController.h */,
 				4929B64F1AA1359900963AA7 /* CanvasViewController.m */,
 				4929B6511AA135A400963AA7 /* ConnectViewController.h */,
@@ -465,12 +471,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4929B62D1AA133D800963AA7 /* Main_iPad.storyboard in Resources */,
+				7E4C80531AAD17ED001BD4C4 /* 200px-Simon_Fraser_University_coat_of_arms.png in Resources */,
 				0EC6D5521AA9B5FF0084B4C6 /* RL_MBC.plist in Resources */,
 				4929B6321AA133DA00963AA7 /* Images.xcassets in Resources */,
 				0EC6D5501AA9B5AE0084B4C6 /* RL_WMC.plist in Resources */,
 				4929B62A1AA133D800963AA7 /* Main_iPhone.storyboard in Resources */,
 				0EC6D5541AA9B6490084B4C6 /* RL_Cornerstone.plist in Resources */,
 				0EC6D5481AA9A0170084B4C6 /* Locations.plist in Resources */,
+				7E4C80551AAD1BB9001BD4C4 /* setting.png in Resources */,
 				4929B6211AA133D600963AA7 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
