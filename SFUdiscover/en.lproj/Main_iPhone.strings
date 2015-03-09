@@ -1,0 +1,213 @@
+
+/* Class = "IBUIButton"; normalTitle = "Loyalty"; ObjectID = "34u-nY-y4x"; */
+"34u-nY-y4x.normalTitle" = "Loyalty";
+
+/* Class = "IBUIButton"; normalTitle = "Back"; ObjectID = "3HE-NJ-gl6"; */
+"3HE-NJ-gl6.normalTitle" = "Back";
+
+/* Class = "IBUIButton"; normalTitle = "S"; ObjectID = "3KN-pN-ECc"; */
+"3KN-pN-ECc.normalTitle" = "S";
+
+/* Class = "IBUIButton"; normalTitle = "S"; ObjectID = "4av-oQ-5GT"; */
+"4av-oQ-5GT.normalTitle" = "S";
+
+/* Class = "IBUINavigationItem"; title = "Navigation"; ObjectID = "4oo-yl-keD"; */
+"4oo-yl-keD.title" = "Navigation";
+
+/* Class = "IBUIButton"; normalTitle = "News Feed"; ObjectID = "7zk-c3-P17"; */
+"7zk-c3-P17.normalTitle" = "News Feed";
+
+/* Class = "IBUIButton"; normalTitle = "Back"; ObjectID = "95J-L1-Jg3"; */
+"95J-L1-Jg3.normalTitle" = "Back";
+
+/* Class = "IBUIButton"; normalTitle = "S"; ObjectID = "AA7-ct-lBd"; */
+"AA7-ct-lBd.normalTitle" = "S";
+
+/* Class = "IBUIButton"; normalTitle = "Back"; ObjectID = "EQe-ec-W5c"; */
+"EQe-ec-W5c.normalTitle" = "Back";
+
+/* Class = "IBUIButton"; normalTitle = "SFUdiscover"; ObjectID = "EdF-4g-iBR"; */
+"EdF-4g-iBR.normalTitle" = "SFUdiscover";
+
+/* Class = "IBUIButton"; normalTitle = "S"; ObjectID = "FYb-YZ-iC2"; */
+"FYb-YZ-iC2.normalTitle" = "S";
+
+/* Class = "IBUIButton"; normalTitle = "S"; ObjectID = "G03-r8-hpg"; */
+"G03-r8-hpg.normalTitle" = "S";
+
+/* Class = "IBUIButton"; normalTitle = "S"; ObjectID = "Gso-mM-5ck"; */
+"Gso-mM-5ck.normalTitle" = "S";
+
+/* Class = "IBUIButton"; normalTitle = "SFUdiscover"; ObjectID = "Gvb-qN-vDo"; */
+"Gvb-qN-vDo.normalTitle" = "SFUdiscover";
+
+/* Class = "IBUIButton"; normalTitle = "Back"; ObjectID = "HBY-4x-OMe"; */
+"HBY-4x-OMe.normalTitle" = "Back";
+
+/* Class = "IBUIButton"; normalTitle = "Bus Schedule"; ObjectID = "HCh-md-gSi"; */
+"HCh-md-gSi.normalTitle" = "Bus Schedule";
+
+/* Class = "IBUIButton"; normalTitle = "SFUdiscover"; ObjectID = "I2l-Hz-yJN"; */
+"I2l-Hz-yJN.normalTitle" = "SFUdiscover";
+
+/* Class = "IBUIButton"; normalTitle = "SFUdiscover"; ObjectID = "Jms-Bh-hko"; */
+"Jms-Bh-hko.normalTitle" = "SFUdiscover";
+
+/* Class = "IBUIButton"; normalTitle = "SFUdiscover"; ObjectID = "JqU-NE-xoT"; */
+"JqU-NE-xoT.normalTitle" = "SFUdiscover";
+
+/* Class = "IBUIButton"; normalTitle = "Back"; ObjectID = "Kl1-ee-hXW"; */
+"Kl1-ee-hXW.normalTitle" = "Back";
+
+/* Class = "IBUIButton"; normalTitle = "SFUdiscover"; ObjectID = "L6T-cv-Vpg"; */
+"L6T-cv-Vpg.normalTitle" = "SFUdiscover";
+
+/* Class = "IBUIButton"; normalTitle = "Navigation"; ObjectID = "LQx-8T-TbB"; */
+"LQx-8T-TbB.normalTitle" = "Navigation";
+
+/* Class = "IBUIButton"; normalTitle = "Map"; ObjectID = "LZy-9j-hdM"; */
+"LZy-9j-hdM.normalTitle" = "Map";
+
+/* Class = "IBUINavigationItem"; title = "Calendar"; ObjectID = "LaR-p4-CA0"; */
+"LaR-p4-CA0.title" = "Calendar";
+
+/* Class = "IBUIButton"; normalTitle = "SFUdiscover"; ObjectID = "Lcp-R6-p2N"; */
+"Lcp-R6-p2N.normalTitle" = "SFUdiscover";
+
+/* Class = "IBUIButton"; normalTitle = "SFUdiscover"; ObjectID = "NSH-43-uBC"; */
+"NSH-43-uBC.normalTitle" = "SFUdiscover";
+
+/* Class = "IBUINavigationItem"; title = "Feedback"; ObjectID = "Nbp-Rc-R9z"; */
+"Nbp-Rc-R9z.title" = "Feedback";
+
+/* Class = "IBUINavigationItem"; title = "Library"; ObjectID = "Np0-kt-ssG"; */
+"Np0-kt-ssG.title" = "Library";
+
+/* Class = "IBUINavigationItem"; title = "Connect"; ObjectID = "PiI-XP-4c0"; */
+"PiI-XP-4c0.title" = "Connect";
+
+/* Class = "IBUIButton"; normalTitle = "Back"; ObjectID = "QVB-ZK-mlU"; */
+"QVB-ZK-mlU.normalTitle" = "Back";
+
+/* Class = "IBUIButton"; normalTitle = "Feedback"; ObjectID = "QZR-Hw-GBb"; */
+"QZR-Hw-GBb.normalTitle" = "Feedback";
+
+/* Class = "IBUIButton"; normalTitle = "Calendar"; ObjectID = "T7d-TS-vyR"; */
+"T7d-TS-vyR.normalTitle" = "Calendar";
+
+/* Class = "IBUIButton"; normalTitle = "S"; ObjectID = "TPa-3Y-3sy"; */
+"TPa-3Y-3sy.normalTitle" = "S";
+
+/* Class = "IBUIButton"; normalTitle = "S"; ObjectID = "TXE-6w-dL4"; */
+"TXE-6w-dL4.normalTitle" = "S";
+
+/* Class = "IBUIButton"; normalTitle = "S"; ObjectID = "ThX-D2-Uh2"; */
+"ThX-D2-Uh2.normalTitle" = "S";
+
+/* Class = "IBUINavigationItem"; title = "Transit"; ObjectID = "UNH-9a-rFD"; */
+"UNH-9a-rFD.title" = "Transit";
+
+/* Class = "IBUIButton"; normalTitle = "Transit"; ObjectID = "UeZ-DD-nNQ"; */
+"UeZ-DD-nNQ.normalTitle" = "Transit";
+
+/* Class = "IBUIButton"; normalTitle = "Canvas"; ObjectID = "V8q-kr-kvM"; */
+"V8q-kr-kvM.normalTitle" = "Canvas";
+
+/* Class = "IBUIButton"; normalTitle = "Back"; ObjectID = "VLN-lN-29Y"; */
+"VLN-lN-29Y.normalTitle" = "Back";
+
+/* Class = "IBUIButton"; normalTitle = "Services"; ObjectID = "Wos-Nt-SJR"; */
+"Wos-Nt-SJR.normalTitle" = "Services";
+
+/* Class = "IBUIButton"; normalTitle = "S"; ObjectID = "Wtc-da-ADE"; */
+"Wtc-da-ADE.normalTitle" = "S";
+
+/* Class = "IBUIButton"; normalTitle = "SFUdiscover"; ObjectID = "cKT-Hu-Vev"; */
+"cKT-Hu-Vev.normalTitle" = "SFUdiscover";
+
+/* Class = "IBUIButton"; normalTitle = "S"; ObjectID = "dT1-GW-ZKZ"; */
+"dT1-GW-ZKZ.normalTitle" = "S";
+
+/* Class = "IBUIButton"; normalTitle = "Back"; ObjectID = "eS0-Fx-dn4"; */
+"eS0-Fx-dn4.normalTitle" = "Back";
+
+/* Class = "IBUILabel"; text = "Current Location"; ObjectID = "fAj-Du-exZ"; */
+"fAj-Du-exZ.text" = "Current Location";
+
+/* Class = "IBUIButton"; normalTitle = "S"; ObjectID = "fwz-p4-3ue"; */
+"fwz-p4-3ue.normalTitle" = "S";
+
+/* Class = "IBUINavigationItem"; title = "Canvas"; ObjectID = "gdq-uS-aCt"; */
+"gdq-uS-aCt.title" = "Canvas";
+
+/* Class = "IBUIButton"; normalTitle = "Back"; ObjectID = "hMU-s4-pnH"; */
+"hMU-s4-pnH.normalTitle" = "Back";
+
+/* Class = "IBUINavigationItem"; title = "News Feed"; ObjectID = "haG-BH-QfV"; */
+"haG-BH-QfV.title" = "News Feed";
+
+/* Class = "IBUIButton"; normalTitle = "Back"; ObjectID = "it0-fj-Jmn"; */
+"it0-fj-Jmn.normalTitle" = "Back";
+
+/* Class = "IBUIButton"; normalTitle = "SFUdiscover"; ObjectID = "jst-n4-fX5"; */
+"jst-n4-fX5.normalTitle" = "SFUdiscover";
+
+/* Class = "IBUIButton"; normalTitle = "Back"; ObjectID = "kaj-qQ-GSl"; */
+"kaj-qQ-GSl.normalTitle" = "Back";
+
+/* Class = "IBUIButton"; normalTitle = "Back"; ObjectID = "l63-MU-r3R"; */
+"l63-MU-r3R.normalTitle" = "Back";
+
+/* Class = "IBUIButton"; normalTitle = "SFUdiscover"; ObjectID = "nHZ-Xg-G6E"; */
+"nHZ-Xg-G6E.normalTitle" = "SFUdiscover";
+
+/* Class = "IBUIButton"; normalTitle = "SFUdiscover"; ObjectID = "nga-Ii-CTr"; */
+"nga-Ii-CTr.normalTitle" = "SFUdiscover";
+
+/* Class = "IBUIButton"; normalTitle = "S"; ObjectID = "oKv-In-KfN"; */
+"oKv-In-KfN.normalTitle" = "S";
+
+/* Class = "IBUIButton"; normalTitle = "Back"; ObjectID = "odW-Yn-1eN"; */
+"odW-Yn-1eN.normalTitle" = "Back";
+
+/* Class = "IBUIButton"; normalTitle = "SFUdiscover"; ObjectID = "p7D-sz-jfl"; */
+"p7D-sz-jfl.normalTitle" = "SFUdiscover";
+
+/* Class = "IBUIButton"; normalTitle = "S"; ObjectID = "qvI-Mu-rv9"; */
+"qvI-Mu-rv9.normalTitle" = "S";
+
+/* Class = "IBUINavigationItem"; title = "Loyalty"; ObjectID = "rH9-ZJ-5uz"; */
+"rH9-ZJ-5uz.title" = "Loyalty";
+
+/* Class = "IBUIButton"; normalTitle = "SFUdiscover"; ObjectID = "ruM-gK-aci"; */
+"ruM-gK-aci.normalTitle" = "SFUdiscover";
+
+/* Class = "IBUINavigationItem"; title = "Transit"; ObjectID = "sAd-T5-QeQ"; */
+"sAd-T5-QeQ.title" = "Transit";
+
+/* Class = "IBUIButton"; normalTitle = "SFUdiscover"; ObjectID = "sTU-OF-fuE"; */
+"sTU-OF-fuE.normalTitle" = "SFUdiscover";
+
+/* Class = "IBUIButton"; normalTitle = "S"; ObjectID = "sbK-kD-gAd"; */
+"sbK-kD-gAd.normalTitle" = "S";
+
+/* Class = "IBUINavigationItem"; title = "Settings"; ObjectID = "tFJ-Hc-6Ch"; */
+"tFJ-Hc-6Ch.title" = "Settings";
+
+/* Class = "IBUINavigationItem"; title = "Services"; ObjectID = "td0-eX-S4X"; */
+"td0-eX-S4X.title" = "Services";
+
+/* Class = "IBUINavigationItem"; title = "Transit"; ObjectID = "u9w-sT-clr"; */
+"u9w-sT-clr.title" = "Transit";
+
+/* Class = "IBUIButton"; normalTitle = "Connect"; ObjectID = "ukx-pn-khi"; */
+"ukx-pn-khi.normalTitle" = "Connect";
+
+/* Class = "IBUIButton"; normalTitle = "Back"; ObjectID = "ymQ-df-DlG"; */
+"ymQ-df-DlG.normalTitle" = "Back";
+
+/* Class = "IBUIButton"; normalTitle = "Library"; ObjectID = "zBS-8N-Z8f"; */
+"zBS-8N-Z8f.normalTitle" = "Library";
+
+/* Class = "IBUINavigationItem"; title = "Transit"; ObjectID = "zyT-fW-gUO"; */
+"zyT-fW-gUO.title" = "Transit";

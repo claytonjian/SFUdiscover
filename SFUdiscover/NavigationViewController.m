@@ -14,7 +14,7 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *navigationToHome;
 @property (strong, nonatomic, readwrite) IBOutlet UIScrollView *scrollView;
-@property (strong, nonatomic) IBOutlet UIImageView *imageView;
+//@property (strong, nonatomic) IBOutlet UIImageView *imageView;
 @property (strong, nonatomic) NSArray *navOptions;
 @property (strong, nonatomic) NSArray *searchResults;
 
@@ -32,7 +32,7 @@
 @implementation NavigationViewController
 
 @synthesize scrollView = _scrollView;
-@synthesize imageView = _imageView;
+//@synthesize imageView = _imageView;
 
 // @synthesize buttons = _buttons;
 
@@ -64,7 +64,7 @@
                                   bHallFrame.size.height);
     */
 }
-
+/*
 - (UIView*)viewForZoomingInScrollView:(UIScrollView *)scrollView {
     // Return the view that you want to zoom
     return self.imageView;
@@ -100,7 +100,8 @@
     [self.scrollView zoomToRect:rectToZoomTo animated:YES];
     
 }
-
+*/
+/*
 - (void)centerScrollViewContents {
     CGSize boundsSize = self.scrollView.bounds.size;
     CGRect contentsFrame = self.imageView.frame;
@@ -119,7 +120,7 @@
     
     self.imageView.frame = contentsFrame;
 }
-
+*/
 - (void)viewDidLoad {
     [super viewDidLoad];
     // bHallFrame = self.bHall.frame;
@@ -127,15 +128,15 @@
     
     
     // 1
-    UIImage *image = [UIImage imageNamed:@"Page1.jpg"];
-    self.imageView = [[UIImageView alloc] initWithImage:image];
+//    UIImage *image = [UIImage imageNamed:@"Page1.jpg"];
+//    self.imageView = [[UIImageView alloc] initWithImage:image];
     // factor of 1.5625
     // Blusson Hall - (5237, 900)
-    [self.imageView setFrame:CGRectMake(250, 840, 14218.75, 9100)];
-    [self.scrollView addSubview:self.imageView];
+ //   [self.imageView setFrame:CGRectMake(250, 840, 14218.75, 9100)];
+ //   [self.scrollView addSubview:self.imageView];
     
-    NSLog(@"The image has width %f", image.size.width);
-    NSLog(@"The image has height %f", image.size.height);
+ //   NSLog(@"The image has width %f", image.size.width);
+ //   NSLog(@"The image has height %f", image.size.height);
     
     /*
     self.bHall = [UIButton buttonWithType:UIButtonTypeRoundedRect];
@@ -152,7 +153,7 @@
     
     
     // 2
-    self.scrollView.contentSize = image.size;
+ //   self.scrollView.contentSize = image.size;
     
     // 3
     UITapGestureRecognizer *doubleTapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(scrollViewDoubleTapped:)];
@@ -181,7 +182,7 @@
     self.scrollView.zoomScale = minScale;
     
     // 6
-    [self centerScrollViewContents];
+ //   [self centerScrollViewContents];
 }
 
 - (void)didReceiveMemoryWarning
@@ -197,12 +198,8 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    if (tableView == self.searchDisplayController.searchResultsTableView) {
-        return [self.searchResults count];
-    }
-    else{
         return [self.navOptions count];
-    }
+    
     
 }
 
@@ -215,16 +212,11 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
     }
-    
-    if (tableView == self.searchDisplayController.searchResultsTableView) {
-        cell.textLabel.text = [self.searchResults objectAtIndex:indexPath.row];
-    }
-    else{
         cell.textLabel.text = [self.navOptions objectAtIndex:indexPath.row];
-    }
+    
     return cell;
 }
-
+/*
 -(void) filterSearchResults: (NSString *)searchText scope:(NSString *)scope{
     NSPredicate *predicate = [NSPredicate predicateWithFormat: @"SELF contains[c] %@", searchText];
     self.searchResults = [self.navOptions filteredArrayUsingPredicate:predicate];
@@ -233,7 +225,7 @@
     [self filterSearchResults:searchString scope:[[self.searchDisplayController.searchBar scopeButtonTitles] objectAtIndex:[self.searchDisplayController.searchBar selectedScopeButtonIndex]]];
     return YES;
 }
-
+*/
 /*
 #pragma mark - Navigation
 

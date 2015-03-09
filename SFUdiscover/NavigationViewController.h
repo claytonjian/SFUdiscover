@@ -13,5 +13,6 @@
 @property (weak, nonatomic) IBOutlet UIImageView *SFUBurnaby;
 @property (strong, nonatomic, readonly) IBOutlet UIScrollView *scrollView;
 
-
 @end
+
+
