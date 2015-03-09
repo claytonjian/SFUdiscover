@@ -10,5 +10,8 @@
 #import "TransitMapViewController.h"
 
 @interface TransitViewController : UIViewController <TransitMapViewControllerDelegate>
+@property (weak, nonatomic) IBOutlet UIButton *mapButton;
+@property (weak, nonatomic) IBOutlet UIButton *busSchedButton;
+
 
 @end

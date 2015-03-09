@@ -34,14 +34,25 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    //scroll view intializer
     [scroller setScrollEnabled:YES];
     [scroller setContentSize:CGSizeMake(320, 480)];
+    
+    //format for button borders
+    _redeemButton.layer.borderWidth = .5f;
+    _redeemButton.layer.borderColor = [[UIColor lightGrayColor]CGColor];
+    _historyButton.layer.borderWidth = .5f;
+    _historyButton.layer.borderColor = [[UIColor lightGrayColor]CGColor];
+    _participantButton.layer.borderWidth = .5f;
+    _participantButton.layer.borderColor = [[UIColor lightGrayColor]CGColor];
+    _QRScanButton.layer.borderWidth = .5f;
+    _QRScanButton.layer.borderColor = [[UIColor lightGrayColor]CGColor];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
 }
 
 /*

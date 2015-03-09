@@ -33,7 +33,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    _bookstoreButton.layer.borderWidth = .5f;
+    _bookstoreButton.layer.borderColor = [[UIColor lightGrayColor]CGColor];
+    _lostFoundButton.layer.borderWidth = .5f;
+    _lostFoundButton.layer.borderColor = [[UIColor lightGrayColor]CGColor];
+    _emergencyButton.layer.borderWidth = .5f;
+    _emergencyButton.layer.borderColor = [[UIColor lightGrayColor]CGColor];
+    _safeWalkButton.layer.borderWidth = .5f;
+    _safeWalkButton.layer.borderColor = [[UIColor lightGrayColor]CGColor];
+    _restaurantButton.layer.borderWidth = .5f;
+    _restaurantButton.layer.borderColor = [[UIColor lightGrayColor]CGColor];
+    _trafficButton.layer.borderWidth = .5f;
+    _trafficButton.layer.borderColor = [[UIColor lightGrayColor]CGColor];
 }
 
 - (void)didReceiveMemoryWarning

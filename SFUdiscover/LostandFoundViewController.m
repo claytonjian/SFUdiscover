@@ -9,6 +9,7 @@
 #import "LostandFoundViewController.h"
 
 @interface LostandFoundViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *lostFoundToHome;
 
 
 
