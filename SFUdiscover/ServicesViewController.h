@@ -3,16 +3,14 @@
 //  SFUdiscover
 //
 //  Created by Clayton Jian on 2015-02-27.
+//  Contributors: James Voong, Riku Kenju, Clayton Jian
+//
+//  - Go back and go home IBActions implemented (James)
+//  - Added buttons and button borders (Riku)
+//
+//  Known Bugs:
+//
 //  Copyright (c) 2015 EngagingFoundations. All rights reserved.
-
-/*
- Editors: Riku, James
- 
- Changes: Go Back and Go Home IBActions implemented (James)
-          Added Buttons and Button Borders (Riku)
- 
- Known Bugs:
- */
 
 #import <UIKit/UIKit.h>
 
