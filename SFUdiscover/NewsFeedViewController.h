@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <FacebookSDK/FacebookSDK.h>
 #import "NewsFeedCardTableViewCell.h"
+
 
 @interface NewsFeedViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
 

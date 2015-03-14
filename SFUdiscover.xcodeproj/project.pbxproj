@@ -66,6 +66,7 @@
 		4E5E6EDD1AABAB8B004DC31F /* EventManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5E6EDC1AABAB8B004DC31F /* EventManager.m */; };
 		4E5E6EE01AABBCAE004DC31F /* DailyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5E6EDF1AABBCAE004DC31F /* DailyViewController.m */; };
 		4E83D95F1AB42B3A0045958A /* NewsFeedCardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E83D95E1AB42B3A0045958A /* NewsFeedCardTableViewCell.m */; };
+		4E83D96A1AB444BD0045958A /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E83D9691AB444BD0045958A /* FacebookSDK.framework */; };
 		7E4C80551AAD1BB9001BD4C4 /* setting.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4C80541AAD1BB9001BD4C4 /* setting.png */; };
 		7EBFB6921AAE36D0003B4E32 /* PageUnderConstructionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EBFB6911AAE36D0003B4E32 /* PageUnderConstructionViewController.m */; };
 		97361C001AA8E9810075B4A5 /* BusScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97361BFF1AA8E9810075B4A5 /* BusScheduleViewController.m */; };
@@ -188,6 +189,7 @@
 		4E5E6EDF1AABBCAE004DC31F /* DailyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DailyViewController.m; sourceTree = "<group>"; };
 		4E83D95D1AB42B3A0045958A /* NewsFeedCardTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsFeedCardTableViewCell.h; sourceTree = "<group>"; };
 		4E83D95E1AB42B3A0045958A /* NewsFeedCardTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsFeedCardTableViewCell.m; sourceTree = "<group>"; };
+		4E83D9691AB444BD0045958A /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		7E4C80541AAD1BB9001BD4C4 /* setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = setting.png; path = Images.xcassets/setting.png; sourceTree = "<group>"; };
 		7EBFB6901AAE36D0003B4E32 /* PageUnderConstructionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageUnderConstructionViewController.h; sourceTree = "<group>"; };
 		7EBFB6911AAE36D0003B4E32 /* PageUnderConstructionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageUnderConstructionViewController.m; sourceTree = "<group>"; };
@@ -216,6 +218,7 @@
 				4929B6191AA133D300963AA7 /* CoreGraphics.framework in Frameworks */,
 				4929B61B1AA133D300963AA7 /* UIKit.framework in Frameworks */,
 				4929B6171AA133D300963AA7 /* Foundation.framework in Frameworks */,
+				4E83D96A1AB444BD0045958A /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +315,7 @@
 		4929B6151AA133D300963AA7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4E83D9691AB444BD0045958A /* FacebookSDK.framework */,
 				49EB64051AACFA1F00172C5B /* CoreData.framework */,
 				49EB63FD1AACF69800172C5B /* libxml2.dylib */,
 				4971E6C81AA951AF00D90AE5 /* MapKit.framework */,
@@ -724,6 +728,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SFUdiscover/SFUdiscover-Prefix.pch";
 				INFOPLIST_FILE = "SFUdiscover/SFUdiscover-Info.plist";
@@ -739,6 +747,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SFUdiscover/SFUdiscover-Prefix.pch";
 				INFOPLIST_FILE = "SFUdiscover/SFUdiscover-Info.plist";
@@ -755,6 +767,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)/SFUdiscoverTests",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SFUdiscover/SFUdiscover-Prefix.pch";
@@ -775,6 +788,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)/SFUdiscoverTests",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SFUdiscover/SFUdiscover-Prefix.pch";

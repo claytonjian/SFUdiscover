@@ -43,6 +43,8 @@
     // Remove lines between cells
     self.tableView.separatorColor = [UIColor clearColor];
     
+    [self getFacebookFeed];
+    
     // Load data
     [self.tableView reloadData];
     
@@ -64,6 +66,26 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (void) getFacebookFeed{
+    FBRequestConnection *fbConnection = [FBRequestConnection startWithGraphPath:@"simonfraseruniversity/feed?fields=message,link" completionHandler:^(FBRequestConnection *connection, id result, NSError *error) {
+        if (!error) {
+            // Sucess! Include your code to handle the results here
+            NSLog(@"user events: %@", result);
+        } else {
+            // An error occurred, we need to handle the error
+            // See: https://developers.facebook.com/docs/ios/errors
+        } }];
+    
+    if (fbConnection == nil){
+        NSLog(@"nil fb connection");
+    }else{
+        NSLog(@"successful");
+        NSLog(@"request: %@", fbConnection.urlRequest);
+        NSLog(@"response: %@", fbConnection.urlResponse);
+    }
+    
+}
 
 #pragma mark - UITableView Delegate and Datasource method implementation
 
