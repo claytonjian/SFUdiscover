@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Z3h-Ab-vzh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Z3h-Ab-vzh">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
         <!--Home View Controller-->
@@ -151,7 +152,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="ya4-fS-sBL" kind="push" customClass="goToLibrary" id="VSC-1P-etC"/>
+                                            <segue destination="ya4-fS-sBL" kind="push" id="VSC-1P-etC"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -1079,7 +1080,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="jaM-9a-bAY"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="1000"/>
                     <connections>
                         <outlet property="scrollView" destination="Qpa-f1-emJ" id="P8U-4u-t8A"/>
                         <outlet property="searchDisplayController" destination="zrp-IW-syN" id="AqX-Nf-g4J"/>
@@ -1537,7 +1537,7 @@
             </objects>
             <point key="canvasLocation" x="1570" y="-237"/>
         </scene>
-        <!--Agenda View Controller - Agenda-->
+        <!--Agenda-->
         <scene sceneID="NXx-Dv-WJh">
             <objects>
                 <viewController id="vSO-34-Gd0" customClass="AgendaViewController" sceneMemberID="viewController">
@@ -1590,16 +1590,47 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="41" sectionHeaderHeight="22" sectionFooterHeight="22" id="frr-S8-7X6">
+                                <rect key="frame" x="0.0" y="93" width="320" height="337"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="idCellEvent" textLabel="6C5-yv-PEv" detailTextLabel="a8M-bX-1B6" rowHeight="41" style="IBUITableViewCellStyleSubtitle" id="Zfy-Hh-lPW">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zfy-Hh-lPW" id="pmC-DU-Lr5">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6C5-yv-PEv">
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="a8M-bX-1B6">
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Agenda" id="K3F-Oj-plz"/>
+                    <connections>
+                        <outlet property="tableEvents" destination="frr-S8-7X6" id="2C1-RM-9Er"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dLO-8e-9lv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1048" y="-2511"/>
         </scene>
-        <!--Calendar View Controller - Calendar View Controller-->
+        <!--Calendar View Controller-->
         <scene sceneID="rwX-GU-841">
             <objects>
                 <tabBarController title="Calendar View Controller" definesPresentationContext="YES" id="FPc-2R-xBT" customClass="CalendarViewController" sceneMemberID="viewController">
@@ -1629,7 +1660,7 @@
             </objects>
             <point key="canvasLocation" x="455" y="-1966"/>
         </scene>
-        <!--Daily View Controller - Daily-->
+        <!--Daily-->
         <scene sceneID="eMX-RK-K3W">
             <objects>
                 <viewController id="fEY-qN-JvF" customClass="DailyViewController" sceneMemberID="viewController">
@@ -1722,7 +1753,7 @@
             </objects>
             <point key="canvasLocation" x="1048" y="-1919"/>
         </scene>
-        <!--Monthly View Controller - Monthly-->
+        <!--Monthly-->
         <scene sceneID="KFk-HE-Sxy">
             <objects>
                 <viewController id="yVP-ZD-hQf" customClass="Monthly_View_Controller" sceneMemberID="viewController">
@@ -1875,7 +1906,7 @@
             </objects>
             <point key="canvasLocation" x="380" y="584"/>
         </scene>
-        <!--Add Event View Controller - Add Event-->
+        <!--Add Event-->
         <scene sceneID="ISF-Ti-2ap">
             <objects>
                 <viewController id="qcI-tf-z42" customClass="AddEventViewController" sceneMemberID="viewController">
@@ -2215,7 +2246,6 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KwV-QX-MzF">
-                                        <rect key="frame" x="117" y="4" width="0.0" height="0.0"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="highlightedColor"/>
@@ -2548,7 +2578,6 @@ Use blue emergency phones</string>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BmO-Zf-QDw">
-                                        <rect key="frame" x="117" y="8" width="0.0" height="0.0"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="highlightedColor"/>

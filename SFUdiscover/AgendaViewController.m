@@ -7,8 +7,10 @@
 //
 
 #import "AgendaViewController.h"
+#import "AppDelegate.h"
 
 @interface AgendaViewController ()
+@property (nonatomic, strong) AppDelegate *appDelegate;
 
 @end
 
@@ -33,7 +35,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    // Make self the delegate and datasource of the table view
+    self.tableEvents.delegate = self;
+    self.tableEvents.dataSource = self;
+    
+    // Instantiate the appDelegate property, so we can access its eventManager property
+    self.appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    
+    // Load the events with a small delay, so the store event gets ready
+    [self performSelector:@selector(loadEvents) withObject:nil afterDelay:0.5];
 }
 
 - (void)didReceiveMemoryWarning
@@ -52,5 +63,61 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+// Display events
+-(void)loadEvents{
+    if (self.appDelegate.eventManager.eventsAccessGranted) {
+        
+        // Get events
+        self.arrEvents = [self.appDelegate.eventManager getEventsOfSelectedCalendar];
+        
+        // Reload view
+        [self.tableEvents reloadData];
+    }
+}
+
+#pragma mark - EditEventViewControllerDelegate method implementation
+
+// Upon saving a new event, reload events' display
+-(void)eventWasSuccessfullySaved{
+    
+    // Reload all events.
+    [self viewDidLoad];
+}
+
+#pragma mark - UITableView Delegate and Datasource method implementation
+
+// Get the number of rows needed
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    
+    // return number of events
+    return self.arrEvents.count;
+}
+
+// Displace cell content
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"idCellEvent"];
+    
+    // Get each single event
+    EKEvent *event = [self.arrEvents objectAtIndex:indexPath.row];
+    
+    
+    
+    // Set event title to the cell's text label
+    cell.textLabel.text = [NSString stringWithFormat:@"%@ - %@", event.title, event.calendar.title];
+    
+    
+    // Get the event start date as a string value
+    NSString *startDateString = [self.appDelegate.eventManager getStringFromDate:event.startDate];
+    
+    // Get the event end date as a string value
+    NSString *endDateString = [self.appDelegate.eventManager getStringFromDate:event.endDate];
+    
+    // Concatenate the start and end date strings and set to the cell's detail text label
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ - %@", startDateString, endDateString];
+    
+    return cell;
+}
 
 @end
