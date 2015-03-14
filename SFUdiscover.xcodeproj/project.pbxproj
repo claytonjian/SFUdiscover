@@ -65,6 +65,7 @@
 		4E5E6EDA1AABAAC3004DC31F /* AddEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5E6ED91AABAAC3004DC31F /* AddEventViewController.m */; };
 		4E5E6EDD1AABAB8B004DC31F /* EventManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5E6EDC1AABAB8B004DC31F /* EventManager.m */; };
 		4E5E6EE01AABBCAE004DC31F /* DailyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5E6EDF1AABBCAE004DC31F /* DailyViewController.m */; };
+		4E83D95F1AB42B3A0045958A /* NewsFeedCardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E83D95E1AB42B3A0045958A /* NewsFeedCardTableViewCell.m */; };
 		7E4C80551AAD1BB9001BD4C4 /* setting.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4C80541AAD1BB9001BD4C4 /* setting.png */; };
 		7EBFB6921AAE36D0003B4E32 /* PageUnderConstructionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EBFB6911AAE36D0003B4E32 /* PageUnderConstructionViewController.m */; };
 		97361C001AA8E9810075B4A5 /* BusScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97361BFF1AA8E9810075B4A5 /* BusScheduleViewController.m */; };
@@ -185,6 +186,8 @@
 		4E5E6EDC1AABAB8B004DC31F /* EventManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventManager.m; sourceTree = "<group>"; };
 		4E5E6EDE1AABBCAE004DC31F /* DailyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DailyViewController.h; sourceTree = "<group>"; };
 		4E5E6EDF1AABBCAE004DC31F /* DailyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DailyViewController.m; sourceTree = "<group>"; };
+		4E83D95D1AB42B3A0045958A /* NewsFeedCardTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsFeedCardTableViewCell.h; sourceTree = "<group>"; };
+		4E83D95E1AB42B3A0045958A /* NewsFeedCardTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsFeedCardTableViewCell.m; sourceTree = "<group>"; };
 		7E4C80541AAD1BB9001BD4C4 /* setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = setting.png; path = Images.xcassets/setting.png; sourceTree = "<group>"; };
 		7EBFB6901AAE36D0003B4E32 /* PageUnderConstructionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageUnderConstructionViewController.h; sourceTree = "<group>"; };
 		7EBFB6911AAE36D0003B4E32 /* PageUnderConstructionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageUnderConstructionViewController.m; sourceTree = "<group>"; };
@@ -375,6 +378,8 @@
 				4929B6611AA135DF00963AA7 /* LoyaltyViewController.m */,
 				4929B6631AA135EE00963AA7 /* NewsFeedViewController.h */,
 				4929B6641AA135EE00963AA7 /* NewsFeedViewController.m */,
+				4E83D95D1AB42B3A0045958A /* NewsFeedCardTableViewCell.h */,
+				4E83D95E1AB42B3A0045958A /* NewsFeedCardTableViewCell.m */,
 				4929B6661AA135FD00963AA7 /* ServicesViewController.h */,
 				4929B6671AA135FD00963AA7 /* ServicesViewController.m */,
 				4925CF6A1AA566200026305C /* SettingsViewController.h */,
@@ -528,6 +533,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E83D95F1AB42B3A0045958A /* NewsFeedCardTableViewCell.m in Sources */,
 				30A459C11AAD5B8400AD7221 /* AgendaViewController.m in Sources */,
 				30A459C01AAD5B7D00AD7221 /* Monthly View Controller.m in Sources */,
 				304816EC1AAD0F4500D1F083 /* SafeWalkViewController.m in Sources */,
