@@ -1,19 +1,18 @@
 //
-//  BookStoreViewController.m
+//  LostandFoundWebViewController.m
 //  SFUdiscover
 //
-//  Created by James Voong on 3/5/2015.
+//  Created by James Voong on 3/15/2015.
 //  Copyright (c) 2015 EngagingFoundations. All rights reserved.
 //
 
-#import "BookStoreViewController.h"
+#import "LostandFoundWebViewController.h"
 
-@interface BookStoreViewController ()
-@property (weak, nonatomic) IBOutlet UIWebView *BookStore;
+@interface LostandFoundWebViewController ()
 
 @end
 
-@implementation BookStoreViewController
+@implementation LostandFoundWebViewController
 
 - (IBAction)goBack:(id)sender {
     [self.navigationController popViewControllerAnimated:(YES)];
@@ -35,10 +34,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Set button borders
-    NSURL *myURL = [NSURL URLWithString:@"http://sfu.collegestoreonline.com/ePOS?form=index.html&store=472&design=mobile"];
-    NSURLRequest *myRequest = [NSURLRequest requestWithURL:myURL];
-    [_BookStore loadRequest:myRequest];
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning
