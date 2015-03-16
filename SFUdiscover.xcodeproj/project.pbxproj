@@ -72,6 +72,17 @@
 		97361C061AA8F8460075B4A5 /* TransitMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97361C051AA8F8460075B4A5 /* TransitMapViewController.m */; };
 		97361C091AA8F8CC0075B4A5 /* MapPin.m in Sources */ = {isa = PBXBuildFile; fileRef = 97361C081AA8F8CC0075B4A5 /* MapPin.m */; };
 		97D44E6B1AABB11F00B0A91C /* myButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D44E6A1AABB11F00B0A91C /* myButton.m */; };
+		A734C3421AB678CA003F2917 /* connect.png in Resources */ = {isa = PBXBuildFile; fileRef = A734C33C1AB678CA003F2917 /* connect.png */; };
+		A734C3541AB68894003F2917 /* library.png in Resources */ = {isa = PBXBuildFile; fileRef = A734C34F1AB68894003F2917 /* library.png */; };
+		A734C3551AB68894003F2917 /* loyaltyblue.png in Resources */ = {isa = PBXBuildFile; fileRef = A734C3501AB68894003F2917 /* loyaltyblue.png */; };
+		A734C3561AB68894003F2917 /* news.png in Resources */ = {isa = PBXBuildFile; fileRef = A734C3511AB68894003F2917 /* news.png */; };
+		A734C3581AB688F7003F2917 /* navred.png in Resources */ = {isa = PBXBuildFile; fileRef = A734C3571AB688F7003F2917 /* navred.png */; };
+		A734C35B1AB6905A003F2917 /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = A734C3591AB6905A003F2917 /* calendar.png */; };
+		A734C35C1AB6905A003F2917 /* transit.png in Resources */ = {isa = PBXBuildFile; fileRef = A734C35A1AB6905A003F2917 /* transit.png */; };
+		A734C35E1AB690CB003F2917 /* feedbackblue.png in Resources */ = {isa = PBXBuildFile; fileRef = A734C35D1AB690CB003F2917 /* feedbackblue.png */; };
+		A734C3631AB6937A003F2917 /* nav2.png in Resources */ = {isa = PBXBuildFile; fileRef = A734C3601AB6937A003F2917 /* nav2.png */; };
+		A734C3641AB6937A003F2917 /* service1blue.png in Resources */ = {isa = PBXBuildFile; fileRef = A734C3611AB6937A003F2917 /* service1blue.png */; };
+		A734C3661AB694C0003F2917 /* canvasblue.png in Resources */ = {isa = PBXBuildFile; fileRef = A734C3651AB694C0003F2917 /* canvasblue.png */; };
 		A7799ED21AAC00060051E4D7 /* QRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7799ED11AAC00060051E4D7 /* QRViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -198,6 +209,17 @@
 		97361C081AA8F8CC0075B4A5 /* MapPin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPin.m; sourceTree = "<group>"; };
 		97D44E6A1AABB11F00B0A91C /* myButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myButton.m; sourceTree = "<group>"; };
 		97D44E6C1AABB13800B0A91C /* myButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myButton.h; sourceTree = "<group>"; };
+		A734C33C1AB678CA003F2917 /* connect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = connect.png; sourceTree = "<group>"; };
+		A734C34F1AB68894003F2917 /* library.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = library.png; sourceTree = "<group>"; };
+		A734C3501AB68894003F2917 /* loyaltyblue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loyaltyblue.png; sourceTree = "<group>"; };
+		A734C3511AB68894003F2917 /* news.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = news.png; sourceTree = "<group>"; };
+		A734C3571AB688F7003F2917 /* navred.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navred.png; sourceTree = "<group>"; };
+		A734C3591AB6905A003F2917 /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar.png; sourceTree = "<group>"; };
+		A734C35A1AB6905A003F2917 /* transit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = transit.png; sourceTree = "<group>"; };
+		A734C35D1AB690CB003F2917 /* feedbackblue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feedbackblue.png; sourceTree = "<group>"; };
+		A734C3601AB6937A003F2917 /* nav2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav2.png; sourceTree = "<group>"; };
+		A734C3611AB6937A003F2917 /* service1blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = service1blue.png; sourceTree = "<group>"; };
+		A734C3651AB694C0003F2917 /* canvasblue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = canvasblue.png; sourceTree = "<group>"; };
 		A7799ED01AAC00060051E4D7 /* QRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRViewController.h; sourceTree = "<group>"; };
 		A7799ED11AAC00060051E4D7 /* QRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -357,6 +379,17 @@
 				4929B62E1AA133D800963AA7 /* HomeViewController.h */,
 				4929B62F1AA133D900963AA7 /* HomeViewController.m */,
 				4929B6311AA133DA00963AA7 /* Images.xcassets */,
+				A734C3651AB694C0003F2917 /* canvasblue.png */,
+				A734C3601AB6937A003F2917 /* nav2.png */,
+				A734C3611AB6937A003F2917 /* service1blue.png */,
+				A734C35D1AB690CB003F2917 /* feedbackblue.png */,
+				A734C3591AB6905A003F2917 /* calendar.png */,
+				A734C35A1AB6905A003F2917 /* transit.png */,
+				A734C3571AB688F7003F2917 /* navred.png */,
+				A734C34F1AB68894003F2917 /* library.png */,
+				A734C3501AB68894003F2917 /* loyaltyblue.png */,
+				A734C3511AB68894003F2917 /* news.png */,
+				A734C33C1AB678CA003F2917 /* connect.png */,
 				496D138A1AAA7FB600256D0D /* Page1.jpg */,
 				7E4C80541AAD1BB9001BD4C4 /* setting.png */,
 				4929B64E1AA1359900963AA7 /* CanvasViewController.h */,
@@ -502,13 +535,24 @@
 			files = (
 				4929B62D1AA133D800963AA7 /* Main_iPad.storyboard in Resources */,
 				0EC6D5521AA9B5FF0084B4C6 /* RL_MBC.plist in Resources */,
+				A734C35C1AB6905A003F2917 /* transit.png in Resources */,
 				4929B6321AA133DA00963AA7 /* Images.xcassets in Resources */,
+				A734C3421AB678CA003F2917 /* connect.png in Resources */,
 				0EC6D5501AA9B5AE0084B4C6 /* RL_WMC.plist in Resources */,
+				A734C3631AB6937A003F2917 /* nav2.png in Resources */,
+				A734C3581AB688F7003F2917 /* navred.png in Resources */,
 				4929B62A1AA133D800963AA7 /* Main_iPhone.storyboard in Resources */,
+				A734C3561AB68894003F2917 /* news.png in Resources */,
+				A734C3551AB68894003F2917 /* loyaltyblue.png in Resources */,
+				A734C35B1AB6905A003F2917 /* calendar.png in Resources */,
 				496D138B1AAA7FB600256D0D /* Page1.jpg in Resources */,
+				A734C3641AB6937A003F2917 /* service1blue.png in Resources */,
+				A734C35E1AB690CB003F2917 /* feedbackblue.png in Resources */,
 				0EC6D5541AA9B6490084B4C6 /* RL_Cornerstone.plist in Resources */,
+				A734C3541AB68894003F2917 /* library.png in Resources */,
 				0EC6D5481AA9A0170084B4C6 /* Locations.plist in Resources */,
 				7E4C80551AAD1BB9001BD4C4 /* setting.png in Resources */,
+				A734C3661AB694C0003F2917 /* canvasblue.png in Resources */,
 				4929B6211AA133D600963AA7 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
