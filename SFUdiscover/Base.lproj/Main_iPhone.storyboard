@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Z3h-Ab-vzh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Z3h-Ab-vzh">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -3527,7 +3527,7 @@ The Safe Walk personnel are identified by:
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pAL-xq-QEm">
-                                        <rect key="frame" x="52" y="81" width="216" height="45"/>
+                                        <rect key="frame" x="52" y="20" width="216" height="45"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
                                         <state key="normal" title="Send to SFU">
@@ -3544,7 +3544,7 @@ The Safe Walk personnel are identified by:
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="VIi-T1-U8S">
-                                        <rect key="frame" x="52" y="258" width="216" height="45"/>
+                                        <rect key="frame" x="52" y="197" width="216" height="45"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
                                         <state key="normal" title="Send to the Developer">
@@ -3561,7 +3561,7 @@ The Safe Walk personnel are identified by:
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mXd-cV-19d">
-                                        <rect key="frame" x="52" y="140" width="216" height="45"/>
+                                        <rect key="frame" x="52" y="79" width="216" height="45"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
                                         <state key="normal" title="Send to Library">
@@ -3578,7 +3578,7 @@ The Safe Walk personnel are identified by:
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gFy-yc-rgs">
-                                        <rect key="frame" x="52" y="199" width="216" height="45"/>
+                                        <rect key="frame" x="52" y="138" width="216" height="45"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
                                         <state key="normal" title="Send to Dining Services">
@@ -3591,18 +3591,15 @@ The Safe Walk personnel are identified by:
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="sendToRests:" destination="dDA-LN-thq" eventType="touchUpInside" id="zjW-cM-FDg"/>
+                                            <action selector="sendToDining:" destination="dDA-LN-thq" eventType="touchUpInside" id="VPs-xN-XgA"/>
                                         </connections>
                                     </button>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type your feeback in here..." minimumFontSize="17" clearButtonMode="unlessEditing" id="kHy-rn-VQA">
-                                        <rect key="frame" x="20" y="20" width="280" height="30"/>
+                                    <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="R2Z-0g-Esf">
+                                        <rect key="frame" x="0.0" y="291" width="320" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <outlet property="delegate" destination="dDA-LN-thq" id="toz-t7-fQZ"/>
-                                        </connections>
-                                    </textField>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3T9-iX-Kf5">
@@ -3625,13 +3622,13 @@ The Safe Walk personnel are identified by:
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="feedbackToHome" destination="3T9-iX-Kf5" id="eAp-Wx-J9D"/>
-                        <outlet property="inputField" destination="kHy-rn-VQA" id="7nR-WN-C2r"/>
                         <outlet property="scrView" destination="6oW-id-Vr3" id="PF9-cb-4ZG"/>
                         <outlet property="scroller" destination="6oW-id-Vr3" id="0mN-IS-gdm"/>
                         <outlet property="sendToDevsButton" destination="VIi-T1-U8S" id="ZyI-cE-NH5"/>
-                        <outlet property="sendToDiningButton" destination="gFy-yc-rgs" id="RCt-3R-bmn"/>
+                        <outlet property="sendToDiningButton" destination="gFy-yc-rgs" id="vFM-Tv-4GH"/>
                         <outlet property="sendToLibButton" destination="mXd-cV-19d" id="Rpg-r5-trr"/>
                         <outlet property="sendToSFUButton" destination="pAL-xq-QEm" id="rCw-iS-icx"/>
+                        <outlet property="statusMessageLabel" destination="R2Z-0g-Esf" id="ya2-2s-XPF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uii-74-o2p" userLabel="First Responder" sceneMemberID="firstResponder"/>
