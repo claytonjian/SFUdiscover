@@ -15,6 +15,7 @@
 //
 
 #import "NavigationViewController.h"
+#import "NavSearchResultsViewController.h"
 
 @interface NavigationViewController (){
     CGRect bHallFrame;
@@ -30,6 +31,10 @@
 @property (strong, nonatomic) NSArray *navOptions;
 @property (strong, nonatomic) NSArray *searchResults;
 @property (strong, nonatomic) NSArray *buildings;
+@property (weak, nonatomic) IBOutlet UISearchBar *navSearch;
+@property (weak, nonatomic) NSString *result;
+
+@property (weak, nonatomic) IBOutlet UITableView *searchTable;
 
 
 @property (strong, nonatomic) IBOutlet UIView *buttons;
@@ -158,7 +163,7 @@
     
     
     // create available search options for search bar
-    self.navOptions = [[NSArray alloc] initWithObjects:@"Building", @"Room", @"Recent", @"Favorites", @"Nearest Amenity", nil];
+    self.navOptions = [[NSArray alloc] initWithObjects:@"Building", @"Room", @"Recent", @"Favorites", @"Nearest Amenity", @"Restaurants", nil];
     self.searchResults = [[NSMutableArray alloc]init];
     self.buildings = [[NSArray alloc]initWithObjects:   @"Academic Quadrangle (AQ)",
                       @"Alcan Aquatic Research Centre (AAB)",
@@ -254,8 +259,9 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    
     // writes the search option to each row
-    static NSString *simpleTableIdentifier = @"SimpleTableCell";
+    static NSString *simpleTableIdentifier = @"showSearchDetail";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
     
@@ -273,23 +279,21 @@
 
 -(void) filterSearchResults: (NSString *)searchText scope:(NSString *)scope{
     // filters search results by keywords that contain search parameter
-    NSPredicate *predicate = [NSPredicate predicateWithFormat: @"SELF contains[c] %@", searchText];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat: @"SELF CONTAINS[c] %@", searchText];
     self.searchResults = [self.searchOptions filteredArrayUsingPredicate:predicate];
 }
 - (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString{
     [self filterSearchResults:searchString scope:[[self.searchDisplayController.searchBar scopeButtonTitles] objectAtIndex:[self.searchDisplayController.searchBar selectedScopeButtonIndex]]];
     return YES;
 }
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    self.result = [self.searchResults objectAtIndex:indexPath.row];
+    [self performSegueWithIdentifier:@"SearchResults" sender:self];
+}
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    NavSearchResultsViewController *NSR = [segue destinationViewController];
+    NSR.title = self.result;
+}
 
-/*
- #pragma mark - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
- {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
 
 @end
