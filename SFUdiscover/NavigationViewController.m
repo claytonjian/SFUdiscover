@@ -16,6 +16,7 @@
 
 #import "NavigationViewController.h"
 #import "NavSearchResultsViewController.h"
+#import "NarrowSearchViewController.h"
 
 @interface NavigationViewController (){
     CGRect bHallFrame;
@@ -23,7 +24,6 @@
 
 // created data types for use in view controller
 
-@property (weak, nonatomic) IBOutlet UIButton *navigationToHome;
 @property (strong, nonatomic, readwrite) IBOutlet UIScrollView *scrollView;
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
 
@@ -35,10 +35,14 @@
 @property (weak, nonatomic) NSString *result;
 
 @property (weak, nonatomic) IBOutlet UITableView *searchTable;
+@property (weak, nonatomic) NSString *tableSelected;
 
 
 @property (strong, nonatomic) IBOutlet UIView *buttons;
 @property (weak, nonatomic) IBOutlet UIButton *bHall;
+@property (weak, nonatomic) IBOutlet UIButton *favoritesButton;
+@property (weak, nonatomic) IBOutlet UIButton *recentButton;
+@property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
 
 
 // declare functions for use in scroll view
@@ -141,11 +145,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     bHallFrame = self.bHall.frame;
-    
-    
+    [self.searchTable setHidden:YES];
+    [self.imageView addSubview:self.favoritesButton];
+    [self.imageView addSubview:self.recentButton];
+    [self.imageView bringSubviewToFront:self.favoritesButton];
+    [self.imageView bringSubviewToFront:self.recentButton];
     
     // load map to image view
-    UIImage *image = [UIImage imageNamed:@"Page1.jpg"];
+    UIImage *image = [UIImage imageNamed:@"SFU Burnaby.jpg"];
     self.imageView = [[UIImageView alloc] initWithImage:image];
     // factor of 1.5625
     // Blusson Hall - (5237, 900)
@@ -235,6 +242,9 @@
     [self centerScrollViewContents];
     
 }
+- (void)viewDidDisappear:(BOOL)animated{
+    [super viewDidDisappear:animated];
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -247,8 +257,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    // returns number of rows the search will display
-    
+     //returns number of rows the search will display
     if (tableView == self.searchDisplayController.searchResultsTableView) {
         return [self.searchResults count];
         
@@ -259,7 +268,6 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
     // writes the search option to each row
     static NSString *simpleTableIdentifier = @"showSearchDetail";
     
@@ -279,7 +287,10 @@
 
 -(void) filterSearchResults: (NSString *)searchText scope:(NSString *)scope{
     // filters search results by keywords that contain search parameter
-    NSPredicate *predicate = [NSPredicate predicateWithFormat: @"SELF CONTAINS[c] %@", searchText];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat: @"SELF BEGINSWITH[c] %@", searchText];
+    if([[self.searchOptions filteredArrayUsingPredicate:predicate] count] == 0){
+        predicate = [NSPredicate predicateWithFormat:@"SELF CONTAINS[c] %@", searchText];
+    }
     self.searchResults = [self.searchOptions filteredArrayUsingPredicate:predicate];
 }
 - (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString{
@@ -287,12 +298,29 @@
     return YES;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    self.result = [self.searchResults objectAtIndex:indexPath.row];
-    [self performSegueWithIdentifier:@"SearchResults" sender:self];
+    self.tableSelected = @"";
+    if([[self.searchResults objectAtIndex:indexPath.row] isEqualToString:(@"Favorites")]){
+        self.tableSelected = @"Favorites";
+        [self performSegueWithIdentifier:@"NarrowSearch" sender:self];
+    }
+    else if ([[self.searchResults objectAtIndex:indexPath.row] isEqualToString:(@"Recent")]){
+        self.tableSelected = @"Recent";
+        [self performSegueWithIdentifier:@"NarrowSearch" sender:self];
+    }
+    else{
+        self.result = [self.searchResults objectAtIndex:indexPath.row];
+        [self performSegueWithIdentifier:@"SearchResults" sender:self];
+    }
 }
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    NavSearchResultsViewController *NSR = [segue destinationViewController];
-    NSR.title = self.result;
+    if ([self.tableSelected isEqualToString:@"Favorites"] || [self.tableSelected isEqualToString:@"Recent"]){
+        NarrowSearchViewController *NS = [segue destinationViewController];
+        NS.tableSelected = self.tableSelected;
+    }
+    else{
+        NavSearchResultsViewController *NSR = [segue destinationViewController];
+        NSR.title = self.result;
+    }
 }
 
 

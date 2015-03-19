@@ -995,6 +995,80 @@
             </objects>
             <point key="canvasLocation" x="1939" y="925"/>
         </scene>
+        <!--Narrow Search View Controller-->
+        <scene sceneID="neE-Mw-QAz">
+            <objects>
+                <viewController id="5s2-IW-z75" customClass="NarrowSearchViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QPa-6m-Rwh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="uhU-cZ-z7x">
+                                <rect key="frame" x="0.0" y="20" width="320" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.66666668650000005" green="0.023529414089999999" blue="0.13333334029999999" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="18"/>
+                                <state key="normal" title="SFUdiscover">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goHome:" destination="5s2-IW-z75" eventType="touchUpInside" id="BBI-GW-ZtK"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" id="l1N-tU-y53">
+                                <rect key="frame" x="0.0" y="49" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="20"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Navigation" id="3dj-KI-g55">
+                                        <barButtonItem key="leftBarButtonItem" id="Zhj-vK-4hG">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5vu-hM-5a5">
+                                                <rect key="frame" x="16" y="7" width="50" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66666668650000005" green="0.023529414089999999" blue="0.13333334029999999" alpha="1" colorSpace="deviceRGB"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
+                                                <state key="normal" title="Back">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="goBack:" destination="5s2-IW-z75" eventType="touchUpInside" id="byO-GL-x5n"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="rKM-gw-M3X">
+                                <rect key="frame" x="0.0" y="93" width="320" height="387"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="5s2-IW-z75" id="hEp-FW-o2h"/>
+                                    <outlet property="delegate" destination="5s2-IW-z75" id="fcv-MX-VPe"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qzV-ka-uag"/>
+                    <connections>
+                        <segue destination="cCo-hh-dEz" kind="push" identifier="ShowLocation" id="2fg-YB-K42"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iPJ-Zf-ubx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1117" y="865"/>
+        </scene>
         <!--Nav Search Results View Controller-->
         <scene sceneID="EQS-eG-3k3">
             <objects>
@@ -1078,7 +1152,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXT-ly-ByU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1590" y="608"/>
+            <point key="canvasLocation" x="1836" y="783"/>
         </scene>
         <!--Navigation View Controller-->
         <scene sceneID="0EZ-SE-PbY">
@@ -1092,7 +1166,7 @@
                                 <rect key="frame" x="0.0" y="117" width="320" height="363"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Qi6-0F-dcI">
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Qi6-0F-dcI">
                                         <rect key="frame" x="0.0" y="20" width="320" height="343"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1168,9 +1242,11 @@
                     <connections>
                         <outlet property="navSearch" destination="chd-0A-kXh" id="w2y-Bd-vhf"/>
                         <outlet property="scrollView" destination="Qpa-f1-emJ" id="P8U-4u-t8A"/>
+                        <outlet property="searchBar" destination="chd-0A-kXh" id="8fM-hT-JRp"/>
                         <outlet property="searchDisplayController" destination="zrp-IW-syN" id="AqX-Nf-g4J"/>
-                        <outlet property="searchTable" destination="Qi6-0F-dcI" id="Xpz-Z1-FHz"/>
+                        <outlet property="searchTable" destination="Qi6-0F-dcI" id="dpY-Ec-s3a"/>
                         <segue destination="cCo-hh-dEz" kind="push" identifier="SearchResults" id="DhK-vF-fLk"/>
+                        <segue destination="5s2-IW-z75" kind="push" identifier="NarrowSearch" id="QgF-uR-td3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yeR-Go-UtT" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -3737,5 +3813,6 @@ The Safe Walk personnel are identified by:
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="Wr6-kP-R6O"/>
+        <segue reference="DhK-vF-fLk"/>
     </inferredMetricsTieBreakers>
 </document>

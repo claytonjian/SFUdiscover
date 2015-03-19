@@ -15,6 +15,7 @@
 
 @property (strong, nonatomic) NSMutableArray *favorites;
 @property (strong, nonatomic) NSMutableArray *recents;
+@property (strong, nonatomic) NSUserDefaults *prefs;
 @property (nonatomic, assign) int index;
 @end
 
@@ -36,18 +37,17 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 - (IBAction)toggleFavorite:(id)sender {
-    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
     self.favoriteButton.selected = !self.favoriteButton.selected;
     if(self.favoriteButton.selected == YES){
         [self.favoriteButton setTitleColor:[UIColor redColor] forState:UIControlStateSelected];
         [self.favorites addObject: self.title];
         [self.favorites sortUsingSelector:@selector(caseInsensitiveCompare:)];
-        [prefs setObject:self.favorites forKey:@"favorites"];
+        [self.prefs setObject:self.favorites forKey:@"favorites"];
     }
     else{
         [self.favoriteButton setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
         [self.favorites removeObject:self.title];
-        [prefs setObject:self.favorites forKey:@"favorites"];
+        [self.prefs setObject:self.favorites forKey:@"favorites"];
     }
 }
 
@@ -57,9 +57,9 @@
     // Do any additional setup after loading the view.
     self.currentResult.text = self.title;
     self.index = [self.favorites indexOfObject:self.title];
-    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-    self.favorites = [prefs mutableArrayValueForKey:@"favorites"];
-    self.recents = [prefs mutableArrayValueForKey:@"recents"];
+    self.prefs = [NSUserDefaults standardUserDefaults];
+    self.favorites = [self.prefs mutableArrayValueForKey:@"favorites"];
+    self.recents = [self.prefs mutableArrayValueForKey:@"recents"];
     if ([self.favorites containsObject:self.title] == YES){
         self.favoriteButton.selected = YES;
     }
@@ -67,7 +67,7 @@
         [self.recents removeObject:self.title];
     }
     [self.recents addObject:self.title];
-    [prefs setObject:self.recents forKey:@"recents"];
+    [self.prefs setObject:self.recents forKey:@"recents"];
     for (int i = 0; i < [self.recents count]; i++){
         NSLog(@"Object %i is %@", i, [self.recents objectAtIndex:i]);
     }
