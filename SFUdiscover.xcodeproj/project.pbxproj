@@ -85,6 +85,7 @@
 		A734C3661AB694C0003F2917 /* canvasblue.png in Resources */ = {isa = PBXBuildFile; fileRef = A734C3651AB694C0003F2917 /* canvasblue.png */; };
 		A7799ED21AAC00060051E4D7 /* QRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7799ED11AAC00060051E4D7 /* QRViewController.m */; };
 		A7BE54961ABB5603006BBD8D /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7BE54951ABB5603006BBD8D /* MessageUI.framework */; };
+		A7BE549A1ABB804F006BBD8D /* appicon120x120red.png in Resources */ = {isa = PBXBuildFile; fileRef = A7BE54991ABB804F006BBD8D /* appicon120x120red.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -224,6 +225,7 @@
 		A7799ED01AAC00060051E4D7 /* QRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRViewController.h; sourceTree = "<group>"; };
 		A7799ED11AAC00060051E4D7 /* QRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRViewController.m; sourceTree = "<group>"; };
 		A7BE54951ABB5603006BBD8D /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		A7BE54991ABB804F006BBD8D /* appicon120x120red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = appicon120x120red.png; path = "../../../../Downloads/Icon Pack/assets/appicon120x120red.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -383,6 +385,7 @@
 				4929B62E1AA133D800963AA7 /* HomeViewController.h */,
 				4929B62F1AA133D900963AA7 /* HomeViewController.m */,
 				4929B6311AA133DA00963AA7 /* Images.xcassets */,
+				A7BE54991ABB804F006BBD8D /* appicon120x120red.png */,
 				A734C3651AB694C0003F2917 /* canvasblue.png */,
 				A734C3601AB6937A003F2917 /* nav2.png */,
 				A734C3611AB6937A003F2917 /* service1blue.png */,
@@ -562,6 +565,7 @@
 				0EC6D5481AA9A0170084B4C6 /* Locations.plist in Resources */,
 				7E4C80551AAD1BB9001BD4C4 /* setting.png in Resources */,
 				A734C3661AB694C0003F2917 /* canvasblue.png in Resources */,
+				A7BE549A1ABB804F006BBD8D /* appicon120x120red.png in Resources */,
 				4929B6211AA133D600963AA7 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
