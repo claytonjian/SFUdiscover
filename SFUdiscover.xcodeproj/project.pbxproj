@@ -58,6 +58,7 @@
 		4929B6651AA135EE00963AA7 /* NewsFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4929B6641AA135EE00963AA7 /* NewsFeedViewController.m */; };
 		4929B6681AA135FD00963AA7 /* ServicesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4929B6671AA135FD00963AA7 /* ServicesViewController.m */; };
 		4961BD641ABA6486003F1DE2 /* SFU Burnaby.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4961BD631ABA6486003F1DE2 /* SFU Burnaby.jpg */; };
+		4961BD661ABA67C7003F1DE2 /* SFU Burnaby.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4961BD651ABA67C7003F1DE2 /* SFU Burnaby.jpg */; };
 		496D138B1AAA7FB600256D0D /* Page1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 496D138A1AAA7FB600256D0D /* Page1.jpg */; };
 		497112B81AB26205001C7E4C /* NavSearchResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 497112B71AB26205001C7E4C /* NavSearchResultsViewController.m */; };
 		4971E6C71AA9517000D90AE5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4971E6C61AA9517000D90AE5 /* CoreLocation.framework */; };
@@ -176,6 +177,7 @@
 		4929B6661AA135FD00963AA7 /* ServicesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServicesViewController.h; sourceTree = "<group>"; };
 		4929B6671AA135FD00963AA7 /* ServicesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServicesViewController.m; sourceTree = "<group>"; };
 		4961BD631ABA6486003F1DE2 /* SFU Burnaby.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "SFU Burnaby.jpg"; path = "../../../../Users/claytonj/Desktop/SFU Burnaby.jpg"; sourceTree = "<group>"; };
+		4961BD651ABA67C7003F1DE2 /* SFU Burnaby.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "SFU Burnaby.jpg"; sourceTree = "<group>"; };
 		496D138A1AAA7FB600256D0D /* Page1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Page1.jpg; sourceTree = SOURCE_ROOT; };
 		497112B61AB26205001C7E4C /* NavSearchResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavSearchResultsViewController.h; sourceTree = "<group>"; };
 		497112B71AB26205001C7E4C /* NavSearchResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavSearchResultsViewController.m; sourceTree = "<group>"; };
@@ -352,6 +354,7 @@
 				0EF4ABC81AAAB999007B1B12 /* SafeWalkSiteViewController.h */,
 				0EF4ABC91AAAB999007B1B12 /* SafeWalkSiteViewController.m */,
 				97361C071AA8F8CC0075B4A5 /* MapPin.h */,
+				4961BD651ABA67C7003F1DE2 /* SFU Burnaby.jpg */,
 				4961BD631ABA6486003F1DE2 /* SFU Burnaby.jpg */,
 				97361C081AA8F8CC0075B4A5 /* MapPin.m */,
 				0EF4ABC51AAAABFD007B1B12 /* SafeWalkViewController.h */,
@@ -520,6 +523,7 @@
 				4929B62A1AA133D800963AA7 /* Main_iPhone.storyboard in Resources */,
 				4961BD641ABA6486003F1DE2 /* SFU Burnaby.jpg in Resources */,
 				496D138B1AAA7FB600256D0D /* Page1.jpg in Resources */,
+				4961BD661ABA67C7003F1DE2 /* SFU Burnaby.jpg in Resources */,
 				0EC6D5541AA9B6490084B4C6 /* RL_Cornerstone.plist in Resources */,
 				0EC6D5481AA9A0170084B4C6 /* Locations.plist in Resources */,
 				7E4C80551AAD1BB9001BD4C4 /* setting.png in Resources */,
