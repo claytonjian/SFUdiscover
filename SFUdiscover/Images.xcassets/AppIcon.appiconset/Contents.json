@@ -8,13 +8,47 @@
     {
       "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "appicon80.png",
+      "filename" : "appicon_no_ribbon_original80x80red.png",
       "scale" : "2x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "appicon120black.png",
+      "filename" : "appicon_no_ribbon_original120x120red.png",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "ipad",
+      "size" : "29x29",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "ipad",
+      "size" : "29x29",
+      "scale" : "2x"
+    },
+    {
+      "size" : "40x40",
+      "idiom" : "ipad",
+      "filename" : "no_ribbon40blue.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "40x40",
+      "idiom" : "ipad",
+      "filename" : "n_ribbon80blue.png",
+      "scale" : "2x"
+    },
+    {
+      "size" : "76x76",
+      "idiom" : "ipad",
+      "filename" : "no_ribbon76blue.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "76x76",
+      "idiom" : "ipad",
+      "filename" : "no_ribbon152blue.png",
       "scale" : "2x"
     }
   ],
