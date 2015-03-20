@@ -43,7 +43,7 @@
     // Do any additional setup after loading the view.
     // To-Do: Secure storage of user login information
     // Create SFU Connect for user
-    NSURL *myURL = [NSURL URLWithString:@"https://cas.sfu.ca/cas/login?app=SFU+Connect&allow=sfu,zimbra&service=https%3A%2F%2Fconnect.sfu.ca%2Fzimbra%2Fpublic%2Fpreauth.jsp"];
+    NSURL *myURL = [NSURL URLWithString:@"https://connect.sfu.ca"];
     NSURLRequest *myRequest = [NSURLRequest requestWithURL:myURL];
     [_SFUConnect loadRequest:myRequest];
 }

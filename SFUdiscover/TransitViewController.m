@@ -9,15 +9,24 @@
 //
 //  - Setup the menu for displaying transit information for SFU campus
 //  - Provide the options for either bus stop selection or bus table display
+//  - Show the bus information from user input of bus stop
 //
 //  Copyright (c) 2015 EngagingFoundations. All rights reserved.
 //
 
 #import "TransitViewController.h"
+#import "TFHpple.h"
+#import "Tutorial.h"
+#import "Contributor.h"
 
-@interface TransitViewController ()
+@interface TransitViewController (){
+    int stop;
+}
 @property (weak, nonatomic) IBOutlet UIButton *transitToHome;
 @property (weak, nonatomic) IBOutlet UILabel *busStop;
+@property (weak, nonatomic) IBOutlet UITextView *busTime;
+@property (weak, nonatomic) IBOutlet UILabel *busLabel;
+@property (weak, nonatomic) IBOutlet UIButton *refresh;
 
 @end
 
@@ -42,6 +51,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [_busTime setUserInteractionEnabled:NO];
     _mapButton.layer.borderWidth = .5f;
     _mapButton.layer.borderColor = [[UIColor lightGrayColor]CGColor];
     _busSchedButton.layer.borderWidth = .5f;
@@ -64,9 +74,60 @@
 
 // Used for delegation to retrieve bus stop selection
 
-- (void) passBack:(TransitMapViewController *)controller busStop:(NSString *)input{
+- (void) passBack:(TransitMapViewController *)controller busStop:(NSString *)input number:(int) num{
     [self.busStop setText:input];
+    stop = num;
+    [self showInfo:num];
 }
+
+// Display bus information in real-time
+
+-(void)showInfo:(int) num {
+    
+    NSString *urlString = [[NSString alloc] initWithFormat:@"http://api.translink.ca/rttiapi/v1/stops/%i/estimates?apikey=3Y9GQyzgF2Iz2sBTICc2&count=3&timeframe=120",num];
+    NSURL *myurl = [NSURL URLWithString:urlString];
+    NSData *HtmlData = [NSData dataWithContentsOfURL:myurl];
+    
+    TFHpple *Parser = [TFHpple hppleWithHTMLData:HtmlData];
+    NSArray *buses = [Parser searchWithXPathQuery:@"//routeno"];
+    NSArray *leaveTime = [Parser searchWithXPathQuery:@"//expectedleavetime"];
+    TFHppleElement *bus, *time;
+    
+    NSString *holder = [[NSString alloc]init];
+    NSMutableString *infoDisplay = [[NSMutableString alloc]init];
+    
+    for (int i = 0; i < buses.count; i++) {
+        bus = buses[i];
+        [infoDisplay appendString:bus.content];
+        [infoDisplay appendString:@"        "];
+        time = leaveTime[(i*3)+0];
+        holder = time.content;
+        holder = [holder componentsSeparatedByString:@" "][0];
+        [infoDisplay appendString:holder];
+        [infoDisplay appendString:@" "];
+        time = leaveTime[(i*3)+1];
+        holder = time.content;
+        holder = [holder componentsSeparatedByString:@" "][0];
+        [infoDisplay appendString:holder];
+        [infoDisplay appendString:@" "];
+        time = leaveTime[(i*3)+2];
+        holder = time.content;
+        holder = [holder componentsSeparatedByString:@" "][0];
+        [infoDisplay appendString:holder];
+        [infoDisplay appendString:@"\n"];
+    }
+    self.busTime.text = infoDisplay;
+    self.busLabel.hidden = FALSE;
+    self.refresh.hidden = FALSE;
+    
+}
+
+// Refreshes the bus time for current location
+
+- (IBAction)refresh:(id)sender{
+    [self showInfo:stop];
+}
+
 
 /*
 #pragma mark - Navigation
