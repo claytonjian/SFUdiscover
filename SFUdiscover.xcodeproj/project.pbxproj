@@ -567,6 +567,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E83D95F1AB42B3A0045958A /* NewsFeedCardTableViewCell.m in Sources */,
 				973D2E6D1AB8ADEA0034A5EE /* KeychainItemWrapper.m in Sources */,
 				97F2A2E11AB8C2E900195CA1 /* JNKeychain.m in Sources */,
 				30A459C11AAD5B8400AD7221 /* AgendaViewController.m in Sources */,

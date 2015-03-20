@@ -2240,7 +2240,7 @@
             </objects>
             <point key="canvasLocation" x="380" y="584"/>
         </scene>
-        <!--Add Event View Controller - Add Event-->
+        <!--Add Event-->
         <scene sceneID="ISF-Ti-2ap">
             <objects>
                 <viewController id="qcI-tf-z42" customClass="AddEventViewController" sceneMemberID="viewController">
