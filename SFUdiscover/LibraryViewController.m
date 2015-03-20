@@ -9,7 +9,7 @@
 #import "LibraryViewController.h"
 
 @interface LibraryViewController ()
-@property (weak, nonatomic) IBOutlet UIButton *libraryToHome;
+@property (weak, nonatomic) IBOutlet UIWebView *LibrarySite;
 
 @end
 
@@ -33,16 +33,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    _hoursButton.layer.borderWidth = .5f;
-    _hoursButton.layer.borderColor = [[UIColor lightGrayColor]CGColor];
-    _askLibButton.layer.borderWidth = .5f;
-    _askLibButton.layer.borderColor = [[UIColor lightGrayColor]CGColor];
-    _citationButton.layer.borderWidth = .5f;
-    _citationButton.layer.borderColor = [[UIColor lightGrayColor]CGColor];
-    _searchCatButton.layer.borderWidth = .5f;
-    _searchCatButton.layer.borderColor = [[UIColor lightGrayColor]CGColor];
-    _bookRoomButton.layer.borderWidth = .5f;
-    _bookRoomButton.layer.borderColor = [[UIColor lightGrayColor]CGColor];
+    NSURL *myURL = [NSURL URLWithString:@"http://www.lib.sfu.ca/m?device=mobile"];
+    NSURLRequest *myRequest = [NSURLRequest requestWithURL:myURL];
+    [_LibrarySite loadRequest:myRequest];
+
 }
 
 - (void)didReceiveMemoryWarning

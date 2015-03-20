@@ -15,7 +15,5 @@
 #import <UIKit/UIKit.h>
 
 @interface BookStoreViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UIButton *courseMatButton;
-@property (weak, nonatomic) IBOutlet UIButton *browseMercButton;
 
 @end

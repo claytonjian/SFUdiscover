@@ -9,6 +9,7 @@
 #import "BookStoreViewController.h"
 
 @interface BookStoreViewController ()
+@property (weak, nonatomic) IBOutlet UIWebView *BookStore;
 
 @end
 
@@ -35,10 +36,9 @@
 {
     [super viewDidLoad];
     // Set button borders
-    _browseMercButton.layer.borderWidth = .5f;
-    _browseMercButton.layer.borderColor = [[UIColor lightGrayColor]CGColor];
-    _courseMatButton.layer.borderWidth = .5f;
-    _courseMatButton.layer.borderColor = [[UIColor lightGrayColor]CGColor];
+    NSURL *myURL = [NSURL URLWithString:@"http://sfu.collegestoreonline.com/ePOS?form=index.html&store=472&design=mobile"];
+    NSURLRequest *myRequest = [NSURLRequest requestWithURL:myURL];
+    [_BookStore loadRequest:myRequest];
 }
 
 - (void)didReceiveMemoryWarning
