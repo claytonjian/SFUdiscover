@@ -45,7 +45,7 @@
     // Do any additional setup after loading the view.
     // To-Do: Secure storage of user login information
     // Create SFU Canvas for user
-    NSURL *myURL = [NSURL URLWithString:@"https://cas.sfu.ca/cas/login?service=https%3A%2F%2Fcanvas.sfu.ca%2Flogin%2Fcas"];
+    NSURL *myURL = [NSURL URLWithString:@"https://canvas.sfu.ca"];
     NSURLRequest *myRequest = [NSURLRequest requestWithURL:myURL];
     [_SFUCanvas loadRequest:myRequest];
 }

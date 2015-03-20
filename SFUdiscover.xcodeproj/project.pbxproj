@@ -71,7 +71,10 @@
 		97361C031AA8EC9A0075B4A5 /* BusTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97361C021AA8EC9A0075B4A5 /* BusTableViewController.m */; };
 		97361C061AA8F8460075B4A5 /* TransitMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97361C051AA8F8460075B4A5 /* TransitMapViewController.m */; };
 		97361C091AA8F8CC0075B4A5 /* MapPin.m in Sources */ = {isa = PBXBuildFile; fileRef = 97361C081AA8F8CC0075B4A5 /* MapPin.m */; };
+		973D2E6D1AB8ADEA0034A5EE /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 973D2E6B1AB8ADEA0034A5EE /* KeychainItemWrapper.m */; };
+		973D2E701AB8B1020034A5EE /* UserLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 973D2E6F1AB8B1020034A5EE /* UserLoginViewController.m */; };
 		97D44E6B1AABB11F00B0A91C /* myButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D44E6A1AABB11F00B0A91C /* myButton.m */; };
+		97F2A2E11AB8C2E900195CA1 /* JNKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F2A2E01AB8C2E900195CA1 /* JNKeychain.m */; };
 		A7799ED21AAC00060051E4D7 /* QRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7799ED11AAC00060051E4D7 /* QRViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -196,8 +199,14 @@
 		97361C051AA8F8460075B4A5 /* TransitMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitMapViewController.m; sourceTree = "<group>"; };
 		97361C071AA8F8CC0075B4A5 /* MapPin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPin.h; sourceTree = "<group>"; };
 		97361C081AA8F8CC0075B4A5 /* MapPin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPin.m; sourceTree = "<group>"; };
+		973D2E6A1AB8ADEA0034A5EE /* KeychainItemWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
+		973D2E6B1AB8ADEA0034A5EE /* KeychainItemWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
+		973D2E6E1AB8B1020034A5EE /* UserLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserLoginViewController.h; sourceTree = "<group>"; };
+		973D2E6F1AB8B1020034A5EE /* UserLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserLoginViewController.m; sourceTree = "<group>"; };
 		97D44E6A1AABB11F00B0A91C /* myButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myButton.m; sourceTree = "<group>"; };
 		97D44E6C1AABB13800B0A91C /* myButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myButton.h; sourceTree = "<group>"; };
+		97F2A2DF1AB8C2E900195CA1 /* JNKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNKeychain.h; sourceTree = "<group>"; };
+		97F2A2E01AB8C2E900195CA1 /* JNKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JNKeychain.m; sourceTree = "<group>"; };
 		A7799ED01AAC00060051E4D7 /* QRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRViewController.h; sourceTree = "<group>"; };
 		A7799ED11AAC00060051E4D7 /* QRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -337,6 +346,10 @@
 				4929B6251AA133D700963AA7 /* AppDelegate.h */,
 				4929B6261AA133D700963AA7 /* AppDelegate.m */,
 				4929B6281AA133D800963AA7 /* Main_iPhone.storyboard */,
+				973D2E6E1AB8B1020034A5EE /* UserLoginViewController.h */,
+				973D2E6F1AB8B1020034A5EE /* UserLoginViewController.m */,
+				97F2A2DF1AB8C2E900195CA1 /* JNKeychain.h */,
+				97F2A2E01AB8C2E900195CA1 /* JNKeychain.m */,
 				7EBFB6901AAE36D0003B4E32 /* PageUnderConstructionViewController.h */,
 				7EBFB6911AAE36D0003B4E32 /* PageUnderConstructionViewController.m */,
 				A7799ED01AAC00060051E4D7 /* QRViewController.h */,
@@ -359,6 +372,8 @@
 				4929B6311AA133DA00963AA7 /* Images.xcassets */,
 				496D138A1AAA7FB600256D0D /* Page1.jpg */,
 				7E4C80541AAD1BB9001BD4C4 /* setting.png */,
+				973D2E6A1AB8ADEA0034A5EE /* KeychainItemWrapper.h */,
+				973D2E6B1AB8ADEA0034A5EE /* KeychainItemWrapper.m */,
 				4929B64E1AA1359900963AA7 /* CanvasViewController.h */,
 				4929B64F1AA1359900963AA7 /* CanvasViewController.m */,
 				4929B6511AA135A400963AA7 /* ConnectViewController.h */,
@@ -528,6 +543,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				973D2E6D1AB8ADEA0034A5EE /* KeychainItemWrapper.m in Sources */,
+				97F2A2E11AB8C2E900195CA1 /* JNKeychain.m in Sources */,
 				30A459C11AAD5B8400AD7221 /* AgendaViewController.m in Sources */,
 				30A459C01AAD5B7D00AD7221 /* Monthly View Controller.m in Sources */,
 				304816EC1AAD0F4500D1F083 /* SafeWalkViewController.m in Sources */,
@@ -544,6 +561,7 @@
 				4929B6651AA135EE00963AA7 /* NewsFeedViewController.m in Sources */,
 				4929B6501AA1359900963AA7 /* CanvasViewController.m in Sources */,
 				4E5E6EDA1AABAAC3004DC31F /* AddEventViewController.m in Sources */,
+				973D2E701AB8B1020034A5EE /* UserLoginViewController.m in Sources */,
 				4929B6531AA135A400963AA7 /* ConnectViewController.m in Sources */,
 				4929B6301AA133D900963AA7 /* HomeViewController.m in Sources */,
 				4E5E6EE01AABBCAE004DC31F /* DailyViewController.m in Sources */,

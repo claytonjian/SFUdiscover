@@ -27,7 +27,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="0OP-lk-fHh" kind="push" id="cn1-a7-REk"/>
+                                            <segue destination="0OP-lk-fHh" kind="push" identifier="Canvas" id="cn1-a7-REk"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ukx-pn-khi">
@@ -41,7 +41,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="Y6U-pI-kVD" kind="push" id="m40-iy-EQU"/>
+                                            <segue destination="Y6U-pI-kVD" kind="push" identifier="Connect" id="m40-iy-EQU"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="QZR-Hw-GBb">
@@ -179,6 +179,35 @@
                                     <segue destination="btR-Tc-CvA" kind="push" id="yHa-VK-xVV"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="OAG-n0-PB7">
+                                <rect key="frame" x="20" y="20" width="49" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="eRE-W6-FcE"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="p8E-EQ-pUt">
+                                <rect key="frame" x="26" y="20" width="49" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="logoutPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Hvd-k6-CZa"/>
+                                </connections>
+                            </button>
+                            <webView hidden="YES" contentMode="scaleToFill" id="tnD-yu-jce">
+                                <rect key="frame" x="254" y="24" width="17" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -191,6 +220,9 @@
                         <outlet property="connectButton" destination="ukx-pn-khi" id="85P-xU-d8M"/>
                         <outlet property="feedbackButton" destination="QZR-Hw-GBb" id="PME-nI-PAD"/>
                         <outlet property="libButton" destination="zBS-8N-Z8f" id="UGl-gx-Jvt"/>
+                        <outlet property="login" destination="OAG-n0-PB7" id="ZdF-2h-80o"/>
+                        <outlet property="logoffWebView" destination="tnD-yu-jce" id="goE-Mg-5ee"/>
+                        <outlet property="logout" destination="p8E-EQ-pUt" id="JVZ-BO-xke"/>
                         <outlet property="loyaltyButton" destination="34u-nY-y4x" id="kGm-5z-22w"/>
                         <outlet property="navButton" destination="LQx-8T-TbB" id="Oes-QA-IsZ"/>
                         <outlet property="nfButton" destination="7zk-c3-P17" id="93X-3N-piM"/>
@@ -1139,10 +1171,10 @@
                                 </items>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="LZy-9j-hdM">
-                                <rect key="frame" x="52" y="294" width="216" height="45"/>
+                                <rect key="frame" x="52" y="329" width="216" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="18"/>
-                                <state key="normal" title="Map">
+                                <state key="normal" title="Campus Map">
                                     <color key="titleColor" red="0.02745098248" green="0.27450981740000002" blue="0.5411764979" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1156,7 +1188,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HCh-md-gSi">
-                                <rect key="frame" x="52" y="353" width="216" height="45"/>
+                                <rect key="frame" x="52" y="378" width="216" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="18"/>
                                 <state key="normal" title="Bus Schedule">
@@ -1198,21 +1230,75 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="C72-rh-SV5">
+                                <rect key="frame" x="247" y="106" width="53" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Refresh">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="refresh:" destination="0c7-Bj-87g" eventType="touchUpInside" id="ITx-QC-eZK"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="hWl-wy-9gE">
+                                <rect key="frame" x="48" y="200" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bus #   Bus arrival times" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JIl-Gs-391">
+                                <rect key="frame" x="52" y="173" width="186" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Zzg-8s-BIB"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
+                        <outlet property="busLabel" destination="JIl-Gs-391" id="vQZ-dI-Pca"/>
                         <outlet property="busSchedButton" destination="HCh-md-gSi" id="mrx-dD-dtC"/>
                         <outlet property="busStop" destination="fAj-Du-exZ" id="jrS-UU-U8M"/>
+                        <outlet property="busTime" destination="hWl-wy-9gE" id="hMU-p7-8ZV"/>
                         <outlet property="mapButton" destination="LZy-9j-hdM" id="q60-KS-9zl"/>
+                        <outlet property="refresh" destination="C72-rh-SV5" id="ou2-99-NhC"/>
                         <outlet property="transitToHome" destination="tdQ-bW-9xY" id="lRr-CC-vtR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eRW-qe-FSM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1939" y="344"/>
+        </scene>
+        <!--Test View Controller-->
+        <scene sceneID="0pl-TF-BRo">
+            <objects>
+                <viewController id="15R-EQ-tTv" customClass="testViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gyd-7R-oa0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="rND-j6-UMR">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="iF9-Od-YSj"/>
+                    <connections>
+                        <outlet property="busTime" destination="rND-j6-UMR" id="wJL-7d-g1y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e2d-ob-bhN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2422" y="-270"/>
         </scene>
         <!--Bus Table View Controller-->
         <scene sceneID="Nvi-Hr-zif">
@@ -1288,11 +1374,11 @@
             <objects>
                 <viewController storyboardIdentifier="TransitMapViewController" id="Ef7-DW-Mwb" customClass="TransitMapViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="N5z-7j-S73">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="9KY-Vy-6dg">
-                                <rect key="frame" x="0.0" y="93" width="320" height="387"/>
+                                <rect key="frame" x="0.0" y="181" width="320" height="387"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             </mapView>
                             <navigationBar contentMode="scaleToFill" id="fYn-Ma-oc1">
@@ -1855,6 +1941,107 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CBj-GW-qGD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="7330" y="1338"/>
+        </scene>
+        <!--User Login View Controller-->
+        <scene sceneID="Dh3-3z-isr">
+            <objects>
+                <viewController storyboardIdentifier="UserLoginViewController" id="jvJ-wT-7kM" customClass="UserLoginViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6KF-z3-YgF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="nfh-lm-0oh">
+                                <rect key="frame" x="73" y="149" width="175" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="oPd-fT-I1q">
+                                <rect key="frame" x="73" y="216" width="175" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="z4n-hl-mCA">
+                                <rect key="frame" x="126" y="251" width="68" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sign In">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="jvJ-wT-7kM" eventType="touchUpInside" id="L6Q-aT-axc"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" id="JXO-Rb-iv2">
+                                <rect key="frame" x="0.0" y="49" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="20"/>
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Login" id="NrH-dw-puC">
+                                        <barButtonItem key="leftBarButtonItem" style="plain" id="X3r-er-ZU3">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="air-er-i94">
+                                                <rect key="frame" x="16" y="7" width="50" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.73725491759999995" green="0.031372550870000002" blue="0.1411764771" alpha="1" colorSpace="deviceRGB"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
+                                                <state key="normal" title="Back">
+                                                    <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="goBack:" destination="jvJ-wT-7kM" eventType="touchUpInside" id="tsF-OO-1Bv"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0TR-QO-B6h">
+                                <rect key="frame" x="0.0" y="20" width="320" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.73725491759999995" green="0.031372550870000002" blue="0.1411764771" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="18"/>
+                                <state key="normal" title="SFUdiscovery">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goHome:" destination="jvJ-wT-7kM" eventType="touchUpInside" id="sKB-dT-CSc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dtT-Rp-30h">
+                                <rect key="frame" x="73" y="120" width="79" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4pe-f0-ZqS">
+                                <rect key="frame" x="76" y="187" width="76" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <webView hidden="YES" contentMode="scaleToFill" id="Qa1-KZ-dWz">
+                                <rect key="frame" x="223" y="57" width="30" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="password" destination="oPd-fT-I1q" id="wsI-4q-Mke"/>
+                        <outlet property="username" destination="nfh-lm-0oh" id="PgA-Ci-MNp"/>
+                        <outlet property="webview" destination="Qa1-KZ-dWz" id="S6A-Gu-jRx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="weI-ph-MA9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="380" y="18"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="CMC-SS-Pxb">
@@ -3645,9 +3832,9 @@ The Safe Walk personnel are identified by:
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Wr6-kP-R6O"/>
+        <segue reference="hvj-U6-THL"/>
     </inferredMetricsTieBreakers>
 </document>

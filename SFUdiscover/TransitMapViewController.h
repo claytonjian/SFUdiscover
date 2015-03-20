@@ -19,16 +19,18 @@
 @class TransitMapViewController;
 @protocol TransitMapViewControllerDelegate <NSObject>
 
-- (void) passBack:(TransitMapViewController *) controller busStop:(NSString *)input;
+- (void) passBack:(TransitMapViewController *) controller busStop:(NSString *)input number:(int) num;
 - (IBAction)goHome:(id)sender;
 @end
 
 @interface TransitMapViewController : UIViewController <MKMapViewDelegate>{
     MKMapView *mapView;
     NSString *selection;
+    int stopNum;
 }
 @property (nonatomic, retain) IBOutlet MKMapView *mapView;
 @property (nonatomic, retain) NSString *selection;
+@property (nonatomic) int stopNum;
 @property (nonatomic, weak) id<TransitMapViewControllerDelegate> TMVCDelegate;
 
 @end

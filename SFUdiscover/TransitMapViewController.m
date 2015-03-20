@@ -25,7 +25,7 @@
 
 @implementation TransitMapViewController
 
-@synthesize mapView, selection, TMVCDelegate;
+@synthesize mapView, selection, TMVCDelegate, stopNum;
 
 - (IBAction)goBack:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
@@ -76,17 +76,17 @@
 
 - (IBAction)stopSelect:(id)sender {
     NSString *stop = self.stopNumber.text;
-    int stopNum = [stop intValue];
-
+    stopNum = [stop intValue];
     switch (stopNum) {
         case 59314:
-        case 58349:
             selection = @"Production Way Station";
             break;
+        //NEED TO CHANGE
         case 52806:
         case 51860:
             selection = @"Transportation Center 2";
             break;
+        //THIS ONLY INCLUDE 145
         case 51861:
             selection = @"Transit Exchange";
             break;
@@ -107,6 +107,7 @@
     }
     
     if (selection != nil) {
+        NSLog(@"blah %i",stopNum);
         NSString *alertMessage = [[NSString alloc]initWithFormat:@"You have selected %@, is this the right choice?", selection];
         UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Alert" message: alertMessage delegate:self cancelButtonTitle:@"No" otherButtonTitles:@"Yes", nil];
         [alert show];
@@ -138,6 +139,7 @@
 
 - (void)confirm: (myButton *) sender{
     selection = sender.data.annotation.title;
+    stopNum = [[sender.data.annotation.subtitle componentsSeparatedByString:@":"][1] intValue];
     NSString *alertMessage = [[NSString alloc]initWithFormat:@"You have selected %@, is this the right choice?", selection];
     UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Alert" message: alertMessage delegate:self cancelButtonTitle:@"No" otherButtonTitles:@"Yes", nil];
     [alert show];
@@ -147,7 +149,7 @@
 
 -(void)alertView:(UIAlertView *) alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
     if(buttonIndex == 1){
-        [self.TMVCDelegate passBack:self busStop:selection];
+        [self.TMVCDelegate passBack:self busStop:selection number:stopNum];
         [self dismissViewControllerAnimated:YES completion:nil];
     }
 }
@@ -169,6 +171,7 @@
     region.center.longitude = -122.920422;
     transportationCenter1.coordinate = region.center;
     transportationCenter1.title = @"Transportation Center 1";
+    transportationCenter1.subtitle = @"Stop Number: 51863";
     [mapView addAnnotation:transportationCenter1];
     
     MapPin *transportationCenter2 = [[MapPin alloc] init];
@@ -176,6 +179,7 @@
     region.center.longitude = -122.91987;
     transportationCenter2.coordinate = region.center;
     transportationCenter2.title = @"Transportation Center 2";
+    transportationCenter2.subtitle = @"Stop Number: 52806";
     [mapView addAnnotation:transportationCenter2];
     
     MapPin *transitExchange = [[MapPin alloc] init];
@@ -183,6 +187,7 @@
     region.center.longitude = -122.912733;
     transitExchange.coordinate = region.center;
     transitExchange.title = @"Transit Exchange";
+    transitExchange.subtitle = @"Stop Number: 51861";
     [mapView addAnnotation:transitExchange];
     
     MapPin *universityHighStreet = [[MapPin alloc] init];
@@ -190,6 +195,7 @@
     region.center.longitude = -122.909425;
     universityHighStreet.coordinate = region.center;
     universityHighStreet.title = @"University High Street";
+    universityHighStreet.subtitle = @"Stop Number: 59044";
     [mapView addAnnotation:universityHighStreet];
     
     MapPin *scienceRoad = [[MapPin alloc] init];
@@ -197,6 +203,7 @@
     region.center.longitude = -122.916056;
     scienceRoad.coordinate = region.center;
     scienceRoad.title = @"Science Road";
+    scienceRoad.subtitle = @"Stop Number: 51862";
     [mapView addAnnotation:scienceRoad];
     
     MapPin *westCampusRoad = [[MapPin alloc] init];
@@ -204,6 +211,7 @@
     region.center.longitude = -122.92824;
     westCampusRoad.coordinate = region.center;
     westCampusRoad.title = @"West Campus Road";
+    westCampusRoad.subtitle = @"Stop Number: 51864";
     [mapView addAnnotation:westCampusRoad];
     
     MapPin *productionWayStation = [[MapPin alloc] init];
@@ -211,6 +219,7 @@
     region.center.longitude = -122.918154;
     productionWayStation.coordinate = region.center;
     productionWayStation.title = @"Production Way Station";
+    productionWayStation.subtitle = @"Stop Number: 59314";
     [mapView addAnnotation:productionWayStation];
 }
 
