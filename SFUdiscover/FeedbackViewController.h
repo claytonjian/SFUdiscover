@@ -14,13 +14,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MessageUI/MessageUI.h>
 
-@interface FeedbackViewController : UIViewController {
+@interface FeedbackViewController : UIViewController <MFMailComposeViewControllerDelegate> {
     IBOutlet UIScrollView *scroller;
 }
 @property (weak, nonatomic) IBOutlet UIButton *sendToSFUButton;
 @property (weak, nonatomic) IBOutlet UIButton *sendToLibButton;
-@property (weak, nonatomic) IBOutlet UIButton *sendToDiningButton;
 @property (weak, nonatomic) IBOutlet UIButton *sendToDevsButton;
+@property (weak, nonatomic) IBOutlet UIButton *sendToDiningButton;
 
 @end
