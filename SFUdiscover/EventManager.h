@@ -30,6 +30,7 @@
 
 
 -(NSString *)getStringFromDate:(NSDate *)date;
+-(NSArray *)getEventsOfSelectedCalendar;
 
 
 @end
