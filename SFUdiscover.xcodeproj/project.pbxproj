@@ -18,6 +18,7 @@
 		0EC6D5541AA9B6490084B4C6 /* RL_Cornerstone.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0EC6D5531AA9B6490084B4C6 /* RL_Cornerstone.plist */; };
 		0EE2FAA61AA9256D007A2F19 /* EmergencyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE2FAA31AA9256D007A2F19 /* EmergencyViewController.m */; };
 		0EE2FAAA1AA92AF6007A2F19 /* LostandFoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE2FAA91AA92AF6007A2F19 /* LostandFoundViewController.m */; };
+		0EEBA0BF1ABBBD4C006308D9 /* ZoneLiaisonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EEBA0BE1ABBBD4C006308D9 /* ZoneLiaisonViewController.m */; };
 		0EF8EBB81AB6A5A1009FCF92 /* LostandFoundWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF8EBB71AB6A5A1009FCF92 /* LostandFoundWebViewController.m */; };
 		303C34031AAB9BF0001E95F7 /* TrafficHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 303C34021AAB9BF0001E95F7 /* TrafficHomeViewController.m */; };
 		304816E51AAD01E800D1F083 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC20A3C1AAB0EF3008207FF /* XPathQuery.m */; };
@@ -106,6 +107,8 @@
 		0EE2FAA31AA9256D007A2F19 /* EmergencyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmergencyViewController.m; sourceTree = "<group>"; };
 		0EE2FAA81AA92AF6007A2F19 /* LostandFoundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LostandFoundViewController.h; sourceTree = "<group>"; };
 		0EE2FAA91AA92AF6007A2F19 /* LostandFoundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LostandFoundViewController.m; sourceTree = "<group>"; };
+		0EEBA0BD1ABBBD4C006308D9 /* ZoneLiaisonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZoneLiaisonViewController.h; sourceTree = "<group>"; };
+		0EEBA0BE1ABBBD4C006308D9 /* ZoneLiaisonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZoneLiaisonViewController.m; sourceTree = "<group>"; };
 		0EF4ABC51AAAABFD007B1B12 /* SafeWalkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeWalkViewController.h; sourceTree = "<group>"; };
 		0EF4ABC61AAAABFD007B1B12 /* SafeWalkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeWalkViewController.m; sourceTree = "<group>"; };
 		0EF4ABC81AAAB999007B1B12 /* SafeWalkSiteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeWalkSiteViewController.h; sourceTree = "<group>"; };
@@ -245,6 +248,17 @@
 			name = Hpple;
 			sourceTree = "<group>";
 		};
+		0EEBA0BC1ABBBCED006308D9 /* Emergency */ = {
+			isa = PBXGroup;
+			children = (
+				0EE2FAA21AA9256D007A2F19 /* EmergencyViewController.h */,
+				0EE2FAA31AA9256D007A2F19 /* EmergencyViewController.m */,
+				0EEBA0BD1ABBBD4C006308D9 /* ZoneLiaisonViewController.h */,
+				0EEBA0BE1ABBBD4C006308D9 /* ZoneLiaisonViewController.m */,
+			);
+			name = Emergency;
+			sourceTree = "<group>";
+		};
 		0EEC41741AAAE73B00B4AF19 /* Library */ = {
 			isa = PBXGroup;
 			children = (
@@ -313,13 +327,12 @@
 		4929B61C1AA133D300963AA7 /* SFUdiscover */ = {
 			isa = PBXGroup;
 			children = (
+				0EEBA0BC1ABBBCED006308D9 /* Emergency */,
 				0EF8EBB51AB69F96009FCF92 /* Lost and Found */,
 				0EC20A401AAB0F1D008207FF /* Hpple */,
 				0EC209ED1AAB0D88008207FF /* Traffic */,
 				0EF731CF1AAAF16100EBC23D /* Restaurant */,
 				0EEC41741AAAE73B00B4AF19 /* Library */,
-				0EE2FAA21AA9256D007A2F19 /* EmergencyViewController.h */,
-				0EE2FAA31AA9256D007A2F19 /* EmergencyViewController.m */,
 				97D44E6C1AABB13800B0A91C /* myButton.h */,
 				97D44E6A1AABB11F00B0A91C /* myButton.m */,
 				4929B6251AA133D700963AA7 /* AppDelegate.h */,
@@ -528,6 +541,7 @@
 				0EC20A3E1AAB0EF3008207FF /* TFHppleElement.m in Sources */,
 				97361C091AA8F8CC0075B4A5 /* MapPin.m in Sources */,
 				4929B6651AA135EE00963AA7 /* NewsFeedViewController.m in Sources */,
+				0EEBA0BF1ABBBD4C006308D9 /* ZoneLiaisonViewController.m in Sources */,
 				4929B6501AA1359900963AA7 /* CanvasViewController.m in Sources */,
 				4E5E6EDA1AABAAC3004DC31F /* AddEventViewController.m in Sources */,
 				4929B6531AA135A400963AA7 /* ConnectViewController.m in Sources */,

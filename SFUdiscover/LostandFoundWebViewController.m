@@ -10,9 +10,12 @@
 
 @interface LostandFoundWebViewController ()
 
+@property (weak, nonatomic) IBOutlet UIWebView *LFWebPage;
+
 @end
 
 @implementation LostandFoundWebViewController
+@synthesize passedString;
 
 - (IBAction)goBack:(id)sender {
     [self.navigationController popViewControllerAnimated:(YES)];
@@ -35,6 +38,23 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    NSLog(@"%@",passedString);
+    NSURL *url;
+    if([passedString isEqualToString:@"Search"]){
+        url = [NSURL URLWithString:@"http://www.sfu.ca/srs/security/patrol-operations/programs/lost-and-found/search-for-an-item.html?keepThis=true&TB_iframe=true&height=700&width=700"];
+        NSURLRequest *myRequest = [NSURLRequest requestWithURL:url];
+        [_LFWebPage loadRequest:myRequest];
+    }
+    if([passedString isEqualToString:@"ViewAll"]){
+        url = [NSURL URLWithString:@"http://www.sfu.ca/srs/security/patrol-operations/programs/lost-and-found/found-items.html?keepThis=true&TB_iframe=true&height=700&width=700"];
+        NSURLRequest *myRequest = [NSURLRequest requestWithURL:url];
+        [_LFWebPage loadRequest:myRequest];
+    }
+    if([passedString isEqualToString:@"Report"]){
+        url = [NSURL URLWithString:@"http://www.sfu.ca/srs/security/patrol-operations/programs/lost-and-found/report-lost-item.html?keepThis=true&TB_iframe=true&height=700&width=700"];
+        NSURLRequest *myRequest = [NSURLRequest requestWithURL:url];
+        [_LFWebPage loadRequest:myRequest];
+    }
 }
 
 - (void)didReceiveMemoryWarning

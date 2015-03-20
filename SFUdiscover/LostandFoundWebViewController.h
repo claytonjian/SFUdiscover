@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface LostandFoundWebViewController : UIViewController
-
+@property(nonatomic, strong) NSString *passedString;
 @end
