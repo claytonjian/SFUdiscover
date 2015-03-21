@@ -29,6 +29,7 @@
 		304816EC1AAD0F4500D1F083 /* SafeWalkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF4ABC61AAAABFD007B1B12 /* SafeWalkViewController.m */; };
 		30A459C01AAD5B7D00AD7221 /* Monthly View Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E4EF701AAD4F80003F6436 /* Monthly View Controller.m */; };
 		30A459C11AAD5B8400AD7221 /* AgendaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E4EF731AAD5011003F6436 /* AgendaViewController.m */; };
+		3BF2421E1ABD7F6A00630637 /* SubscribedAccountsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF2421D1ABD7F6A00630637 /* SubscribedAccountsViewController.m */; };
 		4925CF6C1AA566200026305C /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4925CF6B1AA566200026305C /* SettingsViewController.m */; };
 		4929B6171AA133D300963AA7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4929B6161AA133D300963AA7 /* Foundation.framework */; };
 		4929B6191AA133D300963AA7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4929B6181AA133D300963AA7 /* CoreGraphics.framework */; };
@@ -144,6 +145,8 @@
 		30E4EF701AAD4F80003F6436 /* Monthly View Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Monthly View Controller.m"; sourceTree = "<group>"; };
 		30E4EF721AAD5011003F6436 /* AgendaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgendaViewController.h; sourceTree = "<group>"; };
 		30E4EF731AAD5011003F6436 /* AgendaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgendaViewController.m; sourceTree = "<group>"; };
+		3BF2421C1ABD7F6A00630637 /* SubscribedAccountsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubscribedAccountsViewController.h; sourceTree = "<group>"; };
+		3BF2421D1ABD7F6A00630637 /* SubscribedAccountsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubscribedAccountsViewController.m; sourceTree = "<group>"; };
 		4925CF6A1AA566200026305C /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		4925CF6B1AA566200026305C /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		4929B6131AA133D300963AA7 /* SFUdiscover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SFUdiscover.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -390,6 +393,8 @@
 				4929B6251AA133D700963AA7 /* AppDelegate.h */,
 				4929B6261AA133D700963AA7 /* AppDelegate.m */,
 				4929B6281AA133D800963AA7 /* Main_iPhone.storyboard */,
+				3BF2421C1ABD7F6A00630637 /* SubscribedAccountsViewController.h */,
+				3BF2421D1ABD7F6A00630637 /* SubscribedAccountsViewController.m */,
 				973D2E6E1AB8B1020034A5EE /* UserLoginViewController.h */,
 				973D2E6F1AB8B1020034A5EE /* UserLoginViewController.m */,
 				97F2A2DF1AB8C2E900195CA1 /* JNKeychain.h */,
@@ -652,6 +657,7 @@
 				0EC6D53D1AA97FC30084B4C6 /* BookStoreViewController.m in Sources */,
 				0E222D4E1AAAF57400E57818 /* Food2ViewController.m in Sources */,
 				0EF8EBB81AB6A5A1009FCF92 /* LostandFoundWebViewController.m in Sources */,
+				3BF2421E1ABD7F6A00630637 /* SubscribedAccountsViewController.m in Sources */,
 				0EC20A451AAB10FD008207FF /* TrafficViewController.m in Sources */,
 				49F871EF1ABA1EF60022CCC0 /* NarrowSearchViewController.m in Sources */,
 				4929B6271AA133D700963AA7 /* AppDelegate.m in Sources */,
