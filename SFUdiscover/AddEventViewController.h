@@ -17,11 +17,16 @@
 
 @protocol AddEventViewControllerDelegate
 
--(void)eventWasSuccessfullySaved;
+- (void)eventWasSuccessfullySaved;
 
 @end
 
 
 @interface AddEventViewController : UIViewController
+
 @property (nonatomic, strong) id<AddEventViewControllerDelegate> delegate;
+
+- (IBAction)saveEvent:(id)sender;
+//- (IBAction)cancelEvent:(id)sender;
+
 @end

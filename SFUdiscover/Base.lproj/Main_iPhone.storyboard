@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Z3h-Ab-vzh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Z3h-Ab-vzh">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -1909,6 +1909,11 @@
                                                 </connections>
                                             </button>
                                         </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="iVg-Mz-uLV">
+                                            <connections>
+                                                <segue destination="qcI-tf-z42" kind="push" identifier="idSegueAgendaAddEvent" id="kDp-5k-1ff"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -1918,18 +1923,21 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="idCellEvent" textLabel="6C5-yv-PEv" detailTextLabel="a8M-bX-1B6" rowHeight="41" style="IBUITableViewCellStyleSubtitle" id="Zfy-Hh-lPW">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="22" width="320" height="41"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zfy-Hh-lPW" id="pmC-DU-Lr5">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6C5-yv-PEv">
+                                                    <rect key="frame" x="15" y="3" width="31" height="20"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="a8M-bX-1B6">
+                                                    <rect key="frame" x="15" y="23" width="40" height="14"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -2051,9 +2059,9 @@
                                                 </connections>
                                             </button>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="+" id="RZC-u2-HEw">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="RZC-u2-HEw">
                                             <connections>
-                                                <segue destination="qcI-tf-z42" kind="push" id="inh-Bc-Hgj"/>
+                                                <segue destination="qcI-tf-z42" kind="push" identifier="idSegueDailyAddEvent" id="tLe-ep-3fo"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -3744,8 +3752,9 @@ The Safe Walk personnel are identified by:
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="EE8-Zm-d5x"/>
+        <segue reference="kDp-5k-1ff"/>
         <segue reference="5qe-Ws-yCM"/>
         <segue reference="DhK-vF-fLk"/>
-        <segue reference="EE8-Zm-d5x"/>
     </inferredMetricsTieBreakers>
 </document>
