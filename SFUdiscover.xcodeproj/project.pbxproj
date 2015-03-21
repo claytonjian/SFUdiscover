@@ -553,6 +553,11 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = EngagingFoundations;
+				TargetAttributes = {
+					4929B6121AA133D300963AA7 = {
+						DevelopmentTeam = XM6475YHW9;
+					};
+				};
 			};
 			buildConfigurationList = 4929B60E1AA133D300963AA7 /* Build configuration list for PBXProject "SFUdiscover" */;
 			compatibilityVersion = "Xcode 3.2";
