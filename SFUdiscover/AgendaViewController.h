@@ -13,9 +13,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "AddEventViewController.h"
+#import "AddEventTableViewController.h"
 
-@interface AgendaViewController : UIViewController<AddEventViewControllerDelegate, UITableViewDelegate, UITableViewDataSource>
+@interface AgendaViewController : UIViewController<AddEventTableViewControllerDelegate, UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableEvents;
 @property (nonatomic, strong) NSArray *arrEvents;

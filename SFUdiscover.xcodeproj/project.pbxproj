@@ -63,6 +63,8 @@
 		49B69B061AA2A51800B3AC66 /* LibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B69B051AA2A51800B3AC66 /* LibraryViewController.m */; };
 		49EB63FE1AACF69900172C5B /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 49EB63FD1AACF69800172C5B /* libxml2.dylib */; };
 		49F871EF1ABA1EF60022CCC0 /* NarrowSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F871EE1ABA1EF60022CCC0 /* NarrowSearchViewController.m */; };
+		4E27E06E1ABE2C1000FFAD5F /* AddEventTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E27E06D1ABE2C1000FFAD5F /* AddEventTableViewController.m */; };
+		4E27E0711ABE3BCB00FFAD5F /* SelectCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E27E0701ABE3BCB00FFAD5F /* SelectCalendarViewController.m */; };
 		4E5E6EDA1AABAAC3004DC31F /* AddEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5E6ED91AABAAC3004DC31F /* AddEventViewController.m */; };
 		4E5E6EDD1AABAB8B004DC31F /* EventManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5E6EDC1AABAB8B004DC31F /* EventManager.m */; };
 		4E5E6EE01AABBCAE004DC31F /* DailyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5E6EDF1AABBCAE004DC31F /* DailyViewController.m */; };
@@ -199,6 +201,10 @@
 		49EB64051AACFA1F00172C5B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		49F871ED1ABA1EF60022CCC0 /* NarrowSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NarrowSearchViewController.h; sourceTree = "<group>"; };
 		49F871EE1ABA1EF60022CCC0 /* NarrowSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NarrowSearchViewController.m; sourceTree = "<group>"; };
+		4E27E06C1ABE2C1000FFAD5F /* AddEventTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEventTableViewController.h; sourceTree = "<group>"; };
+		4E27E06D1ABE2C1000FFAD5F /* AddEventTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddEventTableViewController.m; sourceTree = "<group>"; };
+		4E27E06F1ABE3BCB00FFAD5F /* SelectCalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectCalendarViewController.h; sourceTree = "<group>"; };
+		4E27E0701ABE3BCB00FFAD5F /* SelectCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectCalendarViewController.m; sourceTree = "<group>"; };
 		4E5E6ED81AABAAC3004DC31F /* AddEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEventViewController.h; sourceTree = "<group>"; };
 		4E5E6ED91AABAAC3004DC31F /* AddEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddEventViewController.m; sourceTree = "<group>"; };
 		4E5E6EDB1AABAB8B004DC31F /* EventManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventManager.h; sourceTree = "<group>"; };
@@ -393,6 +399,10 @@
 				4929B6251AA133D700963AA7 /* AppDelegate.h */,
 				4929B6261AA133D700963AA7 /* AppDelegate.m */,
 				4929B6281AA133D800963AA7 /* Main_iPhone.storyboard */,
+				4E27E06F1ABE3BCB00FFAD5F /* SelectCalendarViewController.h */,
+				4E27E0701ABE3BCB00FFAD5F /* SelectCalendarViewController.m */,
+				4E27E06C1ABE2C1000FFAD5F /* AddEventTableViewController.h */,
+				4E27E06D1ABE2C1000FFAD5F /* AddEventTableViewController.m */,
 				3BF2421C1ABD7F6A00630637 /* SubscribedAccountsViewController.h */,
 				3BF2421D1ABD7F6A00630637 /* SubscribedAccountsViewController.m */,
 				973D2E6E1AB8B1020034A5EE /* UserLoginViewController.h */,
@@ -653,6 +663,7 @@
 				4929B6301AA133D900963AA7 /* HomeViewController.m in Sources */,
 				4E5E6EE01AABBCAE004DC31F /* DailyViewController.m in Sources */,
 				97361C061AA8F8460075B4A5 /* TransitMapViewController.m in Sources */,
+				4E27E0711ABE3BCB00FFAD5F /* SelectCalendarViewController.m in Sources */,
 				97361C031AA8EC9A0075B4A5 /* BusTableViewController.m in Sources */,
 				0EC6D53D1AA97FC30084B4C6 /* BookStoreViewController.m in Sources */,
 				0E222D4E1AAAF57400E57818 /* Food2ViewController.m in Sources */,
@@ -671,6 +682,7 @@
 				4E5E6EDD1AABAB8B004DC31F /* EventManager.m in Sources */,
 				4929B6561AA135AF00963AA7 /* FeedbackViewController.m in Sources */,
 				4929B6591AA135BC00963AA7 /* CalendarViewController.m in Sources */,
+				4E27E06E1ABE2C1000FFAD5F /* AddEventTableViewController.m in Sources */,
 				7EBFB6921AAE36D0003B4E32 /* PageUnderConstructionViewController.m in Sources */,
 				4929B6681AA135FD00963AA7 /* ServicesViewController.m in Sources */,
 				4929B6621AA135DF00963AA7 /* LoyaltyViewController.m in Sources */,
