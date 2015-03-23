@@ -125,4 +125,22 @@
     return cell;
 }
 
+-(void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath{
+    // Keep the identifier of the event that's about to be edited.
+    self.appDelegate.eventManager.selectedEventIdentifier = [[self.arrEvents objectAtIndex:indexPath.row] eventIdentifier];
+    
+    // Perform the segue.
+    [self performSegueWithIdentifier:@"idSegueAgendaAddEvent" sender:self];
+}
+
+-(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        // Delete the selected event.
+        [self.appDelegate.eventManager deleteEventWithIdentifier:[[self.arrEvents objectAtIndex:indexPath.row] eventIdentifier]];
+        
+        // Reload all events and the table view.
+        [self loadEvents];
+    }
+}
+
 @end

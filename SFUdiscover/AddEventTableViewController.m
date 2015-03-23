@@ -36,8 +36,22 @@ EKCalendar *_calendar;
     // Instantiate the appDelegate property, so we can access its eventManager property.
     self.appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     
+    // Check the value of the selectedEventIdentifier property, of the eventManager object.
+    // If its length is 0, then a new event is going to be added.
+    // If its length is other than 0, then an existing event is going to be edited. In that case, load the event.
+    if (self.appDelegate.eventManager.selectedEventIdentifier.length > 0) {
+        self.editedEvent = [self.appDelegate.eventManager.eventStore eventWithIdentifier:self.appDelegate.eventManager.selectedEventIdentifier];
+        
+        self.nameTextField.text = self.editedEvent.title;
+        self.startDatePicker.date = self.editedEvent.startDate;
+        self.endDatePicker.date = self.editedEvent.endDate;
+        self.calendarSelectLabel.text = self.editedEvent.calendar.title;
+        _calendar = self.editedEvent.calendar;
+    }else {
+        self.calendarSelectLabel.text = _calendar.title;
+    }
     
-    self.calendarSelectLabel.text = _calendar.title;
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -73,6 +87,11 @@ EKCalendar *_calendar;
     if (self.startDatePicker == nil || self.endDatePicker == nil) {
         // In this case, do nothing too.
         return;
+    }
+    
+    if (self.appDelegate.eventManager.selectedEventIdentifier.length > 0) {
+        [self.appDelegate.eventManager deleteEventWithIdentifier:self.appDelegate.eventManager.selectedEventIdentifier];
+        self.appDelegate.eventManager.selectedEventIdentifier = @"";
     }
     
     // Create a new event object.

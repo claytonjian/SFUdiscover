@@ -143,6 +143,18 @@
 }
 
 
+-(void)deleteEventWithIdentifier:(NSString *)identifier{
+    // Get the event that's about to be deleted.
+    EKEvent *event = [self.eventStore eventWithIdentifier:identifier];
+    
+    // Delete it.
+    NSError *error;
+    if (![self.eventStore removeEvent:event span:EKSpanFutureEvents error:&error]) {
+        // Display the error description.
+        NSLog(@"%@", [error localizedDescription]);
+    }
+}
+
 @end
 
 

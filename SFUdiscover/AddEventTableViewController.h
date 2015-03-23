@@ -21,5 +21,7 @@
 
 - (IBAction)saveEvent:(id)sender;
 
+@property (nonatomic, strong) EKEvent *editedEvent;
+
 
 @end
