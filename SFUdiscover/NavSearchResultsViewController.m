@@ -40,12 +40,14 @@
     self.favoriteButton.selected = !self.favoriteButton.selected;
     if(self.favoriteButton.selected == YES){
         [self.favoriteButton setTitleColor:[UIColor redColor] forState:UIControlStateSelected];
+        [self.favoriteButton setTitle:@"Favorited" forState:UIControlStateSelected];
         [self.favorites addObject: self.title];
         [self.favorites sortUsingSelector:@selector(caseInsensitiveCompare:)];
-        [self.prefs setObject:self.favorites forKey:@"favorites"];
+        [self.prefs setObject:self.favorites forKey:@"favorite"];
     }
     else{
         [self.favoriteButton setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
+        [self.favoriteButton setTitle:@"Favorite" forState:UIControlStateNormal];
         [self.favorites removeObject:self.title];
         [self.prefs setObject:self.favorites forKey:@"favorites"];
     }
@@ -62,15 +64,13 @@
     self.recents = [self.prefs mutableArrayValueForKey:@"recents"];
     if ([self.favorites containsObject:self.title] == YES){
         self.favoriteButton.selected = YES;
+        [self.favoriteButton setTitle:@"Favorited" forState:UIControlStateSelected];
     }
     if([self.recents containsObject:self.title]){
         [self.recents removeObject:self.title];
     }
     [self.recents addObject:self.title];
     [self.prefs setObject:self.recents forKey:@"recents"];
-    for (int i = 0; i < [self.recents count]; i++){
-        NSLog(@"Object %i is %@", i, [self.recents objectAtIndex:i]);
-    }
 }
 - (void)didReceiveMemoryWarning
 {
@@ -80,14 +80,14 @@
 
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+ {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end

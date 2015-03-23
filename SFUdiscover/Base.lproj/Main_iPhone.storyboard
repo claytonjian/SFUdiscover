@@ -1292,10 +1292,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8eJ-XH-6TW">
+                                <rect key="frame" x="0.0" y="137" width="100" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Favorites">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Pgf-av-fPS">
+                                <rect key="frame" x="105" y="137" width="80" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Recent">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UZH-7j-hGA">
+                                <rect key="frame" x="0.0" y="440" width="110" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Get Location">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getUserLocation:" destination="WwY-Eb-6kS" eventType="touchUpInside" id="cpN-wD-oLk"/>
+                                </connections>
+                            </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" id="Qpa-f1-emJ">
                                 <rect key="frame" x="0.0" y="117" width="320" height="363"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                                 <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="DIu-3L-oP2">
+                                        <rect key="frame" x="0.0" y="20" width="320" height="343"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Qi6-0F-dcI">
                                         <rect key="frame" x="0.0" y="20" width="320" height="343"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1320,7 +1348,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="goHome:" destination="WwY-Eb-6kS" eventType="touchUpInside" id="kgZ-Su-QbU"/>
+                                    <action selector="goHome:" destination="WwY-Eb-6kS" eventType="touchUpInside" id="n9N-xb-T9T"/>
                                 </connections>
                             </button>
                             <searchBar contentMode="redraw" id="chd-0A-kXh">
@@ -1356,7 +1384,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="goBack:" destination="WwY-Eb-6kS" eventType="touchUpInside" id="LoS-AZ-bGl"/>
+                                                    <action selector="goBack:" destination="WwY-Eb-6kS" eventType="touchUpInside" id="bLg-OX-xde"/>
                                                 </connections>
                                             </button>
                                         </barButtonItem>
@@ -1369,9 +1397,12 @@
                     <navigationItem key="navigationItem" id="jaM-9a-bAY"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
-                        <outlet property="navSearch" destination="chd-0A-kXh" id="w2y-Bd-vhf"/>
+                        <outlet property="favoritesButton" destination="8eJ-XH-6TW" id="5DO-cn-ZAc"/>
+                        <outlet property="getLoc" destination="UZH-7j-hGA" id="EEp-a2-Q3m"/>
+                        <outlet property="imageView" destination="DIu-3L-oP2" id="251-La-W6A"/>
+                        <outlet property="recentButton" destination="Pgf-av-fPS" id="lFX-eP-AQl"/>
                         <outlet property="scrollView" destination="Qpa-f1-emJ" id="P8U-4u-t8A"/>
-                        <outlet property="searchBar" destination="chd-0A-kXh" id="8fM-hT-JRp"/>
+                        <outlet property="searchBar" destination="chd-0A-kXh" id="IWc-Gb-Iki"/>
                         <outlet property="searchDisplayController" destination="zrp-IW-syN" id="AqX-Nf-g4J"/>
                         <outlet property="searchTable" destination="Qi6-0F-dcI" id="dpY-Ec-s3a"/>
                         <segue destination="cCo-hh-dEz" kind="push" identifier="SearchResults" id="DhK-vF-fLk"/>

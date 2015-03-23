@@ -19,7 +19,7 @@
 #import "NarrowSearchViewController.h"
 
 @interface NavigationViewController (){
-    CGRect bHallFrame;
+    CLLocationManager *locationManager;
 }
 
 // created data types for use in view controller
@@ -31,18 +31,22 @@
 @property (strong, nonatomic) NSArray *navOptions;
 @property (strong, nonatomic) NSArray *searchResults;
 @property (strong, nonatomic) NSArray *buildings;
-@property (weak, nonatomic) IBOutlet UISearchBar *navSearch;
+@property (strong, nonatomic) NSArray *restaurants;
+@property (strong, nonatomic) NSArray *restaurantLocs;
+
 @property (weak, nonatomic) NSString *result;
 
 @property (weak, nonatomic) IBOutlet UITableView *searchTable;
 @property (weak, nonatomic) NSString *tableSelected;
 
 
-@property (strong, nonatomic) IBOutlet UIView *buttons;
-@property (weak, nonatomic) IBOutlet UIButton *bHall;
 @property (weak, nonatomic) IBOutlet UIButton *favoritesButton;
 @property (weak, nonatomic) IBOutlet UIButton *recentButton;
+@property (weak, nonatomic) IBOutlet UIButton *getLoc;
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
+
+@property (weak, nonatomic) NSString *longValue;
+@property (weak, nonatomic) NSString *latValue;
 
 
 // declare functions for use in scroll view
@@ -57,7 +61,6 @@
 
 @synthesize scrollView = _scrollView;
 @synthesize imageView = _imageView;
-@synthesize buttons = _buttons;
 
 - (IBAction)goBack:(id)sender {
     [self.navigationController popViewControllerAnimated:(YES)];
@@ -66,7 +69,31 @@
 - (IBAction)goHome:(id)sender {
     [self.navigationController popToRootViewControllerAnimated:(YES)];
 }
+- (IBAction)getUserLocation:(id)sender {
+    locationManager.delegate = self;
+    locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+    
+    [locationManager startUpdatingLocation];
+    [locationManager stopUpdatingLocation];
+}
+- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
+{
+    NSLog(@"didFailWithError: %@", error);
+    UIAlertView *errorAlert = [[UIAlertView alloc]
+                               initWithTitle:@"Error" message:@"Failed to Get Your Location" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [errorAlert show];
+}
 
+- (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation
+{
+    NSLog(@"didUpdateToLocation: %@", newLocation);
+    CLLocation *currentLocation = newLocation;
+    
+    if (currentLocation != nil) {
+        self.longValue = [NSString stringWithFormat:@"%.8f", currentLocation.coordinate.longitude];
+        self.latValue = [NSString stringWithFormat:@"%.8f", currentLocation.coordinate.latitude];
+    }
+}
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -76,16 +103,11 @@
     return self;
 }
 
+
 - (void)scrollViewDidZoom:(UIScrollView *)scrollView {
     // recenters contents of scroll view
     
     [self centerScrollViewContents];
-    
-    
-    self.bHall.frame = CGRectMake((bHallFrame.origin.x * self.scrollView.zoomScale),
-                                  (bHallFrame.origin.y * self.scrollView.zoomScale),
-                                  bHallFrame.size.width,
-                                  bHallFrame.size.height);
     
 }
 
@@ -144,30 +166,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    bHallFrame = self.bHall.frame;
+    locationManager = [[CLLocationManager alloc] init];
     [self.searchTable setHidden:YES];
-    [self.imageView addSubview:self.favoritesButton];
-    [self.imageView addSubview:self.recentButton];
-    [self.imageView bringSubviewToFront:self.favoritesButton];
-    [self.imageView bringSubviewToFront:self.recentButton];
+    
     
     // load map to image view
     UIImage *image = [UIImage imageNamed:@"SFU Burnaby.jpg"];
     self.imageView = [[UIImageView alloc] initWithImage:image];
-    // factor of 1.5625
-    // Blusson Hall - (5237, 900)
     [self.imageView setFrame:CGRectMake(250, 840, 14843.75, 9500)];
+    [self.view addSubview:self.imageView];
     [self.scrollView addSubview:self.imageView];
-    
-    /*
-     self.bHall = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-     [self.bHall addTarget:self action:@selector(aMethod:)forControlEvents:UIControlEventTouchUpInside];
-     [self.bHall setTitle:@"Blusson Hall" forState:UIControlStateNormal];
-     [self.scrollView addSubview:self.bHall];
-     bHallFrame.origin.x = 8182.8125;
-     bHallFrame.origin.y = 1406.25;
-     */
-    
+    [self.imageView addSubview:self.favoritesButton];
+    [self.imageView addSubview:self.recentButton];
+    [self.imageView addSubview:self.getLoc];
+    [self.imageView bringSubviewToFront:self.favoritesButton];
+    [self.imageView bringSubviewToFront:self.recentButton];
+    [self.imageView bringSubviewToFront:self.getLoc];
     
     // create available search options for search bar
     self.navOptions = [[NSArray alloc] initWithObjects:@"Building", @"Room", @"Recent", @"Favorites", @"Nearest Amenity", @"Restaurants", nil];
@@ -204,6 +218,11 @@
                       @"W.A.C. Bennett Library (LIB)",
                       @"West Mall Centre (WMC)",
                       @"Water Tower Building (WTB)", nil];
+    self.restaurants = [[NSArray alloc]initWithObjects: @"Renaissance Coffee",
+                        @"Club Illia",
+                        @"Spicy Stone",
+                        @"Yeti Yogurt",nil];
+    self.restaurantLocs = [[NSArray alloc]initWithObjects:@"Cornerstone", nil];
     self.searchOptions = [[NSMutableArray alloc]init];
     
     for (int i = 0; i < [self.navOptions count]; i++) {
@@ -211,6 +230,12 @@
     }
     for (int i = 0; i < [self.buildings count]; i++){
         [self.searchOptions addObject:[self.buildings objectAtIndex:i]];
+    }
+    for (int i = 0; i < [self.restaurants count]; i++){
+        [self.searchOptions addObject:[self.restaurants objectAtIndex:i]];
+    }
+    for(int i = 0; i < [self.restaurantLocs count]; i++){
+        [self.searchOptions addObject:[self.restaurantLocs objectAtIndex:i]];
     }
     
     
@@ -257,7 +282,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-     //returns number of rows the search will display
+    //returns number of rows the search will display
     if (tableView == self.searchDisplayController.searchResultsTableView) {
         return [self.searchResults count];
         
@@ -307,15 +332,21 @@
         self.tableSelected = @"Recent";
         [self performSegueWithIdentifier:@"NarrowSearch" sender:self];
     }
+    else if ([[self.searchResults objectAtIndex:indexPath.row] isEqualToString:(@"Restaurants")]){
+        self.tableSelected = @"RestaurantLocs";
+        [self performSegueWithIdentifier:@"NarrowSearch" sender:self];
+    }
     else{
         self.result = [self.searchResults objectAtIndex:indexPath.row];
         [self performSegueWithIdentifier:@"SearchResults" sender:self];
     }
 }
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    if ([self.tableSelected isEqualToString:@"Favorites"] || [self.tableSelected isEqualToString:@"Recent"]){
+    if ([self.tableSelected isEqualToString:@"Favorites"] || [self.tableSelected isEqualToString:@"Recent"] || [self.tableSelected isEqualToString:@"RestaurantLocs"]){
         NarrowSearchViewController *NS = [segue destinationViewController];
         NS.tableSelected = self.tableSelected;
+        NS.restaurantLocs = self.restaurantLocs;
+        NS.restaurants = self.restaurants;
     }
     else{
         NavSearchResultsViewController *NSR = [segue destinationViewController];

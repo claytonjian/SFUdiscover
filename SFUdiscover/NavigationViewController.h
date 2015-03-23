@@ -14,8 +14,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface NavigationViewController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource,UISearchBarDelegate, UIAlertViewDelegate>
+@interface NavigationViewController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource,UISearchBarDelegate, UIAlertViewDelegate, CLLocationManagerDelegate>
 
 @property (strong, nonatomic, readonly) IBOutlet UIScrollView *scrollView;
 

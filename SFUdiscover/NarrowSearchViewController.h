@@ -11,5 +11,7 @@
 @interface NarrowSearchViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UINavigationControllerDelegate>
 
 @property (weak, nonatomic) NSString *tableSelected;
+@property (strong, nonatomic) NSArray *restaurants;
+@property (strong, nonatomic) NSArray *restaurantLocs;
 
 @end
