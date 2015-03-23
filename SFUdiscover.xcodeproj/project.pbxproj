@@ -70,6 +70,8 @@
 		4E5E6EE01AABBCAE004DC31F /* DailyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5E6EDF1AABBCAE004DC31F /* DailyViewController.m */; };
 		4E83D95F1AB42B3A0045958A /* NewsFeedCardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E83D95E1AB42B3A0045958A /* NewsFeedCardTableViewCell.m */; };
 		4E83D96A1AB444BD0045958A /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E83D9691AB444BD0045958A /* FacebookSDK.framework */; };
+		4EEAC9A81ABFF3E20003CB4B /* SubscribedAccounts.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EEAC9A71ABFF3E20003CB4B /* SubscribedAccounts.m */; };
+		4EEAC9AA1ABFFB7C0003CB4B /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EEAC9A91ABFFB7C0003CB4B /* facebook.png */; };
 		7E46F4CC1ABCDEDB00ED6E43 /* appicon_no_ribbon_original80x80red.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E46F4C01ABCDEDB00ED6E43 /* appicon_no_ribbon_original80x80red.png */; };
 		7E46F4CD1ABCDEDB00ED6E43 /* appicon_no_ribbon_original120x120red.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E46F4C11ABCDEDB00ED6E43 /* appicon_no_ribbon_original120x120red.png */; };
 		7E46F4CE1ABCDEDB00ED6E43 /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E46F4C21ABCDEDB00ED6E43 /* calendar.png */; };
@@ -214,6 +216,9 @@
 		4E83D95D1AB42B3A0045958A /* NewsFeedCardTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsFeedCardTableViewCell.h; sourceTree = "<group>"; };
 		4E83D95E1AB42B3A0045958A /* NewsFeedCardTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsFeedCardTableViewCell.m; sourceTree = "<group>"; };
 		4E83D9691AB444BD0045958A /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		4EEAC9A61ABFF3E20003CB4B /* SubscribedAccounts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubscribedAccounts.h; sourceTree = "<group>"; };
+		4EEAC9A71ABFF3E20003CB4B /* SubscribedAccounts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubscribedAccounts.m; sourceTree = "<group>"; };
+		4EEAC9A91ABFFB7C0003CB4B /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = facebook.png; path = ../../../Downloads/facebook.png; sourceTree = "<group>"; };
 		7E46F4C01ABCDEDB00ED6E43 /* appicon_no_ribbon_original80x80red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appicon_no_ribbon_original80x80red.png; sourceTree = "<group>"; };
 		7E46F4C11ABCDEDB00ED6E43 /* appicon_no_ribbon_original120x120red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appicon_no_ribbon_original120x120red.png; sourceTree = "<group>"; };
 		7E46F4C21ABCDEDB00ED6E43 /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar.png; sourceTree = "<group>"; };
@@ -396,6 +401,7 @@
 				0EEC41741AAAE73B00B4AF19 /* Library */,
 				97D44E6C1AABB13800B0A91C /* myButton.h */,
 				97D44E6A1AABB11F00B0A91C /* myButton.m */,
+				4EEAC9A91ABFFB7C0003CB4B /* facebook.png */,
 				4929B6251AA133D700963AA7 /* AppDelegate.h */,
 				4929B6261AA133D700963AA7 /* AppDelegate.m */,
 				4929B6281AA133D800963AA7 /* Main_iPhone.storyboard */,
@@ -405,6 +411,8 @@
 				4E27E06D1ABE2C1000FFAD5F /* AddEventTableViewController.m */,
 				3BF2421C1ABD7F6A00630637 /* SubscribedAccountsViewController.h */,
 				3BF2421D1ABD7F6A00630637 /* SubscribedAccountsViewController.m */,
+				4EEAC9A61ABFF3E20003CB4B /* SubscribedAccounts.h */,
+				4EEAC9A71ABFF3E20003CB4B /* SubscribedAccounts.m */,
 				973D2E6E1AB8B1020034A5EE /* UserLoginViewController.h */,
 				973D2E6F1AB8B1020034A5EE /* UserLoginViewController.m */,
 				97F2A2DF1AB8C2E900195CA1 /* JNKeychain.h */,
@@ -618,6 +626,7 @@
 				0EC6D5541AA9B6490084B4C6 /* RL_Cornerstone.plist in Resources */,
 				7E46F4D61ABCDEDB00ED6E43 /* service1blue.png in Resources */,
 				0EC6D5481AA9A0170084B4C6 /* Locations.plist in Resources */,
+				4EEAC9AA1ABFFB7C0003CB4B /* facebook.png in Resources */,
 				7E4C80551AAD1BB9001BD4C4 /* setting.png in Resources */,
 				4929B6211AA133D600963AA7 /* InfoPlist.strings in Resources */,
 				7E46F4D31ABCDEDB00ED6E43 /* loyaltyblue.png in Resources */,
@@ -680,6 +689,7 @@
 				4929B6231AA133D600963AA7 /* main.m in Sources */,
 				4929B65F1AA135D100963AA7 /* TransitViewController.m in Sources */,
 				4E5E6EDD1AABAB8B004DC31F /* EventManager.m in Sources */,
+				4EEAC9A81ABFF3E20003CB4B /* SubscribedAccounts.m in Sources */,
 				4929B6561AA135AF00963AA7 /* FeedbackViewController.m in Sources */,
 				4929B6591AA135BC00963AA7 /* CalendarViewController.m in Sources */,
 				4E27E06E1ABE2C1000FFAD5F /* AddEventTableViewController.m in Sources */,

@@ -8,6 +8,8 @@
 
 #import "SubscribedAccountsViewController.h"
 #import "AppDelegate.h"
+#import "TFHpple.h"
+#import "SubscribedAccounts.h"
 
 @interface SubscribedAccountsViewController ()
 
@@ -18,6 +20,8 @@
 
 @implementation SubscribedAccountsViewController
 
+NSUInteger _selectedIndex;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -25,6 +29,10 @@
         // Custom initialization
     }
     return self;
+}
+- (IBAction)cancel:(id)sender {
+    // Pop the current view controller from the navigation stack.
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)viewDidLoad
@@ -38,6 +46,9 @@
     
     // Instantiate the appDelegate property, so we can access its eventManager property
     self.appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    
+    // Initialize variables
+    _selectedIndex = 0;
     
     // Get list of subscribed accounts
     [self getSubscribedAccounts];
@@ -63,14 +74,55 @@
 }
 */
 
--(void)loadSubscribedAccounts
-{
+-(void)loadSubscribedAccounts{
+    
+    self.arrSubscribedAccounts = [self getSubscribedAccounts];
+    
     [self.tableAccounts reloadData];
 }
 
--(void)getSubscribedAccounts
+-(NSArray *)getSubscribedAccounts
 {
-    self.arrSubscribedAccounts = @[@"simonfraseruniversity", @"SFUSurrey", @"SFUVancouver"];
+   
+    // Parse for official SFU Facebook accounts
+    NSURL *tutorialsUrl = [NSURL URLWithString:@"http://www.sfu.ca/dashboard/media/social-media-channels.html"];
+    NSData *tutorialsHtmlData = [NSData dataWithContentsOfURL:tutorialsUrl];
+    TFHpple *tutorialsParser = [TFHpple hppleWithHTMLData:tutorialsHtmlData];
+    NSString *tutorialsXpathQueryString = @"//table/tbody/tr/td/div/a[starts-with(@href, 'http://www.facebook.com')]";
+    NSArray *tutorialsNodes = [tutorialsParser searchWithXPathQuery:tutorialsXpathQueryString];
+    
+
+    // Get the name of the account and link
+    NSMutableArray *newTutorials = [[NSMutableArray alloc] initWithCapacity:0];
+    for (TFHppleElement *element in tutorialsNodes) {
+       
+        SubscribedAccounts *accounts = [[SubscribedAccounts alloc] init];
+        [newTutorials addObject:accounts];
+        accounts.url = [element objectForKey:@"href"];
+        
+        
+        // Get the account name
+        NSArray *urlParts = [accounts.url componentsSeparatedByString:@"/"];
+        
+        if([urlParts count] == 4){
+            
+            // Get the suffix of the url
+            accounts.name = [urlParts lastObject];
+            
+        }else {
+            
+            // Get the account name of the url
+            for (NSString* part in urlParts){
+                if ([[part uppercaseString] containsString:@"SFU"] || [[part uppercaseString] containsString:@"SIMON" ]){
+                    accounts.name = part;
+                }
+            }
+        }
+        
+        
+    }
+    
+    return newTutorials;
 }
 
 #pragma mark - UITableView Delegate and Datasource method implementation
@@ -87,12 +139,39 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"idCellSubscribedAccounts"];
     
-    NSString *accountName = [self.arrSubscribedAccounts objectAtIndex:indexPath.row];
+    SubscribedAccounts *accounts = [self.arrSubscribedAccounts objectAtIndex:indexPath.row];
     
     // Set the cell's text label
-    cell.textLabel.text = accountName;
+    cell.textLabel.text = accounts.name;
+    cell.detailTextLabel.text = accounts.url;
+    
+    // If selected, display a check mark
+    if (indexPath.row == _selectedIndex) {
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    } else {
+        cell.accessoryType = UITableViewCellAccessoryNone;
+    }
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // Deselect the tapped row
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    // If no row is selected, display no checkmark
+    if (_selectedIndex != NSNotFound) {
+        UITableViewCell *cell = [tableView cellForRowAtIndexPath:
+                                 [NSIndexPath indexPathForRow:_selectedIndex inSection:0]];
+        cell.accessoryType = UITableViewCellAccessoryNone;
+    }
+    
+    // Add a checkmark to the selected row
+    _selectedIndex = indexPath.row;
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    
 }
 
 

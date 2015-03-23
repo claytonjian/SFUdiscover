@@ -14,6 +14,6 @@
 
 @property(nonatomic, strong) NSArray *arrSubscribedAccounts;
 
--(void)getSubscribedAccounts;
+-(NSArray *)getSubscribedAccounts;
 
 @end
