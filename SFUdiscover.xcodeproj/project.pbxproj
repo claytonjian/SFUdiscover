@@ -29,6 +29,7 @@
 		304816EC1AAD0F4500D1F083 /* SafeWalkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF4ABC61AAAABFD007B1B12 /* SafeWalkViewController.m */; };
 		30A459C01AAD5B7D00AD7221 /* Monthly View Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E4EF701AAD4F80003F6436 /* Monthly View Controller.m */; };
 		30A459C11AAD5B8400AD7221 /* AgendaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E4EF731AAD5011003F6436 /* AgendaViewController.m */; };
+		3BF2421E1ABD7F6A00630637 /* SubscribedAccountsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF2421D1ABD7F6A00630637 /* SubscribedAccountsViewController.m */; };
 		4925CF6C1AA566200026305C /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4925CF6B1AA566200026305C /* SettingsViewController.m */; };
 		4929B6171AA133D300963AA7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4929B6161AA133D300963AA7 /* Foundation.framework */; };
 		4929B6191AA133D300963AA7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4929B6181AA133D300963AA7 /* CoreGraphics.framework */; };
@@ -62,11 +63,15 @@
 		49B69B061AA2A51800B3AC66 /* LibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B69B051AA2A51800B3AC66 /* LibraryViewController.m */; };
 		49EB63FE1AACF69900172C5B /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 49EB63FD1AACF69800172C5B /* libxml2.dylib */; };
 		49F871EF1ABA1EF60022CCC0 /* NarrowSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F871EE1ABA1EF60022CCC0 /* NarrowSearchViewController.m */; };
+		4E27E06E1ABE2C1000FFAD5F /* AddEventTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E27E06D1ABE2C1000FFAD5F /* AddEventTableViewController.m */; };
+		4E27E0711ABE3BCB00FFAD5F /* SelectCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E27E0701ABE3BCB00FFAD5F /* SelectCalendarViewController.m */; };
 		4E5E6EDA1AABAAC3004DC31F /* AddEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5E6ED91AABAAC3004DC31F /* AddEventViewController.m */; };
 		4E5E6EDD1AABAB8B004DC31F /* EventManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5E6EDC1AABAB8B004DC31F /* EventManager.m */; };
 		4E5E6EE01AABBCAE004DC31F /* DailyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5E6EDF1AABBCAE004DC31F /* DailyViewController.m */; };
 		4E83D95F1AB42B3A0045958A /* NewsFeedCardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E83D95E1AB42B3A0045958A /* NewsFeedCardTableViewCell.m */; };
 		4E83D96A1AB444BD0045958A /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E83D9691AB444BD0045958A /* FacebookSDK.framework */; };
+		4EEAC9A81ABFF3E20003CB4B /* SubscribedAccounts.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EEAC9A71ABFF3E20003CB4B /* SubscribedAccounts.m */; };
+		4EEAC9AA1ABFFB7C0003CB4B /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EEAC9A91ABFFB7C0003CB4B /* facebook.png */; };
 		7E46F4CC1ABCDEDB00ED6E43 /* appicon_no_ribbon_original80x80red.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E46F4C01ABCDEDB00ED6E43 /* appicon_no_ribbon_original80x80red.png */; };
 		7E46F4CD1ABCDEDB00ED6E43 /* appicon_no_ribbon_original120x120red.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E46F4C11ABCDEDB00ED6E43 /* appicon_no_ribbon_original120x120red.png */; };
 		7E46F4CE1ABCDEDB00ED6E43 /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E46F4C21ABCDEDB00ED6E43 /* calendar.png */; };
@@ -144,6 +149,8 @@
 		30E4EF701AAD4F80003F6436 /* Monthly View Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Monthly View Controller.m"; sourceTree = "<group>"; };
 		30E4EF721AAD5011003F6436 /* AgendaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgendaViewController.h; sourceTree = "<group>"; };
 		30E4EF731AAD5011003F6436 /* AgendaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgendaViewController.m; sourceTree = "<group>"; };
+		3BF2421C1ABD7F6A00630637 /* SubscribedAccountsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubscribedAccountsViewController.h; sourceTree = "<group>"; };
+		3BF2421D1ABD7F6A00630637 /* SubscribedAccountsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubscribedAccountsViewController.m; sourceTree = "<group>"; };
 		4925CF6A1AA566200026305C /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		4925CF6B1AA566200026305C /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		4929B6131AA133D300963AA7 /* SFUdiscover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SFUdiscover.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -196,6 +203,10 @@
 		49EB64051AACFA1F00172C5B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		49F871ED1ABA1EF60022CCC0 /* NarrowSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NarrowSearchViewController.h; sourceTree = "<group>"; };
 		49F871EE1ABA1EF60022CCC0 /* NarrowSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NarrowSearchViewController.m; sourceTree = "<group>"; };
+		4E27E06C1ABE2C1000FFAD5F /* AddEventTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEventTableViewController.h; sourceTree = "<group>"; };
+		4E27E06D1ABE2C1000FFAD5F /* AddEventTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddEventTableViewController.m; sourceTree = "<group>"; };
+		4E27E06F1ABE3BCB00FFAD5F /* SelectCalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectCalendarViewController.h; sourceTree = "<group>"; };
+		4E27E0701ABE3BCB00FFAD5F /* SelectCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectCalendarViewController.m; sourceTree = "<group>"; };
 		4E5E6ED81AABAAC3004DC31F /* AddEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEventViewController.h; sourceTree = "<group>"; };
 		4E5E6ED91AABAAC3004DC31F /* AddEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddEventViewController.m; sourceTree = "<group>"; };
 		4E5E6EDB1AABAB8B004DC31F /* EventManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventManager.h; sourceTree = "<group>"; };
@@ -205,6 +216,9 @@
 		4E83D95D1AB42B3A0045958A /* NewsFeedCardTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsFeedCardTableViewCell.h; sourceTree = "<group>"; };
 		4E83D95E1AB42B3A0045958A /* NewsFeedCardTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsFeedCardTableViewCell.m; sourceTree = "<group>"; };
 		4E83D9691AB444BD0045958A /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		4EEAC9A61ABFF3E20003CB4B /* SubscribedAccounts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubscribedAccounts.h; sourceTree = "<group>"; };
+		4EEAC9A71ABFF3E20003CB4B /* SubscribedAccounts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubscribedAccounts.m; sourceTree = "<group>"; };
+		4EEAC9A91ABFFB7C0003CB4B /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = facebook.png; path = ../../../Downloads/facebook.png; sourceTree = "<group>"; };
 		7E46F4C01ABCDEDB00ED6E43 /* appicon_no_ribbon_original80x80red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appicon_no_ribbon_original80x80red.png; sourceTree = "<group>"; };
 		7E46F4C11ABCDEDB00ED6E43 /* appicon_no_ribbon_original120x120red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appicon_no_ribbon_original120x120red.png; sourceTree = "<group>"; };
 		7E46F4C21ABCDEDB00ED6E43 /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar.png; sourceTree = "<group>"; };
@@ -387,9 +401,18 @@
 				0EEC41741AAAE73B00B4AF19 /* Library */,
 				97D44E6C1AABB13800B0A91C /* myButton.h */,
 				97D44E6A1AABB11F00B0A91C /* myButton.m */,
+				4EEAC9A91ABFFB7C0003CB4B /* facebook.png */,
 				4929B6251AA133D700963AA7 /* AppDelegate.h */,
 				4929B6261AA133D700963AA7 /* AppDelegate.m */,
 				4929B6281AA133D800963AA7 /* Main_iPhone.storyboard */,
+				4E27E06F1ABE3BCB00FFAD5F /* SelectCalendarViewController.h */,
+				4E27E0701ABE3BCB00FFAD5F /* SelectCalendarViewController.m */,
+				4E27E06C1ABE2C1000FFAD5F /* AddEventTableViewController.h */,
+				4E27E06D1ABE2C1000FFAD5F /* AddEventTableViewController.m */,
+				3BF2421C1ABD7F6A00630637 /* SubscribedAccountsViewController.h */,
+				3BF2421D1ABD7F6A00630637 /* SubscribedAccountsViewController.m */,
+				4EEAC9A61ABFF3E20003CB4B /* SubscribedAccounts.h */,
+				4EEAC9A71ABFF3E20003CB4B /* SubscribedAccounts.m */,
 				973D2E6E1AB8B1020034A5EE /* UserLoginViewController.h */,
 				973D2E6F1AB8B1020034A5EE /* UserLoginViewController.m */,
 				97F2A2DF1AB8C2E900195CA1 /* JNKeychain.h */,
@@ -603,6 +626,7 @@
 				0EC6D5541AA9B6490084B4C6 /* RL_Cornerstone.plist in Resources */,
 				7E46F4D61ABCDEDB00ED6E43 /* service1blue.png in Resources */,
 				0EC6D5481AA9A0170084B4C6 /* Locations.plist in Resources */,
+				4EEAC9AA1ABFFB7C0003CB4B /* facebook.png in Resources */,
 				7E4C80551AAD1BB9001BD4C4 /* setting.png in Resources */,
 				4929B6211AA133D600963AA7 /* InfoPlist.strings in Resources */,
 				7E46F4D31ABCDEDB00ED6E43 /* loyaltyblue.png in Resources */,
@@ -648,10 +672,12 @@
 				4929B6301AA133D900963AA7 /* HomeViewController.m in Sources */,
 				4E5E6EE01AABBCAE004DC31F /* DailyViewController.m in Sources */,
 				97361C061AA8F8460075B4A5 /* TransitMapViewController.m in Sources */,
+				4E27E0711ABE3BCB00FFAD5F /* SelectCalendarViewController.m in Sources */,
 				97361C031AA8EC9A0075B4A5 /* BusTableViewController.m in Sources */,
 				0EC6D53D1AA97FC30084B4C6 /* BookStoreViewController.m in Sources */,
 				0E222D4E1AAAF57400E57818 /* Food2ViewController.m in Sources */,
 				0EF8EBB81AB6A5A1009FCF92 /* LostandFoundWebViewController.m in Sources */,
+				3BF2421E1ABD7F6A00630637 /* SubscribedAccountsViewController.m in Sources */,
 				0EC20A451AAB10FD008207FF /* TrafficViewController.m in Sources */,
 				49F871EF1ABA1EF60022CCC0 /* NarrowSearchViewController.m in Sources */,
 				4929B6271AA133D700963AA7 /* AppDelegate.m in Sources */,
@@ -663,8 +689,10 @@
 				4929B6231AA133D600963AA7 /* main.m in Sources */,
 				4929B65F1AA135D100963AA7 /* TransitViewController.m in Sources */,
 				4E5E6EDD1AABAB8B004DC31F /* EventManager.m in Sources */,
+				4EEAC9A81ABFF3E20003CB4B /* SubscribedAccounts.m in Sources */,
 				4929B6561AA135AF00963AA7 /* FeedbackViewController.m in Sources */,
 				4929B6591AA135BC00963AA7 /* CalendarViewController.m in Sources */,
+				4E27E06E1ABE2C1000FFAD5F /* AddEventTableViewController.m in Sources */,
 				7EBFB6921AAE36D0003B4E32 /* PageUnderConstructionViewController.m in Sources */,
 				4929B6681AA135FD00963AA7 /* ServicesViewController.m in Sources */,
 				4929B6621AA135DF00963AA7 /* LoyaltyViewController.m in Sources */,

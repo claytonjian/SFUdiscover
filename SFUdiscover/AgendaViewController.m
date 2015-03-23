@@ -53,7 +53,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -61,8 +61,13 @@
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:@"idSegueAgendaAddEvent"]) {
+        AddEventTableViewController *addEventTableViewController = [segue destinationViewController];
+        addEventTableViewController.delegate = self;
+    }
+    
 }
-*/
+
 
 // Display events
 -(void)loadEvents{
@@ -82,7 +87,7 @@
 -(void)eventWasSuccessfullySaved{
     
     // Reload all events.
-    [self viewDidLoad];
+    [self loadEvents];
 }
 
 #pragma mark - UITableView Delegate and Datasource method implementation
@@ -118,6 +123,24 @@
     cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ - %@", startDateString, endDateString];
     
     return cell;
+}
+
+-(void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath{
+    // Keep the identifier of the event that's about to be edited.
+    self.appDelegate.eventManager.selectedEventIdentifier = [[self.arrEvents objectAtIndex:indexPath.row] eventIdentifier];
+    
+    // Perform the segue.
+    [self performSegueWithIdentifier:@"idSegueAgendaAddEvent" sender:self];
+}
+
+-(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        // Delete the selected event.
+        [self.appDelegate.eventManager deleteEventWithIdentifier:[[self.arrEvents objectAtIndex:indexPath.row] eventIdentifier]];
+        
+        // Reload all events and the table view.
+        [self loadEvents];
+    }
 }
 
 @end

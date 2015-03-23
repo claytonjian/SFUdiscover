@@ -43,7 +43,7 @@
     // Remove lines between cells
     self.tableView.separatorColor = [UIColor clearColor];
     
-    [self getFacebookFeed];
+    //[self getFacebookFeed];
     
     // Load data
     [self.tableView reloadData];

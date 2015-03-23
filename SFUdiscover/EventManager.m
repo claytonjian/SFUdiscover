@@ -54,7 +54,7 @@
 }
 
 
--(void)setEventsAccessGranted:(BOOL)eventsAccessGranted{
+- (void)setEventsAccessGranted:(BOOL)eventsAccessGranted{
     _eventsAccessGranted = eventsAccessGranted;
     
     [[NSUserDefaults standardUserDefaults] setValue:[NSNumber numberWithBool:eventsAccessGranted] forKey:@"eventkit_events_access_granted"];
@@ -62,23 +62,25 @@
 
 
 
--(void)saveCustomCalendarIdentifier:(NSString *)identifier{
+- (void)saveCustomCalendarIdentifier:(NSString *)identifier{
     [self.arrCustomCalendarIdentifiers addObject:identifier];
     
     [[NSUserDefaults standardUserDefaults] setObject:self.arrCustomCalendarIdentifiers forKey:@"eventkit_cal_identifiers"];
 }
 
 // Return the given date in string format
--(NSString *)getStringFromDate:(NSDate *)date{
+- (NSString *)getStringFromDate:(NSDate *)date{
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     dateFormatter.locale = [NSLocale currentLocale];
-    [dateFormatter setDateFormat:@"d MMM yyyy, HH:mm"];
+    //[dateFormatter setDateFormat:@"d MMM yyyy, HH:mm"];
+    [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
+    [dateFormatter setTimeStyle:NSDateFormatterShortStyle];
     NSString *stringFromDate = [dateFormatter stringFromDate:date];
     return stringFromDate;
 }
 
 // Return array of all events
--(NSArray *)getEventsOfSelectedCalendar{
+- (NSArray *)getEventsOfSelectedCalendar{
     // Specify the calendar that will be used to get the events from.
     EKCalendar *calendar = nil;
     /*if (self.selectedCalendarIdentifier != nil && self.selectedCalendarIdentifier.length > 0) {
@@ -104,6 +106,53 @@
     
     // Return that array.
     return eventsArray;
+}
+
+- (NSArray *)getLocalEventCalendars{
+    
+    NSArray *allCalendars = [self.eventStore calendarsForEntityType:EKEntityTypeEvent];
+    NSMutableArray *localCalendars = [[NSMutableArray alloc] init];
+    
+    for (int i=0; i<allCalendars.count; i++) {
+        EKCalendar *currentCalendar = [allCalendars objectAtIndex:i];
+        if (currentCalendar.type == EKCalendarTypeLocal) {
+            [localCalendars addObject:currentCalendar];
+        }
+    }
+    
+    return (NSArray *)localCalendars;
+}
+
+-(BOOL)checkIfCalendarIsCustomWithIdentifier:(NSString *)identifier{
+    BOOL isCustomCalendar = NO;
+    
+    for (int i=0; i<self.arrCustomCalendarIdentifiers.count; i++) {
+        if ([[self.arrCustomCalendarIdentifiers objectAtIndex:i] isEqualToString:identifier]) {
+            isCustomCalendar = YES;
+            break;
+        }
+    }
+    
+    return isCustomCalendar;
+}
+
+-(void)removeCalendarIdentifier:(NSString *)identifier{
+    [self.arrCustomCalendarIdentifiers removeObject:identifier];
+    
+    [[NSUserDefaults standardUserDefaults] setObject:self.arrCustomCalendarIdentifiers forKey:@"eventkit_cal_identifiers"];
+}
+
+
+-(void)deleteEventWithIdentifier:(NSString *)identifier{
+    // Get the event that's about to be deleted.
+    EKEvent *event = [self.eventStore eventWithIdentifier:identifier];
+    
+    // Delete it.
+    NSError *error;
+    if (![self.eventStore removeEvent:event span:EKSpanFutureEvents error:&error]) {
+        // Display the error description.
+        NSLog(@"%@", [error localizedDescription]);
+    }
 }
 
 @end

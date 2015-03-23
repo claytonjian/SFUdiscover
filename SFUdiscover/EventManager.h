@@ -26,12 +26,19 @@
 @property (nonatomic, strong) NSString *selectedCalendarIdentifier;
 @property (nonatomic, strong) NSMutableArray *arrCustomCalendarIdentifiers;
 
+@property (nonatomic, strong) NSString *selectedEventIdentifier;
+
 -(void)saveCustomCalendarIdentifier:(NSString *)identifier;
 
 
 -(NSString *)getStringFromDate:(NSDate *)date;
 -(NSArray *)getEventsOfSelectedCalendar;
 
+-(NSArray *)getLocalEventCalendars;
+-(BOOL)checkIfCalendarIsCustomWithIdentifier:(NSString *)identifier;
+
+-(void)removeCalendarIdentifier:(NSString *)identifier;
+-(void)deleteEventWithIdentifier:(NSString *)identifier;
 
 @end
 

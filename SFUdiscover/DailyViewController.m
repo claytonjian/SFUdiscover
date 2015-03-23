@@ -51,7 +51,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -59,8 +59,12 @@
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:@"idSegueDailyAddEvent"]) {
+        AddEventViewController *addEventViewController = [segue destinationViewController];
+        addEventViewController.delegate = self;
+    }
 }
-*/
+
 
 -(void) loadEvents
 {
@@ -97,7 +101,7 @@
 
 -(void)eventWasSuccessfullySaved{
     // Reload all events.
-    [self viewDidLoad];
+    [self loadEvents];
 }
 
 @end
