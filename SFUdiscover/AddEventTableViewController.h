@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SelectCalendarViewController.h"
 
 @protocol AddEventTableViewControllerDelegate
 
@@ -14,7 +15,7 @@
 
 @end
 
-@interface AddEventTableViewController : UITableViewController
+@interface AddEventTableViewController : UITableViewController<SelectCalendarViewControllerDelegate>
 
 @property (nonatomic, strong) id<AddEventTableViewControllerDelegate> delegate;
 

@@ -32,6 +32,8 @@
 -(NSString *)getStringFromDate:(NSDate *)date;
 -(NSArray *)getEventsOfSelectedCalendar;
 
+-(NSArray *)getLocalEventCalendars;
+
 
 @end
 

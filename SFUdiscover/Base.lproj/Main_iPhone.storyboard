@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Z3h-Ab-vzh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Z3h-Ab-vzh">
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
         <!--Home View Controller-->
@@ -1865,7 +1864,7 @@
             </objects>
             <point key="canvasLocation" x="1570" y="-237"/>
         </scene>
-        <!--Agenda-->
+        <!--Agenda View Controller - Agenda-->
         <scene sceneID="NXx-Dv-WJh">
             <objects>
                 <viewController id="vSO-34-Gd0" customClass="AgendaViewController" sceneMemberID="viewController">
@@ -1966,7 +1965,7 @@
             </objects>
             <point key="canvasLocation" x="1048" y="-2511"/>
         </scene>
-        <!--Calendar View Controller-->
+        <!--Calendar View Controller - Calendar View Controller-->
         <scene sceneID="rwX-GU-841">
             <objects>
                 <tabBarController title="Calendar View Controller" definesPresentationContext="YES" id="FPc-2R-xBT" customClass="CalendarViewController" sceneMemberID="viewController">
@@ -1996,7 +1995,7 @@
             </objects>
             <point key="canvasLocation" x="455" y="-1966"/>
         </scene>
-        <!--Daily-->
+        <!--Daily View Controller - Daily-->
         <scene sceneID="eMX-RK-K3W">
             <objects>
                 <viewController id="fEY-qN-JvF" customClass="DailyViewController" sceneMemberID="viewController">
@@ -2089,7 +2088,7 @@
             </objects>
             <point key="canvasLocation" x="1048" y="-1919"/>
         </scene>
-        <!--Monthly-->
+        <!--Monthly View Controller - Monthly-->
         <scene sceneID="KFk-HE-Sxy">
             <objects>
                 <viewController id="yVP-ZD-hQf" customClass="Monthly_View_Controller" sceneMemberID="viewController">
@@ -2397,7 +2396,7 @@
             </objects>
             <point key="canvasLocation" x="380" y="584"/>
         </scene>
-        <!--Add Event-->
+        <!--Add Event View Controller - Add Event-->
         <scene sceneID="ISF-Ti-2ap">
             <objects>
                 <viewController id="qcI-tf-z42" customClass="AddEventViewController" sceneMemberID="viewController">
@@ -2538,8 +2537,10 @@
                             <tableViewSection headerTitle="Basic Information" id="gjQ-Y5-tzJ">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="jyy-xz-5uG">
+                                        <rect key="frame" x="0.0" y="99" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jyy-xz-5uG" id="8uR-Wy-h2M">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Event Name" minimumFontSize="17" id="YPf-N8-dWx">
@@ -2552,17 +2553,21 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="pMM-cG-Rz6" detailTextLabel="crB-wa-bSv" style="IBUITableViewCellStyleValue1" id="i6i-15-FbY">
+                                        <rect key="frame" x="0.0" y="143" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="i6i-15-FbY" id="A5t-dX-oqh">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Calendar" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pMM-cG-Rz6">
+                                                    <rect key="frame" x="15" y="12" width="66" height="20"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Select" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="crB-wa-bSv">
+                                                    <rect key="frame" x="239" y="12" width="46" height="20"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
@@ -2579,8 +2584,10 @@
                             <tableViewSection headerTitle="Start Date &amp; Time" id="mwG-ao-oTf">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="163" id="HB1-zm-oec">
+                                        <rect key="frame" x="0.0" y="235" width="320" height="163"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HB1-zm-oec" id="QWV-lz-09f">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="162"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <datePicker contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" datePickerMode="dateAndTime" minuteInterval="1" id="13k-Ty-Xtg">
@@ -2598,8 +2605,10 @@
                             <tableViewSection headerTitle="End Date &amp; Time" id="peg-8Z-SSV">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="163" id="ovq-eH-xEU">
+                                        <rect key="frame" x="0.0" y="446" width="320" height="163"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ovq-eH-xEU" id="hjv-wC-yOq">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="162"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <datePicker contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" datePickerMode="dateAndTime" minuteInterval="1" id="CJb-cv-8re">
@@ -2617,8 +2626,10 @@
                             <tableViewSection headerTitle="Location" id="O1s-U6-Gn3">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Ljg-ye-UDw">
+                                        <rect key="frame" x="0.0" y="657" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ljg-ye-UDw" id="klh-6D-P7e">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="h1q-o8-vKK">
@@ -2635,20 +2646,26 @@
                             <tableViewSection headerTitle="Recurrance " id="cxd-pb-wuV">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="6HB-4B-8Q4">
+                                        <rect key="frame" x="0.0" y="749" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6HB-4B-8Q4" id="9p5-hX-sTH">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="LSy-LE-d6b">
+                                        <rect key="frame" x="0.0" y="793" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LSy-LE-d6b" id="71i-RT-PJ5">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="aHw-jX-uIr">
+                                        <rect key="frame" x="0.0" y="837" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aHw-jX-uIr" id="rZa-2m-4hu">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -2686,7 +2703,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Select Calendar" id="0ih-qI-OVa"/>
+                                    <navigationItem title="Select Calendar" id="0ih-qI-OVa">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="dZC-ej-34i">
+                                            <connections>
+                                                <action selector="backToAddEvent:" destination="ewU-wE-o42" id="RTn-uC-4qn"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="qpE-oC-eL6"/>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ZO2-Pq-vzo">
@@ -2695,11 +2719,14 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="idCellSelectCalendar" textLabel="2cS-Wq-80S" style="IBUITableViewCellStyleDefault" id="59j-Ux-kgY">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="59j-Ux-kgY" id="PYW-IS-7e8">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2cS-Wq-80S">
+                                                    <rect key="frame" x="15" y="0.0" width="290" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>

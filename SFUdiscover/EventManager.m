@@ -54,7 +54,7 @@
 }
 
 
--(void)setEventsAccessGranted:(BOOL)eventsAccessGranted{
+- (void)setEventsAccessGranted:(BOOL)eventsAccessGranted{
     _eventsAccessGranted = eventsAccessGranted;
     
     [[NSUserDefaults standardUserDefaults] setValue:[NSNumber numberWithBool:eventsAccessGranted] forKey:@"eventkit_events_access_granted"];
@@ -62,14 +62,14 @@
 
 
 
--(void)saveCustomCalendarIdentifier:(NSString *)identifier{
+- (void)saveCustomCalendarIdentifier:(NSString *)identifier{
     [self.arrCustomCalendarIdentifiers addObject:identifier];
     
     [[NSUserDefaults standardUserDefaults] setObject:self.arrCustomCalendarIdentifiers forKey:@"eventkit_cal_identifiers"];
 }
 
 // Return the given date in string format
--(NSString *)getStringFromDate:(NSDate *)date{
+- (NSString *)getStringFromDate:(NSDate *)date{
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     dateFormatter.locale = [NSLocale currentLocale];
     //[dateFormatter setDateFormat:@"d MMM yyyy, HH:mm"];
@@ -80,7 +80,7 @@
 }
 
 // Return array of all events
--(NSArray *)getEventsOfSelectedCalendar{
+- (NSArray *)getEventsOfSelectedCalendar{
     // Specify the calendar that will be used to get the events from.
     EKCalendar *calendar = nil;
     /*if (self.selectedCalendarIdentifier != nil && self.selectedCalendarIdentifier.length > 0) {
@@ -106,6 +106,21 @@
     
     // Return that array.
     return eventsArray;
+}
+
+- (NSArray *)getLocalEventCalendars{
+    
+    NSArray *allCalendars = [self.eventStore calendarsForEntityType:EKEntityTypeEvent];
+    NSMutableArray *localCalendars = [[NSMutableArray alloc] init];
+    
+    for (int i=0; i<allCalendars.count; i++) {
+        EKCalendar *currentCalendar = [allCalendars objectAtIndex:i];
+        if (currentCalendar.type == EKCalendarTypeLocal) {
+            [localCalendars addObject:currentCalendar];
+        }
+    }
+    
+    return (NSArray *)localCalendars;
 }
 
 @end

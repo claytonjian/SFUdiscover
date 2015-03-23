@@ -27,7 +27,7 @@
     // Instantiate the appDelegate property, so we can access its eventManager property
     self.appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     
-    [self loadCalendars];
+    [self loadEventCalendars];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -45,10 +45,31 @@
 }
 */
 
-- (void)loadCalendars {
+- (void)loadEventCalendars {
+    
+    self.calendarArray = [self.appDelegate.eventManager getLocalEventCalendars];
     
     [self.calendarTableView reloadData];
     
 }
 
+- (IBAction)backToAddEvent:(id)sender {
+    [self.delegate selectedCalendar];
+}
+
+#pragma mark - UITableView Delegate and Datasource method implementation
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return self.calendarArray.count;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"idCellSelectCalendar"];
+    
+    EKCalendar *currentCalendar = [self.calendarArray objectAtIndex:indexPath.row];
+    
+    cell.textLabel.text = currentCalendar.title;
+    
+    return cell;
+}
 @end

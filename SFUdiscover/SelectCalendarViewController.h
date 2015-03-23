@@ -8,9 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol SelectCalendarViewControllerDelegate
+
+- (void)selectedCalendar;
+
+@end
+
+
 @interface SelectCalendarViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *calendarTableView;
 @property (nonatomic, strong) NSArray *calendarArray;
+
+@property (nonatomic, strong) id<SelectCalendarViewControllerDelegate> delegate;
+
 
 @end
