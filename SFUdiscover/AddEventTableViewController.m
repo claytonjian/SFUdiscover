@@ -22,6 +22,8 @@
 
 @implementation AddEventTableViewController
 
+EKCalendar *_calendar;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -33,6 +35,9 @@
     
     // Instantiate the appDelegate property, so we can access its eventManager property.
     self.appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    
+    
+    self.calendarSelectLabel.text = _calendar.title;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -77,7 +82,7 @@
     event.title = self.nameTextField.text;
     
     // Set its calendar
-    event.calendar = [self createCalendar];
+    event.calendar = _calendar;
     
     // Set the start and end dates to the event.
     event.startDate = self.startDatePicker.date;
@@ -100,48 +105,6 @@
     
 }
 
--(EKCalendar *)createCalendar{
-    
-    //[self.eventCalendar resignFirstResponder];
-    
-    // Create a new calendar.
-    EKCalendar *calendar = [EKCalendar calendarForEntityType:EKEntityTypeEvent
-                                                  eventStore:self.appDelegate.eventManager.eventStore];
-    
-    // Set the calendar title.
-    calendar.title = @"Default Calendar Name";
-    
-    // Find the proper source type value.
-    for (int i=0; i<self.appDelegate.eventManager.eventStore.sources.count; i++) {
-        EKSource *source = (EKSource *)[self.appDelegate.eventManager.eventStore.sources objectAtIndex:i];
-        EKSourceType currentSourceType = source.sourceType;
-        
-        if (currentSourceType == EKSourceTypeLocal) {
-            calendar.source = source;
-            break;
-        }
-    }
-    
-    // Save and commit the calendar.
-    NSError *error;
-    [self.appDelegate.eventManager.eventStore saveCalendar:calendar commit:YES error:&error];
-    
-    // If no error occurs then turn the editing mode off, store the new calendar identifier and reload the calendars.
-    if (error == nil) {
-        
-        // Store the calendar identifier.
-        [self.appDelegate.eventManager saveCustomCalendarIdentifier:calendar.calendarIdentifier];
-        return calendar;
-        
-    }
-    else{
-        // Display the error description to the debugger.
-        NSLog(@"%@", [error localizedDescription]);
-        return nil;
-    }
-    
-}
-
 - (IBAction)cancelEvent:(id)sender {
     
     // Pop the current view controller from the navigation stack.
@@ -149,9 +112,13 @@
     
 }
 
-- (void)selectedCalendar {
+- (void)selectedCalendar:(EKCalendar *)calendar {
     // Pop the current view controller from the navigation stack.
     [self.navigationController popViewControllerAnimated:YES];
+    
+    _calendar = calendar;
+    self.calendarSelectLabel.text = _calendar.title;
+    
 }
 
 @end
