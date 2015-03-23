@@ -33,7 +33,9 @@
 -(NSArray *)getEventsOfSelectedCalendar;
 
 -(NSArray *)getLocalEventCalendars;
+-(BOOL)checkIfCalendarIsCustomWithIdentifier:(NSString *)identifier;
 
+-(void)removeCalendarIdentifier:(NSString *)identifier;
 
 @end
 

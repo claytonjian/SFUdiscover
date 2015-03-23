@@ -123,6 +123,26 @@
     return (NSArray *)localCalendars;
 }
 
+-(BOOL)checkIfCalendarIsCustomWithIdentifier:(NSString *)identifier{
+    BOOL isCustomCalendar = NO;
+    
+    for (int i=0; i<self.arrCustomCalendarIdentifiers.count; i++) {
+        if ([[self.arrCustomCalendarIdentifiers objectAtIndex:i] isEqualToString:identifier]) {
+            isCustomCalendar = YES;
+            break;
+        }
+    }
+    
+    return isCustomCalendar;
+}
+
+-(void)removeCalendarIdentifier:(NSString *)identifier{
+    [self.arrCustomCalendarIdentifiers removeObject:identifier];
+    
+    [[NSUserDefaults standardUserDefaults] setObject:self.arrCustomCalendarIdentifiers forKey:@"eventkit_cal_identifiers"];
+}
+
+
 @end
 
 

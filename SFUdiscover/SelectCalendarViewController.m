@@ -129,6 +129,59 @@ NSUInteger _selectedIndex;
     
 }
 
+-(void)confirmCalendarDeletion{
+    // Check if the selected calendar is a custom one and can be actually deleted.
+    NSString *identifier = [[self.calendarArray objectAtIndex:self.indexOfCalendarToDelete] calendarIdentifier];
+    if (![self.appDelegate.eventManager checkIfCalendarIsCustomWithIdentifier:identifier]) {
+        // The selected calendar was not created by our app, so we shouldn't delete it.
+        // Show a message to the user.
+        [[[UIAlertView alloc] initWithTitle:@"SFUdiscover"
+                                    message:@"You are not allowed to delete this calendar because it was not created by our app."
+                                   delegate:nil
+                          cancelButtonTitle:nil
+                          otherButtonTitles:@"Okay", nil] show];
+    }
+    else{
+        // The calendar can be deleted, but first ask for confirmation.
+        // Ask for delete confirmation.
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"SFUdiscover"
+                                                        message:@"Are you sure you want to delete the selected calendar?"
+                                                       delegate:self
+                                              cancelButtonTitle:@"Cancel"
+                                              otherButtonTitles:@"Yes, delete", nil];
+        
+        [alert show];
+    }
+}
+
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    // Delete the selected calendar if user selected so.
+    if (buttonIndex == 1) {
+        NSString *identifier = [[self.calendarArray objectAtIndex:self.indexOfCalendarToDelete] calendarIdentifier];
+        
+        EKCalendar *calendarToDelete = [self.calendarArray objectAtIndex:self.indexOfCalendarToDelete];
+        
+        NSError *error;
+        if ([self.appDelegate.eventManager.eventStore removeCalendar:calendarToDelete commit:YES error:&error]) {
+            // Check if the calendar that's about to be deleted is the selected one.
+            if ([self.appDelegate.eventManager.selectedCalendarIdentifier isEqualToString:identifier]) {
+                // In this case, set the empty string as the selectedCalendarIdentifier property's value.
+                self.appDelegate.eventManager.selectedCalendarIdentifier = @"";
+            }
+            
+            // Remove the current identifier from the collection of the custom calendar identifiers.
+            [self.appDelegate.eventManager removeCalendarIdentifier:identifier];
+            
+            // Load the calendars once again.
+            [self loadEventCalendars];
+        }
+        else{
+            // Simply log the error description.
+            NSLog(@"%@", [error localizedDescription]);
+        }
+    }
+}
+
 #pragma mark - UITableView Delegate and Datasource method implementation
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -210,7 +263,11 @@ NSUInteger _selectedIndex;
         [self createCalendar];
     }
     else{
+        // Keep the row index of the calendar that's about to be deleted.
+        self.indexOfCalendarToDelete = indexPath.row - 1;
         
+        // Show the confirmation alert view.
+        [self confirmCalendarDeletion];
     }
 }
 

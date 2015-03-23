@@ -24,6 +24,9 @@
 
 @property (nonatomic, strong) id<SelectCalendarViewControllerDelegate> delegate;
 
+@property (nonatomic) NSUInteger indexOfCalendarToDelete;
+
+-(void)confirmCalendarDeletion;
 -(void)createCalendar;
 
 
