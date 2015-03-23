@@ -89,33 +89,23 @@
     NSData *HtmlData = [NSData dataWithContentsOfURL:myurl];
     
     TFHpple *Parser = [TFHpple hppleWithHTMLData:HtmlData];
-    NSArray *buses = [Parser searchWithXPathQuery:@"//routeno"];
-    NSArray *leaveTime = [Parser searchWithXPathQuery:@"//expectedleavetime"];
-    TFHppleElement *bus, *time;
-    
-    NSString *holder = [[NSString alloc]init];
     NSMutableString *infoDisplay = [[NSMutableString alloc]init];
     
-    for (int i = 0; i < buses.count; i++) {
-        bus = buses[i];
-        [infoDisplay appendString:bus.content];
+    TFHppleElement *times;
+    NSString *temp;
+    NSArray *buses = [Parser searchWithXPathQuery:@"//nextbus"];
+    for (TFHppleElement *item in buses) {
+        [infoDisplay appendString:(((TFHppleElement *)item.children[0]).content)];
         [infoDisplay appendString:@"        "];
-        time = leaveTime[(i*3)+0];
-        holder = time.content;
-        holder = [holder componentsSeparatedByString:@" "][0];
-        [infoDisplay appendString:holder];
-        [infoDisplay appendString:@" "];
-        time = leaveTime[(i*3)+1];
-        holder = time.content;
-        holder = [holder componentsSeparatedByString:@" "][0];
-        [infoDisplay appendString:holder];
-        [infoDisplay appendString:@" "];
-        time = leaveTime[(i*3)+2];
-        holder = time.content;
-        holder = [holder componentsSeparatedByString:@" "][0];
-        [infoDisplay appendString:holder];
+        times = item.children[4];
+        for (int i = 0; i < times.children.count; i++){
+            temp = ((TFHppleElement *)((TFHppleElement *)times.children[i]).children[2]).content;
+            [infoDisplay appendString:([temp componentsSeparatedByString:@" "][0])];
+            [infoDisplay appendString:@" "];
+        }
         [infoDisplay appendString:@"\n"];
     }
+    
     self.busTime.text = infoDisplay;
     self.busLabel.hidden = FALSE;
     self.refresh.hidden = FALSE;
