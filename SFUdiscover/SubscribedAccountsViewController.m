@@ -111,12 +111,15 @@ NSUInteger _selectedIndex;
             
         }else {
             
+            accounts.name = accounts.url;
+            /*
             // Get the account name of the url
             for (NSString* part in urlParts){
-                if ([[part uppercaseString] containsString:@"SFU"] || [[part uppercaseString] containsString:@"SIMON" ]){
+             //   if ([[part uppercaseString] rangeofString:@"SFU"].length > 0 || [[part uppercaseString] rangeofString:@"SIMON" ].length > 0){
                     accounts.name = part;
                 }
             }
+            */
         }
         
         
