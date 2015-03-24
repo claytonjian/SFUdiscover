@@ -550,7 +550,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ujp-lv-l1t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1201" y="1508"/>
+            <point key="canvasLocation" x="556" y="2409"/>
         </scene>
         <!--Loyalty View Controller-->
         <scene sceneID="qFZ-Fe-gk0">
@@ -622,9 +622,6 @@
                                                 <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <segue destination="6wP-jG-8vl" kind="push" id="5qe-Ws-yCM"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="BV1-gY-em0">
                                         <rect key="frame" x="52" y="184" width="216" height="45"/>
@@ -639,9 +636,6 @@
                                                 <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <segue destination="6wP-jG-8vl" kind="push" id="hvj-U6-THL"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tOL-pn-wod">
                                         <rect key="frame" x="52" y="243" width="216" height="45"/>
@@ -656,9 +650,6 @@
                                                 <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <segue destination="6wP-jG-8vl" kind="push" id="XQe-pp-xCN"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dJe-T8-Qtg">
                                         <rect key="frame" x="52" y="301" width="216" height="45"/>
@@ -709,7 +700,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JBd-2A-IkC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2680" y="933"/>
+            <point key="canvasLocation" x="1201" y="917"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="qK1-6B-eQt">
@@ -812,7 +803,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5s5-I1-S1j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3053" y="933"/>
+            <point key="canvasLocation" x="1570" y="917"/>
         </scene>
         <!--News Feed View Controller-->
         <scene sceneID="5p8-zM-62w">
@@ -949,7 +940,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DAj-ls-meL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1578" y="925"/>
+            <point key="canvasLocation" x="870" y="-1211"/>
         </scene>
         <!--Services View Controller-->
         <scene sceneID="OAd-eF-Q1T">
@@ -1123,7 +1114,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W0r-0P-2Ue" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1939" y="925"/>
+            <point key="canvasLocation" x="1201" y="2409"/>
         </scene>
         <!--Narrow Search View Controller-->
         <scene sceneID="neE-Mw-QAz">
@@ -1197,7 +1188,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iPJ-Zf-ubx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1117" y="865"/>
+            <point key="canvasLocation" x="1570" y="344"/>
         </scene>
         <!--Nav Search Results View Controller-->
         <scene sceneID="EQS-eG-3k3">
@@ -1282,7 +1273,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXT-ly-ByU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1836" y="783"/>
+            <point key="canvasLocation" x="1939" y="344"/>
         </scene>
         <!--Navigation View Controller-->
         <scene sceneID="0EZ-SE-PbY">
@@ -1420,7 +1411,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="1570" y="344"/>
+            <point key="canvasLocation" x="1201" y="344"/>
         </scene>
         <!--Transit View Controller-->
         <scene sceneID="Q4C-Ni-48a">
@@ -1562,35 +1553,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eRW-qe-FSM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1939" y="344"/>
-        </scene>
-        <!--Test View Controller-->
-        <scene sceneID="0pl-TF-BRo">
-            <objects>
-                <viewController id="15R-EQ-tTv" customClass="testViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Gyd-7R-oa0">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="rND-j6-UMR">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="iF9-Od-YSj"/>
-                    <connections>
-                        <outlet property="busTime" destination="rND-j6-UMR" id="wJL-7d-g1y"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="e2d-ob-bhN" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2422" y="-270"/>
+            <point key="canvasLocation" x="1201" y="1494"/>
         </scene>
         <!--Bus Table View Controller-->
         <scene sceneID="Nvi-Hr-zif">
@@ -1659,18 +1622,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tNU-UX-uaQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2680" y="344"/>
+            <point key="canvasLocation" x="1939" y="1494"/>
         </scene>
         <!--Transit Map View Controller-->
         <scene sceneID="Hkt-sO-wOq">
             <objects>
                 <viewController storyboardIdentifier="TransitMapViewController" id="Ef7-DW-Mwb" customClass="TransitMapViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="N5z-7j-S73">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="9KY-Vy-6dg">
-                                <rect key="frame" x="0.0" y="181" width="320" height="387"/>
+                                <rect key="frame" x="0.0" y="93" width="320" height="387"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             </mapView>
                             <navigationBar contentMode="scaleToFill" id="fYn-Ma-oc1">
@@ -1747,6 +1710,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="mapView" destination="9KY-Vy-6dg" id="UEH-yP-yuc"/>
                         <outlet property="stopNumber" destination="AIU-fm-Q5r" id="jAJ-Gq-SNE"/>
@@ -1755,7 +1719,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TlZ-Om-qMj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3053" y="344"/>
+            <point key="canvasLocation" x="2305" y="1494"/>
         </scene>
         <!--Bus Schedule View Controller-->
         <scene sceneID="W5P-L0-r3D">
@@ -1841,7 +1805,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ffQ-u9-JPX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2301" y="344"/>
+            <point key="canvasLocation" x="1570" y="1494"/>
         </scene>
         <!--Connect View Controller-->
         <scene sceneID="q7z-Q5-2QO">
@@ -1994,7 +1958,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dLO-8e-9lv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1048" y="-2511"/>
+            <point key="canvasLocation" x="848" y="-3287"/>
         </scene>
         <!--Calendar View Controller - Calendar View Controller-->
         <scene sceneID="rwX-GU-841">
@@ -2024,7 +1988,7 @@
                 </navigationBar>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5cW-Da-q9v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="455" y="-1966"/>
+            <point key="canvasLocation" x="119" y="-2622"/>
         </scene>
         <!--Daily View Controller - Daily-->
         <scene sceneID="eMX-RK-K3W">
@@ -2117,7 +2081,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0UE-1A-zAQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1048" y="-1919"/>
+            <point key="canvasLocation" x="840" y="-2667"/>
         </scene>
         <!--Monthly View Controller - Monthly-->
         <scene sceneID="KFk-HE-Sxy">
@@ -2179,7 +2143,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RN4-wb-y1d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1048" y="-1200"/>
+            <point key="canvasLocation" x="840" y="-1940"/>
         </scene>
         <!--Subscribed Accounts View Controller-->
         <scene sceneID="yyW-c7-yr2">
@@ -2243,79 +2207,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qKI-m4-klU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1437" y="-936"/>
-        </scene>
-        <!--Page Under Construction View Controller-->
-        <scene sceneID="rH7-Fs-5Ba">
-            <objects>
-                <viewController id="6wP-jG-8vl" customClass="PageUnderConstructionViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8UX-Uv-S2W">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" id="Aca-L0-Kcf">
-                                <rect key="frame" x="0.0" y="49" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <textAttributes key="titleTextAttributes">
-                                    <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="20"/>
-                                </textAttributes>
-                                <items>
-                                    <navigationItem title="..." id="5b0-kG-sCb">
-                                        <barButtonItem key="leftBarButtonItem" id="voE-h7-9DD">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aqK-yR-Ckq">
-                                                <rect key="frame" x="16" y="7" width="50" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.66666668650000005" green="0.023529414089999999" blue="0.13333334029999999" alpha="1" colorSpace="deviceRGB"/>
-                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
-                                                <state key="normal" title="Back">
-                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="3"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="goBack:" destination="6wP-jG-8vl" eventType="touchUpInside" id="eCn-XC-Dye"/>
-                                                </connections>
-                                            </button>
-                                            <connections>
-                                                <action selector="goBack:" destination="6wP-jG-8vl" id="jL6-gn-bjj"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fP0-bX-NBt">
-                                <rect key="frame" x="0.0" y="20" width="320" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.66666668650000005" green="0.023529414089999999" blue="0.13333334029999999" alpha="1" colorSpace="deviceRGB"/>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="18"/>
-                                <state key="normal" title="SFUdiscover">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="goHome:" destination="6wP-jG-8vl" eventType="touchUpInside" id="hfY-ek-yLd"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="EYS-td-rRs">
-                                <rect key="frame" x="0.0" y="148" width="320" height="121"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="This page is underconstruction...">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="AY8-0S-9o2"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CBj-GW-qGD" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="7330" y="1338"/>
+            <point key="canvasLocation" x="1433" y="-1200"/>
         </scene>
         <!--User Login View Controller-->
         <scene sceneID="Dh3-3z-isr">
@@ -2730,7 +2622,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dlj-7a-Ps9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1978" y="-2363"/>
+            <point key="canvasLocation" x="1620" y="-3061"/>
         </scene>
         <!--Select Calendar View Controller-->
         <scene sceneID="8sa-lT-4kX">
@@ -2813,7 +2705,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ew0-oV-gNI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2366" y="-2570"/>
+            <point key="canvasLocation" x="2154" y="-2822"/>
         </scene>
         <!--Traffic View Controller-->
         <scene sceneID="6zV-TB-Ccp">
@@ -2895,7 +2787,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JwC-jx-qJC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2755" y="2348"/>
+            <point key="canvasLocation" x="2727" y="3048"/>
         </scene>
         <!--Lostand Found View Controller-->
         <scene sceneID="wyr-bY-Wql">
@@ -3016,7 +2908,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WhT-dv-bw0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3692" y="954"/>
+            <point key="canvasLocation" x="2305" y="2422"/>
         </scene>
         <!--Lostand Found Web View Controller-->
         <scene sceneID="c8d-ly-tjs">
@@ -3086,7 +2978,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Qf-Lk-f6Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4138" y="954"/>
+            <point key="canvasLocation" x="2718" y="2422"/>
         </scene>
         <!--Zone Liaison View Controller-->
         <scene sceneID="EmO-bq-Ytu">
@@ -3254,7 +3146,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NIG-Xd-uOZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1506" y="2316"/>
+            <point key="canvasLocation" x="1570" y="3024"/>
         </scene>
         <!--Emergency View Controller-->
         <scene sceneID="JNv-ye-7vQ">
@@ -3388,7 +3280,7 @@ Use blue emergency phones</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Id-FD-Yau" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1939" y="1533"/>
+            <point key="canvasLocation" x="1201" y="3037"/>
         </scene>
         <!--Book Store View Controller-->
         <scene sceneID="Vbz-2B-qHa">
@@ -3459,7 +3351,7 @@ Use blue emergency phones</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Jz-F3-KmN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2354" y="2976"/>
+            <point key="canvasLocation" x="1570" y="2409"/>
         </scene>
         <!--Safe Walk View Controller-->
         <scene sceneID="2Su-pR-Tpq">
@@ -3590,7 +3482,7 @@ The Safe Walk personnel are identified by:
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kdj-lY-jTn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="92" y="2083"/>
+            <point key="canvasLocation" x="1190" y="4331"/>
         </scene>
         <!--Safe Walk Site View Controller-->
         <scene sceneID="Dqw-xo-ktC">
@@ -3661,7 +3553,7 @@ The Safe Walk personnel are identified by:
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zep-GT-Ffz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1144" y="2316"/>
+            <point key="canvasLocation" x="1570" y="4348"/>
         </scene>
         <!--Food2 View Controller-->
         <scene sceneID="j0j-BB-nfb">
@@ -3740,7 +3632,7 @@ The Safe Walk personnel are identified by:
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kg9-LF-y7j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2991" y="1698"/>
+            <point key="canvasLocation" x="2703" y="3654"/>
         </scene>
         <!--Food View Controller-->
         <scene sceneID="YKM-Mm-uPz">
@@ -3825,7 +3717,7 @@ The Safe Walk personnel are identified by:
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8qS-uP-VLW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2601" y="1698"/>
+            <point key="canvasLocation" x="2313" y="3654"/>
         </scene>
         <!--Traffic Home View Controller-->
         <scene sceneID="iTS-Lt-i8D">
@@ -3897,9 +3789,6 @@ The Safe Walk personnel are identified by:
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="6wP-jG-8vl" kind="push" id="hCW-nN-Hq8"/>
-                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Srv-sS-Q6h">
                                 <rect key="frame" x="20" y="240" width="280" height="84"/>
@@ -3941,7 +3830,7 @@ The Safe Walk personnel are identified by:
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="auF-7Z-lSc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2341" y="2348"/>
+            <point key="canvasLocation" x="2305" y="3048"/>
         </scene>
         <!--Feedback View Controller-->
         <scene sceneID="YqG-eW-8o1">
@@ -4095,7 +3984,7 @@ The Safe Walk personnel are identified by:
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uii-74-o2p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1939" y="-237"/>
+            <point key="canvasLocation" x="1939" y="917"/>
         </scene>
     </scenes>
     <resources>
@@ -4117,8 +4006,7 @@ The Safe Walk personnel are identified by:
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="5qe-Ws-yCM"/>
-        <segue reference="EE8-Zm-d5x"/>
-        <segue reference="DhK-vF-fLk"/>
+        <segue reference="2fg-YB-K42"/>
+        <segue reference="Mnd-ap-ipg"/>
     </inferredMetricsTieBreakers>
 </document>

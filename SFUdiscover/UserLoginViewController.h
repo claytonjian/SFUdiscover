@@ -14,7 +14,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "KeychainItemWrapper.h"
 #import "JNKeychain.h"
 
 @protocol UserLoginViewControllerDelegate

@@ -56,7 +56,6 @@
 		4929B6651AA135EE00963AA7 /* NewsFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4929B6641AA135EE00963AA7 /* NewsFeedViewController.m */; };
 		4929B6681AA135FD00963AA7 /* ServicesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4929B6671AA135FD00963AA7 /* ServicesViewController.m */; };
 		4961BD661ABA67C7003F1DE2 /* SFU Burnaby.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4961BD651ABA67C7003F1DE2 /* SFU Burnaby.jpg */; };
-		496D138B1AAA7FB600256D0D /* Page1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 496D138A1AAA7FB600256D0D /* Page1.jpg */; };
 		497112B81AB26205001C7E4C /* NavSearchResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 497112B71AB26205001C7E4C /* NavSearchResultsViewController.m */; };
 		4971E6C71AA9517000D90AE5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4971E6C61AA9517000D90AE5 /* CoreLocation.framework */; };
 		4971E6C91AA951AF00D90AE5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4971E6C81AA951AF00D90AE5 /* MapKit.framework */; };
@@ -85,12 +84,10 @@
 		7E46F4D71ABCDEDB00ED6E43 /* transit.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E46F4CB1ABCDEDB00ED6E43 /* transit.png */; };
 		7E46F4D91ABCE2D700ED6E43 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E46F4D81ABCE2D700ED6E43 /* MessageUI.framework */; };
 		7E4C80551AAD1BB9001BD4C4 /* setting.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4C80541AAD1BB9001BD4C4 /* setting.png */; };
-		7EBFB6921AAE36D0003B4E32 /* PageUnderConstructionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EBFB6911AAE36D0003B4E32 /* PageUnderConstructionViewController.m */; };
 		97361C001AA8E9810075B4A5 /* BusScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97361BFF1AA8E9810075B4A5 /* BusScheduleViewController.m */; };
 		97361C031AA8EC9A0075B4A5 /* BusTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97361C021AA8EC9A0075B4A5 /* BusTableViewController.m */; };
 		97361C061AA8F8460075B4A5 /* TransitMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97361C051AA8F8460075B4A5 /* TransitMapViewController.m */; };
 		97361C091AA8F8CC0075B4A5 /* MapPin.m in Sources */ = {isa = PBXBuildFile; fileRef = 97361C081AA8F8CC0075B4A5 /* MapPin.m */; };
-		973D2E6D1AB8ADEA0034A5EE /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 973D2E6B1AB8ADEA0034A5EE /* KeychainItemWrapper.m */; };
 		973D2E701AB8B1020034A5EE /* UserLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 973D2E6F1AB8B1020034A5EE /* UserLoginViewController.m */; };
 		97D44E6B1AABB11F00B0A91C /* myButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D44E6A1AABB11F00B0A91C /* myButton.m */; };
 		97F2A2E11AB8C2E900195CA1 /* JNKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F2A2E01AB8C2E900195CA1 /* JNKeychain.m */; };
@@ -144,10 +141,10 @@
 		0EF8EBB71AB6A5A1009FCF92 /* LostandFoundWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LostandFoundWebViewController.m; sourceTree = "<group>"; };
 		303C34011AAB9BF0001E95F7 /* TrafficHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrafficHomeViewController.h; sourceTree = "<group>"; };
 		303C34021AAB9BF0001E95F7 /* TrafficHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrafficHomeViewController.m; sourceTree = "<group>"; };
-		30E4EF6F1AAD4F80003F6436 /* Monthly View Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Monthly View Controller.h"; sourceTree = "<group>"; };
-		30E4EF701AAD4F80003F6436 /* Monthly View Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Monthly View Controller.m"; sourceTree = "<group>"; };
-		30E4EF721AAD5011003F6436 /* AgendaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgendaViewController.h; sourceTree = "<group>"; };
-		30E4EF731AAD5011003F6436 /* AgendaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgendaViewController.m; sourceTree = "<group>"; };
+		30E4EF6F1AAD4F80003F6436 /* Monthly View Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Monthly View Controller.h"; path = "SFUdiscover/Monthly View Controller.h"; sourceTree = "<group>"; };
+		30E4EF701AAD4F80003F6436 /* Monthly View Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Monthly View Controller.m"; path = "SFUdiscover/Monthly View Controller.m"; sourceTree = "<group>"; };
+		30E4EF721AAD5011003F6436 /* AgendaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AgendaViewController.h; path = SFUdiscover/AgendaViewController.h; sourceTree = "<group>"; };
+		30E4EF731AAD5011003F6436 /* AgendaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AgendaViewController.m; path = SFUdiscover/AgendaViewController.m; sourceTree = "<group>"; };
 		3BF2421C1ABD7F6A00630637 /* SubscribedAccountsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubscribedAccountsViewController.h; sourceTree = "<group>"; };
 		3BF2421D1ABD7F6A00630637 /* SubscribedAccountsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubscribedAccountsViewController.m; sourceTree = "<group>"; };
 		4925CF6A1AA566200026305C /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
@@ -178,8 +175,8 @@
 		4929B6521AA135A400963AA7 /* ConnectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectViewController.m; sourceTree = "<group>"; };
 		4929B6541AA135AF00963AA7 /* FeedbackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackViewController.h; sourceTree = "<group>"; };
 		4929B6551AA135AF00963AA7 /* FeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackViewController.m; sourceTree = "<group>"; };
-		4929B6571AA135BC00963AA7 /* CalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarViewController.h; sourceTree = "<group>"; };
-		4929B6581AA135BC00963AA7 /* CalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarViewController.m; sourceTree = "<group>"; };
+		4929B6571AA135BC00963AA7 /* CalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalendarViewController.h; path = SFUdiscover/CalendarViewController.h; sourceTree = "<group>"; };
+		4929B6581AA135BC00963AA7 /* CalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CalendarViewController.m; path = SFUdiscover/CalendarViewController.m; sourceTree = "<group>"; };
 		4929B65A1AA135C700963AA7 /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
 		4929B65B1AA135C700963AA7 /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
 		4929B65D1AA135D100963AA7 /* TransitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitViewController.h; sourceTree = "<group>"; };
@@ -191,7 +188,6 @@
 		4929B6661AA135FD00963AA7 /* ServicesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServicesViewController.h; sourceTree = "<group>"; };
 		4929B6671AA135FD00963AA7 /* ServicesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServicesViewController.m; sourceTree = "<group>"; };
 		4961BD651ABA67C7003F1DE2 /* SFU Burnaby.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "SFU Burnaby.jpg"; sourceTree = "<group>"; };
-		496D138A1AAA7FB600256D0D /* Page1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Page1.jpg; sourceTree = SOURCE_ROOT; };
 		497112B61AB26205001C7E4C /* NavSearchResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavSearchResultsViewController.h; sourceTree = "<group>"; };
 		497112B71AB26205001C7E4C /* NavSearchResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavSearchResultsViewController.m; sourceTree = "<group>"; };
 		4971E6C61AA9517000D90AE5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -202,16 +198,16 @@
 		49EB64051AACFA1F00172C5B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		49F871ED1ABA1EF60022CCC0 /* NarrowSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NarrowSearchViewController.h; sourceTree = "<group>"; };
 		49F871EE1ABA1EF60022CCC0 /* NarrowSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NarrowSearchViewController.m; sourceTree = "<group>"; };
-		4E27E06C1ABE2C1000FFAD5F /* AddEventTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEventTableViewController.h; sourceTree = "<group>"; };
-		4E27E06D1ABE2C1000FFAD5F /* AddEventTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddEventTableViewController.m; sourceTree = "<group>"; };
-		4E27E06F1ABE3BCB00FFAD5F /* SelectCalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectCalendarViewController.h; sourceTree = "<group>"; };
-		4E27E0701ABE3BCB00FFAD5F /* SelectCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectCalendarViewController.m; sourceTree = "<group>"; };
-		4E5E6ED81AABAAC3004DC31F /* AddEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEventViewController.h; sourceTree = "<group>"; };
-		4E5E6ED91AABAAC3004DC31F /* AddEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddEventViewController.m; sourceTree = "<group>"; };
-		4E5E6EDB1AABAB8B004DC31F /* EventManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventManager.h; sourceTree = "<group>"; };
-		4E5E6EDC1AABAB8B004DC31F /* EventManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventManager.m; sourceTree = "<group>"; };
-		4E5E6EDE1AABBCAE004DC31F /* DailyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DailyViewController.h; sourceTree = "<group>"; };
-		4E5E6EDF1AABBCAE004DC31F /* DailyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DailyViewController.m; sourceTree = "<group>"; };
+		4E27E06C1ABE2C1000FFAD5F /* AddEventTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddEventTableViewController.h; path = SFUdiscover/AddEventTableViewController.h; sourceTree = "<group>"; };
+		4E27E06D1ABE2C1000FFAD5F /* AddEventTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddEventTableViewController.m; path = SFUdiscover/AddEventTableViewController.m; sourceTree = "<group>"; };
+		4E27E06F1ABE3BCB00FFAD5F /* SelectCalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SelectCalendarViewController.h; path = SFUdiscover/SelectCalendarViewController.h; sourceTree = "<group>"; };
+		4E27E0701ABE3BCB00FFAD5F /* SelectCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SelectCalendarViewController.m; path = SFUdiscover/SelectCalendarViewController.m; sourceTree = "<group>"; };
+		4E5E6ED81AABAAC3004DC31F /* AddEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddEventViewController.h; path = SFUdiscover/AddEventViewController.h; sourceTree = "<group>"; };
+		4E5E6ED91AABAAC3004DC31F /* AddEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddEventViewController.m; path = SFUdiscover/AddEventViewController.m; sourceTree = "<group>"; };
+		4E5E6EDB1AABAB8B004DC31F /* EventManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventManager.h; path = SFUdiscover/EventManager.h; sourceTree = "<group>"; };
+		4E5E6EDC1AABAB8B004DC31F /* EventManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EventManager.m; path = SFUdiscover/EventManager.m; sourceTree = "<group>"; };
+		4E5E6EDE1AABBCAE004DC31F /* DailyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DailyViewController.h; path = SFUdiscover/DailyViewController.h; sourceTree = "<group>"; };
+		4E5E6EDF1AABBCAE004DC31F /* DailyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DailyViewController.m; path = SFUdiscover/DailyViewController.m; sourceTree = "<group>"; };
 		4E83D95D1AB42B3A0045958A /* NewsFeedCardTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsFeedCardTableViewCell.h; sourceTree = "<group>"; };
 		4E83D95E1AB42B3A0045958A /* NewsFeedCardTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsFeedCardTableViewCell.m; sourceTree = "<group>"; };
 		4E83D9691AB444BD0045958A /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
@@ -231,8 +227,6 @@
 		7E46F4CB1ABCDEDB00ED6E43 /* transit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = transit.png; sourceTree = "<group>"; };
 		7E46F4D81ABCE2D700ED6E43 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		7E4C80541AAD1BB9001BD4C4 /* setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = setting.png; path = Images.xcassets/setting.png; sourceTree = "<group>"; };
-		7EBFB6901AAE36D0003B4E32 /* PageUnderConstructionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageUnderConstructionViewController.h; sourceTree = "<group>"; };
-		7EBFB6911AAE36D0003B4E32 /* PageUnderConstructionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageUnderConstructionViewController.m; sourceTree = "<group>"; };
 		97361BFE1AA8E9810075B4A5 /* BusScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusScheduleViewController.h; sourceTree = "<group>"; };
 		97361BFF1AA8E9810075B4A5 /* BusScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusScheduleViewController.m; sourceTree = "<group>"; };
 		97361C011AA8EC9A0075B4A5 /* BusTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusTableViewController.h; sourceTree = "<group>"; };
@@ -241,8 +235,6 @@
 		97361C051AA8F8460075B4A5 /* TransitMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitMapViewController.m; sourceTree = "<group>"; };
 		97361C071AA8F8CC0075B4A5 /* MapPin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPin.h; sourceTree = "<group>"; };
 		97361C081AA8F8CC0075B4A5 /* MapPin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPin.m; sourceTree = "<group>"; };
-		973D2E6A1AB8ADEA0034A5EE /* KeychainItemWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
-		973D2E6B1AB8ADEA0034A5EE /* KeychainItemWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
 		973D2E6E1AB8B1020034A5EE /* UserLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserLoginViewController.h; sourceTree = "<group>"; };
 		973D2E6F1AB8B1020034A5EE /* UserLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserLoginViewController.m; sourceTree = "<group>"; };
 		97D44E6A1AABB11F00B0A91C /* myButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myButton.m; sourceTree = "<group>"; };
@@ -352,6 +344,139 @@
 			name = "Lost and Found";
 			sourceTree = "<group>";
 		};
+		300066ED1AC0DBF700365414 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				4929B6571AA135BC00963AA7 /* CalendarViewController.h */,
+				4929B6581AA135BC00963AA7 /* CalendarViewController.m */,
+				4E27E06F1ABE3BCB00FFAD5F /* SelectCalendarViewController.h */,
+				4E5E6ED81AABAAC3004DC31F /* AddEventViewController.h */,
+				4E5E6ED91AABAAC3004DC31F /* AddEventViewController.m */,
+				4E5E6EDE1AABBCAE004DC31F /* DailyViewController.h */,
+				4E5E6EDF1AABBCAE004DC31F /* DailyViewController.m */,
+				4E5E6EDB1AABAB8B004DC31F /* EventManager.h */,
+				4E5E6EDC1AABAB8B004DC31F /* EventManager.m */,
+				30E4EF6F1AAD4F80003F6436 /* Monthly View Controller.h */,
+				30E4EF701AAD4F80003F6436 /* Monthly View Controller.m */,
+				30E4EF721AAD5011003F6436 /* AgendaViewController.h */,
+				30E4EF731AAD5011003F6436 /* AgendaViewController.m */,
+				4E27E0701ABE3BCB00FFAD5F /* SelectCalendarViewController.m */,
+				4E27E06C1ABE2C1000FFAD5F /* AddEventTableViewController.h */,
+				4E27E06D1ABE2C1000FFAD5F /* AddEventTableViewController.m */,
+			);
+			name = Calendar;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		300066EE1AC0DC0900365414 /* NewsFeed */ = {
+			isa = PBXGroup;
+			children = (
+				3BF2421C1ABD7F6A00630637 /* SubscribedAccountsViewController.h */,
+				3BF2421D1ABD7F6A00630637 /* SubscribedAccountsViewController.m */,
+				4929B6631AA135EE00963AA7 /* NewsFeedViewController.h */,
+				4929B6641AA135EE00963AA7 /* NewsFeedViewController.m */,
+				4E83D95D1AB42B3A0045958A /* NewsFeedCardTableViewCell.h */,
+				4E83D95E1AB42B3A0045958A /* NewsFeedCardTableViewCell.m */,
+				4EEAC9A61ABFF3E20003CB4B /* SubscribedAccounts.h */,
+				4EEAC9A71ABFF3E20003CB4B /* SubscribedAccounts.m */,
+			);
+			name = NewsFeed;
+			sourceTree = "<group>";
+		};
+		300066EF1AC0DC6A00365414 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				4929B65A1AA135C700963AA7 /* NavigationViewController.h */,
+				4929B65B1AA135C700963AA7 /* NavigationViewController.m */,
+				497112B61AB26205001C7E4C /* NavSearchResultsViewController.h */,
+				497112B71AB26205001C7E4C /* NavSearchResultsViewController.m */,
+				49F871ED1ABA1EF60022CCC0 /* NarrowSearchViewController.h */,
+				49F871EE1ABA1EF60022CCC0 /* NarrowSearchViewController.m */,
+			);
+			name = Navigation;
+			sourceTree = "<group>";
+		};
+		300066F01AC0DDED00365414 /* Connect/Canvas */ = {
+			isa = PBXGroup;
+			children = (
+				4929B64E1AA1359900963AA7 /* CanvasViewController.h */,
+				4929B64F1AA1359900963AA7 /* CanvasViewController.m */,
+				4929B6511AA135A400963AA7 /* ConnectViewController.h */,
+				4929B6521AA135A400963AA7 /* ConnectViewController.m */,
+			);
+			name = Connect/Canvas;
+			sourceTree = "<group>";
+		};
+		300066F11AC0DE2C00365414 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				97F2A2DF1AB8C2E900195CA1 /* JNKeychain.h */,
+				97F2A2E01AB8C2E900195CA1 /* JNKeychain.m */,
+				973D2E6E1AB8B1020034A5EE /* UserLoginViewController.h */,
+				973D2E6F1AB8B1020034A5EE /* UserLoginViewController.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		300066F21AC0DE8800365414 /* Transit */ = {
+			isa = PBXGroup;
+			children = (
+				97361C041AA8F8460075B4A5 /* TransitMapViewController.h */,
+				97361C051AA8F8460075B4A5 /* TransitMapViewController.m */,
+				97361BFE1AA8E9810075B4A5 /* BusScheduleViewController.h */,
+				97361BFF1AA8E9810075B4A5 /* BusScheduleViewController.m */,
+				97361C011AA8EC9A0075B4A5 /* BusTableViewController.h */,
+				97361C021AA8EC9A0075B4A5 /* BusTableViewController.m */,
+				97361C081AA8F8CC0075B4A5 /* MapPin.m */,
+				97361C071AA8F8CC0075B4A5 /* MapPin.h */,
+				97D44E6C1AABB13800B0A91C /* myButton.h */,
+				97D44E6A1AABB11F00B0A91C /* myButton.m */,
+				4929B65D1AA135D100963AA7 /* TransitViewController.h */,
+				4929B65E1AA135D100963AA7 /* TransitViewController.m */,
+			);
+			name = Transit;
+			sourceTree = "<group>";
+		};
+		300066F31AC0DF9A00365414 /* SafeWalk */ = {
+			isa = PBXGroup;
+			children = (
+				0EF4ABC81AAAB999007B1B12 /* SafeWalkSiteViewController.h */,
+				0EF4ABC91AAAB999007B1B12 /* SafeWalkSiteViewController.m */,
+				0EF4ABC51AAAABFD007B1B12 /* SafeWalkViewController.h */,
+				0EF4ABC61AAAABFD007B1B12 /* SafeWalkViewController.m */,
+			);
+			name = SafeWalk;
+			sourceTree = "<group>";
+		};
+		300066F41AC0E01F00365414 /* BookStore */ = {
+			isa = PBXGroup;
+			children = (
+				0EC6D53B1AA97FC30084B4C6 /* BookStoreViewController.h */,
+				0EC6D53C1AA97FC30084B4C6 /* BookStoreViewController.m */,
+			);
+			name = BookStore;
+			sourceTree = "<group>";
+		};
+		300066F51AC0E05200365414 /* Feedback */ = {
+			isa = PBXGroup;
+			children = (
+				4929B6541AA135AF00963AA7 /* FeedbackViewController.h */,
+				4929B6551AA135AF00963AA7 /* FeedbackViewController.m */,
+			);
+			name = Feedback;
+			sourceTree = "<group>";
+		};
+		300066F61AC0E07C00365414 /* Loyalty */ = {
+			isa = PBXGroup;
+			children = (
+				A7799ED01AAC00060051E4D7 /* QRViewController.h */,
+				A7799ED11AAC00060051E4D7 /* QRViewController.m */,
+				4929B6601AA135DF00963AA7 /* LoyaltyViewController.h */,
+				4929B6611AA135DF00963AA7 /* LoyaltyViewController.m */,
+			);
+			name = Loyalty;
+			sourceTree = "<group>";
+		};
 		4929B60A1AA133D300963AA7 = {
 			isa = PBXGroup;
 			children = (
@@ -391,105 +516,34 @@
 		4929B61C1AA133D300963AA7 /* SFUdiscover */ = {
 			isa = PBXGroup;
 			children = (
+				4929B6281AA133D800963AA7 /* Main_iPhone.storyboard */,
+				300066F21AC0DE8800365414 /* Transit */,
+				300066F11AC0DE2C00365414 /* Login */,
+				300066F01AC0DDED00365414 /* Connect/Canvas */,
+				300066EF1AC0DC6A00365414 /* Navigation */,
+				300066EE1AC0DC0900365414 /* NewsFeed */,
+				300066ED1AC0DBF700365414 /* Calendar */,
 				0EEBA0BC1ABBBCED006308D9 /* Emergency */,
 				0EF8EBB51AB69F96009FCF92 /* Lost and Found */,
 				0EC20A401AAB0F1D008207FF /* Hpple */,
 				0EC209ED1AAB0D88008207FF /* Traffic */,
 				0EF731CF1AAAF16100EBC23D /* Restaurant */,
 				0EEC41741AAAE73B00B4AF19 /* Library */,
-				97D44E6C1AABB13800B0A91C /* myButton.h */,
-				97D44E6A1AABB11F00B0A91C /* myButton.m */,
+				300066F31AC0DF9A00365414 /* SafeWalk */,
+				300066F41AC0E01F00365414 /* BookStore */,
+				300066F51AC0E05200365414 /* Feedback */,
+				300066F61AC0E07C00365414 /* Loyalty */,
 				4929B6251AA133D700963AA7 /* AppDelegate.h */,
 				4929B6261AA133D700963AA7 /* AppDelegate.m */,
-				4929B6281AA133D800963AA7 /* Main_iPhone.storyboard */,
-				4E27E06F1ABE3BCB00FFAD5F /* SelectCalendarViewController.h */,
-				4E27E0701ABE3BCB00FFAD5F /* SelectCalendarViewController.m */,
-				4E27E06C1ABE2C1000FFAD5F /* AddEventTableViewController.h */,
-				4E27E06D1ABE2C1000FFAD5F /* AddEventTableViewController.m */,
-				3BF2421C1ABD7F6A00630637 /* SubscribedAccountsViewController.h */,
-				3BF2421D1ABD7F6A00630637 /* SubscribedAccountsViewController.m */,
-				4EEAC9A61ABFF3E20003CB4B /* SubscribedAccounts.h */,
-				4EEAC9A71ABFF3E20003CB4B /* SubscribedAccounts.m */,
-				973D2E6E1AB8B1020034A5EE /* UserLoginViewController.h */,
-				973D2E6F1AB8B1020034A5EE /* UserLoginViewController.m */,
-				97F2A2DF1AB8C2E900195CA1 /* JNKeychain.h */,
-				97F2A2E01AB8C2E900195CA1 /* JNKeychain.m */,
-				7EBFB6901AAE36D0003B4E32 /* PageUnderConstructionViewController.h */,
-				7EBFB6911AAE36D0003B4E32 /* PageUnderConstructionViewController.m */,
-				A7799ED01AAC00060051E4D7 /* QRViewController.h */,
-				A7799ED11AAC00060051E4D7 /* QRViewController.m */,
-				0EF4ABC81AAAB999007B1B12 /* SafeWalkSiteViewController.h */,
-				0EF4ABC91AAAB999007B1B12 /* SafeWalkSiteViewController.m */,
-				97361C071AA8F8CC0075B4A5 /* MapPin.h */,
-				4961BD651ABA67C7003F1DE2 /* SFU Burnaby.jpg */,
-				97361C081AA8F8CC0075B4A5 /* MapPin.m */,
-				0EF4ABC51AAAABFD007B1B12 /* SafeWalkViewController.h */,
-				0EF4ABC61AAAABFD007B1B12 /* SafeWalkViewController.m */,
-				97361C041AA8F8460075B4A5 /* TransitMapViewController.h */,
-				97361C051AA8F8460075B4A5 /* TransitMapViewController.m */,
-				97361BFE1AA8E9810075B4A5 /* BusScheduleViewController.h */,
-				97361BFF1AA8E9810075B4A5 /* BusScheduleViewController.m */,
-				97361C011AA8EC9A0075B4A5 /* BusTableViewController.h */,
-				97361C021AA8EC9A0075B4A5 /* BusTableViewController.m */,
-				4929B62B1AA133D800963AA7 /* Main_iPad.storyboard */,
 				4929B62E1AA133D800963AA7 /* HomeViewController.h */,
 				4929B62F1AA133D900963AA7 /* HomeViewController.m */,
-				4929B6311AA133DA00963AA7 /* Images.xcassets */,
-				7E46F4C01ABCDEDB00ED6E43 /* appicon_no_ribbon_original80x80red.png */,
-				7E46F4C11ABCDEDB00ED6E43 /* appicon_no_ribbon_original120x120red.png */,
-				7E46F4C21ABCDEDB00ED6E43 /* calendar.png */,
-				7E46F4C31ABCDEDB00ED6E43 /* canvasblue.png */,
-				7E46F4C41ABCDEDB00ED6E43 /* connect.png */,
-				7E46F4C51ABCDEDB00ED6E43 /* feedbackblue.png */,
-				7E46F4C61ABCDEDB00ED6E43 /* library.png */,
-				7E46F4C71ABCDEDB00ED6E43 /* loyaltyblue.png */,
-				7E46F4C81ABCDEDB00ED6E43 /* nav2.png */,
-				7E46F4C91ABCDEDB00ED6E43 /* news.png */,
-				7E46F4CA1ABCDEDB00ED6E43 /* service1blue.png */,
-				7E46F4CB1ABCDEDB00ED6E43 /* transit.png */,
-				496D138A1AAA7FB600256D0D /* Page1.jpg */,
-				7E4C80541AAD1BB9001BD4C4 /* setting.png */,
-				973D2E6A1AB8ADEA0034A5EE /* KeychainItemWrapper.h */,
-				973D2E6B1AB8ADEA0034A5EE /* KeychainItemWrapper.m */,
-				4929B64E1AA1359900963AA7 /* CanvasViewController.h */,
-				4929B64F1AA1359900963AA7 /* CanvasViewController.m */,
-				4929B6511AA135A400963AA7 /* ConnectViewController.h */,
-				4929B6521AA135A400963AA7 /* ConnectViewController.m */,
-				4929B6541AA135AF00963AA7 /* FeedbackViewController.h */,
-				4929B6551AA135AF00963AA7 /* FeedbackViewController.m */,
-				4929B6571AA135BC00963AA7 /* CalendarViewController.h */,
-				4929B6581AA135BC00963AA7 /* CalendarViewController.m */,
-				4929B65A1AA135C700963AA7 /* NavigationViewController.h */,
-				4929B65B1AA135C700963AA7 /* NavigationViewController.m */,
-				497112B61AB26205001C7E4C /* NavSearchResultsViewController.h */,
-				497112B71AB26205001C7E4C /* NavSearchResultsViewController.m */,
-				49F871ED1ABA1EF60022CCC0 /* NarrowSearchViewController.h */,
-				49F871EE1ABA1EF60022CCC0 /* NarrowSearchViewController.m */,
-				4929B65D1AA135D100963AA7 /* TransitViewController.h */,
-				4929B65E1AA135D100963AA7 /* TransitViewController.m */,
-				4929B6601AA135DF00963AA7 /* LoyaltyViewController.h */,
-				4929B6611AA135DF00963AA7 /* LoyaltyViewController.m */,
-				4929B6631AA135EE00963AA7 /* NewsFeedViewController.h */,
-				4929B6641AA135EE00963AA7 /* NewsFeedViewController.m */,
-				4E83D95D1AB42B3A0045958A /* NewsFeedCardTableViewCell.h */,
-				4E83D95E1AB42B3A0045958A /* NewsFeedCardTableViewCell.m */,
 				4929B6661AA135FD00963AA7 /* ServicesViewController.h */,
 				4929B6671AA135FD00963AA7 /* ServicesViewController.m */,
 				4925CF6A1AA566200026305C /* SettingsViewController.h */,
 				4925CF6B1AA566200026305C /* SettingsViewController.m */,
-				0EC6D53B1AA97FC30084B4C6 /* BookStoreViewController.h */,
-				0EC6D53C1AA97FC30084B4C6 /* BookStoreViewController.m */,
+				4929B6311AA133DA00963AA7 /* Images.xcassets */,
 				4929B61D1AA133D400963AA7 /* Supporting Files */,
-				4E5E6ED81AABAAC3004DC31F /* AddEventViewController.h */,
-				4E5E6ED91AABAAC3004DC31F /* AddEventViewController.m */,
-				4E5E6EDE1AABBCAE004DC31F /* DailyViewController.h */,
-				4E5E6EDF1AABBCAE004DC31F /* DailyViewController.m */,
-				4E5E6EDB1AABAB8B004DC31F /* EventManager.h */,
-				4E5E6EDC1AABAB8B004DC31F /* EventManager.m */,
-				30E4EF6F1AAD4F80003F6436 /* Monthly View Controller.h */,
-				30E4EF701AAD4F80003F6436 /* Monthly View Controller.m */,
-				30E4EF721AAD5011003F6436 /* AgendaViewController.h */,
-				30E4EF731AAD5011003F6436 /* AgendaViewController.m */,
+				4929B62B1AA133D800963AA7 /* Main_iPad.storyboard */,
 			);
 			path = SFUdiscover;
 			sourceTree = "<group>";
@@ -497,6 +551,20 @@
 		4929B61D1AA133D400963AA7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7E46F4C01ABCDEDB00ED6E43 /* appicon_no_ribbon_original80x80red.png */,
+				7E46F4C11ABCDEDB00ED6E43 /* appicon_no_ribbon_original120x120red.png */,
+				7E46F4C21ABCDEDB00ED6E43 /* calendar.png */,
+				7E46F4C31ABCDEDB00ED6E43 /* canvasblue.png */,
+				7E46F4C41ABCDEDB00ED6E43 /* connect.png */,
+				7E46F4C51ABCDEDB00ED6E43 /* feedbackblue.png */,
+				4961BD651ABA67C7003F1DE2 /* SFU Burnaby.jpg */,
+				7E46F4C61ABCDEDB00ED6E43 /* library.png */,
+				7E46F4C71ABCDEDB00ED6E43 /* loyaltyblue.png */,
+				7E46F4C81ABCDEDB00ED6E43 /* nav2.png */,
+				7E46F4C91ABCDEDB00ED6E43 /* news.png */,
+				7E46F4CA1ABCDEDB00ED6E43 /* service1blue.png */,
+				7E46F4CB1ABCDEDB00ED6E43 /* transit.png */,
+				7E4C80541AAD1BB9001BD4C4 /* setting.png */,
 				4929B61F1AA133D600963AA7 /* InfoPlist.strings */,
 				4929B6221AA133D600963AA7 /* main.m */,
 				4929B61E1AA133D400963AA7 /* SFUdiscover-Info.plist */,
@@ -613,7 +681,6 @@
 				7E46F4D41ABCDEDB00ED6E43 /* nav2.png in Resources */,
 				0EC6D5501AA9B5AE0084B4C6 /* RL_WMC.plist in Resources */,
 				4929B62A1AA133D800963AA7 /* Main_iPhone.storyboard in Resources */,
-				496D138B1AAA7FB600256D0D /* Page1.jpg in Resources */,
 				7E46F4CF1ABCDEDB00ED6E43 /* canvasblue.png in Resources */,
 				7E46F4D51ABCDEDB00ED6E43 /* news.png in Resources */,
 				7E46F4D01ABCDEDB00ED6E43 /* connect.png in Resources */,
@@ -645,7 +712,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E83D95F1AB42B3A0045958A /* NewsFeedCardTableViewCell.m in Sources */,
-				973D2E6D1AB8ADEA0034A5EE /* KeychainItemWrapper.m in Sources */,
 				97F2A2E11AB8C2E900195CA1 /* JNKeychain.m in Sources */,
 				30A459C11AAD5B8400AD7221 /* AgendaViewController.m in Sources */,
 				30A459C01AAD5B7D00AD7221 /* Monthly View Controller.m in Sources */,
@@ -689,7 +755,6 @@
 				4929B6561AA135AF00963AA7 /* FeedbackViewController.m in Sources */,
 				4929B6591AA135BC00963AA7 /* CalendarViewController.m in Sources */,
 				4E27E06E1ABE2C1000FFAD5F /* AddEventTableViewController.m in Sources */,
-				7EBFB6921AAE36D0003B4E32 /* PageUnderConstructionViewController.m in Sources */,
 				4929B6681AA135FD00963AA7 /* ServicesViewController.m in Sources */,
 				4929B6621AA135DF00963AA7 /* LoyaltyViewController.m in Sources */,
 				303C34031AAB9BF0001E95F7 /* TrafficHomeViewController.m in Sources */,
