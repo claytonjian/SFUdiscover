@@ -1,4 +1,4 @@
-#SFUdiscover
+# SFUdiscover
 
 This is an application that aims to serve as the official SFU app. 
 
